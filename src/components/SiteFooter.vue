@@ -1,7 +1,7 @@
 <template lang="html">
   <footer class="db tc center ph2 pv4">
     <a
-      class="inline-flex no-underline justify-center items-center gray hover-blue mh1"
+      class="inline-flex no-underline justify-center items-center gray hover-blue ph1 mh1"
       :href="settings.social.github"
       title="GitHub">
       <span class="h2 w2 dib">
@@ -9,7 +9,7 @@
       </span>
     </a>
     <a
-      class="inline-flex no-underline justify-center items-center gray hover-blue mh1"
+      class="inline-flex no-underline justify-center items-center gray hover-blue ph1 mh1"
       :href="settings.social.twitter"
       title="Twitter">
       <span class="h2 w2 dib">
@@ -17,7 +17,7 @@
       </span>
     </a>
     <a
-      class="inline-flex no-underline justify-center items-center gray hover-blue mh1"
+      class="inline-flex no-underline justify-center items-center gray hover-blue ph1 mh1"
       :href="settings.social.linkedin"
       title="LinkedIn">
       <span class="h2 w2 dib">
@@ -25,7 +25,7 @@
       </span>
     </a>
     <a
-      class="inline-flex no-underline justify-center items-center gray hover-blue mh1"
+      class="inline-flex no-underline justify-center items-center gray hover-blue ph1 mh1"
       :href="`mailto:${settings.social.email}`"
       title="Email me">
       <span class="h2 w2 dib">
