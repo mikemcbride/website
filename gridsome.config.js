@@ -1,3 +1,15 @@
 module.exports = {
-  plugins: []
+  siteName: 'Mike McBride',
+  siteUrl: 'https://mikemcbride.me',
+  siteDescription: 'Personal website of Mike McBride',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/index.md',
+        typeName: 'BlogPost',
+        route: '/blog/:year/:month/:day/:slug'
+      }
+    }
+  ]
 }

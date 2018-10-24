@@ -1,11 +1,16 @@
 <template>
   <Layout>
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    <h1>Hello, world!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
+    <div class="flex justify-center pv6 pv7-ns">
+      <div class="ph3">
+        <div class="fw6 f3 f2-ns mv2">Hey there! I'm Mike.</div>
+        <div class="f4-ns lh-copy">I build things for the internet.</div>
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Home'
+}
 </script>
