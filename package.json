@@ -4,8 +4,7 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore",
-    "deploy": "npm run build && now ./dist"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.1.0",
@@ -15,8 +14,5 @@
   },
   "devDependencies": {
     "@gridsome/transformer-remark": "^0.0.3"
-  },
-  "now": {
-    "alias": "mikemcbride.me"
   }
 }
