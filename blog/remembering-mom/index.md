@@ -7,7 +7,7 @@ type: post
 published: true
 ---
 
-On August 2, my mom passed away after a 29 month battle with brain cancer. Over the past few weeks, I have had a lot of time to reflect on her life and what an incredible woman and mother she was. I also had the privilege of sharing some words of remembrance on her life at her funeral in St. Louis this past Friday, and many people have asked me to send them a copy of what I wrote. I've been thinking about what I wanted to write about her here on my blog, but I've already written it, so I'm just going to paste it below. For those of you who knew my mom, I hope you enjoy reading my reflection on her life. For those of you who did not, hopefully this gives you a little glimpse into who she was and what made her such an incredible woman.
+On August 2, my mom passed away after a 29 month battle with brain cancer. Over the past few weeks, I have had a lot of time to reflect on her life and what an incredible woman and mother she was. I also had the privilege of sharing some words of remembrance on her life at her funeral in St. Louis this past Friday, and many people have asked me to send them a copy of what I wrote. I've been thinking about what I wanted to write about her here on my blog, but since I've already written it for that speech, I'm just going to paste it below. For those of you who knew my mom, I hope you enjoy reading my reflection on her life. For those of you who did not, hopefully this gives you a little glimpse into who she was and what made her such an incredible woman.
 
 ---
 

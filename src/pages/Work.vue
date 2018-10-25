@@ -9,23 +9,23 @@
     </p>
 
     <section class="flex flex-wrap mb5">
-      <article
-        class="pt5 w-100"
-        v-for="project in projects">
-        <a :href="project.url" class="db f3 dark-gray lh-title underline-hover" target="_blank">
-          {{ project.title }}
-        </a>
-        <p class="f5 mt2 mb4 mid-gray lh-copy">{{ project.description }}</p>
-      </article>
+      <ProjectListItem
+        v-for="(project, $index) in projects"
+        :key="$index"
+        :project="project" />
     </section>
   </Layout>
 </template>
 
 <script>
 import projects from '@/data/work'
+import ProjectListItem from '@/components/ProjectListItem'
 
 export default {
   name: 'Work',
+  components: {
+    ProjectListItem
+  },
   data() {
     return {
       projects

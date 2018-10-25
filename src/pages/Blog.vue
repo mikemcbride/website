@@ -1,27 +1,21 @@
 <template lang="html">
   <Layout>
     <section class="mb5">
-      <article
-        class="pv4"
-        v-for="{ node: post } in $page.allBlogPost.edges">
-        <g-link
-          class="db mb1 f3 dark-gray lh-title underline-hover"
-          :to="post.path">
-          {{ post.title }}
-        </g-link>
-        <div class="post-date f5 fw4 pb1 gray db">{{ post.date | formatDate }}</div>
-      </article>
-  </section>
+      <BlogListItem
+        v-for="({ node: post }, $index) in $page.allBlogPost.edges"
+        :key="$index"
+        :post="post" />
+    </section>
   </Layout>
 </template>
 
 <script>
-import formatDate from '@/filters/formatDate'
+import BlogListItem from '@/components/BlogListItem'
 
 export default {
   name: 'Blog',
-  filters: {
-    formatDate
+  components: {
+    BlogListItem
   }
 }
 </script>

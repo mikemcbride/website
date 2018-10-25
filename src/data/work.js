@@ -1,17 +1,22 @@
 export default [
   {
+    title: "Catholic AF",
+    description: "A friend and I built a website where we design and sell snarky Catholic stickers and apparel. Completely real, totally a joke. Check it out.",
+    url: "https://catholic.af"
+  },
+  {
     title: "LSU Phoenix Alumni Association",
     description: "I designed and built the new website for the LSU Phoenix Alumni Association.",
-    url: "http://lsuphoenix.org"
+    url: "https://lsuphoenix.org"
   },
   {
     title: "Flexbox Playground",
-    description: "A web app that allows you to experiment with and understand how flexbox works. Note: This app will load on a phone, but it's intended to be used on a larger screen.",
+    description: "A web app that allows you to experiment with and understand how flexbox works. Note that while this app will technically load on a phone, it's definitely intended to be used on a larger screen and probably won't work very well on smaller devices.",
     url: "https://github.com/mikemcbride/flexbox-playground"
   },
   {
     title: "Electron Highlighter Syntax",
-    description: "A dark syntax theme for the Atom text editor.",
+    description: "A dark syntax theme for the Atom text editor. I've invested far more time into this color theme than I care to admit.",
     url: "https://github.com/mikemcbride/electron-highlighter-syntax"
   },
   {
@@ -21,12 +26,12 @@ export default [
   },
   {
     title: "Hyper Website Theme",
-    description: "A syntax theme for Hyper based on the website color scheme for the app.",
+    description: "A syntax theme for Hyper based on the app's website - hyper.is.",
     url: "https://github.com/mikemcbride/hyper-website-theme"
   },
   {
     title: "Hyper Mono Christmas",
-    description: "Another Hyper syntax theme. Monochrome, but with red and green for nice colored CLI outputs.",
+    description: "Another Hyper syntax theme. All monochrome, but with red and green for nice colored CLI outputs.",
     url: "https://github.com/mikemcbride/hyper-mono-christmas"
   }
 ]

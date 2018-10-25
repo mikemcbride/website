@@ -1,8 +1,8 @@
 <template>
   <Layout :title="$page.post.title">
-    <header class="mb3 lh-title">
+    <header class="mb4 lh-title">
       <h1 class="fw4 mv0">{{ $page.post.title }}</h1>
-      <p class="mb3 silver">{{ $page.post.date | formatDate }}</p>
+      <p class="mb3 f7 silver">{{ $page.post.date | formatDate }}</p>
     </header>
 
     <article class="mb5 post-content">
