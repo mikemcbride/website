@@ -1,5 +1,5 @@
 <template functional>
-  <article class="pt5 w-100">
+  <article class="mb5 w-100">
     <a
       :href="props.project.url"
       class="db f3 dark-gray lh-title underline-hover"
@@ -7,7 +7,7 @@
       rel="nofollow noreferrer noopener">
       {{ props.project.title }}
     </a>
-    <p class="f5 mt2 mb4 mid-gray lh-copy">{{ props.project.description }}</p>
+    <p class="f5 mt2 mid-gray lh-copy">{{ props.project.description }}</p>
   </article>
 </template>
 

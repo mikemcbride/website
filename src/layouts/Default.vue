@@ -137,7 +137,7 @@ blockquote {
   color: var(--gray);
   font-size: 1.2em;
   margin-left: 0;
-  padding: 1em;
+  padding: var(--xs) 1em;
   width: 100%;
 
   > :last-child {

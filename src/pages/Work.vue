@@ -1,6 +1,6 @@
 <template lang="html">
   <Layout>    
-    <p class="mb4">
+    <p class="mb5">
       Most of my work I am not able to showcase publicly, since it is for my company, 
       but I do try to contribute to open source projects when I have time, 
       especially ones that I find particularly helpful to me. 
@@ -8,7 +8,7 @@
       You can find some of them listed below.
     </p>
 
-    <section class="flex flex-wrap mb5">
+    <section class="mb5">
       <ProjectListItem
         v-for="(project, $index) in projects"
         :key="$index"
