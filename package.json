@@ -1,8 +1,8 @@
 {
-  "name": "mikemcbride-dot-me",
+  "name": "mikemcbride.me",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "gridsome build && cp now.json dist",
     "dev": "gridsome develop",
     "explore": "gridsome explore"
   },

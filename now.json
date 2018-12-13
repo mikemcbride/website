@@ -1,4 +1,5 @@
 {
-  "type": "static",
+  "version": 2,
+  "name": "website",
   "alias": "mikemcbride.me"
 }
