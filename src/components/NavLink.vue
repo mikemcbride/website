@@ -1,7 +1,7 @@
 <template functional>
   <g-link
-    class="near-black dib ml3 no-underline-hover"
-    :class="{'fw5': props.active === true, 'gray hover-blue': props.active === false}"
+    class="near-black dib ml3 pb1 no-underline-hover bb bw1"
+    :class="{'fw5 b--near-black': props.active === true, 'b--transparent hover-blue': props.active === false}"
     :to="props.to">
     {{ props.title }}
   </g-link>
