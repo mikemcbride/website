@@ -1,7 +1,7 @@
 export default [
   {
     title: "Catholic AF",
-    description: "A friend and I built a website where we design and sell snarky Catholic stickers and apparel and donate the proceed to Catholic charities. Completely real, totally a joke. Check it out.",
+    description: "A friend and I built a website where we design and sell snarky Catholic stickers and apparel and donate the proceeds to Catholic charities. Completely real, totally a joke. Check it out.",
     url: "https://catholic.af"
   },
   {

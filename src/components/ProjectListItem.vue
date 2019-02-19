@@ -1,13 +1,13 @@
 <template functional>
-  <article class="mb5 w-100">
+  <article class="mb-16 w-full">
     <a
       :href="props.project.url"
-      class="db f3 dark-gray lh-title underline-hover"
+      class="block text-2xl text-black leading-tight hover:underline"
       target="_blank"
       rel="nofollow noreferrer noopener">
       {{ props.project.title }}
     </a>
-    <p class="f5 mt2 mid-gray lh-copy">{{ props.project.description }}</p>
+    <p class="text-base mt-2 text-grey-darkest leading-normal">{{ props.project.description }}</p>
   </article>
 </template>
 

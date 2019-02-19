@@ -12,6 +12,7 @@ published: true
 - updated work/desk setup
 - switched from zsh to fish shell
 - removed `atom-ternjs` and `split-diff` packages
+
 ---
 
 I recently read a post by [a developer I follow on Twitter](https://twitter.com/wesbos) where he outlined a lot of the things he uses to keep up his productivity, and it inspired me to do this write-up on the things I use (apps, tools, setups, configs, etc) to stay productive. Let's dive in.
@@ -69,9 +70,8 @@ I have spent quite a bit of time setting up some configs, aliases, and functions
 
 I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via [Homebrew Cask](https://caskroom.io/) I will include the install command.
 
-- **IntelliJ Idea** - when I'm working on Java/Grails APIs and not doing front-end code, this is the IDE our company uses. It's pretty decent.
-- **Firefox** - Got a massive revamp in late 2017 and it's amazing. Beautiful UI, dev tools are great (not quite as good as Chrome, but good enough, plus their CSS Grid inspector is lit), and blazing fast. `brew cask install firefox`
-- **Notes** - I don't use Evernote anymore, despite it being fantastic and pretty much the de-facto note taking app. I switched when Apple updated the Notes app to have folders, checklist items, and embedded photos inside of notes (summer/fall 2015 I think?). You can share notes now too, so at this point it does everything I used Evernote for anyway.
+- **Brave Browser** - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. But in late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. `brew cask install brave-browser`
+- **Bear** - I switched back to Apple Notes for quite a while before discovering Bear. It's $15 a year but totally worth it in my opinion. It's a beautiful notes app and has almost all the features of Apple Notes, but it also has built-in Markdown capability which is huge for developers. The only thing I miss is that I can't have shared notes with my wife, so we still use Apple Notes for that.
 - **Reminders** - I used Wunderlist for years and loved it, then realized that Reminders could do everything I needed in a todo list app, plus being able to add items to my lists via Siri is a huge benefit. I can even share lists with my wife, like a grocery list, and we can both add/remove items.
 - **Tweetbot** - I love Twitter, and I use it as my primary source of news/information, but I can't stand the ads and their official desktop app wasn't updated for years. Years ago I got Tweetbot for iOS and fell in love. Then they came out with the desktop app, and it's awesome. Ever since I started using the desktop app, I find that I keep up with it much better.
 - **Kap** - Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [[website](https://getkap.co/)] [[download](https://getkap.co/download)] `brew cask install kap`
@@ -81,6 +81,7 @@ I use a variety of other desktop applications to get things done. I'll elaborate
 - **Robo3T** - Previously Robomongo. I use it for interacting with MongoDBs. Pretty solid. `brew cask install robo3t`
 - **Insomnia** - A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. `brew cask install insomnia`
 - **LastPass** - I use LastPass for password management across all my devices. I pay $12 per year for premium service because previously that's the only way you could get access on all devices. That feature is now free, but premium gives me a family sharing folder so my wife and I can both use it. `brew cask install lastpass`
+- **Newton Mail** - I used Mail.app for the longest time on iOS and macOS, but I was always left wanting more. I tried every app available on iOS and found Newton and loved it. It took me a while to come to grips with the price - $49 per year - but that comes out to about $4 a month for one of the most used apps on my phone and laptop.
 
 ## Desk Setup
 

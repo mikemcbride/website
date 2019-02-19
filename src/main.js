@@ -1,4 +1,5 @@
 import DefaultLayout from '~/layouts/Default.vue'
+import '~/assets/tailwind.css'
 
 export default function (Vue, { head }) {
   head.meta.push({

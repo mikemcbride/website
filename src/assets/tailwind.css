@@ -1,0 +1,61 @@
+@tailwind preflight;
+
+/**
+* Set base font size for rem units
+*/
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+* Reset margins on these things
+*/
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: 1em 0;
+  font-weight: 700;
+}
+
+/**
+* Links
+*/
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  color: #0071e4;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {  
+  .post-content a:hover { text-decoration: underline; }
+}
+
+/**
+* Paragraphs, ul, ol
+*/
+ul, p, ol {
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+  
+ul li {
+  padding-left: 1rem;
+}
+
+ul li::before {
+  color: #8795a1;
+  content: '\2013'; /* unicode for the endash char (2 dashes) */
+  margin-left: -1rem;
+  margin-right: .5rem;
+}
+
+@tailwind utilities;

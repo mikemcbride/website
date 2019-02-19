@@ -1,11 +1,11 @@
 <template functional>
-  <article class="pv4">
+  <article class="py-8">
     <g-link
-      class="db mb1 f3 dark-gray lh-title underline-hover"
+      class="block mb-1 text-2xl text-black lh-title hover:underline"
       :to="props.post.path">
       {{ props.post.title }}
     </g-link>
-    <div class="f6 fw4 pb1 dark-gray db">{{ props.post.date | formatDate }}</div>
+    <div class="text-sm font-normal pb-1 text-black block">{{ props.post.date | formatDate }}</div>
   </article>
 </template>
 

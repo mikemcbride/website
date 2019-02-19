@@ -1,9 +1,9 @@
 <template functional>
   <a
-    class="inline-flex no-underline justify-center items-center gray ph1 mh1"
+    class="inline-flex no-underline justify-center items-center text-grey hover:text-grey-darker px-1 mx-1"
     :href="props.to"
     :title="props.title">
-    <span class="h2 w2 dib">
+    <span class="h-8 w-8 inline-block">
       <slot />
     </span>
   </a>
@@ -24,9 +24,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-a:hover {
-  color: var(--blue);
-}
-</style>

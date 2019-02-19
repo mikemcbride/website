@@ -1,6 +1,6 @@
 <template>
-  <header class="pa3 pa4-ns mb4 sans-serif">
-    <nav class="f6 fw4 db site-nav mw7 center ph3 tr">
+  <header class="p-4 md:p-8 mb-8">
+    <nav class="text-sm font-normal block site-nav max-w-lg mx-auto px-4 text-right">
       <NavLink to="/" :active="false" title="Home" v-if="$route.path !== '/'" />
       <NavLink to="/about" :active="$route.path.startsWith('/about')" title="About" />
       <NavLink to="/work" :active="$route.path.startsWith('/work')" title="Work" />

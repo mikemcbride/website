@@ -1,11 +1,11 @@
 <template>
   <Layout>
     <section class="post-content">
-      <p class="mb4 mt4">
+      <p class="my-8">
         I am a web developer based out of St. Louis, MO, 
         where I live with <a href="https://putting-on-love.com" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a> and our
-        <span class="strike mr1">daughter</span>
-        <span class="strike">two</span> three children.
+        <span class="line-through mr-1">daughter</span>
+        <span class="line-through">two</span> three children.
         I enjoy running, LSU football, good whiskey, hiking, and reading.
         I am slightly obsessed with keyboard shortcuts and productivity hacks.
       </p>

@@ -1,5 +1,5 @@
 <template lang="html">
-  <footer class="db tc center ph2 pv4">
+  <footer class="block text-center mx-auto px-2 py-8">
     
     <FooterLink :to="settings.social.github" title="GitHub">
       <GitHub />
