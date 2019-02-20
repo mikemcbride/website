@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build && cp now.json dist",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "deploy": "now ./dist"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.2.0",
