@@ -8,6 +8,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+@media all and (min-width: 768px) {
+  html { font-size: 20px; }
+  .post-content a:hover { text-decoration: underline; }
+}
+
 /**
 * Reset margins on these things
 */
@@ -29,10 +34,6 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   color: #0071e4;
   text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {  
-  .post-content a:hover { text-decoration: underline; }
 }
 
 /**

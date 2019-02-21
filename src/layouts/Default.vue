@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full text-black font-sans min-h-screen flex flex-col">
+  <div class="w-full max-w-lg mx-auto px-4 text-black font-sans min-h-screen flex flex-col">
     <SiteHeader />
-    <main role="main" class="w-full max-w-lg mx-auto px-4 flex-auto">
+    <main role="main" class="w-full flex-auto">
       <slot />
     </main>
     <SiteFooter />

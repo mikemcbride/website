@@ -1,31 +1,21 @@
 <template lang="html">
-  <footer class="block text-center mx-auto px-2 py-8">
-    
-    <FooterLink :to="settings.social.github" title="GitHub">
-      <GitHub />
+  <footer class="text-center py-8">
+    <FooterLink
+      v-for="(link, index) in settings"
+      :key="index"
+      :title="link.title"
+      :to="link.to">
+      <Component :is="link.component" />
     </FooterLink>
-    
-    <FooterLink :to="settings.social.twitter" title="Twitter">
-      <Twitter />
-    </FooterLink>
-    
-    <FooterLink :to="settings.social.linkedin" title="LinkedIn">
-      <LinkedIn />
-    </FooterLink>
-    
-    <FooterLink :to="`mailto:${settings.social.email}`" title="Email me">
-      <Email />
-    </FooterLink>
-    
   </footer>
 </template>
 
 <script>
 import FooterLink from '@/components/FooterLink'
-import GitHub from '@/components/GitHub'
-import Twitter from '@/components/Twitter'
-import LinkedIn from '@/components/LinkedIn'
-import Email from '@/components/Email'
+import GitHub from '@/components/icons/GitHub'
+import Twitter from '@/components/icons/Twitter'
+import LinkedIn from '@/components/icons/LinkedIn'
+import Email from '@/components/icons/Email'
 import settings from '@/data/settings'
 
 export default {
@@ -37,9 +27,10 @@ export default {
     LinkedIn,
     Email
   },
-  data() {
-    return {
-      settings
+  computed: {
+    settings() {
+      // make settings a computed property because the settings will never change. This doesn't need to be reactive.
+      return settings.footerLinks
     }
   }
 }

@@ -10,7 +10,7 @@
         I am slightly obsessed with keyboard shortcuts and productivity hacks.
       </p>
       <p>
-        The easiest place to find and reach me is <a :href="settings.social.twitter" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>, or if you'd prefer, you can <a :href="`mailto:${settings.social.email}`">send me an email</a>.
+        The easiest place to find and reach me is <a :href="settings.twitterUrl" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>, or if you'd prefer, you can <a :href="`mailto:${settings.email}`">send me an email</a>.
       </p>
     </section>
   </Layout>
