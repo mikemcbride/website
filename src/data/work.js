@@ -15,6 +15,11 @@ export default [
     url: "https://github.com/mikemcbride/flexbox-playground"
   },
   {
+    title: "Sudoku Solver",
+    description: "A web app that will solve sudoku puzzles for you. It uses a variation of a brute force search algorithm with backtracking to solve even the hardest puzzles.",
+    url: "https://sudoku.mcbride.tech"
+  },
+  {
     title: "Electron Highlighter Syntax",
     description: "A dark syntax theme for the Atom text editor. I've invested far more time into this color theme than I care to admit.",
     url: "https://github.com/mikemcbride/electron-highlighter-syntax"
