@@ -3,22 +3,18 @@ export default {
     {
       title: 'GitHub',
       to: 'https://github.com/mikemcbride',
-      component: 'GitHub',
     },
     {
       title: 'Twitter',
       to: 'https://twitter.com/_mcbridem_',
-      component: 'Twitter',
     },
     {
       title: 'LinkedIn',
       to: 'https://www.linkedin.com/in/mmcbride1007',
-      component: 'LinkedIn',
     },
     {
-      title: 'Email Me',
+      title: 'Email',
       to: 'mailto:mmcbride1007@gmail.com',
-      component: 'Email',
     }
   ],
   twitterUrl: 'https://twitter.com/_mcbridem_',

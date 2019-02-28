@@ -1,11 +1,9 @@
 <template lang="html">
   <Layout>    
     <p class="mb-16">
-      Most of my work I am not able to showcase publicly, since it is for my company, 
-      but I do try to contribute to open source projects when I have time, 
-      especially ones that I find particularly helpful to me. 
-      I also have a few open source projects and public websites which I have built. 
-      You can find some of them listed below.
+      Most of my work is private, since it is for my company,
+      but I do have a few open source projects and public websites which I have built. 
+      You can find some of them listed below, and the rest you can find on my GitHub profile.
     </p>
 
     <section class="mb-16">
@@ -22,14 +20,12 @@ import projects from '@/data/work'
 import ProjectListItem from '@/components/ProjectListItem'
 
 export default {
-  name: 'Work',
+  name: 'Projects',
   components: {
     ProjectListItem
   },
-  data() {
-    return {
-      projects
-    }
+  created() {
+    this.projects = projects
   }
 }
 </script>

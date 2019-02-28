@@ -9,7 +9,6 @@ html {
 }
 
 @media all and (min-width: 768px) {
-  html { font-size: 20px; }
   .post-content a:hover { text-decoration: underline; }
 }
 

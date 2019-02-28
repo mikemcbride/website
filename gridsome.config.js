@@ -11,11 +11,7 @@ module.exports = {
         route: '/blog/:year/:month/:day/:slug'
       }
     },
-    {
-      use: 'gridsome-plugin-purgecss'
-    },
-    {
-      use: 'gridsome-plugin-tailwindcss'
-    }
+    { use: 'gridsome-plugin-purgecss' },
+    { use: 'gridsome-plugin-tailwindcss' }
   ]
 }

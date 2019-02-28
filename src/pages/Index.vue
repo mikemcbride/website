@@ -1,16 +1,35 @@
 <template>
   <Layout>
-    <div class="flex justify-center py-32 md:py-64">
-      <div class="px-4">
-        <div class="font-semibold text-2xl md:text-4xl my-2">Hey there! I'm Mike.</div>
-        <div class="md:text-xl leading-normal">I build things for the internet.</div>
+    <section class="post-content">
+      <div class="text-center mb-8 mt-4">
+        <span class="inline-block overflow-hidden p-1 h-32 w-32 rounded-full shadow border border-grey-light">
+          <g-image src="../assets/mike.jpg" class="w-full h-full rounded-full border border-grey-lightest"></g-image>
+        </span>
       </div>
-    </div>
+      <p class="mb-8">
+        Hey there! I'm Mike. I'm a web developer based out of St. Louis, MO, 
+        where I live with <a href="https://putting-on-love.com" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a> and our
+        <span class="line-through mr-1">daughter</span>
+        <span class="line-through">two</span> three children.
+        I enjoy running, LSU football, good whiskey, hiking, and reading.
+        I am slightly obsessed with keyboard shortcuts and productivity hacks.
+      </p>
+      <p>
+        The easiest place to find and reach me is <a :href="settings.twitterUrl" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>, or if you'd prefer, you can <a :href="`mailto:${settings.email}`">send me an email</a>.
+      </p>
+    </section>
   </Layout>
 </template>
 
 <script>
+import settings from '@/data/settings'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  data() {
+    return {
+      settings: settings
+    }
+  }
 }
 </script>

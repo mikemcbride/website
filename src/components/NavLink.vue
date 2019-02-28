@@ -1,9 +1,9 @@
 <template functional>
   <g-link
-    class="text-black inline-block ml-4 pb-1 no-underline border-b-2"
+    class="inline-block mr-4 md:mr-6 uppercase font-semibold tracking-wide no-underline hover:text-black"
     :class="{
-      'font-medium border-black': props.active === true,
-      'border-transparent hover:text-blue': props.active === false
+      'text-black': props.active === true,
+      'text-grey-dark': props.active === false
     }"
     :to="props.to">
     {{ props.title }}

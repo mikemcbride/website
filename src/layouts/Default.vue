@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full max-w-lg mx-auto px-4 text-black font-sans min-h-screen flex flex-col">
+  <div class="w-full text-black font-sans min-h-screen flex flex-col sm:pl-16 lg:pl-24 px-4">
     <SiteHeader />
-    <main role="main" class="w-full flex-auto">
+    <main role="main" class="w-full flex-auto max-w-md">
       <slot />
     </main>
-    <SiteFooter />
+    <SiteFooter/>
   </div>
 </template>
 

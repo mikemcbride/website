@@ -1,11 +1,9 @@
 <template functional>
   <a
-    class="inline-flex no-underline justify-center items-center text-grey hover:text-grey-darker px-1 mx-1"
+    class="no-underline inline-block text-grey-dark hover:text-grey-darkest text-sm mx-2"
     :href="props.to"
     :title="props.title">
-    <span class="h-8 w-8 inline-block">
-      <slot />
-    </span>
+    {{ props.title }}
   </a>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
-  <header class="p-4 md:p-8 mb-8">
-    <nav class="text-sm font-normal block site-nav text-right">
-      <NavLink to="/" :active="false" title="Home" v-if="$route.path !== '/'" />
-      <NavLink to="/about" :active="$route.path.startsWith('/about')" title="About" />
-      <NavLink to="/work" :active="$route.path.startsWith('/work')" title="Work" />
+  <header class="py-6 sm:py-12">
+    <g-link to="/" class="block text-black font-bold font-extrabold no-underline text-2xl lg:text-3xl mb-3">Mike McBride</g-link>
+    <nav class="block block site-nav text-xs">
+      <NavLink to="/" :active="$route.path === '/'" title="About" />
+      <NavLink to="/projects" :active="$route.path.startsWith('/projects')" title="Projects" />
       <NavLink to="/blog" :active="$route.path.startsWith('/blog')" title="Blog" />
     </nav>
   </header>
@@ -15,7 +15,7 @@ import NavLink from '@/components/NavLink'
 export default {
   name: 'SiteHeader',
   components: {
-    NavLink
-  }
+    NavLink,
+  },
 }
 </script>
