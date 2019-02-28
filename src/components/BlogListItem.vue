@@ -5,7 +5,7 @@
       :to="props.post.path">
       {{ props.post.title }}
     </g-link>
-    <div class="text-sm text-grey-dark uppercase leading-normal">{{ props.post.date | formatDate }}</div>
+    <div class="text-sm text-grey-dark leading-normal">{{ props.post.date | formatDate }}</div>
   </article>
 </template>
 
