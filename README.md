@@ -1,3 +1,1 @@
-# Gridsome Website
-
-Source code for my personal website. It's built using Gridsome, uses Tailwind for styles.
+This is the source code for my personal website. It's built using Gridsome and uses Tailwind for styles.
