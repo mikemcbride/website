@@ -5,15 +5,15 @@ workflow "Deploy on Now" {
 
 # npm install
 action "install" {
-  uses = "actions/npm@master"
+  uses = "borales/actions-yarn@master"
   args = "install"
 }
 
 # build it
 action "build" {
-  needs = "install"
   uses = "actions/npm@master"
   args = "run build"
+  needs = ["install"]
 }
 
 # Deploy, and write deployment to file
