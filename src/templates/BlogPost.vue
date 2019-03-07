@@ -1,5 +1,7 @@
 <template>
   <Layout :title="$page.post.title">
+    <ScrollProgress />
+    
     <header class="mb-8 leading-tight">
       <h1 class="font-normal my-0">{{ $page.post.title }}</h1>
       <p class="mb-4 text-sm text-grey-darker">{{ $page.post.date | formatDate }}</p>
@@ -23,8 +25,12 @@ query Post ($path: String!) {
 
 <script>
 import formatDate from '@/filters/formatDate'
+import ScrollProgress from '@/components/ScrollProgress'
 
 export default {
+  components: {
+    ScrollProgress,
+  },
   metaInfo () {
     return {
       title: this.$page.post.title
