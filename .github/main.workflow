@@ -20,7 +20,7 @@ action "build" {
 action "deploy" {
   needs = "build"
   uses = "actions/zeit-now@master"
-  args = "--no-clipboard deploy $HOME/dist > $HOME/$GITHUB_ACTION.txt"
+  args = "--no-clipboard deploy ./dist > $HOME/$GITHUB_ACTION.txt"
   secrets = ["ZEIT_TOKEN"]
 }
 
