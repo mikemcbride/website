@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="fixed pin-t pin-l h-1 bg-blue" :style="progressWidth"></div>
+  <div class="fixed pin-t pin-l h-05 bg-blue" :style="progressWidth"></div>
 </template>
 
 <script>

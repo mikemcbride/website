@@ -4767,12 +4767,11 @@ javascript-stringify@^1.6.0:
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
   integrity sha1-FC0RHzpuPa6PSpr9d9RYVbWpzOM=
 
-jest-worker@^24.0.0:
-  version "24.3.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-24.3.0.tgz#2e02eea58f8e43d32e5d82e42aa411dee127dc2d"
-  integrity sha512-gJ5eGnHt73cCpwKGbx0drrVCypgUVINZ5nUAvzD57EUCFc1kzqA0wpPmn4LVWi7mkNeOE36daBbAyWPEmEf+CQ==
+jest-worker@24.0.0, jest-worker@^24.0.0:
+  version "24.0.0"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-24.0.0.tgz#3d3483b077bf04f412f47654a27bba7e947f8b6d"
+  integrity sha512-s64/OThpfQvoCeHG963MiEZOAAxu8kHsaL/rCMF7lpdzo7vgF0CtPml9hfguOMgykgH/eOm4jFP4ibfHLruytg==
   dependencies:
-    "@types/node" "*"
     merge-stream "^1.0.1"
     supports-color "^6.1.0"
 

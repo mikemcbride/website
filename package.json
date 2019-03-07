@@ -17,5 +17,8 @@
     "@gridsome/transformer-remark": "^0.2.0",
     "gridsome-plugin-purgecss": "^1.0.9",
     "gridsome-plugin-tailwindcss": "^1.0.5"
+  },
+  "resolutions": {
+    "gridsome/jest-worker": "24.0.0"
   }
 }
