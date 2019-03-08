@@ -8,18 +8,20 @@ export default {
   data() {
     return {
       scrollY: 0,
-      offset: 1
+      clientHeight: 1,
+      innerHeight: 0
     }
   },
   computed: {
+    offset() {
+      return this.clientHeight - this.innerHeight
+    },
     progressWidth() {
-      let pct = (this.scrollY / this.offset) * 100
-      return `width: ${pct}%`
+      return `width: ${(this.scrollY / this.offset) * 100}%`
     }
   },
   mounted() {
-    this.offset = document.body.clientHeight - window.innerHeight
-    this.scrollY = window.scrollY
+    this.handleScroll()
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
@@ -27,6 +29,8 @@ export default {
   },
   methods: {
     handleScroll() {
+      this.innerHeight = window.innerHeight
+      this.clientHeight = document.body.clientHeight
       this.scrollY = window.scrollY
     }
   },
