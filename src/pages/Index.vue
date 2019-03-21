@@ -60,7 +60,7 @@ export default {
       return `${urlBase}/${options}/${imageName}.${format}`
     }
   },
-  created() {
+  mounted() {
     const browser = Bowser.getParser(window.navigator.userAgent)
     
     // these browsers support the webp image format.
