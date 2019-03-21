@@ -3,7 +3,9 @@
     <section class="post-content">
       <div class="text-center mb-8 mt-4">
         <span class="inline-block overflow-hidden p-1 h-32 w-32 rounded-full shadow border border-grey-light">
-          <g-image src="../assets/mike.jpg" class="w-full h-full rounded-full border border-grey-lightest"></g-image>
+          <img 
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,w_118/v1553193958/profile_pic.webp"
+            class="w-full h-full rounded-full border border-grey-lightest" />
         </span>
       </div>
       <p class="mb-8">
