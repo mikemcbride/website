@@ -1,6 +1,6 @@
 <template functional>
   <a
-    class="no-underline inline-block text-grey-dark hover:text-grey-darkest text-sm mx-2"
+    class="inline-block text-grey-dark hover:text-grey-darkest text-sm mx-2"
     :href="props.to"
     :title="props.title">
     {{ props.title }}

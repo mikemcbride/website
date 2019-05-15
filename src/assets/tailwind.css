@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 
 /**
 * Set base font size for rem units
@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   color: #0071e4;
-  text-decoration: none;
 }
 
 /**

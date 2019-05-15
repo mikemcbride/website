@@ -1,6 +1,6 @@
 <template functional>
   <g-link
-    class="inline-block mr-4 md:mr-6 uppercase font-medium tracking-wide no-underline hover:text-black"
+    class="inline-block mr-4 md:mr-6 uppercase font-medium tracking-wider hover:text-black"
     :class="{
       'text-black': props.active === true,
       'text-grey-dark': props.active === false

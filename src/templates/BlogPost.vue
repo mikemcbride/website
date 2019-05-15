@@ -3,7 +3,7 @@
     <ScrollProgress />
     
     <header class="mb-8 leading-tight">
-      <h1 class="font-normal my-0">{{ $page.post.title }}</h1>
+      <h1 class="font-normal text-3xl my-0">{{ $page.post.title }}</h1>
       <p class="mb-4 text-sm text-grey-darker">{{ $page.post.date | formatDate }}</p>
     </header>
 
@@ -113,4 +113,7 @@ hr {
   border-bottom-width: 1px;
   margin: 2rem 0;
 }
+
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
 </style>

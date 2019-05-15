@@ -667,7 +667,7 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@fullhuman/postcss-purgecss@^1.2.0", "@fullhuman/postcss-purgecss@latest":
+"@fullhuman/postcss-purgecss@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-1.2.0.tgz#a3207a0e1812f8b56fa49fba5796a1020f2756a8"
   integrity sha512-An05jbnZVUrX+VVNniaNQtOuo/S7tyQu5x86itXTF+7kfMaGxglFGykFX2KCt2hcbJijbvfCval9IkPO19V1KA==
@@ -3831,22 +3831,15 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-purgecss@^1.0.9:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-purgecss/-/gridsome-plugin-purgecss-1.0.12.tgz#dd927c2bd44e04ad08d67fbd5126fe0e1357feef"
-  integrity sha512-SWYUKV2jb0RJrxgLzOx6wKJzEtNu79bzZuZDNMyVH+NqouFGqJQDUUaQqZpKQmgGMdb0P8gAwLx4KQBTYWvFBw==
-  dependencies:
-    "@fullhuman/postcss-purgecss" latest
-
-gridsome-plugin-tailwindcss@^1.0.5:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-1.3.2.tgz#90f58d2d9c20d7e8474700032d0e2fe4c7820611"
-  integrity sha512-pc7VTEQfIYfq7y5oCnn6421Dd2HJrBbSpmi37HEkkgHYhuytcW1B/cAYXx7dMv7mVn6qM8e2T0J6yXXZwZ+Ocg==
+gridsome-plugin-tailwindcss@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-2.0.3.tgz#ad65d255d7974b9736a4a169f01e26e8e69824ae"
+  integrity sha512-JhRv16LrKHb8oiiul8q9SjwcZxS7lD+oLtmYrbfTmaKhwJfRndl1UcFFh4meBJ5K+pU54H59WX30sjOzyaZkEw==
   dependencies:
     "@fullhuman/postcss-purgecss" "^1.2.0"
     autoprefixer "^9.5.1"
     postcss-import "^12.0.1"
-    postcss-nesting "^7.0.0"
+    postcss-nested "^4.1.2"
     tailwindcss latest
 
 gridsome@^0.6.0:
@@ -6561,20 +6554,13 @@ postcss-modules-values@^2.0.0:
     icss-replace-symbols "^1.1.0"
     postcss "^7.0.6"
 
-postcss-nested@^4.1.1:
+postcss-nested@^4.1.1, postcss-nested@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.1.2.tgz#8e0570f736bfb4be5136e31901bf2380b819a561"
   integrity sha512-9bQFr2TezohU3KRSu9f6sfecXmf/x6RXDedl8CHF6fyuyVW7UqgNMRdWMHZQWuFY6Xqs2NYk+Fj4Z4vSOf7PQg==
   dependencies:
     postcss "^7.0.14"
     postcss-selector-parser "^5.0.0"
-
-postcss-nesting@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-7.0.0.tgz#6e26a770a0c8fcba33782a6b6f350845e1a448f6"
-  integrity sha512-WSsbVd5Ampi3Y0nk/SKr5+K34n52PqMqEfswu6RtU4r7wA8vSD+gM8/D9qq4aJkHImwn1+9iEFTbjoWsQeqtaQ==
-  dependencies:
-    postcss "^7.0.2"
 
 postcss-normalize-charset@^4.0.1:
   version "4.0.1"
@@ -6746,7 +6732,7 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.5, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.14, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.16"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.16.tgz#48f64f1b4b558cb8b52c88987724359acb010da2"
   integrity sha512-MOo8zNSlIqh22Uaa3drkdIAgUGEL+AD1ESiSdmElLUmE2uVDo1QloiT/IfW9qRw8Gw+Y/w69UVMGwbufMSftxA==
