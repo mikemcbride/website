@@ -1,5 +1,6 @@
 {
   "version": 2,
   "name": "website",
-  "alias": "mikemcbride.me"
+  "alias": "mikemcbride.me",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }

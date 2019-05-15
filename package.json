@@ -2,24 +2,22 @@
   "name": "mikemcbride.me",
   "private": true,
   "scripts": {
-    "build": "gridsome build && cp now.json dist",
+    "build": "gridsome build",
+    "now-build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore",
-    "deploy": "now ./dist"
+    "now-dev": "gridsome develop",
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-filesystem": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.4.1",
     "bowser": "^2.1.2",
-    "gridsome": "^0.5.0",
+    "gridsome": "^0.6.0",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0"
   },
   "devDependencies": {
-    "@gridsome/transformer-remark": "^0.2.0",
+    "@gridsome/transformer-remark": "^0.3.1",
     "gridsome-plugin-purgecss": "^1.0.9",
     "gridsome-plugin-tailwindcss": "^1.0.5"
-  },
-  "resolutions": {
-    "gridsome/jest-worker": "24.0.0"
   }
 }

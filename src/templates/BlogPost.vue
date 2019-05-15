@@ -113,12 +113,4 @@ hr {
   border-bottom-width: 1px;
   margin: 2rem 0;
 }
-// 
-// .post-content p {
-//   font-size: 16px;
-// 
-//   @media all and (min-width: 768px) {
-//     font-size: 20px;
-//   }
-// }
 </style>
