@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.4.1",
-    "bowser": "^2.1.2",
     "gridsome": "^0.6.0",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0"

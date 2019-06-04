@@ -3,10 +3,10 @@
     <section class="post-content">
       <div class="text-center mb-8 mt-4">
         <span class="inline-block overflow-hidden p-1 h-32 w-32 rounded-full shadow border border-grey-light">
-          <img
-            v-if="supportsWebp !== null"
-            :src="imageUrl"
-            class="w-full h-full rounded-full border border-grey-lightest" />
+          <g-image
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,fl_progressive,q_70,w_118/v1553193958/profile_pic.jpg"
+            class="w-full h-full rounded-full border border-grey-lightest"
+            alt="Picture of Mike" />
         </span>
       </div>
       <p class="mb-8">
@@ -25,55 +25,14 @@
 </template>
 
 <script>
-import Bowser from 'bowser'
 import settings from '@/data/settings'
 
 export default {
   name: 'Home',
   data() {
     return {
-      settings: settings,
-      supportsWebp: null
+      settings: settings
     }
-  },
-  computed: {
-    imageUrl() {
-      if (this.supportsWebp === null) {
-        return ''
-      }
-      
-      const urlBase = 'https://res.cloudinary.com/mikemcbride/image/upload'
-      const imageName = 'v1553193958/profile_pic'
-      let options = ''
-      let format = ''
-      
-      if (this.supportsWebp === true) {
-        // use WebP image format
-        options = 'c_scale,w_118'
-        format = 'webp'
-      } else {
-        // fall back to progressive jpeg
-        options = 'c_scale,fl_progressive,q_60,w_118'
-        format = 'jpg'
-      }
-      
-      return `${urlBase}/${options}/${imageName}.${format}`
-    }
-  },
-  mounted() {
-    const browser = Bowser.getParser(window.navigator.userAgent)
-    
-    // these browsers support the webp image format.
-    // if our browser matches this, use webp since it's better.
-    // otherwise, we will fall back to a progressive jpeg.
-    const conditions = {
-      chrome: '>=32',
-      firefox: '>=65',
-      edge: '>=18',
-      opera: '>=19'
-    }
-    
-    this.supportsWebp = browser.satisfies(conditions) === true
   }
 }
 </script>
