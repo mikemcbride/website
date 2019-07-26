@@ -6,7 +6,7 @@ Tonight I was working on a spreadsheet in Google Sheets and had the need to do s
 
 ## The Situation
 
-My wife and I were making some soy wax candles and some hand soaps using essential oils (it's actually insanely cheap to make your own stuff, <a href="mailto:{{site.data.settings.email}}">email me</a> if you want more info). We wanted to keep track of "recipes" (each time we try one) and if we like it, we'll make it again. We could make notes or adjust it to try and improve it, but that would be a new recipe. One sheet, called "Recipes", has a column for "Recipe #" as the first and "Name" as the second. Here's a screenshot:
+My wife and I were making some soy wax candles and some hand soaps using essential oils (it's actually insanely cheap to make your own stuff, <a href="mailto:mmcbride1007@gmail.com">email me</a> if you want more info). We wanted to keep track of "recipes" (each time we try one) and if we like it, we'll make it again. We could make notes or adjust it to try and improve it, but that would be a new recipe. One sheet, called "Recipes", has a column for "Recipe #" as the first and "Name" as the second. Here's a screenshot:
 
 ![Sheet 1](./sheet1.png)
 
@@ -36,7 +36,7 @@ I wrote that rule and another one exactly the same except with "bad" instead of 
 
 ![Final](./final.png)
 
-> Note: the grapefruit + peppermint isn't actually bad, I just wanted to show both colors highlighting. It's actually quite a refreshing scent!
+*Note: the grapefruit + peppermint isn't actually bad, I just wanted to show both colors highlighting. It's actually quite a refreshing scent!*
 
 And the conditional formatting setup:
 

@@ -46,7 +46,7 @@ The font in both Atom and the terminal is Fira Mono, which is free and can be fo
 
 I also spend a lot of time in the terminal, so I've put a lot of time into my setup (and a lot of time into automating it). You can check out [my dotfiles on GitHub](https://github.com/mikemcbride/dotfiles) if you want to see the whole thing. Here's an overview of what I use:
 
-> **Note:** I won't keep this section super updated. Check out the dotfiles repo above, the README there has an extensive list of everything the install script will do, including all the configs listed below and more.
+_**Note:** I won't keep this section super updated. Check out the dotfiles repo above, the README there has an extensive list of everything the install script will do, including all the configs listed below and more._
 
 - [Hyper](https://hyper.is/). It's a terminal that runs in Electron and is built using HTML, JS, and CSS. It's more performant than iTerm and is almost as fast as the default Terminal.app (their goal is to be faster). It's super legit, and easily customizable.
 - [fish](https://fishshell.com) as my shell. You should consider it if you are using bash and haven't considered other shells. It's amazing. I've customized it pretty heavily - if you want to check out my config, you can [install it](https://github.com/mikemcbride/dotfiles#setup).

@@ -7,7 +7,7 @@
       <p class="mb-4 text-sm text-grey-darker">{{ $page.post.date | formatDate }}</p>
     </header>
 
-    <article class="mb-16 post-content">
+    <article class="mb-16 post-content leading-normal">
       <div v-html="$page.post.content"></div>
     </article>
   </Layout>
@@ -43,39 +43,18 @@ export default {
 </script>
 
 <style lang="scss">
-/**
-* Images
-*/
-img {
-  vertical-align: middle;
-}
-
-/**
-* Blockquotes
-*/
 blockquote {
-  border-left: 4px solid #b8c2cc;
-  color: #606f7b;
-  font-size: 1.2em;
-  margin-left: 0;
-  padding: .25rem 1em;
-  width: 100%;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+  font-size: 1.15rem;
+  font-style: italic;
 }
 
-/**
-* Code styles
-*/
 pre, code, .code, .monospace {
-  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, Courier, monospace;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
 code {
   color: #d8009c;
-  font-size: 90%;
+  font-size: .875rem;
   
   &::before,
   &::after {
@@ -84,36 +63,19 @@ code {
 }
 
 pre {
-  background: #f8fafc;
   border: 1px solid #dae1e7;
   border-radius: .25rem;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  margin-top: 0;
   overflow-x: auto;
   padding: 1rem;
   white-space: pre;
   word-break: inherit;
   word-wrap: inherit;
   
-  > code {
-    font-size: inherit;
-    
+  > code {    
     &::before,
     &::after {
       content: none;
     }
   }
 }
-
-hr {
-  border: 0px solid rgba(0,0,0,0.2);
-  border-bottom-width: 1px;
-  margin: 2rem 0;
-}
-
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
 </style>

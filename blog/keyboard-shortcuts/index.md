@@ -6,13 +6,13 @@ status: publish
 type: post
 published: true
 ---
-> This is a two part post. Part one: why you should use keyboard shortcuts. Part two: common keyboard shortcuts and ones that I find super useful.
+*This is a two part post. Part one: why you should use keyboard shortcuts. Part two: common keyboard shortcuts and ones that I find super useful.*
 
 Almost anyone I work with can tell you how much I love keyboard shortcuts. Anytime I find myself doing something frequently, I check the settings or search to see if there's a keyboard shortcut for it. Keyboard shortcuts are a massive time saver. Anytime you can prevent yourself from having to move your hands from the keys to your mouse to perform an operation, you're saving time. It's why I like using vim mode in my code editor. With one keystroke, I can place the cursor at the end or beginning of the current line. I can tap `d` twice to delete the current line. I almost cringe now when I see people use the mouse to highlight an entire line just to delete it.
 
 You get the point. Keyboard shortcuts are a big time saver, and you should be using them. Below are some super common keyboard shortcuts that you should definitely be using, followed by some more obscure ones that are my favorites.
 
-> Note: I am a Mac user, so some of these keyboard shortcuts will not apply to Windows/Linux. In many cases, you can substitute `cmd` for `ctrl` on those operating systems and get the same result.
+*Note: I am a Mac user, so some of these keyboard shortcuts will not apply to Windows/Linux. In many cases, you can substitute `cmd` for `ctrl` on those operating systems and get the same result.*
 
 ## Common Keyboard Shortcuts
 
@@ -91,4 +91,4 @@ Calendar:
 - `cmd + right`: next (day/week/month/year depending on view)
 
 
-If you have any other shortcuts that you use a lot, I'd love to hear about it! Throw it in the comments below or [hit me up on Twitter](https://twitter.com/{{ site.twitter_username }})!
+If you have any other shortcuts that you use a lot, I'd love to hear about it! Throw it in the comments below or [hit me up on Twitter](https://twitter.com/_mcbridem_)!

@@ -6,9 +6,7 @@ status: publish
 type: post
 published: true
 ---
-I've been working on a few static websites over the past year and have gotten my build process to a fairly decent place. There's definitely room for improvement, especially around deploying and updating content if you aren't a developer, but for anyone who is familiar with Git and using the terminal it's actually pretty smooth. I use [Jekyll](http://jekyllrb.com) to generate the site and host most of the sites on GitHub Pages using a CNAME file to use a custom domain name. I also use [Tachyons](http://tachyons.io) for the vast majority of my styles (you should too, it's awesome).
-
-The problem I was running into, and I'm sure you've run into it as well if you've ever used a CSS framework, is that you're probably not using 75% or more of the classes/features the framework offers. No big deal, except that you are also probably shipping the whole thing to your production site. Not so cool. Take Bootstrap for example. The *minified* CSS file for the latest stable version at the time of writing this post is 121KB, and more than likely you've got custom CSS on top of it so your site doesn't look like a vanilla Bootstrap website. So if you're only using 25% of Bootstrap, wouldn't it be way better to ship 30KB instead of 120?
+I've been working on a few static websites over the past year and have gotten my build process to a fairly decent place. One of the biggest problems I was running into, and I'm sure you've run into it as well if you've ever used a CSS framework, is that there's probably a lot of stuff the framework offers that you aren't using. No big deal, except that you are also probably shipping the whole thing to your production site. Not so cool. Take Bootstrap for example. The *minified* CSS file for the latest stable version at the time of writing this post is 121KB, and more than likely you've got custom CSS on top of it so your site doesn't look like a vanilla Bootstrap website. So if you're only using 25% of Bootstrap, wouldn't it be way better to ship 30KB instead of 120?
 
 This was bugging me. Tachyons is great, and they publish each part of the framework as modules so you could pick and choose which ones you bring in if you want, but I found that harder to manage. So in my build process, I'm using Gulp to generate my `assets` folder before Jekyll builds the site (if you're unfamiliar with Jekyll, it will automatically compile your assets folder into your `_site` when it builds). Using Gulp to pre-build my assets folder allows me to run my own pre-processing including using PostCSS instead of Sass (which Jekyll supports out of the box), image minification, etc. I also get the ability to use BrowserSync when developing locally so I don't have to manually reload (first world problem).
 
@@ -16,7 +14,7 @@ So I figured there had to be something I could do to make my CSS file smaller, m
 
 I tried using the Gulp plugin for Purify CSS and had a TON of issues, so I just ended up using the plain Node module and running it inside a Gulp task by itself (would have been super nice to be able to just `pipe` through it all in one `styles` task but oh well). It's been working really well so far. Here's the setup:
 
-> **NOTE:** For a Jekyll site, you will have to run the PurifyCSS task after the site has been compiled so that all of the HTML is generated.
+_**NOTE:** For a Jekyll site, you will have to run the PurifyCSS task after the site has been compiled so that all of the HTML is generated._
 
 ```js
 // remove unused CSS
@@ -34,4 +32,4 @@ gulp.task('purify-css', () => {
 
 I use a Gulp plugin called `run-sequence` to force certain Gulp tasks to finish before running another one, so I just ensure that my `styles` task finishes before I build my Jekyll site, then the Jekyll build has to finish before I run `purify-css`. It was a bit finicky to get working perfectly, but now that it works consistently it's great. On the site you're reading right now I decreased the minified CSS file size from 365KB to 57KB, which is pretty substantial (85% reduction), especially if you're trying to download assets on a poor connection.
 
-If you're interested in seeing the guts of the static site setup, I've got [a repo](https://github.com/mikemcbride/new-jekyll-site) you can check out that I use as a template to start all of my static websites. There's plenty of info in the README and you can check out [the Gulpfile](https://github.com/mikemcbride/new-jekyll-site/blob/master/gulpfile.js) to see how it all gets built. Compiling a Jekyll site inside a Gulp task took quite a while to get right, but it works for me every time now!
+If you're interested in seeing the guts of the static site setup, I've got [a repo](https://github.com/mikemcbride/new-jekyll-site) you can check out that I use as a template to start all of my static websites. There's plenty of info in the README and you can check out [the Gulpfile](https://github.com/mikemcbride/new-jekyll-site/blob/master/gulpfile.js) to see how it all gets built. Compiling a Jekyll site inside a Gulp task took quite a while to get right, but it works for me every time now.
