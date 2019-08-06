@@ -32,17 +32,5 @@ export default [
     description: "The same syntax theme from Atom, but for the awesome Hyper terminal app.",
     source: "https://github.com/mikemcbride/hyper-electron-highlighter",
     url: "https://hyper.is/plugins/hyper-electron-highlighter"
-  },
-  {
-    title: "Hyper Website Theme",
-    description: "A syntax theme for Hyper based on the app's website - hyper.is.",
-    source: "https://github.com/mikemcbride/hyper-website-theme",
-    url: "https://hyper.is/plugins/hyper-website-theme"
-  },
-  {
-    title: "Hyper Mono Christmas",
-    description: "Another Hyper syntax theme. All monochrome, but with red and green for nice colored CLI outputs.",
-    source: "https://github.com/mikemcbride/hyper-mono-christmas",
-    url: "https://hyper.is/plugins/hyper-mono-christmas"
   }
 ]

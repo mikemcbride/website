@@ -1,7 +1,7 @@
 <template functional>
   <article class="py-8">
     <g-link
-      class="block mb-2 text-2xl text-black leading-tight hover:underline"
+      class="inline-block mb-2 text-2xl text-black leading-tight hover:underline"
       :to="props.post.path">
       {{ props.post.title }}
     </g-link>

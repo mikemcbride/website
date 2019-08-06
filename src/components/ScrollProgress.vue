@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="fixed top-0 left-0 h-05 bg-blue" :style="progressWidth"></div>
+  <div class="fixed top-0 left-0 h-05 bg-blue" :style="progress"></div>
 </template>
 
 <script>
@@ -16,8 +16,11 @@ export default {
     offset() {
       return this.clientHeight - this.innerHeight
     },
-    progressWidth() {
-      return `width: ${(this.scrollY / this.offset) * 100}%`
+    calculatedWidth() {
+      return (this.scrollY / this.offset) * 100
+    },
+    progress() {
+      return `width: ${this.calculatedWidth}%`
     }
   },
   mounted() {
