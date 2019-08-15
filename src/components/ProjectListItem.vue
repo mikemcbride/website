@@ -2,7 +2,7 @@
   <article class="mb-16 w-full">
     <a
       :href="props.project.url"
-      class="block mb-2 text-2xl text-black leading-tight hover:underline"
+      class="inline-block mb-2 text-2xl text-black leading-tight hover:underline"
       target="_blank"
       rel="nofollow noreferrer noopener">
       {{ props.project.title }}

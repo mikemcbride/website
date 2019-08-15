@@ -5,6 +5,7 @@
       <NavLink to="/" :active="$route.path === '/'" title="About" />
       <NavLink to="/projects" :active="$route.path.startsWith('/projects')" title="Projects" />
       <NavLink to="/blog" :active="$route.path.startsWith('/blog')" title="Blog" />
+      <NavLink to="/uses" :active="$route.path.startsWith('/uses')" title="Uses" />
     </nav>
   </header>
 </template>
