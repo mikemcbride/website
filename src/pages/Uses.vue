@@ -1,6 +1,6 @@
 <template lang="html">
   <Layout>
-    <p>Inspired by <a href="https://twitter.com/wesbos" target="_blank">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
+    <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
     <h2>Editor</h2>
 
