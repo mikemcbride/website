@@ -21,6 +21,9 @@ import ProjectListItem from '@/components/ProjectListItem'
 
 export default {
   name: 'Projects',
+  metaInfo: {
+    title: 'Projects'
+  },
   components: {
     ProjectListItem
   },

@@ -16,6 +16,9 @@ export default {
   name: 'Blog',
   components: {
     BlogListItem
+  },
+  metaInfo: {
+    title: 'Blog'
   }
 }
 </script>

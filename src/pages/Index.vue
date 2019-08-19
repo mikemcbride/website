@@ -29,6 +29,9 @@ import settings from '@/data/settings'
 
 export default {
   name: 'Home',
+  metaInfo: {
+    title: 'About'
+  },
   data() {
     return {
       settings: settings

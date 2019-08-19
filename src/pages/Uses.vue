@@ -4,56 +4,51 @@
 
     <h2>Editor</h2>
 
-    <p>I have been using <a href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> as my primary code editor for a long time now and I love it more every day. It's built on web technologies, so it's super customizable. <a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a>, an engineer at Google, had a great quote about the importance of optimizing your editor:</p>
+    <blockquote class="italic text-lg text-grey-darkest leading-relaxed">
+      Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
+      <div class="text-right"><a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
+    </blockquote>
 
-    <blockquote class="italic text-lg text-grey-darkest leading-relaxed">Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.</blockquote>
+    <ul class="mb-8">
+      <li><a href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a>. No, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
+      <li><a href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> theme. I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
+      <g-image
+        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/atom"
+        class="w-full"
+        alt="color scheme for my code editor" />
+      <li><a href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> font in both editor and terminal. It's free on Google Fonts.</li>
+    </ul>
 
-    <p>That is one of the biggest reasons I love Atom - there are tons of plugins and themes, and it's super easy to customize things to do exactly what you want. It's built by an internal team at GitHub (with help from the community), and they are constantly releasing new updates. Here are some of the plugins (in no particular order) that I'm using for Atom that I find to give me a lot of benefit:</p>
-
-    <ul>
+    <h3 class="font-semibold">Plugins</h3>
+    <p>Here are a handful of the plugins I use in my editor that I find especially useful:</p>
+    <ul class="mb-8">
       <li><a href="https://atom.io/packages/autocomplete-paths" target="_blank">autocomplete-paths</a> - gives you file path completion inside the editor.</li>
       <li><a href="https://atom.io/packages/file-icons" target="_blank">file-icons</a> - adds icons (and optional colors) to files to better visual grepping.</li>
       <li><a href="https://atom.io/packages/emmet" target="_blank">emmet</a> - powerful snippet completion for HTML. See <a href="http://emmet.io" target="_blank" rel="nofollow noreferrer">Emmet</a> for more info if you're unfamiliar with Emmet.</li>
-      <li><a href="https://atom.io/packages/vim-mode-plus" target="_blank">vim-mode-plus</a> - I like vim a lot, but I love the features you get from a code editor like Atom. A vim plugin gives me the best of both worlds. *Note:* <code class="text-pink">vim-mode</code> was the official Atom package but it's been deprecated. This one has better performance and support.</li>
+      <li><a href="https://atom.io/packages/vim-mode-plus" target="_blank">vim-mode-plus</a> - I like vim a lot, but I love the features you get from a code editor like Atom. A vim plugin gives me the best of both worlds.</li>
       <li><a href="https://atom.io/packages/sync-settings" target="_blank">sync-settings</a> - super useful package, especially if you use Atom on multiple machines. This allows you to back up and restore your settings to/from a Gist linked to your GitHub account. It will sync your installed packages, settings, init script, stylesheet, keymap, and snippets.</li>
       <li><a href="https://atom.io/packages/set-syntax" target="_blank">set-syntax</a> - a package that adds syntax switching options to the command palette instead of having to remember the keybinding to open the panel for switching syntax.</li>
-      <li><a href="https://atom.io/packages/language-dotfiles" target="_blank">language-dotfiles</a> - adds syntax highlighting for bash in dotfiles.</li>
       <li><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - helps developers maintain consistent coding styles between different editors.</li>
       <li><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink">node_modules</code></li>
       <li><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
     </ul>
     
-    <p>I also care a lot about my color scheme. It might sound dumb, but I spend a lot of time looking at a code editor and a terminal and having a color scheme that I enjoy makes a difference. I spent a lot of time tweaking one that I really love (screenshot below), and I use it in Atom and my terminal. I published it as a theme for Atom, so you can use it too! <a href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">You can check it out here</a>.</p>
-
-    <g-image
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/atom"
-      class="w-full"
-      alt="color scheme for my code editor" />
-
-    <p>The font in both Atom and the terminal is Fira Mono, which is free and can be found on Google Fonts.</p>
-
     <h2>Terminal</h2>
 
-    <p>I also spend a lot of time in the terminal, so I've put a lot of time into my setup (and a lot of time into automating it). You can check out <a href="https://github.com/mikemcbride/dotfiles" target="_blank">my dotfiles on GitHub</a> if you want to see the whole thing. Here's an overview of what I use:</p>
-
-    <p class="italic"><span class="font-bold">**Note:**</span> I won't keep this section super updated. Check out the dotfiles repo above, the README there has an extensive list of everything the install script will do, including all the configs listed below and more.</p>
-
     <ul>
-      <li><a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a>. It's a terminal that runs in Electron and is built using HTML, JS, and CSS. It's more performant than iTerm and is almost as fast as the default Terminal.app (their goal is to be faster). It's super legit, and easily customizable.</li>
-      <li><a href="https://fishshell.com" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. You should consider it if you are using bash and haven't considered other shells. It's amazing. I've customized it pretty heavily - if you want to check out my config, you can <a href="https://github.com/mikemcbride/dotfiles#setup" target="_blank" rel="nofollow noreferrer">install it</a>.</li>
-      <li>My Electron color scheme from Atom. I made themes for <a href="https://github.com/mikemcbride/hyper-electron-highlighter" target="_blank" rel="nofollow noreferrer">Hyper</a>, <a href="https://github.com/mikemcbride/electron-terminal-colors" target="_blank" rel="noreferrer nofollow">Terminal, and iTerm 2</a>. Admittedly I don't keep the Terminal/iTerm versions updated since I don't use those apps.</li>
+      <li><a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a>. It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
+      <li><a href="https://fishshell.com" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
+      <li><a href="https://github.com/mikemcbride/hyper-electron-highlighter" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
     </ul>
-    
-    <p>Here's what all of that looks like in Hyper:</p>
 
     <g-image
       src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/hyper"
       class="w-full"
       alt="my hyper theme and setup" />
 
-    <p>I have spent quite a bit of time setting up some configs, aliases, and functions that I find to be really useful. Here are a few of my favorites (find the rest of them on GitHub in my dotfiles):</p>
+    <p>Here are a few of my favorites aliases/functions I've set up:</p>
 
-    <ul>
+    <ul class="mb-8">
       <li class="mb-2">alias <code class="text-pink">afk</code> starts my screensaver</li>
       <li class="mb-2">alias <code class="text-pink">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
       <li class="mb-2">alias <code class="text-pink">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink">curl wttr.in</code> in your own terminal.</li>
@@ -67,7 +62,7 @@
 
     <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://caskroom.io/" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
-    <ul>
+    <ul class="mb-8">
       <li class="mb-2"><span class="font-bold">Brave Browser</span> - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. But in late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. <code class="text-pink">brew cask install brave-browser</code></li>
       <li class="mb-2"><span class="font-bold">Apple Notes</span> - I was using Bear for a while and it's really great (LOVE the markdown support), but ultimately I switched back to Apple Notes because I can't have shared notes with my wife in Bear. If they ever add that, I'll probably switch back.</li>
       <li class="mb-2"><span class="font-bold">Reminders</span> - I used Wunderlist for years and loved it, then realized that Reminders could do everything I needed in a todo list app, plus being able to add items to my lists via Siri is a huge benefit. I can even share lists with my wife, like a grocery list, and we can both add/remove items.</li>
@@ -83,7 +78,7 @@
     
     <h2>Desk Setup</h2>
 
-    <h3>Desk at work:</h3>
+    <h3>At work:</h3>
 
     <ul>
       <li>I have two 23" HP monitors mounted on monitor arms mounted to a really nice sit/stand desk that I didn't pay for.</li>
@@ -93,7 +88,7 @@
       <li>I use an <a href="https://smile.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI" target="_blank" rel="nofollow noreferrer">Apple Magic Keyboard</a> and <a href="http://smile.amazon.com/Apple-MJ2R2LL-A-Magic-Trackpad/dp/B016QO5YWC" target="_blank" rel="nofollow noreferrer">Apple Magic Trackpad</a>. I love the gestures on the MacBook touchpad, so I opted for the Magic Trackpad instead of a Magic Mouse, but I do hear excellent things about the mouse.</li>
     </ul>
     
-    <h3>Desk at home:</h3>
+    <h3>At home:</h3>
 
     <ul>
       <li>I have one 23" Acer monitor</li>
@@ -107,7 +102,10 @@
 
 <script>
 export default {
-  name: 'Uses'
+  name: 'Uses',
+  metaInfo: {
+    title: 'Uses'
+  }
 }
 </script>
 
