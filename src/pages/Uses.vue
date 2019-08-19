@@ -6,39 +6,39 @@
 
     <blockquote class="italic text-lg text-grey-darkest leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
-      <div class="text-right"><a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
+      <div class="text-right -mt-2">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
     </blockquote>
 
     <ul class="mb-8">
-      <li><a href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a>. No, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
-      <li><a href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> theme. I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
+      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> - no, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
+      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> - I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
       <g-image
         src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/atom"
         class="w-full"
         alt="color scheme for my code editor" />
-      <li><a href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> font in both editor and terminal. It's free on Google Fonts.</li>
+      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> is my font in both the editor and terminal. It's free on Google Fonts.</li>
     </ul>
 
     <h3 class="font-semibold">Plugins</h3>
     <p>Here are a handful of the plugins I use in my editor that I find especially useful:</p>
     <ul class="mb-8">
-      <li><a href="https://atom.io/packages/autocomplete-paths" target="_blank">autocomplete-paths</a> - gives you file path completion inside the editor.</li>
-      <li><a href="https://atom.io/packages/file-icons" target="_blank">file-icons</a> - adds icons (and optional colors) to files to better visual grepping.</li>
-      <li><a href="https://atom.io/packages/emmet" target="_blank">emmet</a> - powerful snippet completion for HTML. See <a href="http://emmet.io" target="_blank" rel="nofollow noreferrer">Emmet</a> for more info if you're unfamiliar with Emmet.</li>
-      <li><a href="https://atom.io/packages/vim-mode-plus" target="_blank">vim-mode-plus</a> - I like vim a lot, but I love the features you get from a code editor like Atom. A vim plugin gives me the best of both worlds.</li>
-      <li><a href="https://atom.io/packages/sync-settings" target="_blank">sync-settings</a> - super useful package, especially if you use Atom on multiple machines. This allows you to back up and restore your settings to/from a Gist linked to your GitHub account. It will sync your installed packages, settings, init script, stylesheet, keymap, and snippets.</li>
-      <li><a href="https://atom.io/packages/set-syntax" target="_blank">set-syntax</a> - a package that adds syntax switching options to the command palette instead of having to remember the keybinding to open the panel for switching syntax.</li>
-      <li><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - helps developers maintain consistent coding styles between different editors.</li>
-      <li><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink">node_modules</code></li>
-      <li><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-paths" target="_blank">autocomplete-paths</a> - gives you file path completion inside the editor.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/file-icons" target="_blank">file-icons</a> - adds icons (and optional colors) to files to better visual grepping.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/emmet" target="_blank">emmet</a> - powerful snippet completion for HTML. See <a href="http://emmet.io" target="_blank" rel="nofollow noreferrer">Emmet</a> for more info if you're unfamiliar with Emmet.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/vim-mode-plus" target="_blank">vim-mode-plus</a> - I like vim a lot, but I love the features you get from a code editor like Atom. A vim plugin gives me the best of both worlds.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/sync-settings" target="_blank">sync-settings</a> - super useful package, especially if you use Atom on multiple machines. This allows you to back up and restore your settings to/from a Gist linked to your GitHub account. It will sync your installed packages, settings, init script, stylesheet, keymap, and snippets.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/set-syntax" target="_blank">set-syntax</a> - a package that adds syntax switching options to the command palette instead of having to remember the keybinding to open the panel for switching syntax.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - helps developers maintain consistent coding styles between different editors.</li>
+      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink">node_modules</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
     </ul>
     
     <h2>Terminal</h2>
 
     <ul>
-      <li><a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a>. It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
-      <li><a href="https://fishshell.com" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
-      <li><a href="https://github.com/mikemcbride/hyper-electron-highlighter" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
+      <li class="mb-2"><a href="https://hyper.is/" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper</a> - It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
+      <li class="mb-2"><a href="https://fishshell.com" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
+      <li class="mb-2"><a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
     </ul>
 
     <g-image
@@ -46,16 +46,16 @@
       class="w-full"
       alt="my hyper theme and setup" />
 
-    <p>Here are a few of my favorite aliases/functions I've set up:</p>
+    <p>Here are a few of my favorite aliases I've set up:</p>
 
     <ul class="mb-8">
-      <li class="mb-2">alias <code class="text-pink">afk</code> starts my screensaver</li>
-      <li class="mb-2">alias <code class="text-pink">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
-      <li class="mb-2">alias <code class="text-pink">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink">curl wttr.in</code> in your own terminal.</li>
-      <li class="mb-2">alias <code class="text-pink">please</code> = <code class="text-pink">sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
-      <li class="mb-2">alias <code class="text-pink">resource</code> re-sources my shell if I've made changes</li>
-      <li class="mb-2">alias <code class="text-pink">rm</code> = <code class="text-pink">trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code class="text-pink">rm</code> equal to <code class="text-pink">trash</code> means instead of losing something forever when I run <code class="text-pink">rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
-      <li class="mb-2">alias <code class="text-pink">gpub</code> = <code class="text-pink">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
+      <li class="mb-2"><code class="text-pink">afk</code> starts my screensaver</li>
+      <li class="mb-2"><code class="text-pink">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
+      <li class="mb-2"><code class="text-pink">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink">curl wttr.in</code> in your own terminal.</li>
+      <li class="mb-2"><code class="text-pink">please</code> = <code class="text-pink">sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
+      <li class="mb-2"><code class="text-pink">resource</code> re-sources my shell if I've made changes</li>
+      <li class="mb-2"><code class="text-pink">rm</code> = <code class="text-pink">trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code class="text-pink">rm</code> equal to <code class="text-pink">trash</code> means instead of losing something forever when I run <code class="text-pink">rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
+      <li class="mb-2"><code class="text-pink">gpub</code> = <code class="text-pink">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
     </ul>
     
     <h2>Desktop Applications</h2>
@@ -63,7 +63,7 @@
     <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://caskroom.io/" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
     <ul class="mb-8">
-      <li class="mb-2"><span class="font-bold">Brave Browser</span> - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. But in late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. <code class="text-pink">brew cask install brave-browser</code></li>
+      <li class="mb-2"><span class="font-bold">Brave Browser</span> - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink">brew cask install brave-browser</code></li>
       <li class="mb-2"><span class="font-bold">Apple Notes</span> - I was using Bear for a while and it's really great (LOVE the markdown support), but ultimately I switched back to Apple Notes because I can't have shared notes with my wife in Bear. If they ever add that, I'll probably switch back.</li>
       <li class="mb-2"><span class="font-bold">Reminders</span> - I used Wunderlist for years and loved it, then realized that Reminders could do everything I needed in a todo list app, plus being able to add items to my lists via Siri is a huge benefit. I can even share lists with my wife, like a grocery list, and we can both add/remove items.</li>
       <li class="mb-2"><span class="font-bold">Tweetbot</span> - I love Twitter, and I use it as my primary source of news/information, but I can't stand the ads and their official desktop app wasn't updated for years. Years ago I got Tweetbot for iOS and fell in love. Then they came out with the desktop app, and it's awesome. Ever since I started using the desktop app, I find that I keep up with it much better.</li>
