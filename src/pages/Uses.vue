@@ -46,7 +46,7 @@
       class="w-full"
       alt="my hyper theme and setup" />
 
-    <p>Here are a few of my favorites aliases/functions I've set up:</p>
+    <p>Here are a few of my favorite aliases/functions I've set up:</p>
 
     <ul class="mb-8">
       <li class="mb-2">alias <code class="text-pink">afk</code> starts my screensaver</li>
