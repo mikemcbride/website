@@ -63,7 +63,7 @@ code {
 }
 
 pre {
-  border: 1px solid #dae1e7;
+  background: #000;
   border-radius: .25rem;
   overflow-x: auto;
   padding: 1rem;
@@ -76,6 +76,7 @@ pre {
     &::after {
       content: none;
     }
+    color: #fff;
   }
 }
 </style>
