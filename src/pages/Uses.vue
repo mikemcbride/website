@@ -13,7 +13,7 @@
       <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> - no, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
       <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> - I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
       <g-image
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/atom"
+        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/atom"
         class="w-full"
         alt="color scheme for my code editor" />
       <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> is my font in both the editor and terminal. It's free on Google Fonts.</li>
@@ -42,7 +42,7 @@
     </ul>
 
     <g-image
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/v1553193958/hyper"
+      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/hyper"
       class="w-full"
       alt="my hyper theme and setup" />
 

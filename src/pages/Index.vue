@@ -4,7 +4,7 @@
       <div class="text-center mb-8 mt-4">
         <span class="inline-block overflow-hidden p-1 h-32 w-32 rounded-full shadow border border-grey-light">
           <g-image
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,fl_progressive,q_70,w_118/v1553193958/profile_pic"
+            src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,fl_progressive,q_70,w_118/profile_pic"
             class="w-full h-full rounded-full border border-grey-lightest"
             alt="Picture of Mike" />
         </span>
