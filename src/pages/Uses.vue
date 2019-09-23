@@ -60,7 +60,7 @@
     
     <h2>Desktop Applications</h2>
 
-    <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://caskroom.io/" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
+    <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
     <ul class="mb-8">
       <li class="mb-2"><span class="font-bold">Brave Browser</span> - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink">brew cask install brave-browser</code></li>
