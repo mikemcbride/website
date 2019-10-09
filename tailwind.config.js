@@ -11,8 +11,7 @@ module.exports = {
       'grey-lighter': '#f1f5f8',
       'grey-lightest': '#f8fafc',
       'white': '#ffffff',
-      'blue': '#0071e4',
-      'pink': '#d8009c'
+      'inherit': 'inherit'
     },
     fontFamily: {
       'sans': [

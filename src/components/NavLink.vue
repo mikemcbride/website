@@ -1,9 +1,9 @@
 <template functional>
   <g-link
-    class="inline-block mr-4 md:mr-6 uppercase font-medium tracking-wider hover:text-black"
+    class="inline-block mr-4 md:mr-6 mb-4 md:mb-0 md:uppercase font-semibold md:tracking-wider"
     :class="{
-      'text-black': props.active === true,
-      'text-grey-dark': props.active === false
+      'text-default': props.active === true,
+      'inactive text-gray': props.active === false
     }"
     :to="props.to">
     {{ props.title }}
@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.active { color: var(--app-text); }
+.inactive { color: var(--app-gray); }
+.inactive:hover { color: var(--app-text); }
+</style>

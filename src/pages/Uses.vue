@@ -4,19 +4,19 @@
 
     <h2>Editor</h2>
 
-    <blockquote class="italic text-lg text-grey-darkest leading-relaxed">
+    <blockquote class="italic text-lg text-gray leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
       <div class="text-right -mt-2">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
     </blockquote>
 
     <ul class="mb-8">
-      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> - no, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
-      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> - I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
+      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> - no, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
+      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> - I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
       <g-image
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/atom"
+        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,q_auto,dpr_auto/atom"
         class="w-full"
         alt="color scheme for my code editor" />
-      <li class="mb-2"><a class="font-bold text-black underline hover:text-blue" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> is my font in both the editor and terminal. It's free on Google Fonts.</li>
+      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> is my font in both the editor and terminal. It's free on Google Fonts.</li>
     </ul>
 
     <h3 class="font-semibold">Plugins</h3>
@@ -36,13 +36,13 @@
     <h2>Terminal</h2>
 
     <ul>
-      <li class="mb-2"><a href="https://hyper.is/" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper</a> - It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
-      <li class="mb-2"><a href="https://fishshell.com" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
-      <li class="mb-2"><a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="font-bold underline text-black hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
+      <li class="mb-2"><a href="https://hyper.is/" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper</a> - It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
+      <li class="mb-2"><a href="https://fishshell.com" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
+      <li class="mb-2"><a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
     </ul>
 
     <g-image
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,dpr_auto/hyper"
+      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,q_auto,dpr_auto/hyper"
       class="w-full"
       alt="my hyper theme and setup" />
 

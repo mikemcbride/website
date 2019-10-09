@@ -1,3 +1,38 @@
+:root {
+  --app-bg: #fff;
+  --app-text: #22292f;
+  --app-gray: #606f7b;
+  --link-color: #0071e4;
+  --code-color: #d8009c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-layout {
+    --app-bg: #22292f;
+    --app-text: #fff;
+    --app-gray: #8795a1;
+    --link-color: #82aaff;
+    --code-color: #ff6bd6;
+  }
+}
+
+/* force dark/light mode */
+.dark-mode.main-layout {
+  --app-bg: #22292f;
+  --app-text: #fff;
+  --app-gray: #8795a1;
+  --link-color: #82aaff;
+  --code-color: #ff6bd6;
+}
+
+.light-mode.main-layout {
+  --app-bg: #fff;
+  --app-text: #22292f;
+  --app-gray: #606f7b;
+  --link-color: #0071e4;
+  --code-color: #d8009c;
+}
+
 html {
   box-sizing: border-box;
   line-height: 1.5;
@@ -49,9 +84,25 @@ hr {
 
 a {
   background-color: transparent;
-  color: #0071e4;
+  color: var(--link-color);
   text-decoration: inherit;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.text-default {
+  color: var(--app-text);
+}
+
+.text-gray {
+  color: var(--app-gray);
+}
+
+.text-blue {
+  color: var(--link-color);
+}
+
+.text-pink {
+  color: var(--code-color);
 }
 
 /**

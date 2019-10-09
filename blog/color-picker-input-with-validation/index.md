@@ -7,7 +7,7 @@ type: post
 published: true
 ---
 
-<p class="text-grey-darker italic">Note: this was written in an AngularJS app but the logic for evaluating a color picker is easily used in any JS application or framework - there's nothing Angular specific, it's just an implementation detail.</p>
+<p class="text-gray italic">Note: this was written in an AngularJS app but the logic for evaluating a color picker is easily used in any JS application or framework - there's nothing Angular specific, it's just an implementation detail.</p>
 
 ---
 

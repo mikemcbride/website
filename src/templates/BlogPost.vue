@@ -4,7 +4,7 @@
     
     <header class="mb-8 leading-tight">
       <h1 class="font-normal text-3xl my-0">{{ $page.post.title }}</h1>
-      <p class="mb-4 text-sm text-grey-darker">{{ $page.post.date | formatDate }}</p>
+      <p class="mb-4 text-sm text-gray">{{ $page.post.date | formatDate }}</p>
     </header>
 
     <article class="mb-16 post-content leading-normal">
@@ -53,7 +53,7 @@ pre, code, .code, .monospace {
 }
 
 code {
-  color: #d8009c;
+  color: var(--code-color);
   font-size: .875rem;
   
   &::before,
@@ -63,8 +63,9 @@ code {
 }
 
 pre {
-  background: #000;
+  background: var(--app-bg);
   border-radius: .25rem;
+  border: 1px solid var(--app-gray);
   overflow-x: auto;
   padding: 1rem;
   white-space: pre;
@@ -76,7 +77,7 @@ pre {
     &::after {
       content: none;
     }
-    color: #fff;
+    color: var(--code-color);
   }
 }
 </style>
