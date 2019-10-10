@@ -29,6 +29,10 @@
   --app-gray: #8795a1;
   --link-color: #82aaff;
   --code-color: #ff6bd6;
+  
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
 }
 
 .light-mode.main-layout {
