@@ -12,7 +12,7 @@ export default {
   name: 'ToggleDarkMode',
   methods: {
     toggleDarkMode() {
-      this.$store.commit('toggleDarkMode')
+      this.$store.commit('toggleDarkMode', this.$el)
     }
   },
 }

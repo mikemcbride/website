@@ -7,15 +7,26 @@ export default function (Vue, { head, appOptions }) {
   
   appOptions.store = new Vuex.Store({
     state: {
-      useDarkMode: null,
+      theme: null,
       navOpen: false
     },
     mutations: {
-      toggleDarkMode(state) {
-        state.useDarkMode = !state.useDarkMode
-      },
-      setDarkMode(state, val) {
-        state.useDarkMode = val
+      toggleDarkMode(state, val) {
+        if (state.theme === null) {
+          let themePref = window.getComputedStyle(val).getPropertyValue('--app-bg').trim()
+          if (themePref === '#fff') {
+            // already using light mode
+            state.theme = 'dark'
+          } else {
+            state.theme = 'light'
+          }
+        } else {
+          if (state.theme === 'light') {
+            state.theme = 'dark'
+          } else {
+            state.theme = 'light'
+          }
+        }
       },
       toggleNav(state) {
         state.navOpen = !state.navOpen

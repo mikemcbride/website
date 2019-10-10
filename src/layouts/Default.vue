@@ -2,8 +2,8 @@
   <div
     class="main-layout w-full font-sans text-lg min-h-screen flex flex-col sm:pl-16 lg:pl-24 px-4 leading-tight"
     :class="{
-      'dark-mode': useDarkMode === true,
-      'light-mode': useDarkMode !== true,
+      'dark-mode': theme === 'dark',
+      'light-mode': theme === 'light',
       'overflow-y-hidden h-screen': navOpen === true
     }">
     <SiteHeader />
@@ -24,24 +24,13 @@ export default {
     SiteFooter
   },
   computed: {
-    useDarkMode() {
-      return this.$store.state.useDarkMode
+    theme() {
+      return this.$store.state.theme
     },
     navOpen() {
       return this.$store.state.navOpen
     }
-  },
-  mounted() {
-    if (this.useDarkMode === null) {
-      let themePref = window.getComputedStyle(this.$el).getPropertyValue('--app-bg').trim()
-      this.$store.commit('setDarkMode', themePref !== '#fff')
-    }
-  },
-  methods: {
-    toggleDarkMode() {
-      this.useDarkMode = !this.useDarkMode
-    }
-  },
+  }
 }
 </script>
 
