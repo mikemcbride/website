@@ -13,8 +13,10 @@ export default function (Vue, { head, appOptions, router }) {
     mutations: {
       toggleDarkMode(state, val) {
         if (state.theme === null) {
-          let themePref = window.getComputedStyle(val).getPropertyValue('--app-bg').trim()
-          if (themePref === '#fff') {
+          // they're using whatever color scheme the browser set based on their OS.
+          // let's figure out what that is and 
+          let themePref = window.getComputedStyle(val).getPropertyValue('--app-theme').trim()
+          if (themePref === 'light') {
             // already using light mode
             state.theme = 'dark'
           } else {

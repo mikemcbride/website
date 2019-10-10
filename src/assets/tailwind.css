@@ -4,15 +4,21 @@
   --app-gray: #606f7b;
   --link-color: #0071e4;
   --code-color: #d8009c;
+  --app-theme: 'light';
 }
 
 @media (prefers-color-scheme: dark) {
-  .main-layout {
+  :root {
     --app-bg: #22292f;
     --app-text: #fff;
     --app-gray: #8795a1;
     --link-color: #82aaff;
     --code-color: #ff6bd6;
+    --app-theme: 'dark';
+  }
+  
+  img {
+    filter: brightness(.8) contrast(1.2);
   }
 }
 
