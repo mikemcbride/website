@@ -1,6 +1,8 @@
 <template lang="html">
   <Layout>
-    <section class="mb5">
+    <h1 class="text-2xl font-bold mb-4">Blog</h1>
+    <p class="mb-8 text-lg">Sometimes I write things. You can read them here.</p>
+    <section>
       <BlogListItem
         v-for="({ node: post }, $index) in $page.allBlogPost.edges"
         :key="$index"

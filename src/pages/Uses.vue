@@ -1,8 +1,9 @@
 <template lang="html">
   <Layout>
+    <h1 class="text-2xl font-bold mb-4">Uses</h1>
     <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
-    <h2>Editor</h2>
+    <h2 class="font-semibold text-lg">Editor</h2>
 
     <blockquote class="italic text-lg text-gray leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
@@ -33,7 +34,7 @@
       <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
     </ul>
     
-    <h2>Terminal</h2>
+    <h2 class="font-semibold text-lg">Terminal</h2>
 
     <ul>
       <li class="mb-2"><a href="https://hyper.is/" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper</a> - It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
@@ -58,7 +59,7 @@
       <li class="mb-2"><code class="text-pink">gpub</code> = <code class="text-pink">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
     </ul>
     
-    <h2>Desktop Applications</h2>
+    <h2 class="font-semibold text-lg">Desktop Applications</h2>
 
     <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
@@ -76,9 +77,9 @@
       <li class="mb-2"><span class="font-bold">Apple Mail</span> - I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service, and it's reportedly getting some nice new features in Fall 2019.</li>
     </ul>
     
-    <h2>Desk Setup</h2>
+    <h2 class="font-semibold text-lg">Desk Setup</h2>
 
-    <h3>At work:</h3>
+    <h3 class="font-semibold">At work:</h3>
 
     <ul>
       <li>I have two 23" HP monitors mounted on monitor arms mounted to a really nice sit/stand desk that I didn't pay for.</li>
@@ -88,7 +89,7 @@
       <li>I use an <a href="https://smile.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI" target="_blank" rel="nofollow noreferrer">Apple Magic Keyboard</a> and <a href="http://smile.amazon.com/Apple-MJ2R2LL-A-Magic-Trackpad/dp/B016QO5YWC" target="_blank" rel="nofollow noreferrer">Apple Magic Trackpad</a>. I love the gestures on the MacBook touchpad, so I opted for the Magic Trackpad instead of a Magic Mouse, but I do hear excellent things about the mouse.</li>
     </ul>
     
-    <h3>At home:</h3>
+    <h3 class="font-semibold">At home:</h3>
 
     <ul>
       <li>I have one 23" Acer monitor</li>

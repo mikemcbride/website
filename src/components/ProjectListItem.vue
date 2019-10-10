@@ -7,7 +7,7 @@
       rel="nofollow noreferrer noopener">
       {{ props.project.title }}
     </a>
-    <p class="text-lg leading-normal mb-2">{{ props.project.description }}</p>
+    <p class="text-base leading-normal mb-2">{{ props.project.description }}</p>
     <div class="flex items-center">
       <a
         v-if="props.project.url"
