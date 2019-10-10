@@ -2,7 +2,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '~/assets/tailwind.css'
 
-export default function (Vue, { head, appOptions }) {
+export default function (Vue, { head, appOptions, router }) {
   Vue.use(Vuex)
   
   appOptions.store = new Vuex.Store({
@@ -32,6 +32,13 @@ export default function (Vue, { head, appOptions }) {
         state.navOpen = !state.navOpen
       }
     }
+  })
+  
+  router.beforeEach((to, from, next) => {
+    if (appOptions.store.state.navOpen === true) {
+      appOptions.store.commit('toggleNav')
+    }
+    next()
   })
   
   head.meta.push({
