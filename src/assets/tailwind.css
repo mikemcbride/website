@@ -41,6 +41,11 @@
   --app-gray: #606f7b;
   --link-color: #0071e4;
   --code-color: #d8009c;
+
+  img {
+    filter: brightness(1) contrast(1);
+  }
+
 }
 
 html {
