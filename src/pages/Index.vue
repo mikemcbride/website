@@ -2,11 +2,8 @@
   <Layout>
     <section class="post-content">
       <div class="text-center mb-8 mt-4">
-        <span class="inline-block overflow-hidden p-1 h-32 w-32 rounded-full shadow-md">
-          <g-image
-            src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,fl_progressive,q_auto,w_118/profile_pic"
-            class="w-full h-full rounded-full"
-            alt="Picture of Mike" />
+        <span class="inline-block overflow-hidden h-32 w-32 rounded-full shadow-md">
+          <Avatar class="w-full h-full rounded-full" />
         </span>
       </div>
       <p class="mb-8">
@@ -22,8 +19,13 @@
 </template>
 
 <script>
+import Avatar from '@/components/Avatar'
+
 export default {
   name: 'Home',
+  components: {
+    Avatar,
+  },
   metaInfo: {
     title: 'About'
   }
