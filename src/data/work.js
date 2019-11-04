@@ -52,8 +52,14 @@ export default [
     source: "https://github.com/mikemcbride/electron-highlighter-syntax"
   },
   {
+    title: "VS Code Electron Highlighter Syntax",
+    description: "The same syntax theme, but for VS Code.",
+    url: "https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter",
+    source: "https://github.com/mikemcbride/vscode-electron-highlighter"
+  },
+  {
     title: "Hyper Electron Highlighter",
-    description: "The same syntax theme from Atom, but for the awesome Hyper terminal app.",
+    description: "The same syntax theme, but for Hyper (the terminal app).",
     source: "https://github.com/mikemcbride/hyper-electron-highlighter",
     url: "https://hyper.is/plugins/hyper-electron-highlighter"
   }
