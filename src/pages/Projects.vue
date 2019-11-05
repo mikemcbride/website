@@ -1,6 +1,6 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-2xl font-bold mb-4">Projects</h1>
+    <h1 class="text-4xl font-medium mb-4">Projects</h1>
     <p class="mb-16">
       Most of my work is private, since it is for my company,
       but I do have a few open source projects and public websites which I have built. 
