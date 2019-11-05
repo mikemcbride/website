@@ -1,6 +1,6 @@
 <template functional>
   <g-link
-    class="inline-block mr-4 md:mr-6 mb-4 md:mb-0 font-semibold md:font-normal md:tracking-wider md:pb-2 md:border-b-2 border-transparent"
+    class="inline-block mr-4 md:mr-6 mb-4 md:mb-0 font-semibold md:font-medium md:tracking-wider md:pb-2 md:border-b-2 border-transparent"
     :class="{
       'text-default border-default': props.active === true,
       'inactive text-gray': props.active === false
