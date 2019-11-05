@@ -5,6 +5,7 @@ date: 2013-10-10
 status: publish
 type: post
 published: true
+excerpt: I had an iPhone. I switched to Android. It lasted 4 months. After a few years, I gave Android another try. Here's why.
 ---
 "What the heck? This looks just like another post you have on here, except backwards!" Yes sir (or ma'am), that is correct. Nearly 4 years ago I became the proud owner of an iPhone 4. When I was up for contract renewal on that phone, I decided to try out Android with the Samsung Galaxy S2 Skyrocket. Less than 6 months later I had switched back to my iPhone 4. I even wrote [an article on my experience with Android and why I switched back to iOS]({% post_url 2013-05-13-my-android-experience-and-why-i-switched-back-to-ios %}). Now I'm sitting here writing another article about why, two years later, I'm deciding to switch back to Android. When Android 4.4 Kit Kat is officially released and (presumably) the new Nexus phone (Nexus 5? that's what most people think) comes out, I will be purchasing it and moving away from the iPhone world once again. "But Mike, didn't you learn your lesson two years ago?" Apparently not. Kidding... I did learn quite a few lessons, but a lot has changed in the last two years with regards to both Android and iOS (like, a LOT, you guys), and in the light of all the new information, I'm giving Android a second chance. Here's why.
 

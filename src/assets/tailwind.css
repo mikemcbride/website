@@ -5,6 +5,7 @@
   --link-color: #0071e4;
   --code-color: #d8009c;
   --app-theme: light;
+  --app-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --link-color: #82aaff;
     --code-color: #ff6bd6;
     --app-theme: dark;
+    --app-shadow: 0 4px 6px -1px rgba(255,255,255, 0.1), 0 2px 4px -1px rgba(255,255,255, 0.06);
   }
   
   img {
@@ -29,6 +31,7 @@
   --app-gray: #8795a1;
   --link-color: #82aaff;
   --code-color: #ff6bd6;
+  --app-shadow: 0 4px 6px -1px rgba(255,255,255, 0.1), 0 2px 4px -1px rgba(255,255,255, 0.06);
   
   img {
     filter: brightness(.8) contrast(1.2);
@@ -41,11 +44,11 @@
   --app-gray: #606f7b;
   --link-color: #0071e4;
   --code-color: #d8009c;
+  --app-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   img {
     filter: brightness(1) contrast(1);
   }
-
 }
 
 html {
@@ -104,22 +107,6 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.text-default {
-  color: var(--app-text);
-}
-
-.text-gray {
-  color: var(--app-gray);
-}
-
-.text-blue {
-  color: var(--link-color);
-}
-
-.text-pink {
-  color: var(--code-color);
-}
-
 /**
 * Images
 */
@@ -171,3 +158,32 @@ ul li::before {
 }
 
 @tailwind utilities;
+
+
+.text-default {
+  color: var(--app-text);
+}
+
+.text-gray {
+  color: var(--app-gray);
+}
+
+.text-blue {
+  color: var(--link-color);
+}
+
+.text-pink {
+  color: var(--code-color);
+}
+
+.border-faded {
+  border-color: rgba(127,127,127,0.3)
+}
+
+.border-default {
+  border-color: var(--app-text);
+}
+
+.dynamic-shadow {
+  box-shadow: var(--app-shadow);
+}

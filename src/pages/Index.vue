@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <section class="post-content">
-      <div class="text-center mb-8 mt-4">
-        <span class="inline-block overflow-hidden h-32 w-32 rounded-full shadow-md">
+      <div class="text-center md:text-left mb-8 mt-4">
+        <span class="inline-block overflow-hidden border border-faded h-32 w-32 rounded-full dynamic-shadow">
           <Avatar class="w-full h-full rounded-full" />
         </span>
       </div>

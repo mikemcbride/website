@@ -5,6 +5,7 @@ date: 2014-05-29
 status: publish
 type: post
 published: true
+excerpt: I came across an interesting situation at work this week and was a little disappointed with the majority of the answers suggested on how to solve the issue, so I want to share how I solved it.
 ---
 I came across an interesting situation at work this week and was a little disappointed with the majority of the answers suggested on how to solve the issue, so I want to share how I solved it.
 

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Color Picker Input with HEX Validation
+title: Color Picker Input with Validation
 date: 2014-09-09
 status: publish
 type: post
 published: true
+excerpt: I recently had the opportunity to work on a really fun feature in an app where we built a color picker input component that needed validation for HEX codes.
 ---
 
 <p class="text-gray italic">Note: this was written in an AngularJS app but the logic for evaluating a color picker is easily used in any JS application or framework - there's nothing Angular specific, it's just an implementation detail.</p>
 
 ---
 
-I recently had the opportunity to work on a really fun little feature in an app. We were creating tags to drag and drop onto a board, and needed the ability to pick a color for your tag. Initially we implemented a static set of 16 color choices, but people wanted it to be more flexible, so I set up an input field that allows you to enter any HEX color code that you want for the tag. Naturally, that meant we had to ensure they used a valid HEX code. Keep reading to see how it all fits together.
+I recently had the opportunity to work on a really fun feature in an app. We were creating tags to drag and drop onto a board, and needed the ability to pick a color for your tag. Initially we implemented a static set of 16 color choices, but people wanted it to be more flexible, so I set up an input field that allows you to enter any HEX color code that you want for the tag. Naturally, that meant we had to ensure they used a valid HEX code. Keep reading to see how it all fits together.
 
 First off, [check out this fiddle](http://jsfiddle.net/mmcbride1007/4hf3o76g/) to see it in action. Pretty fun, right? So there are a few components working together here that actually made this SUPER simple. If you looked at the code, it goes without saying that AngularJS is a huge reason why this was so easy. Let's look at the components that brought this all together:
 

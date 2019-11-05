@@ -1,6 +1,6 @@
 <template>
   <header class="py-6 sm:py-12">
-    <div class="flex justify-between items-center mb-3">
+    <div class="flex justify-between items-center mb-3 md:mb-8">
       <g-link to="/" class="block font-semibold text-default text-2xl">Mike McBride</g-link>
       <ToggleDarkMode class="h-8 w-8 hidden md:block" />
       <button class="block md:hidden w-8 h-8 p-0 bg-transparent text-default" @click="toggleNav">
@@ -22,11 +22,12 @@
     </nav>
     
     <!-- desktop nav -->
-    <nav class="hidden md:block text-sm">
+    <nav class="hidden md:block text-base">
       <NavLink to="/" :active="$route.path === '/'" title="About" />
       <NavLink to="/projects" :active="$route.path.startsWith('/projects')" title="Projects" />
       <NavLink to="/blog" :active="$route.path.startsWith('/blog')" title="Blog" />
       <NavLink to="/uses" :active="$route.path.startsWith('/uses')" title="Uses" />
+      <div class="border-faded border-b sm:-ml-16 lg:-ml-24 w-screen -mt-px"></div>
     </nav>
   </header>
 </template>

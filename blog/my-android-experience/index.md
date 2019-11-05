@@ -5,6 +5,7 @@ date: 2013-05-13
 status: publish
 type: post
 published: true
+excerpt: I switched from iOS to Android. It lasted less than six months. I reflect on why.
 ---
 <em>NB: I wrote this article in early 2012, so a few things have changed in the realm of iPhones and Android. The iPhone charger is different, so there aren't as many iPhone 5 chargers laying around at people's houses, the iPhone increased screen size by half an inch, and Android has put out a couple of new versions of their OS that are far better than the OS version I was using when I switched. Although I'd be willing to give Android another try, I'd be wary of it, and I'd still never use anything other than a Google Nexus phone or other phone running stock Android.</em>
 

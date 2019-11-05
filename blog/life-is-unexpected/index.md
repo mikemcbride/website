@@ -4,6 +4,7 @@ title: Life Is Unexpected
 date: 2016-02-20
 status: publish
 type: post
+excerpt: I never would have imagined what the last three days have brought. This was the beginning of one of the most impactful series of events in my life.
 ---
 I never would have imagined what the last three days have brought.
 

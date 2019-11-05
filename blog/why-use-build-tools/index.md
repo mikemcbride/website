@@ -5,6 +5,7 @@ date: 2017-10-02
 status: publish
 type: post
 published: true
+excerpt: One question I get a lot from people who are just starting out with web development is along the lines of "why is there all this extra overhead for a build process?", and I remember when I was starting out and wondered the exact same thing.
 ---
 
 One question I get a lot from people who are just starting out with web development is along the lines of "why is there all this extra overhead for a build process?", and I remember when I was starting out and wondered the exact same thing. My first website loaded Bootstrap's CSS and JS onto every page, and had page-specific styles in a `style` tag at the top. Any scripts I had were inside a `script` tag at the bottom of the page. I looked at things like Grunt, Bower, and npm and wondered why people were making it so darn complicated. After all, why is it so difficult to load a CSS file and a maybe a couple scripts into a page?

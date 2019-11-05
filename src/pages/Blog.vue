@@ -1,14 +1,15 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-4xl font-medium mb-8">Blog</h1>
+    <h1 class="text-4xl font-medium mb-3">Blog</h1>
+    <p class="mb-8">Sometimes I write things. You can read them here.</p>
     <div class="relative mb-6">
       <input
         v-model="searchText"
         placeholder="Search blog posts"
-        class="text-sm bg-transparent py-2 pl-8 text-default focus:outline-none search-input" />
+        class="text-sm bg-transparent py-2 pl-8 text-default focus:outline-none search-input w-full" />
       <Search class="inline-block w-4 h-4 absolute search-icon text-default opacity-50" />
     </div>
-    <div class="divider -ml-4 border-b left-0 lg:-ml-30 sm:-ml-24 w-screen"></div>
+    <div class="border-faded border-b left-0 -ml-4 sm:-ml-16 md:-ml-24 lg:-ml-30 w-screen"></div>
     <section>
       <BlogListItem
         v-for="({ node: post }, $index) in filteredPosts"
@@ -57,10 +58,6 @@ export default {
 .search-input:focus + .search-icon {
   opacity: 1;
 }
-
-.divider {
-  border-color: rgba(127,127,127,0.3)
-}
 </style>
 
 <page-query>
@@ -71,6 +68,7 @@ query BlogList {
         title
         date
         path
+        excerpt
       }
     }
   }

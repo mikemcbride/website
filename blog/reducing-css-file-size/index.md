@@ -5,6 +5,7 @@ date: 2017-02-12
 status: publish
 type: post
 published: true
+excerpt: Here are some tips on reducing your CSS file size.
 ---
 I've been working on a few static websites over the past year and have gotten my build process to a fairly decent place. One of the biggest problems I was running into, and I'm sure you've run into it as well if you've ever used a CSS framework, is that there's probably a lot of stuff the framework offers that you aren't using. No big deal, except that you are also probably shipping the whole thing to your production site. Not so cool. Take Bootstrap for example. The *minified* CSS file for the latest stable version at the time of writing this post is 121KB, and more than likely you've got custom CSS on top of it so your site doesn't look like a vanilla Bootstrap website. So if you're only using 25% of Bootstrap, wouldn't it be way better to ship 30KB instead of 120?
 

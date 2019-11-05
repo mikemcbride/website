@@ -5,6 +5,7 @@ date: 2015-10-10
 status: publish
 type: post
 published: true
+excerpt: Almost anyone I work with can tell you how much I love keyboard shortcuts. Anytime I find myself doing something frequently, I check the settings or search to see if there's a keyboard shortcut for it.
 ---
 *This is a two part post. Part one: why you should use keyboard shortcuts. Part two: common keyboard shortcuts and ones that I find super useful.*
 

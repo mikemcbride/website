@@ -5,6 +5,7 @@ date: 2015-09-12
 status: publish
 type: post
 published: true
+excerpt: As I've worked on more web sites and applications, I've come across and developed a number of standards for writing and using cleaner, more useful CSS.
 ---
 
 As I've worked on more web sites and applications, I've come across and developed a number of standards for writing and using cleaner, more useful CSS. Most of these revolve around how to name classes to make it easier to tell what's going on, but there will be a bit of code style conventions in here as well. Let's get started!

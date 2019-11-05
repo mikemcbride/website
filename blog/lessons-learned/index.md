@@ -5,6 +5,7 @@ date: 2016-09-22
 status: publish
 type: post
 published: true
+excerpt: I reflect on some lessons learned after being promoted to a senior developer.
 ---
 
 At the end of 2015, I was promoted to the role of senior developer. For the year and a half leading up to that point, I had been meeting with my manager and working on things to make that promotion happen. It was something I aspired to, because I looked up to the other senior developers and had a lot of respect for their quality of work.

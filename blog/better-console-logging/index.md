@@ -5,6 +5,7 @@ date: 2016-11-23
 status: publish
 type: post
 published: true
+excerpt: This is just a quick tip to improve your experience with console logging with some alternative methods.
 ---
 
 This is just a quick tip to improve your experience with console logging. I frequently find myself going through a function, especially during debugging, and logging out a ton of stuff to see the attributes on an object at certain points in time, or even to check if it exists at all. So you've probably done something like this:

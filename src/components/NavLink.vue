@@ -1,8 +1,8 @@
 <template functional>
   <g-link
-    class="inline-block mr-4 md:mr-6 mb-4 md:mb-0 md:uppercase font-semibold md:tracking-wider"
+    class="inline-block mr-4 md:mr-6 mb-4 md:mb-0 font-semibold md:font-normal md:tracking-wider md:pb-2 md:border-b-2 border-transparent"
     :class="{
-      'text-default': props.active === true,
+      'text-default border-default': props.active === true,
       'inactive text-gray': props.active === false
     }"
     :to="props.to">
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.active { color: var(--app-text); }
+.active { color: var(--app-text); opacity: .9; }
 .inactive { color: var(--app-gray); }
 .inactive:hover { color: var(--app-text); }
 </style>
