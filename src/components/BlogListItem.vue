@@ -10,7 +10,7 @@
     <g-link
       class="inline-block text-sm text-blue no-underline uppercase tracking-wide"
       :to="props.post.path">
-      READ MORE →
+      Read more →
     </g-link>
   </article>
 </template>
