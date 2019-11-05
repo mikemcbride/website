@@ -32,10 +32,10 @@
   --link-color: #82aaff;
   --code-color: #ff6bd6;
   --app-shadow: 0 4px 6px -1px rgba(255,255,255, 0.1), 0 2px 4px -1px rgba(255,255,255, 0.06);
-  
-  img {
-    filter: brightness(.8) contrast(1.2);
-  }
+}
+
+.dark-mode.main-layout img {
+  filter: brightness(.8) contrast(1.2);
 }
 
 .light-mode.main-layout {
@@ -45,10 +45,10 @@
   --link-color: #0071e4;
   --code-color: #d8009c;
   --app-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 
-  img {
-    filter: brightness(1) contrast(1);
-  }
+.light-mode.main-layout img {
+  filter: brightness(1) contrast(1);
 }
 
 html {
