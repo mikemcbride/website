@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.active { color: var(--app-text); opacity: .9; }
-.inactive { color: var(--app-gray); }
-.inactive:hover { color: var(--app-text); }
+.active { color: var(--app-text); }
+.inactive { color: var(--app-gray); opacity: .85; }
+.inactive:hover { color: var(--app-text); opacity: 1; }
 </style>
