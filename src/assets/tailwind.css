@@ -142,19 +142,8 @@ ul, p, ol {
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-  
-ul li {
-  padding-left: 1rem;
-}
-
-ul li::before {
-  opacity: .5;
-  content: '\2013'; /* unicode for the endash char (2 dashes) */
-  margin-left: -1rem;
-  margin-right: .5rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 @tailwind utilities;

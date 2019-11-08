@@ -3,7 +3,7 @@
     <h1 class="text-4xl font-medium mb-4">Uses</h1>
     <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
-    <h2 class="font-semibold text-lg">Editor</h2>
+    <h2 class="font-semibold text-xl">Editor</h2>
 
     <blockquote class="italic text-lg text-gray leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
@@ -11,13 +11,30 @@
     </blockquote>
 
     <ul class="mb-8">
-      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a> - no, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.</li>
-      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Hyper Electron Highlighter</a> - I wrote my own theme (see screenshot below). It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking.</li>
-      <g-image
-        src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,q_auto,dpr_auto/atom"
-        class="w-full"
-        alt="color scheme for my code editor" />
-      <li class="mb-2"><a class="font-bold underline hover:text-blue" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a> is my font in both the editor and terminal. It's free on Google Fonts.</li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a class="text-default font-bold underline" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a>
+        </p>
+        <p>
+          No, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a class="text-default font-bold underline" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
+        </p>
+        <p>
+          I wrote my own theme. It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking. I have spent way more time on this theme than I care to admit.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a class="text-default font-bold underline" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a>
+        </p>
+        <p>
+          Fira Mono is my font in both the editor and terminal. It's free on Google Fonts. There's also Fira Code which is the same font but with coding ligatures if you're into that sort of thing.
+        </p>
+      </li>
     </ul>
 
     <h3 class="font-semibold">Plugins</h3>
@@ -34,18 +51,34 @@
       <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
     </ul>
     
-    <h2 class="font-semibold text-lg">Terminal</h2>
+    <h2 class="font-semibold text-xl">Terminal</h2>
 
     <ul>
-      <li class="mb-2"><a href="https://hyper.is/" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper</a> - It's super easy to customize and more performant than iTerm in a number of benchmark tests.</li>
-      <li class="mb-2"><a href="https://fishshell.com" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">fish</a> as my shell. Much better than bash in my opinion. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize.</li>
-      <li class="mb-2"><a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="font-bold underline hover:text-blue" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a> theme. It's my Electron color scheme from Atom, ported to Hyper.</li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a href="https://hyper.is/" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper</a>
+        </p>
+        <p>
+           It's super easy to customize and more performant than iTerm in a number of benchmark tests.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a href="https://fishshell.com" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">fish</a>
+        </p>
+        <p>
+           Fish is my shell. Much better than bash in my opinion. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize. It used to have a lot of incompatibilities with bash scripts which was annoying because you couldn't copy them and run them, but many of these things have been made compatible so it's much better than it used to be.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1">
+          <a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
+        </p>
+        <p>
+           This theme is my Electron color scheme from Atom, ported to Hyper.
+        </p>
+      </li>
     </ul>
-
-    <g-image
-      src="https://res.cloudinary.com/mikemcbride/image/upload/c_scale,f_auto,w_576,q_auto,dpr_auto/hyper"
-      class="w-full"
-      alt="my hyper theme and setup" />
 
     <p>Here are a few of my favorite aliases I've set up:</p>
 
@@ -59,25 +92,102 @@
       <li class="mb-2"><code class="text-pink">gpub</code> = <code class="text-pink">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
     </ul>
     
-    <h2 class="font-semibold text-lg">Desktop Applications</h2>
+    <h2 class="font-semibold text-xl">Desktop Applications</h2>
 
     <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
     <ul class="mb-8">
-      <li class="mb-2"><span class="font-bold">Brave Browser</span> - Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink">brew cask install brave-browser</code></li>
-      <li class="mb-2"><span class="font-bold">Apple Notes</span> - I was using Bear for a while and it's really great (LOVE the markdown support), but ultimately I switched back to Apple Notes because I can't have shared notes with my wife in Bear. If they ever add that, I'll probably switch back.</li>
-      <li class="mb-2"><span class="font-bold">Reminders</span> - I used Wunderlist for years and loved it, then realized that Reminders could do everything I needed in a todo list app, plus being able to add items to my lists via Siri is a huge benefit. I can even share lists with my wife, like a grocery list, and we can both add/remove items.</li>
-      <li class="mb-2"><span class="font-bold">Tweetbot</span> - I love Twitter, and I use it as my primary source of news/information, but I can't stand the ads and their official desktop app wasn't updated for years. Years ago I got Tweetbot for iOS and fell in love. Then they came out with the desktop app, and it's awesome. Ever since I started using the desktop app, I find that I keep up with it much better.</li>
-      <li class="mb-2"><span class="font-bold">Kap</span> - Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code class="text-pink">brew cask install kap</code></li>
-      <li class="mb-2"><span class="font-bold">Slack</span> - basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code class="text-pink">brew cask install slack</code></li>
-      <li class="mb-2"><span class="font-bold">Spectacle</span> - This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code class="text-pink">brew cask install spectacle</code></li>
-      <li class="mb-2"><span class="font-bold">Insomnia</span> - A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code class="text-pink">brew cask install insomnia</code></li>
-      <li class="mb-2"><span class="font-bold">Robo3T</span> - Previously Robomongo. I use it for interacting with MongoDBs. Pretty solid. <code class="text-pink">brew cask install robo3t</code></li>
-      <li class="mb-2"><span class="font-bold">LastPass</span> - I use LastPass for password management across all my devices. I pay $48 per year for a Family Plan because it gives me a family sharing folder so my wife and I can both use it, and also has an emergency access so if I die, someone can get access to my account and get my passwords if necessary. <code class="text-pink">brew cask install lastpass</code></li>
-      <li class="mb-2"><span class="font-bold">Apple Mail</span> - I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service, and it's reportedly getting some nice new features in Fall 2019.</li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Brave Browser
+        </p>
+        <p>
+          Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink">brew cask install brave-browser</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Apple Notes
+        </p>
+        <p>
+          I was using Bear for a while and it's really great (LOVE the markdown support), but ultimately I switched back to Apple Notes because I can't have shared notes with my wife in Bear. If they ever add that, I'll probably switch back.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Reminders
+        </p>
+        <p>
+          I used Wunderlist for years and loved it, then realized that Reminders could do everything I needed in a todo list app, plus being able to add items to my lists via Siri is a huge benefit. I can even share lists with my wife, like a grocery list, and we can both add/remove items.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Tweetbot
+        </p>
+        <p>
+          I love Twitter, and I use it as my primary source of news/information, but I can't stand the ads and their official desktop app wasn't updated for years. Years ago I got Tweetbot for iOS and fell in love. Then they came out with the desktop app, and it's awesome. Ever since I started using the desktop app, I find that I keep up with it much better.
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Kap
+        </p>
+        <p>
+          Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code class="text-pink">brew cask install kap</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Slack
+        </p>
+        <p>
+          basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code class="text-pink">brew cask install slack</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Spectacle
+        </p>
+        <p>
+          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code class="text-pink">brew cask install spectacle</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Insomnia
+        </p>
+        <p>
+          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code class="text-pink">brew cask install insomnia</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Robo3T
+        </p>
+        <p>
+          Previously Robomongo. I use it for interacting with MongoDBs. Pretty solid. <code class="text-pink">brew cask install robo3t</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          LastPass
+        </p>
+        <p>
+          I use LastPass for password management across all my devices. I pay $48 per year for a Family Plan because it gives me a family sharing folder so my wife and I can both use it, and also has an emergency access so if I die, someone can get access to my account and get my passwords if necessary. <code class="text-pink">brew cask install lastpass</code>
+        </p>
+      </li>
+      <li class="mb-2">
+        <p class="leading-normal mb-1 font-bold">
+          Apple Mail
+        </p>
+        <p>
+          I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service, and it's reportedly getting some nice new features in Fall 2019.
+        </p>
+      </li>
     </ul>
     
-    <h2 class="font-semibold text-lg">Desk Setup</h2>
+    <h2 class="font-semibold text-xl">Desk Setup</h2>
 
     <h3 class="font-semibold">At work:</h3>
 
