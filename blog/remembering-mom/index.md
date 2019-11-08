@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remembering Mom"
+title: Remembering Mom
 date: 2018-08-19
 status: publish
 type: post

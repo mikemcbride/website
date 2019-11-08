@@ -3,7 +3,7 @@
     <ScrollProgress />
     
     <header class="mb-8 leading-tight">
-      <h1 class="font-normal text-3xl my-0">{{ $page.post.title }}</h1>
+      <h1 class="font-normal text-3xl my-0">{{ $page.post.title | formatTitle }}</h1>
       <p class="mb-4 text-sm text-gray">{{ $page.post.date | formatDate }}</p>
     </header>
 
@@ -25,6 +25,7 @@ query Post ($path: String!) {
 
 <script>
 import formatDate from '@/filters/formatDate'
+import formatTitle from '@/filters/formatTitle'
 import ScrollProgress from '@/components/ScrollProgress'
 
 export default {
@@ -33,11 +34,12 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.post.title
+      title: formatTitle(this.$page.post.title)
     }
   },
   filters: {
-    formatDate
+    formatDate,
+    formatTitle
   }
 }
 </script>
