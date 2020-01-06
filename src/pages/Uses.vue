@@ -13,15 +13,15 @@
     <ul class="mb-8">
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-default font-bold underline" href="https://atom.io" target="_blank" rel="nofollow noreferrer">Atom</a>
+          <a class="text-default font-bold underline" href="https://code.visualstudio.com" target="_blank" rel="nofollow noreferrer">VS Code</a>
         </p>
         <p>
-          No, I don't use VS Code. I realize I'm in the minority here and I constantly get asked why I'm not using VS Code, but I've been using Atom since it was in it's earliest days and I have invested a lot in both my set up and the community. I've written a handful of themes and plugins and heavily customized my editor. Any time I've tried switching to VS Code I end up switching back within days because I'm just not as productive and the switch doesn't seem worth it to me.
+          I am probably one of the last people to make the switch to VS Code. I was a super early adopter of Atom and was heavily invested in the community and ecosystem, having written a few themes and plugins and contributing to a few core packages. I endured performance issues for years because I loved the customizability. When VS Code started becoming popular, I was very hesitant to switch. A new project started up in the Atom organization to re-write the editor component. It was incredibly promising. Being written in Rust and doing all the heavy lifting on the server, it had incredible performance even on large files. Combined with the new tree-sitter parsing system for syntax higlighting, it had so much potential. But the project (called x-ray), got shut down. I was done holding out hope at that point. I had tried VS Code a few different times in the past and it never stuck. I finally gave in and made the switch and have been pretty happy with it. The intellisense is very impressive, and while I still don't think it's quite as polished as Atom, the performance is generally much better and it's got a wonderful ecosystem. If x-ray ever becomes a reality, I'll jump back to Atom in a heartbeat but for now I'm sticking with VS Code.
         </p>
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-default font-bold underline" href="https://atom.io/themes/electron-highlighter-syntax" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
+          <a class="text-default font-bold underline" href="https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
         </p>
         <p>
           I wrote my own theme. It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking. I have spent way more time on this theme than I care to admit.
@@ -36,7 +36,8 @@
         </p>
       </li>
     </ul>
-
+<!-- 
+  TODO: these are outdated after switching to VS Code. Update them or just ditch the section entirely.
     <h3 class="font-semibold">Plugins</h3>
     <p>Here are a handful of the plugins I use in my editor that I find especially useful:</p>
     <ul class="mb-8">
@@ -50,7 +51,7 @@
       <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink">node_modules</code></li>
       <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
     </ul>
-    
+     -->
     <h2 class="font-semibold text-xl">Terminal</h2>
 
     <ul>
@@ -163,18 +164,18 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1 font-bold">
-          Robo3T
+          MongoDB Compass
         </p>
         <p>
-          Previously Robomongo. I use it for interacting with MongoDBs. Pretty solid. <code class="text-pink">brew cask install robo3t</code>
+          I use it for interacting with Mongo databases. It's pretty solid.
         </p>
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1 font-bold">
-          LastPass
+          1Password
         </p>
         <p>
-          I use LastPass for password management across all my devices. I pay $48 per year for a Family Plan because it gives me a family sharing folder so my wife and I can both use it, and also has an emergency access so if I die, someone can get access to my account and get my passwords if necessary. <code class="text-pink">brew cask install lastpass</code>
+          I use 1Password for password management across all my devices. I pay about $60 a year for a Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate.
         </p>
       </li>
       <li class="mb-2">
@@ -182,7 +183,7 @@
           Apple Mail
         </p>
         <p>
-          I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service, and it's reportedly getting some nice new features in Fall 2019.
+          I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service. If Newton gets a little more polished I could see myself switching back.
         </p>
       </li>
     </ul>
