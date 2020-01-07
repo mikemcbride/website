@@ -11,6 +11,10 @@ export default {
     {
       title: 'LinkedIn',
       to: 'https://www.linkedin.com/in/mmcbride1007',
+    },
+    {
+      title: 'RSS',
+      to: '/feed.json'
     }
   ],
   twitterUrl: 'https://twitter.com/_mcbridem_',
