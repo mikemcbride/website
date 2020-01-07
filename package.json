@@ -1,6 +1,9 @@
 {
   "name": "mikemcbride.me",
   "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "build": "gridsome build",
     "now-build": "gridsome build",
