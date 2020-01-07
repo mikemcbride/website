@@ -1,3 +1,6 @@
+const marked = require('marked')
+const formatTitle = require('./src/filters/formatTitle')
+
 module.exports = {
   siteName: 'Mike McBride',
   siteUrl: 'https://mikemcbride.me',
@@ -39,7 +42,12 @@ module.exports = {
         json: {
           enabled: true,
           output: '/feed.json'
-        }
+        },
+        nodeToFeedItem: node => ({
+          title: formatTitle(node.title),
+          date: node.date || node.fields.date,
+          content: marked(node.content)
+        })
       }
     }
   ]

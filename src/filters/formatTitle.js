@@ -1,7 +1,7 @@
-import title from 'title'
+const title = require('title')
 
-export default function (val) {
+module.exports = function (val) {
   return title(val, {
-    special: ['AngularJS', 'iOS', 'macOS', 'iPhone', 'iPad', 'tvOS'] // exceptions
+    special: ['AngularJS', 'iOS', 'macOS', 'iPhone', 'iPad', 'tvOS']
   })
 }
