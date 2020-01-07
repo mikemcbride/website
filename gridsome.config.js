@@ -19,6 +19,28 @@ module.exports = {
        shouldNest: true,
        shouldAutoprefix: true,
       }
+    },
+    {
+      use: 'gridsome-plugin-feed',
+      options: {
+        contentTypes: ['BlogPost'],
+        feedOptions: {
+          title: "Mike McBride's Blog",
+          description: 'Sometimes Mike writes things. You can read them here.'
+        },
+        rss: {
+          enabled: true,
+          output: '/feed.xml'
+        },
+        atom: {
+          enabled: true,
+          output: '/feed.atom'
+        },
+        json: {
+          enabled: true,
+          output: '/feed.json'
+        }
+      }
     }
   ]
 }
