@@ -11,10 +11,6 @@ export default {
     {
       title: 'LinkedIn',
       to: 'https://www.linkedin.com/in/mmcbride1007',
-    },
-    {
-      title: 'Email',
-      to: 'mailto:mmcbride1007@gmail.com',
     }
   ],
   twitterUrl: 'https://twitter.com/_mcbridem_',

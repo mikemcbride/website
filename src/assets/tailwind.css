@@ -92,8 +92,8 @@ main {
 }
 
 hr {
-  border-bottom-width: 1px;
   border: 0px solid #dae1e7;
+  border-bottom-width: 1px;
   box-sizing: content-box;
   height: 0;
   margin: 2rem 0;
