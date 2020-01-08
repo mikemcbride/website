@@ -6,7 +6,7 @@
       <input
         v-model="searchText"
         placeholder="Search blog posts"
-        class="text-sm bg-transparent py-2 pl-8 text-default focus:outline-none search-input w-full" />
+        class="text-base bg-transparent py-2 pl-8 text-default focus:outline-none search-input w-full" />
       <Search class="inline-block w-4 h-4 absolute search-icon text-default opacity-50" />
     </div>
     <div class="border-faded border-b left-0 -ml-4 sm:-ml-16 md:-ml-24 lg:-ml-30 w-screen"></div>
