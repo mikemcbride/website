@@ -8,10 +8,10 @@
       </div>
       <p class="mb-8 md:mt-4">
         Hey there! I'm Mike. I'm a web developer based out of St. Louis, MO, 
-        where I live with <a href="https://putting-on-love.com" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a> and our
+        where I live with <a href="https://instagram.com/putting.on.love" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a> and our
         <span class="line-through mr-1">daughter</span>
         <span class="line-through">two</span> three children.
-        I enjoy running, LSU football, good whiskey, hiking, and reading.
+        I enjoy running, LSU football, good whiskey, and reading.
         I am slightly obsessed with keyboard shortcuts and productivity hacks.
       </p>
     </section>
