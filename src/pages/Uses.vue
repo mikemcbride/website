@@ -1,7 +1,7 @@
 <template lang="html">
   <Layout>
     <h1 class="text-4xl font-medium mb-4">Uses</h1>
-    <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
+    <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="nofollow noreferrer">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
     <h2 class="font-semibold text-xl">Editor</h2>
 
