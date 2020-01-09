@@ -17,10 +17,13 @@ module.exports = {
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {
-       shouldPurge: true,
-       shouldImport: true,
-       shouldNest: true,
-       shouldAutoprefix: true,
+       purgeConfig: {
+        content: [
+          './src/**/*.vue',
+          './blog/**/*.md',
+          './blog/**/*.html'
+        ]
+       }
       }
     },
     {
