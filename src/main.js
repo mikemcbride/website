@@ -1,6 +1,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '~/assets/tailwind.css'
+import '~/assets/inter/inter.css'
 
 export default function (Vue, { head, appOptions, router }) {
   Vue.use(Vuex)
@@ -46,11 +47,6 @@ export default function (Vue, { head, appOptions, router }) {
   head.meta.push({
     name: 'description',
     content: 'Personal website of Mike McBride'
-  })
-
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://rsms.me/inter/inter.css'
   })
   
   Vue.component('Layout', DefaultLayout)
