@@ -3,7 +3,7 @@
     <ScrollProgress />
     
     <header class="mb-8 leading-tight">
-      <h1 class="font-normal text-3xl my-0">{{ $page.post.title | formatTitle }}</h1>
+      <h1 class="font-medium text-3xl my-0">{{ $page.post.title | formatTitle }}</h1>
       <p class="mb-4 text-sm text-gray">{{ $page.post.date | formatDate }}</p>
     </header>
 
