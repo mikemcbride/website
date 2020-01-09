@@ -74,4 +74,4 @@ By using the Alfred Emoji Pack and tweaking a few of our Alfred snippet settings
 - paste the selected emoji into the underlying application, like qmoji or Rocket
 - auto-expansion (no other Mac emoji apps do this, but apps like Slack and GitHub do it)
 
-Hopefully this was helpful! I love productivity hacks and automating stuff, so if you have any other great Alfred workflows you want to share I'd love to hear them. <a href="https://twitter.com/_mcbridem_" target="_blank">Hit me up on Twitter</a>!
+Hopefully this was helpful! I love productivity hacks and automating stuff, so if you have any other great Alfred workflows you want to share I'd love to hear them. <a href="https://twitter.com/_mcbridem_" target="_blank" rel="nofollow noreferrer">Hit me up on Twitter</a>!

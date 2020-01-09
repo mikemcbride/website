@@ -2,6 +2,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '~/assets/tailwind.css'
 import '~/assets/inter/inter.css'
+import ExternalLink from '~/components/ExternalLink.vue'
 
 export default function (Vue, { head, appOptions, router }) {
   Vue.use(Vuex)
@@ -50,4 +51,5 @@ export default function (Vue, { head, appOptions, router }) {
   })
   
   Vue.component('Layout', DefaultLayout)
+  Vue.component('ExternalLink', ExternalLink)
 }
