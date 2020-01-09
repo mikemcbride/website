@@ -2,8 +2,9 @@
   <Layout>
     <h1 class="text-4xl font-medium mb-3">Blog</h1>
     <p class="mb-8">Sometimes I write things. You can read them here.</p>
-    <label class="block relative mb-6 search-input">
+    <label class="block relative mb-6 search-input" for="blog-post-search">
       <input
+        id="blog-post-search"
         name="Search blog posts"
         v-model="searchText"
         placeholder="Search blog posts"
