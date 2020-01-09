@@ -161,6 +161,18 @@ ul {
   color: var(--link-color);
 }
 
+.hover\:text-default:hover {
+  color: var(--app-text);
+}
+
+.hover\:text-gray:hover {
+  color: var(--app-gray);
+}
+
+.hover\:text-blue:hover {
+  color: var(--link-color);
+}
+
 .text-pink {
   color: var(--code-color);
 }
