@@ -49,37 +49,4 @@ blockquote {
   font-size: 1.15rem;
   font-style: italic;
 }
-
-pre, code, .code, .monospace {
-  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-}
-
-code {
-  color: var(--code-color);
-  font-size: .875rem;
-  
-  &::before,
-  &::after {
-    content: '`';
-  }
-}
-
-pre {
-  background: var(--app-bg);
-  border-radius: .25rem;
-  border: 1px solid var(--app-gray);
-  overflow-x: auto;
-  padding: 1rem;
-  white-space: pre;
-  word-break: inherit;
-  word-wrap: inherit;
-  
-  > code {    
-    &::before,
-    &::after {
-      content: none;
-    }
-    color: var(--code-color);
-  }
-}
 </style>
