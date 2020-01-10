@@ -48,6 +48,11 @@ export default function (Vue, { head, appOptions, router }) {
     name: 'description',
     content: 'Personal website of Mike McBride'
   })
+
+  head.link.push({
+    href: 'https://rsms.me/inter/inter.css',
+    rel: 'stylesheet'
+  })
   
   Vue.component('Layout', DefaultLayout)
   Vue.component('ExternalLink', ExternalLink)
