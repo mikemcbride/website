@@ -1,6 +1,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '~/assets/tailwind.css'
+import '~/assets/inter/inter.css'
 import ExternalLink from '~/components/ExternalLink.vue'
 
 export default function (Vue, { head, appOptions, router }) {
