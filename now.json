@@ -3,5 +3,9 @@
   "name": "website",
   "alias": "mikemcbride.me",
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
-  "routes": [{ "src": "/wp-login.php", "dest": "/wp-admin"}]
+  "routes": [
+    { "src": "/wp-login.php", "dest": "/wp-admin"},
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
 }
