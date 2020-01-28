@@ -18,7 +18,7 @@ export default [
   },
   {
     title: "convert-color-cli",
-    description: "A CLI tool that will convert HEX values to RGB and vice-versa.",
+    description: "A CLI tool that can convert colors between HEX, RGB, and HSL.",
     url: "https://npmjs.com/package/convert-color-cli",
     source: "https://github.com/mikemcbride/convert-color-cli",
   },
