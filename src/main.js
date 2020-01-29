@@ -51,8 +51,28 @@ export default function (Vue, { head, appOptions, router }) {
 
   head.link.push({
     rel: "preload",
+    href: "/inter/Inter-Regular-subset.woff2?v=3.11",
+    as: "font/woff2",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/inter/Inter-Medium-subset.woff2?v=3.11",
+    as: "font/woff2",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/inter/Inter-SemiBold-subset.woff2?v=3.11",
+    as: "font/woff2",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "stylesheet",
     href: "/inter/inter.css",
-    as: "font"
   })
 
   Vue.component('Layout', DefaultLayout)
