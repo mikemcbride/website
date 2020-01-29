@@ -1,7 +1,6 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '~/assets/tailwind.css'
-// import '~/assets/inter/inter.css'
 import ExternalLink from '~/components/ExternalLink.vue'
 
 export default function (Vue, { head, appOptions, router }) {
@@ -51,8 +50,9 @@ export default function (Vue, { head, appOptions, router }) {
   })
 
   head.link.push({
-    rel: "stylesheet",
-    href: "/inter/inter.css"
+    rel: "preload",
+    href: "/inter/inter.css",
+    as: "font"
   })
 
   Vue.component('Layout', DefaultLayout)
