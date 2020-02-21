@@ -4,7 +4,7 @@ title: Useful Javascript Features
 date: 2020-02-14
 status: publish
 type: post
-published: true
+published: false
 excerpt: In this post we'll cover some of the new(ish) features in Javascript that I didn't really understand at first but now that I do, I find them super useful. Hopefully you'll take something away from this as well.
 ---
 

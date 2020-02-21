@@ -66,7 +66,7 @@ export default {
 
 <page-query>
 query BlogList {
-  allBlogPost {
+  allBlogPost(filter: { published: { eq: true }}) {
     edges {
       node {
         title
