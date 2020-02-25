@@ -2,7 +2,6 @@
 layout: post
 title: 'Paper: The Last Great Medium'
 date: 2014-07-23
-status: publish
 type: post
 published: true
 excerpt: Paper is just the best. Go use some paper.

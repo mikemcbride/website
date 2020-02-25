@@ -2,7 +2,6 @@
 layout: post
 title: "Why Use Build Tools?"
 date: 2017-10-02
-status: publish
 type: post
 published: true
 excerpt: One question I get a lot from people who are just starting out with web development is along the lines of "why is there all this extra overhead for a build process?", and I remember when I was starting out and wondered the exact same thing.

@@ -1,6 +1,7 @@
 ---
 title: Advanced Conditional Formatting in Google Sheets
 date: 2016-10-14
+published: true
 excerpt: Tonight I was working on a spreadsheet in Google Sheets and had the need to do some advanced formatting on cells referencing data across multiple sheets.
 ---
 Tonight I was working on a spreadsheet in Google Sheets and had the need to do some advanced formatting on cells referencing data across multiple sheets. It took me a while to get it exactly how I wanted it, and I wanted to post this to hopefully help anyone who has tried to do something similar and struggled.

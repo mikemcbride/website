@@ -2,7 +2,6 @@
 layout: post
 title: My Android Experience, and Why I Switched Back to iOS
 date: 2013-05-13
-status: publish
 type: post
 published: true
 excerpt: I switched from iOS to Android. It lasted less than six months. I reflect on why.

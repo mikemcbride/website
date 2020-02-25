@@ -2,7 +2,6 @@
 layout: post
 title: "Reducing CSS File Size"
 date: 2017-02-12
-status: publish
 type: post
 published: true
 excerpt: Here are some tips on reducing your CSS file size.

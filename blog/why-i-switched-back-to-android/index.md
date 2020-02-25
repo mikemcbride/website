@@ -2,7 +2,6 @@
 layout: post
 title: Why I decided to switch to Android from iOS... again
 date: 2013-10-10
-status: publish
 type: post
 published: true
 excerpt: I had an iPhone. I switched to Android. It lasted 4 months. After a few years, I gave Android another try. Here's why.
