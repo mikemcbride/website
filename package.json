@@ -12,6 +12,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-feed": "^1.0.2",

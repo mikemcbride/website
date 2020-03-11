@@ -9,9 +9,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        pathPrefix: '/blog',
         path: 'blog/**/index.md',
-        typeName: 'BlogPost'
+        typeName: 'BlogPost',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     },
     {
