@@ -9,11 +9,11 @@ excerpt: Alfred is a powerful application with vast capabilities for automation.
 
 [Alfred](https://alfredapp.com) is a powerful application with vast capabilities for automation. In this post we'll explore how to make it dead simple to use it as a system-wide emoji picker in macOS. Fair warning here, if you do not already use Alfred, it is not a free app if you want to install custom things like what we'll do here, but anyone who uses it will tell you that it is well worth the price to pay for the powerpack.
 
-<h2 class="font-medium mt-8 mb-4 text-2xl">The Problem</h3>
+## The Problem
 
 Applications like Slack and even web applications like GitHub have implemented a seamless experience for inserting emoji into text. You start typing `:` and the emoji picker pops up. You can then start typing a name of an emoji and when you find the one you want, press `return` and it will insert the emoji inline in your text. It's a wonderful UX that I wish were available in every application. macOS has implemented a native one, but it is horrible. The global shortcut is clunky and hard to remember, the picker takes a VERY long time to load, and searching emoji is not great (you can't type to filter... you just scroll... FOREVER). I've tried a number of third party Mac apps that aim to do this, and while I did find a few that were very good, ultimately I landed on Alfred snippets as a solution.
 
-<h2 class="font-medium mt-8 mb-4 text-2xl">The Competition</h3>
+## The Competition
 
 If you're interested in checking out some of the other solutions, I've tried a few and would recommend checking out the following:
 
@@ -23,13 +23,13 @@ If you're interested in checking out some of the other solutions, I've tried a f
 
 There are certainly other apps that aim to do this but many of them were very basic and not customizable, or just didn't work well.
 
-<h2 class="font-medium mt-8 mb-4 text-2xl">Alfred To The Rescue</h3>
+## Alfred To The Rescue
 
 I finally made the jump to Alfred sometime in 2019 in an effort to try and bake a little more automation into my everyday workflow and speed up some repetitive tasks. I came across the [Alfred Emoji Pack](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) by Joel Califa and saw a lot of promise in it, so I installed it and promptly forgot about it until recently. After tinkering around with a few settings, I was able to take all the things I loved about each of the apps above and make it into a seamless system-wide flow for picking emoji. We'll walk through it step by step here.
 
 First thing you'll have to do is download and install the pack from the link above. Instructions are on the website so I won't go through that here. What it will do is install a bunch of snippets in Alfred, which can be used anywhere.
 
-<h3 class="font-medium mt-8 text-xl">Auto Expansion</h3>
+### Auto Expansion
 
 In order for snippets to auto-expand in any application, you need to enable this setting:
 
@@ -39,7 +39,7 @@ That gets you part of the way there - if you know the keyword for your emoji, yo
 
 Cool... but what if you don't know the name of the emoji EXACTLY?
 
-<h3 class="font-medium mt-8 text-xl">Snippet Search</h3>
+### Snippet Search
 
 You have two other options for searching through your snippets. The first is to open Alfred and type your snippet keyword (defined in that same settings page), then start typing your snippet name:
 
@@ -60,13 +60,13 @@ Here's what that looks like:
 
 In either of the two approaches to searching snippets, Alfred will automatically paste the snippet into the underlying application.
 
-<h3 class="font-medium mt-8 text-xl">Aliases</h3>
+### Aliases
 
 That's all great, but sometimes I don't remember a keyword for an emoji and it drives me nuts trying to remember. It would be sweet if I could add an alias. Rocket allows you to add custom keywords and map that to an emoji. In Alfred, all we have to do is go into our snippets and add a new one. You'll want to follow the convention in the Emoji Pack, where the Name of the snippet is the emoji plus the keyword. This helps when searching to see which emoji you'll be picking.
 
 ![Adding a custom snippet](./custom-snippet.png)
 
-<h2 class="font-medium mt-8 mb-4 text-2xl">Recap</h3>
+## Recap
 
 By using the Alfred Emoji Pack and tweaking a few of our Alfred snippet settings, we get all the best functionality of some various applications. We get:
 
