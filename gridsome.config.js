@@ -50,6 +50,7 @@ module.exports = {
           enabled: true,
           output: '/feed.json'
         },
+        filterNodes: node => node.published === true,
         nodeToFeedItem: node => ({
           title: formatTitle(node.title),
           date: node.date || node.fields.date,
