@@ -1,14 +1,14 @@
 <template functional>
   <article class="py-8">
-    <div class="text-sm text-gray leading-normal mb-2">{{ props.post.date | formatDate }}</div>
+    <div class="text-sm text-grey-darker dark:text-grey-dark leading-normal mb-2">{{ props.post.date | formatDate }}</div>
     <g-link
-      class="inline-block text-2xl font-semibold text-default leading-tight hover:underline mb-4"
+      class="inline-block text-2xl font-semibold text-black dark:text-white leading-tight hover:underline mb-4"
       :to="props.post.path">
       {{ props.post.title | formatTitle }}
     </g-link>
-    <p class="text-default mb-6 leading-loose text-base">{{ props.post.excerpt }}</p>
+    <p class="text-black dark:text-white mb-6 leading-loose text-base">{{ props.post.excerpt }}</p>
     <g-link
-      class="inline-block text-sm text-blue no-underline uppercase tracking-wide"
+      class="inline-block text-sm text-blue dark:text-blue-light no-underline uppercase tracking-wide"
       :to="props.post.path">
       Read more →
     </g-link>

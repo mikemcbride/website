@@ -1,6 +1,6 @@
 <template functional>
   <a
-    class="inline-block text-sm mx-2"
+    class="text-grey-darker hover:text-black dark:text-grey dark-hover:text-white inline-block text-sm mx-2"
     :href="props.to"
     :title="props.title">
     {{ props.title }}
@@ -22,8 +22,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-a { color: var(--app-gray); }
-a:hover { color: var(--app-text); }
-</style>

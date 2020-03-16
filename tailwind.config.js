@@ -11,7 +11,15 @@ module.exports = {
       'grey-lighter': '#f1f5f8',
       'grey-lightest': '#f8fafc',
       'white': '#ffffff',
-      'inherit': 'inherit'
+      'inherit': 'inherit',
+      'blue': '#0071e4',
+      'blue-light': '#82aaff',
+      'pink': '#d8009c',
+      'pink-light': '#ff6bd6'
+    },
+    boxShadow: {
+      'default': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      'light': '0 4px 6px -1px rgba(255,255,255, 0.1), 0 2px 4px -1px rgba(255,255,255, 0.06)'
     },
     fontFamily: {
       'sans': [
@@ -63,7 +71,6 @@ module.exports = {
     height: {
       'auto': 'auto',
       'px': '1px',
-      '05': '0.125rem',
       '1': '0.25rem',
       '2': '0.5rem',
       '3': '0.75rem',
@@ -137,16 +144,16 @@ module.exports = {
   variants: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColor: ['responsive', 'hover', 'focus'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'dark'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: [],
-    borderColor: ['responsive', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus', 'dark'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
-    boxShadow: ['responsive', 'hover', 'focus'],
+    boxShadow: ['responsive', 'hover', 'focus', 'dark'],
     cursor: ['responsive'],
     display: ['responsive'],
     fill: [],
@@ -187,7 +194,7 @@ module.exports = {
     stroke: [],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColor: ['responsive', 'hover', 'focus'],
+    textColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover'],
     fontStyle: ['responsive', 'hover', 'focus'],
     fontSmoothing: ['responsive', 'hover', 'focus'],
     textDecoration: ['responsive', 'hover', 'focus'],
@@ -202,5 +209,8 @@ module.exports = {
   },
   corePlugins: {
     container: false
-  }
+  },
+  plugins: [
+    require('tailwindcss-dark-mode')()
+  ]
 }

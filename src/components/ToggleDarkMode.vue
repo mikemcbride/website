@@ -11,8 +11,26 @@
 export default {
   name: 'ToggleDarkMode',
   methods: {
+    prefersDarkMode() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return true
+      }
+      return false
+    },
     toggleDarkMode() {
-      this.$store.commit('toggleDarkMode', this.$el)
+      let body = document.body
+      if (body.classList.contains('mode-dark')) {
+        body.classList.remove('mode-dark')
+      } else {
+        body.classList.add('mode-dark')
+      }
+    }
+  },
+  mounted() {
+    // check if they prefer dark mode
+    if (this.prefersDarkMode()) {
+      // if so, add `mode-dark` to body
+      document.body.classList.add('mode-dark')
     }
   },
 }

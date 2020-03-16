@@ -5,7 +5,7 @@
 
     <h2 class="font-semibold text-xl">Editor</h2>
 
-    <blockquote class="italic text-lg text-gray leading-relaxed">
+    <blockquote class="italic text-lg text-grey-darker dark:text-grey-dark leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
       <div class="text-right -mt-2">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
     </blockquote>
@@ -13,7 +13,7 @@
     <ul class="mb-8">
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-default font-bold underline" href="https://code.visualstudio.com" target="_blank" rel="nofollow noreferrer">VS Code</a>
+          <a class="text-black dark:text-white font-bold underline" href="https://code.visualstudio.com" target="_blank" rel="nofollow noreferrer">VS Code</a>
         </p>
         <p>
           I am probably one of the last people to make the switch to VS Code. I was a super early adopter of Atom and was heavily invested in the community and ecosystem, having written a few themes and plugins and contributing to a few core packages. I endured performance issues for years because I loved the customizability. When VS Code started becoming popular, I was very hesitant to switch. A new project started up in the Atom organization to re-write the editor component. It was incredibly promising. Being written in Rust and doing all the heavy lifting on the server, it had incredible performance even on large files. Combined with the new tree-sitter parsing system for syntax higlighting, it had so much potential. But the project (called x-ray), got shut down. I was done holding out hope at that point. I had tried VS Code a few different times in the past and it never stuck. I finally gave in and made the switch and have been pretty happy with it. The intellisense is very impressive, and while I still don't think it's quite as polished as Atom, the performance is generally much better and it's got a wonderful ecosystem. If x-ray ever becomes a reality, I'll jump back to Atom in a heartbeat but for now I'm sticking with VS Code.
@@ -21,7 +21,7 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-default font-bold underline" href="https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
+          <a class="text-black dark:text-white font-bold underline" href="https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
         </p>
         <p>
           I wrote my own theme. It's a slightly more vibrant version of Atom's One Dark syntax theme that I've customized to my liking. I have spent way more time on this theme than I care to admit.
@@ -29,7 +29,7 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-default font-bold underline" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a>
+          <a class="text-black dark:text-white font-bold underline" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a>
         </p>
         <p>
           Fira Mono is my font in both the editor and terminal. It's free on Google Fonts. There's also Fira Code which is the same font but with coding ligatures if you're into that sort of thing.
@@ -48,8 +48,8 @@
       <li class="mb-2"><a href="https://atom.io/packages/sync-settings" target="_blank">sync-settings</a> - super useful package, especially if you use Atom on multiple machines. This allows you to back up and restore your settings to/from a Gist linked to your GitHub account. It will sync your installed packages, settings, init script, stylesheet, keymap, and snippets.</li>
       <li class="mb-2"><a href="https://atom.io/packages/set-syntax" target="_blank">set-syntax</a> - a package that adds syntax switching options to the command palette instead of having to remember the keybinding to open the panel for switching syntax.</li>
       <li class="mb-2"><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - helps developers maintain consistent coding styles between different editors.</li>
-      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink">node_modules</code></li>
-      <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink">&lt;/</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink dark:text-pink-light">node_modules</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink dark:text-pink-light">&lt;/</code></li>
     </ul>
      -->
     <h2 class="font-semibold text-xl">Terminal</h2>
@@ -57,7 +57,7 @@
     <ul>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a href="https://hyper.is/" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper</a>
+          <a href="https://hyper.is/" class="text-black dark:text-white font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper</a>
         </p>
         <p>
            It's super easy to customize and more performant than iTerm in a number of benchmark tests.
@@ -65,7 +65,7 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a href="https://fishshell.com" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">fish</a>
+          <a href="https://fishshell.com" class="text-black dark:text-white font-bold underline" target="_blank" rel="nofollow noreferrer">fish</a>
         </p>
         <p>
            Fish is my shell. Much better than bash in my opinion. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize. It used to have a lot of incompatibilities with bash scripts which was annoying because you couldn't copy them and run them, but many of these things have been made compatible so it's much better than it used to be.
@@ -73,7 +73,7 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="text-default font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
+          <a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="text-black dark:text-white font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
         </p>
         <p>
            This theme is my Electron color scheme from Atom, ported to Hyper.
@@ -84,13 +84,13 @@
     <p>Here are a few of my favorite aliases I've set up:</p>
 
     <ul class="mb-8">
-      <li class="mb-2"><code class="text-pink">afk</code> starts my screensaver</li>
-      <li class="mb-2"><code class="text-pink">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
-      <li class="mb-2"><code class="text-pink">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink">curl wttr.in</code> in your own terminal.</li>
-      <li class="mb-2"><code class="text-pink">please</code> = <code class="text-pink">sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
-      <li class="mb-2"><code class="text-pink">resource</code> re-sources my shell if I've made changes</li>
-      <li class="mb-2"><code class="text-pink">rm</code> = <code class="text-pink">trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code class="text-pink">rm</code> equal to <code class="text-pink">trash</code> means instead of losing something forever when I run <code class="text-pink">rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
-      <li class="mb-2"><code class="text-pink">gpub</code> = <code class="text-pink">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">afk</code> starts my screensaver</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink dark:text-pink-light">curl wttr.in</code> in your own terminal.</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">please</code> = <code class="text-pink dark:text-pink-light">sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">resource</code> re-sources my shell if I've made changes</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">rm</code> = <code class="text-pink dark:text-pink-light">trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code class="text-pink dark:text-pink-light">rm</code> equal to <code class="text-pink dark:text-pink-light">trash</code> means instead of losing something forever when I run <code class="text-pink dark:text-pink-light">rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
+      <li class="mb-2"><code class="text-pink dark:text-pink-light">gpub</code> = <code class="text-pink dark:text-pink-light">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
     </ul>
     
     <h2 class="font-semibold text-xl">Desktop Applications</h2>
@@ -103,7 +103,7 @@
           Brave Browser
         </p>
         <p>
-          Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink">brew cask install brave-browser</code>
+          Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink dark:text-pink-light">brew cask install brave-browser</code>
         </p>
       </li>
       <li class="mb-2">
@@ -135,7 +135,7 @@
           Kap
         </p>
         <p>
-          Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code class="text-pink">brew cask install kap</code>
+          Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code class="text-pink dark:text-pink-light">brew cask install kap</code>
         </p>
       </li>
       <li class="mb-2">
@@ -143,7 +143,7 @@
           Slack
         </p>
         <p>
-          basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code class="text-pink">brew cask install slack</code>
+          basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code class="text-pink dark:text-pink-light">brew cask install slack</code>
         </p>
       </li>
       <li class="mb-2">
@@ -151,7 +151,7 @@
           Spectacle
         </p>
         <p>
-          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code class="text-pink">brew cask install spectacle</code>
+          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code class="text-pink dark:text-pink-light">brew cask install spectacle</code>
         </p>
       </li>
       <li class="mb-2">
@@ -159,7 +159,7 @@
           Insomnia
         </p>
         <p>
-          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code class="text-pink">brew cask install insomnia</code>
+          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code class="text-pink dark:text-pink-light">brew cask install insomnia</code>
         </p>
       </li>
       <li class="mb-2">

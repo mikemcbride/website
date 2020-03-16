@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="fixed top-0 left-0 h-05 bg-blue" :style="progress"></div>
+  <div class="fixed top-0 left-0 bg-blue dark:bg-blue-light" :style="progress"></div>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
       return (this.scrollY / this.offset) * 100
     },
     progress() {
-      return `width: ${this.calculatedWidth}%`
+      return `height: 2px; width: ${this.calculatedWidth}%`
     }
   },
   mounted() {

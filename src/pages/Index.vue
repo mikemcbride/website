@@ -2,7 +2,7 @@
   <Layout>
     <section class="post-content md:flex">
       <div class="text-center mb-8 mt-4 md:mr-8">
-        <span class="inline-block overflow-hidden border border-faded h-32 w-32 rounded-full dynamic-shadow">
+        <span class="inline-block overflow-hidden border border-grey-lighter dark:border-grey-darkest h-32 w-32 rounded-full shadow dark:shadow-light">
           <Avatar class="w-full h-full rounded-full" />
         </span>
       </div>
