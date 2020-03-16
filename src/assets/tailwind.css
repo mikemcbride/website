@@ -131,6 +131,8 @@ code:not([class*="language-"])::after {
 * prism.js theme
 */
 
+/* purgecss start ignore */
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #a8b5d1;
@@ -243,5 +245,7 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+
+/* purgecss end ignore */
 
 @tailwind utilities;
