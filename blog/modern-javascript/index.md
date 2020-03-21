@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Modern Javascript
-date: 2020-02-14
+date: 2020-03-21
 status: publish
 type: post
-published: false
+published: true
 excerpt: In this post I'll cover some of the features of modern Javascript that I didn't really understand at first but now that I do, I find them super useful. Hopefully you'll take something away from this as well.
 ---
 
@@ -154,16 +154,34 @@ const updated = [...oldArray, newItem]
 We can do some similar things using the spread syntax with Objects. First let's take a look at combining two Objects. In the past you may have used `Object.assign`:
 
 ```js
-const defaultItem = { name: 'New Item', price: 5, currency: 'USD' }
-const myItem = { name: 'Sweatshirt', price: 20 }
+const defaultItem = {
+	name: 'New Item',
+	price: 5,
+	currency: 'USD'
+}
+
+const myItem = {
+	name: 'Sweatshirt',
+	price: 20
+}
+
 const objectWithDefaults = Object.assign({}, defaultItem, myItem)
 ```
 
 This operation says take an empty object, then assign all the enumerable properties of `defaultItem` onto it, and then take that result and assign all enumerable properties of `myItem` onto that, and give me the final result. This can be especially useful in Classes where you want to set some default values but if an object is passed into the constructor, you prefer those values over the default ones. However, the spread syntax gives us an easier way of doing this:
 
 ```js
-const defaultItem = { name: 'New Item', price: 5, currency: 'USD' }
-const myItem = { name: 'Sweatshirt', price: 20 }
+const defaultItem = {
+	name: 'New Item',
+	price: 5,
+	currency: 'USD'
+}
+
+const myItem = {
+	name: 'Sweatshirt',
+	price: 20
+}
+
 const objectWithDefaults = { ...defaultItem, ...myItem }
 ```
 
@@ -197,7 +215,7 @@ Arrow functions were one of the most talked about features that landed in the ma
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_separate_this)
 
-Before arrow functions, we would sometimes find ourselves in a situation where you have to reassign the `this` keyword to a variable for use inside of another function. You see, each function has its own scope, and thus its own context for `this`. When you have an inner function that needs access to the `this` context from an outer scope, you're left having to some inelegant variable manipulation or using the [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) method. Please bear with me as I try to explain why it is a problem before we jump in to solving this with arrow functions. Here's an example scenario:
+Before arrow functions, we would sometimes find ourselves in a situation where you have to reassign the `this` keyword to a variable for use inside of another function. You see, each function has its own scope, and thus its own context for `this`. When you have an inner function that needs access to the `this` context from an outer scope, you're left having to do some inelegant variable manipulation or using the [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) method. Please bear with me as I try to explain why it is a problem before we jump in to solving this with arrow functions. Here's an example scenario:
 
 ```js
 const mike = { name: 'Mike' }
@@ -402,7 +420,7 @@ let userCountry = user.location.country
 // Uncaught TypeError: Cannot read property 'country' of undefined
 ```
 
-Until more recently, our best option here was do to one of two things. We could either chain `&&` statements together or pull in a library like [Lodash](https://lodash.org) to use a helper method like `_.get`. Here's what those two would look like:
+Until more recently, our best option here was do to one of two things. We could either chain `&&` statements together or pull in a library like [Lodash](https://lodash.com) to use a helper method like `_.get`. Here's what those two would look like:
 
 ```js
 let userCountry
