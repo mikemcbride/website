@@ -26,7 +26,8 @@ module.exports = {
           './src/**/*.vue',
           './blog/**/*.md',
           './blog/**/*.html'
-        ]
+        ],
+        whitelist: ['hr']
        }
       }
     },
