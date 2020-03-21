@@ -119,6 +119,7 @@ const [{ data: users }, { data: items }] = await Promise.all(promises)
 
 We use both array and object destructuring assignment to make our code far more concise. As I said above, this is easily the feature I use most out of all the ones in this post. I find it so incredibly useful.
 
+---
 
 ## Spread Syntax
 
@@ -183,6 +184,8 @@ const { firstName, lastName, ...others } = user
 ```
 
 Now we have two variables, `firstName` and `lastName`, set to those respective properties from the `user` object. We have a third variable which is an object containing all of the remaining properties from `user` (in this instance, `occupation`, `location`, and `age`).
+
+---
 
 ## Arrow Functions
 
@@ -307,6 +310,7 @@ const activeUsers = users.map(user => ({ ...user, active: true }))
 
 In this example, we map over an array of users and return a new object with the `active` property set to `true`. Notice we used the Object spread syntax which we just talked about to spread out the properties of the `user` object onto the new value which we are returning.
 
+---
 
 ## Default Parameters
 
@@ -333,6 +337,8 @@ function greetUser(name = 'World') {
 
 Default parameters are one of those things that are super easy to grasp conceptually and make your life so much easier. One of the most practical additions to JavaScript in recent years, I think.
 
+---
+
 ## for...of loops
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
@@ -356,15 +362,88 @@ for (let user of users) {
 
 That's it! How awesome is that? `for...of` works with any iterable object, not just arrays. Check out the MDN reference for more information there.
 
+---
+
 ## Optional Chaining
 
-optional chaining (ES2020)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+Optional Chaining is the newest thing on this list. It is officially part of the ES2020 spec, so at the time of writing this article, it is VERY recently an "official" part of the language. This has existed in a similar form in a number of other languages, so you may have seen something like this elsewhere. It is a syntax that allows us to access a deeply nested property of an object without this dreaded error:
+
+```
+Uncaught TypeError: Cannot read property 'nested' of undefined
+```
+
+Take this example:
+
+```js
+const user = {
+	id: 51023,
+	name: 'Mike McBride',
+	location: null
+}
+```
+
+Maybe a user signed up for your app and didn't fill in their location yet. However, your location object in your database looks something like this:
+
+```js
+Location {
+	state: String,
+	country: String,
+	city: String,
+	postalCode: Number
+}
+```
+
+So if you expect the location property to not only exist on the object but also for it to be an object with those properties, you will run into an error if you try to do this:
+
+```js
+let userCountry = user.location.country
+// Uncaught TypeError: Cannot read property 'country' of undefined
+```
+
+Until more recently, our best option here was do to one of two things. We could either chain `&&` statements together or pull in a library like [Lodash](https://lodash.org) to use a helper method like `_.get`. Here's what those two would look like:
+
+```js
+let userCountry
+
+if (user && user.location && user.location.country) {
+	userCountry = user.location.country
+} else {
+	// do some error handling
+}
+```
+
+Or using Lodash:
+
+```js
+import _get from 'lodash/get'
+let userCountry = _get(user, 'location.country')
+```
+
+The Lodash approach is certainly more elegant, but leans on an external dependency. If you're already using Lodash in your project then great, but if not, it's probably not worth the extra bloat. The `&&` chaining is also effective but it very quickly becomes quite verbose, especially if you are digging more than a couple of layers deep into an object.
+
+Thankfully, we are finally getting the optional chaining syntax. It looks like this:
+
+```js
+let userCountry = user?.location?.country
+```
+
+It behaves basically the same way as the Lodash `_get` method, where it will try to access the next property and if that property doesn't exist, then it returns `undefined`. If it successfully makes it all the way to the desired property, it returns that value.
+
+I think this is just so elegant. It's quite a succinct syntax, and the `?` operator represents the nature of the operation perfectly. It's like it's asking the code, "hey, does this property exist?", rather than demanding "hey, give me this property!". The question mark is such a fitting operator there.
+
+The down side here is that the support isn't super great yet. At the time of writing, it's supported in all the Chromium based browsers, Firefox, and Opera, as well as Chrome for Android. That's it. No Safari or iOS support, no Firefox on Android, and not even in the latest Node.js release. For now you'll probably need to use a [Babel plugin](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining) but fortunately it's quite easy to get that set up in a project.
+
+It's been discussed for years now, and I'm super excited to see it finally make its way into the official language spec. This has always been a pain point of working with more complex object structures in JavaScript - there's a good reason that the `_get` method in Lodash is (at least in my experience) the most popular method. It's great to see the language provide a solution for such a common problem.
+
+---
 
 ## Bonus Methods
 
 These are just some quick hits of things that I find useful. They are not necessarily confusing, but they may not be quite as well-known features.
 
-#### Array.flat
+#### Flatten Arrays
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
 
@@ -378,7 +457,7 @@ const flattened = mixed.flat()
 [1, 'hello', 'a', 'b', 'c', null, 4, 1, 8, 'fun']
 ```
 
-#### Array.includes
+#### Array Includes
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
@@ -398,17 +477,18 @@ const arrayHasValue = someArray.includes('value-you-care-about')
 
 Pretty useful!
 
-#### Array.find
+#### Find in Array
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-Okay last one on Arrays for real this time. This is too good not to share, because this method took something that always required at least 2 lines of code to accomplish and worked it into one line - `Array.find()`.
+Okay last one on Arrays for real this time. This is too good not to share, because this method took something that always required at *least* 2 lines of code to accomplish and worked it into one line - `Array.find()`.
 
 I want to find out if an item exists in an array, and if it does, I want the value of that item. There are multiple ways of doing this, but probably the most common would be to use a `for` loop. Let's say we have a list of users and we want to check if the user's `id` property matches an ID string we have:
 
 ```js
 const idString = 'abc-123'
-const users = [] // pretend this array is full of user objects
+// 👇 pretend this array is full of user objects
+const users = []
 
 let foundUser
 
@@ -427,27 +507,35 @@ if (foundUser) {
 Not horrible, but `Array.find` makes this significantly easier:
 
 ```js
-const idString = 'abc-123'
-const users = [] // pretend this array is full of user objects
-
 let foundUser = users.find(user => user.id === idString)
 
 if (foundUser) {
-	// we have the user. Array.find returns `undefined` if it doesn't find a match.
+	// Array.find returns `undefined` if it doesn't find a match.
+	// Therefore, we know we have the user object
 }
 ```
 
 `Array.find` gives us a mechanism for easily determining whether an item exists in an Array and simultaneously setting that value to a variable. If it reaches the end of the array without finding a match, it returns `undefined`.
 
-### Object.entries and Object.values
+#### Iterable Object Methods
 
 [MDN Reference - Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) | [MDN Reference - Object.values ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
 
 We have had `Object.keys()` for quite some time now, which gives us an Array of keys in an Object. This is super useful for having a way to iterate through an Object and test some logic, but it was still fairly tedious if you needed to do something with the values in an Object. Your best approach was to do something like this:
 
 ```js
-const user = {} // pretend it has properties in it
-Object.keys(user).forEach(key => {
+const user = {
+	id: 'abc123',
+	firstName: 'Mike',
+	lastName: 'McBride',
+	age: 31,
+	location: 'USA'
+}
+
+let keys = Object.keys(user)
+// ['id', 'firstName', 'lastName', 'age', 'location']
+
+keys.forEach(key => {
 	let value = user[key]
 	// now I can do something with the value
 })
@@ -456,16 +544,15 @@ Object.keys(user).forEach(key => {
 Certainly better than nothing, but `Object.entries` and `Object.values` came along more recently and gave us more power. `Object.values` does the same thing as `Object.keys`, but with the values instead of the properties (or keys):
 
 ```js
-const user = {}
-Object.values(user).forEach(value => {
-	// I have the value now
-})
+const user = {...}
+let values = Object.values(user)
+// ['abc123', 'Mike', 'McBride', 31, 'USA']
 ```
 
 `Object.entries` does both... it returns an array of arrays. Each inner array has two values - a key and its corresponding value. We can use our destructuring assignment thing from above to see them like so:
 
 ```js
-const user = {}
+const user = {...}
 
 Object.entries(user).forEach([key, value] => {
 	console.log(`user ${key} is ${value}`)
@@ -476,4 +563,4 @@ This is another one of those things where it's not something you'll be reaching 
 
 ---
 
-I hope this was helpful! I'd love feedback, or if you just want to talk about JavaScript, I'm always down for that. Find me on Twitter in the link down there. 👇
+I hope this was helpful! I'd love feedback, or if you just want to talk about JavaScript, I'm always down for that too. Find me on Twitter in the link down there. 👇

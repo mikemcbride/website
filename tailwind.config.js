@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     colors: {
       'transparent': 'transparent',
-      'black': '#22292f',
+      'black': '#1b212c',
       'grey-darkest': '#3d4852',
       'grey-darker': '#606f7b',
       'grey-dark': '#8795a1',
