@@ -8,12 +8,12 @@ export default [
     title: "Flexbox Playground",
     description: "A web app that allows you to experiment with and understand how flexbox works. Note that while this app will technically load on a phone, it's definitely intended to be used on a larger screen and probably won't work very well on smaller devices.",
     source: "https://github.com/mikemcbride/flexbox-playground",
-    url: "https://flexbox.mcbride.tech"
+    url: "https://flexbox.tech"
   },
   {
     title: "Sudoku Solver",
     description: "A web app that will solve sudoku puzzles for you. It uses a variation of a brute force search algorithm with backtracking to solve even the hardest puzzles.",
-    url: "https://sudoku.mcbride.tech",
+    url: "https://sudoku.mcbrid.es",
     source: "https://github.com/mikemcbride/vue-sudoku",
   },
   {
