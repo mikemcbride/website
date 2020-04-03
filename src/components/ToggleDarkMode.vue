@@ -31,6 +31,9 @@ export default {
       }
       return false
     },
+    isDarkModeSet() {
+      return document.body.classList.contains('mode-dark')
+    },
     toggleDarkMode() {
       this.isDark = !this.isDark
       let body = document.body
@@ -42,8 +45,12 @@ export default {
     }
   },
   mounted() {
-    // check if they prefer dark mode
-    if (this.prefersDarkMode()) {
+    // when we go to a new route, the dark mode toggle gets reset if we're manually choosing dark mode.
+    // we need to check if the class is on the body and if so, we know they explicitly chose dark mode.
+    if (this.isDarkModeSet()) {
+      this.isDark = true
+    } else if (this.prefersDarkMode()) {
+      // check if they prefer dark mode
       this.isDark = true
       // if so, add `mode-dark` to body
       document.body.classList.add('mode-dark')
