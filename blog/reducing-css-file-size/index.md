@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "Reducing CSS File Size"
-date: 2017-02-12
-type: post
+date: 2017-02-12T12:00:00Z
 published: true
 excerpt: Here are some tips on reducing your CSS file size.
 ---
+
+> 2020 update: I would recommend checking out PurgeCSS. Purify is still around as far as I know, but Purge is quite popular and very excellent. It's easily integrated into a PostCSS workflow as well.
+
 I've been working on a few static websites over the past year and have gotten my build process to a fairly decent place. One of the biggest problems I was running into, and I'm sure you've run into it as well if you've ever used a CSS framework, is that there's probably a lot of stuff the framework offers that you aren't using. No big deal, except that you are also probably shipping the whole thing to your production site. Not so cool. Take Bootstrap for example. The *minified* CSS file for the latest stable version at the time of writing this post is 121KB, and more than likely you've got custom CSS on top of it so your site doesn't look like a vanilla Bootstrap website. So if you're only using 25% of Bootstrap, wouldn't it be way better to ship 30KB instead of 120?
 
 This was bugging me. Tachyons is great, and they publish each part of the framework as modules so you could pick and choose which ones you bring in if you want, but I found that harder to manage. So in my build process, I'm using Gulp to generate my `assets` folder before Jekyll builds the site (if you're unfamiliar with Jekyll, it will automatically compile your assets folder into your `_site` when it builds). Using Gulp to pre-build my assets folder allows me to run my own pre-processing including using PostCSS instead of Sass (which Jekyll supports out of the box), image minification, etc. I also get the ability to use BrowserSync when developing locally so I don't have to manually reload (first world problem).

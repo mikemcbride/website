@@ -1,8 +1,6 @@
 ---
-layout: post
 title: A quick update
-date: 2020-01-06
-type: post
+date: 2020-01-06T12:00:00Z
 published: true
 excerpt: TL;DR - 2019 was busy and hard. I didn't write a post. I want to change that.
 ---

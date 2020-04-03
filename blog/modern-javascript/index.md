@@ -1,6 +1,6 @@
 ---
 title: Modern Javascript
-date: 2020-03-21
+date: 2020-03-20T12:00:00Z
 published: true
 excerpt: In this post I'll cover some of the features of modern Javascript that I didn't really understand at first but now that I do, I find them super useful. Hopefully you'll take something away from this as well.
 ---

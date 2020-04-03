@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Remembering Mom
-date: 2018-08-19
-type: post
+date: 2018-08-19T12:00:00Z
 published: true
 excerpt: On August 2, my mom passed away after a 29 month battle with brain cancer. I had the privilege of sharing some words of remembrance at her funeral.
 ---

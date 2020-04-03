@@ -1,8 +1,6 @@
 ---
-layout: post
 title: "Useful Flexbox Tricks and Tips"
-date: 2018-05-25
-type: post
+date: 2018-05-25T12:00:00Z
 published: true
 excerpt: Flexbox is a CSS spec that has been around for a few years now, but it continues to be one that people seem to struggle with. There are a few things that I think trip people up, and hopefully I can provide some resources and examples that will make it easier to understand.
 ---

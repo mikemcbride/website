@@ -1,9 +1,6 @@
 ---
-layout: post
 title: Color Picker Input with Validation
-date: 2014-09-09
-status: publish
-type: post
+date: 2014-09-09T12:00:00Z
 published: true
 excerpt: I recently had the opportunity to work on a really fun feature in an app where we built a color picker input component that needed validation for HEX codes.
 ---

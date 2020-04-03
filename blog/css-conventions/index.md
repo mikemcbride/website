@@ -1,9 +1,6 @@
 ---
-layout: post
 title: CSS Conventions
-date: 2015-09-12
-status: publish
-type: post
+date: 2015-09-12T12:00:00Z
 published: true
 excerpt: As I've worked on more web sites and applications, I've come across and developed a number of standards for writing and using cleaner, more useful CSS.
 ---

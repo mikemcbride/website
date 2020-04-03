@@ -12,10 +12,8 @@ module.exports = {
       'grey-lightest': '#f8fafc',
       'white': '#ffffff',
       'inherit': 'inherit',
-      'blue': '#0071e4',
-      'blue-light': '#82aaff',
-      'pink': '#d8009c',
-      'pink-light': '#ff6bd6'
+      'blue': '#0261dc',
+      'blue-light': '#82aaff'
     },
     boxShadow: {
       'default': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

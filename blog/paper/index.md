@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Paper: The Last Great Medium'
-date: 2014-07-23
-type: post
+date: 2014-07-23T12:00:00Z
 published: true
 excerpt: Paper is just the best. Go use some paper.
 ---
