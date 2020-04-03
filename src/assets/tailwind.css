@@ -1,7 +1,7 @@
 :root {
-  --inline-code-color: #d8009c;
-  --code-bg: #f7fafc;
-  --code-fg: #6e8091;
+  --inline-code-bg: rgba(134, 38, 220, 0.08);
+  --code-bg: #f8fafc;
+  --code-fg: #637484;
   --code-comment: #a8b3bd;
   --code-cyan: #36b9ac;
   --code-blue: #0261dc;
@@ -13,7 +13,7 @@
 }
 
 .mode-dark {
-  --inline-code-color: #ff6bd6;
+  --inline-code-bg: rgba(199, 146, 234, .1);
   --code-bg: #171c26;
   --code-fg: #a8b5d1;
   --code-comment: #506686;
@@ -135,12 +135,15 @@ pre, code, .code, .monospace {
 
 code {
   color: var(--code-purple);
+  background: var(--inline-code-bg);
   font-size: 1rem;
+  padding: .125rem .25rem;
+  border-radius: .125rem;
 }
 
-code:not([class*="language-"])::before,
-code:not([class*="language-"])::after {
-  content: '`';
+a > code {
+  color: var(--code-blue);
+  background: none;
 }
 
 blockquote {
@@ -170,6 +173,8 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: var(--code-fg);
   background: none;
+  border-radius: 0;
+  padding: 0;
   font-size: 1rem;
   text-align: left;
   white-space: pre;
@@ -191,7 +196,6 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
   background: var(--code-bg);
-  border-radius: 0;
   margin: 1rem -1rem 2rem;
   overflow: auto;
   padding: 1rem;

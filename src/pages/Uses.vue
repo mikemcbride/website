@@ -48,8 +48,8 @@
       <li class="mb-2"><a href="https://atom.io/packages/sync-settings" target="_blank">sync-settings</a> - super useful package, especially if you use Atom on multiple machines. This allows you to back up and restore your settings to/from a Gist linked to your GitHub account. It will sync your installed packages, settings, init script, stylesheet, keymap, and snippets.</li>
       <li class="mb-2"><a href="https://atom.io/packages/set-syntax" target="_blank">set-syntax</a> - a package that adds syntax switching options to the command palette instead of having to remember the keybinding to open the panel for switching syntax.</li>
       <li class="mb-2"><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - helps developers maintain consistent coding styles between different editors.</li>
-      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code class="text-pink dark:text-pink-light">node_modules</code></li>
-      <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code class="text-pink dark:text-pink-light">&lt;/</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/autocomplete-modules" target="_blank">autocomplete-modules</a> - provides autocomplete on packages in <code>node_modules</code></li>
+      <li class="mb-2"><a href="https://atom.io/packages/less-than-slash" target="_blank">less-than-slash</a> - auto-close HTML tag when you type <code>&lt;/</code></li>
     </ul>
      -->
     <h2 class="font-semibold text-xl">Terminal</h2>
@@ -84,13 +84,13 @@
     <p>Here are a few of my favorite aliases I've set up:</p>
 
     <ul class="mb-8">
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">afk</code> starts my screensaver</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">weather</code> gets the current weather in your area - try it out! Run <code class="text-pink dark:text-pink-light">curl wttr.in</code> in your own terminal.</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">please</code> = <code class="text-pink dark:text-pink-light">sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">resource</code> re-sources my shell if I've made changes</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">rm</code> = <code class="text-pink dark:text-pink-light">trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code class="text-pink dark:text-pink-light">rm</code> equal to <code class="text-pink dark:text-pink-light">trash</code> means instead of losing something forever when I run <code class="text-pink dark:text-pink-light">rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
-      <li class="mb-2"><code class="text-pink dark:text-pink-light">gpub</code> = <code class="text-pink dark:text-pink-light">git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
+      <li class="mb-2"><code>afk</code> starts my screensaver</li>
+      <li class="mb-2"><code>bitly</code> followed by a URL runs a Python script to get the shortened link and copies it to my clipboard. Mostly useful for <a href="https://en.wikipedia.org/wiki/Rickrolling" target="_blank" rel="nofollow noreferrer">Rickrolling</a> people.</li>
+      <li class="mb-2"><code>weather</code> gets the current weather in your area - try it out! Run <code>curl wttr.in</code> in your own terminal.</li>
+      <li class="mb-2"><code>please</code> = <code>sudo</code>. Stole this idea from <a href="https://github.com/paulirish/dotfiles" target="_blank" rel="noreferrer nofollow">Paul Irish</a>, but I can't seem to find it in his dotfiles anymore.</li>
+      <li class="mb-2"><code>resource</code> re-sources my shell if I've made changes</li>
+      <li class="mb-2"><code>rm</code> = <code>trash</code>. I installed <a href="https://github.com/sindresorhus/trash-cli" target="_blank" rel="nofollow noreferrer">trash-cli</a>, so setting <code>rm</code> equal to <code>trash</code> means instead of losing something forever when I run <code>rm</code>, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.</li>
+      <li class="mb-2"><code>gpub</code> = <code>git push -u origin $(git_current_branch)</code>. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.</li>
     </ul>
     
     <h2 class="font-semibold text-xl">Desktop Applications</h2>
@@ -103,7 +103,7 @@
           Brave Browser
         </p>
         <p>
-          Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code class="text-pink dark:text-pink-light">brew cask install brave-browser</code>
+          Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code>brew cask install brave-browser</code>
         </p>
       </li>
       <li class="mb-2">
@@ -135,7 +135,7 @@
           Kap
         </p>
         <p>
-          Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code class="text-pink dark:text-pink-light">brew cask install kap</code>
+          Great app for doing screen captures with options for exporting as a GIF or video file. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code>brew cask install kap</code>
         </p>
       </li>
       <li class="mb-2">
@@ -143,7 +143,7 @@
           Slack
         </p>
         <p>
-          basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code class="text-pink dark:text-pink-light">brew cask install slack</code>
+          basically the go-to app for team collaboration. I like it pretty well. Slackbots are fun to build when you have some free time. <code>brew cask install slack</code>
         </p>
       </li>
       <li class="mb-2">
@@ -151,7 +151,7 @@
           Spectacle
         </p>
         <p>
-          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code class="text-pink dark:text-pink-light">brew cask install spectacle</code>
+          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install spectacle</code>
         </p>
       </li>
       <li class="mb-2">
@@ -159,7 +159,7 @@
           Insomnia
         </p>
         <p>
-          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code class="text-pink dark:text-pink-light">brew cask install insomnia</code>
+          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew cask install insomnia</code>
         </p>
       </li>
       <li class="mb-2">
@@ -220,10 +220,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-code::before,
-code::after {
-  content: '`';
-}
-</style>
