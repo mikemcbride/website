@@ -12,18 +12,16 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/remark-prismjs": "^0.3.0",
-    "@gridsome/source-filesystem": "^0.6.1",
-    "gridsome": "^0.7.0",
-    "gridsome-plugin-feed": "^1.0.2",
-    "node-sass": "^4.9.4",
-    "sass-loader": "^7.1.0",
-    "title": "^3.4.1"
+    "gridsome": "^0.7.0"
   },
   "devDependencies": {
+    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.1",
     "@gridsome/transformer-remark": "^0.4.0",
     "gridsome-plugin-tailwindcss": "^2.2.30",
+    "gridsome-plugin-feed": "^1.0.2",
     "marked": "^0.8.0",
-    "tailwindcss-dark-mode": "^1.1.3"
+    "tailwindcss-dark-mode": "^1.1.3",
+    "title": "^3.4.1"
   }
 }

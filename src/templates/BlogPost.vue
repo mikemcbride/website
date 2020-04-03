@@ -43,24 +43,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-blockquote {
-  font-size: 1.15rem;
-  font-style: italic;
-}
-
-.post-content {
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin: 2rem 0 1rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-top: 2rem;
-  }
-}
-</style>
