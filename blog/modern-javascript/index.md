@@ -1,9 +1,6 @@
 ---
-layout: post
 title: Modern Javascript
 date: 2020-03-21
-status: publish
-type: post
 published: true
 excerpt: In this post I'll cover some of the features of modern Javascript that I didn't really understand at first but now that I do, I find them super useful. Hopefully you'll take something away from this as well.
 ---
