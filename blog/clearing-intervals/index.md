@@ -88,15 +88,20 @@ If you're not interested in Vue.js, the blog post ends here :)
 
 ## Usage in Vue.js
 
-We use Vue.js at my job, and I use it on almost every side project as well. I ran into this issue of how to clear an interval in Vue a couple years ago, and quite recently I had a colleague ask for help trying to figure it out. Earlier that same day, I was on a Vue forum where someone asked the same exact question as my colleague - "How do I stop a setInterval from running inside a Vue component?"
+I ran into this issue of how to clear an interval in Vue a couple years ago. Quite recently I had a colleague ask for help trying to figure it out, and earlier that same day I was on a Vue forum where someone asked the same exact question as my colleague - "How do I stop a `setInterval` from running inside a Vue component?"
 
 It's not the most intuitive thing to figure out, so we'll cover it here as well.
 
 ```html
 <template>
   <div>
-    <p>{{ quizTimer }} second(s) remaining</p>
-    <button @click="doCountdown">Start Quiz</button>
+    <p>
+      {{ quizTimer }} second(s) remaining
+    </p>
+    <button
+      @click="doCountdown">
+      Start Quiz
+    </button>
   </div>
 </template>
 ```
@@ -128,7 +133,7 @@ export default {
 
 Okay, so what's going on here? We have a `data` property called `quizTimer` that starts at 10 and a `quizInterval` that defaults to `null`. We have a paragraph tag in our template that renders the number of seconds remaining, and we have a button in our template that, when clicked, starts the countdown interval.
 
-Inside this `doCountdown` method, we start the interval and set it to the `quizInterval` property on our data. The interval begins running and it decrements the value of the timer by 1 every second. If the value is then zero after decrementing, it stops the timer by running `clearInterval` and passing in the interval instance that we have stored in our data property.
+Inside this `doCountdown` method, we start the interval and set it to the `quizInterval` property on our data. The interval begins running and it decrements the value of the timer by 1 every second. If the value is zero after decrementing, it stops the timer by running `clearInterval` and passing in the interval instance that we have stored in our data property.
 
 Once you see it laid out, it's not really all that different from how you would normally do it. The main thing that I think isn't super obvious is that you need a way to access the interval in order to clear it. In Vue, variables declared in one method aren't available in other methods, just like function scoping. You *could* declare a variable outside the default export and reference it anywhere, but that's not typically considered best practice. Putting it in `data` means you get access to it from another method.
 
@@ -160,11 +165,22 @@ This approach would absolutely work, but what you lose is the ability to clear t
 ```html
 <template>
   <div>
-    <p>{{ quizTimer }} second(s) remaining</p>
-    <button @click="doCountdown">Start Quiz</button>
+    <p>
+      {{ quizTimer }} second(s) remaining
+    </p>
+    <button
+      @click="doCountdown">
+      Start Quiz
+    </button>
 
-    <button @click="stopTimer">Pause Quiz</button>
-    <button @click="doCountdown">Resume Quiz</button>
+    <button
+      @click="stopTimer">
+      Pause Quiz
+    </button>
+    <button
+      @click="doCountdown">
+      Resume Quiz
+    </button>
   </div>
 </template>
 ```
