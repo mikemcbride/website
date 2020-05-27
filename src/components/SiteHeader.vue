@@ -5,7 +5,7 @@
       <ToggleDarkMode class="h-8 w-8 block" />
     </div>
 
-    <nav class="block text-base">
+    <nav class="block text-base sticky top-0">
       <NavLink to="/" :active="$route.path === '/'" title="About" />
       <NavLink to="/projects" :active="$route.path.startsWith('/projects')" title="Projects" />
       <NavLink to="/blog" :active="$route.path.startsWith('/blog')" title="Blog" />
