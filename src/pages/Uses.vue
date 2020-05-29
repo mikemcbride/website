@@ -16,7 +16,7 @@
           <a class="text-black dark:text-white font-bold underline" href="https://code.visualstudio.com" target="_blank" rel="nofollow noreferrer">VS Code</a>
         </p>
         <p>
-          I am probably one of the last people to make the switch to VS Code. I was a super early adopter of Atom and was heavily invested in the community and ecosystem, having written a few themes and plugins and contributing to a few core packages. I endured performance issues for years because I loved the customizability. When VS Code started becoming popular, I was very hesitant to switch. A new project started up in the Atom organization to re-write the editor component. It was incredibly promising. Being written in Rust and doing all the heavy lifting on the server, it had incredible performance even on large files. Combined with the new tree-sitter parsing system for syntax higlighting, it had so much potential. But the project (called x-ray), got shut down. I was done holding out hope at that point. I had tried VS Code a few different times in the past and it never stuck. I finally gave in and made the switch and have been pretty happy with it. The intellisense is very impressive, and while I still don't think it's quite as polished as Atom, the performance is generally much better and it's got a wonderful ecosystem. If x-ray ever becomes a reality, I'll jump back to Atom in a heartbeat but for now I'm sticking with VS Code.
+          I am probably one of the last people to make the switch to VS Code. I'll probably do a write-up on why I switched, because it took a lot for me to leave Atom. For now, I'm really enjoying VS Code.
         </p>
       </li>
       <li class="mb-2">
@@ -29,10 +29,10 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1">
-          <a class="text-black dark:text-white font-bold underline" href="https://fonts.google.com/specimen/Fira+Mono" target="_blank" rel="nofollow noreferrer">Fira Mono</a>
+          <a class="text-black dark:text-white font-bold underline" href="https://www.typography.com/fonts/operator/styles" target="_blank" rel="nofollow noreferrer">Operator Mono</a>
         </p>
         <p>
-          Fira Mono is my font in both the editor and terminal. It's free on Google Fonts. There's also Fira Code which is the same font but with coding ligatures if you're into that sort of thing.
+          I have used a number of fonts over the years. Operator is what I currently use in my editor and terminal. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at.
         </p>
       </li>
     </ul>
@@ -60,7 +60,7 @@
           <a href="https://hyper.is/" class="text-black dark:text-white font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper</a>
         </p>
         <p>
-           It's super easy to customize and more performant than iTerm in a number of benchmark tests.
+           It's super easy to customize and very performant.
         </p>
       </li>
       <li class="mb-2">
@@ -76,7 +76,7 @@
           <a href="https://github.com/mikemcbride/hyper-electron-highlighter" class="text-black dark:text-white font-bold underline" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
         </p>
         <p>
-           This theme is my Electron color scheme from Atom, ported to Hyper.
+           The theme is my Electron color scheme from Atom, ported to Hyper.
         </p>
       </li>
     </ul>
@@ -148,10 +148,10 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1 font-bold">
-          Spectacle
+          Rectangle
         </p>
         <p>
-          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Spectacle gives you keyboard shortcuts for rearranging and resizing your windows. I will never be able to use a Mac without this app. [<a href="https://www.spectacleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install spectacle</code>
+          This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install rectangle</code>
         </p>
       </li>
       <li class="mb-2">
@@ -159,7 +159,7 @@
           Insomnia
         </p>
         <p>
-          A REST client, used for testing API calls. I used to use Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew cask install insomnia</code>
+          A REST client, used for testing API calls. I previously used Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew cask install insomnia</code>
         </p>
       </li>
       <li class="mb-2">
@@ -180,10 +180,10 @@
       </li>
       <li class="mb-2">
         <p class="leading-normal mb-1 font-bold">
-          Apple Mail
+          Newton Mail
         </p>
         <p>
-          I was using Newton Mail for a few months but it's pretty pricy ($49 per year) and there were still a few bugs that would drive me nuts. Apple Mail is super stable and compatible with basically every type of email service. If Newton gets a little more polished I could see myself switching back.
+          Netwon is my favorite email client I've ever used. It's minimal, fast, and works with all the different email providers I need it to. It's an excellent email client, and I will gladly pay the yearly subscription fee for something I use so often. It also has an accompanying iOS app.
         </p>
       </li>
     </ul>
@@ -193,7 +193,7 @@
     <h3 class="font-semibold">At work:</h3>
 
     <ul>
-      <li>I have two 23" HP monitors mounted on monitor arms mounted to a really nice sit/stand desk that I didn't pay for.</li>
+      <li>I have two 23" monitors mounted on monitor arms to a sit/stand desk that I didn't pay for.</li>
       <li>My laptop (15" MBP) sits beneath the two monitors, centered on the desk.</li>
       <li>I use <a href="https://apple.com/airpods/" target="_blank" rel="nofollow noreferrer">Apple AirPods</a> and can't recommend them enough.</li>
       <li>When I'm not standing, I sit on a <a href="http://moddea.com/2013/06/20/buoy-multifunctional-chair/" target="_blank" rel="nofollow noreferrer">buoy stool</a>. My company had a few of them sitting around our building and I snagged one instead of using a normal desk chair. I love it. I have bad posture and this helps a lot.</li>
@@ -205,9 +205,8 @@
     <ul>
       <li>I have one 23" Acer monitor</li>
       <li>To the left of the monitor, my laptop (15" MBP) sits on top of an <a href="http://smile.amazon.com/Rain-Design-10032-mStand-Laptop/dp/B000OOYECC" target="_blank" rel="nofollow noreferrer">mStand by Rain Design</a>. I love it. It also helps keep the laptop cool so it doesn't overheat.</li>
-      <li>I have some Logitech speakers and subwoofer that I plug into my laptop most of the time when I want to listen to music. If I need to get on a call or be quieter, I have a pair of Apple headphones I plug in.</li>
-      <li>The desk itself is an IKEA table top (61" beech wood, don't remember the name) mounted on a frame I built out of black steel pipes from Lowe's.</li>
-      <li>I have two glass dry erase boards on the wall next to my desk. They were also from IKEA, and look a lot nicer than they really are. So far I'm not super impressed. We have some glass dry erase boards at work that are way better to write on (but also probably 10x more expensive).</li>
+      <li>I have some Logitech speakers and subwoofer that I plug into my laptop most of the time when I want to listen to music.</li>
+      <li>The desk itself is an IKEA table top mounted on a frame I built out of steel pipes that I spray painted black.</li>
     </ul>
   </Layout>
 </template>
