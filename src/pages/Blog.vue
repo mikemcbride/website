@@ -1,7 +1,7 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-4xl font-medium mb-3">Blog</h1>
-    <p class="mb-8">Sometimes I write things. You can read them here.</p>
+    <h1 class="text-3xl sm:text-4xl font-medium mb-3">Blog</h1>
+    <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
     <div class="block relative mb-6 search-input">
       <label>
         <input
