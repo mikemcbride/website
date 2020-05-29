@@ -7,7 +7,7 @@
 
     <blockquote class="italic text-lg text-grey-darker dark:text-grey-dark leading-relaxed">
       Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
-      <div class="text-right -mt-2">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
+      <div class="text-right -mt-1">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
     </blockquote>
 
     <ul class="mb-8">
