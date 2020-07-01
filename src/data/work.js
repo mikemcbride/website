@@ -17,6 +17,12 @@ export default [
     source: "https://github.com/mikemcbride/vue-sudoku",
   },
   {
+    title: "Virtual Keyboard",
+    description: "A web app that displays a keyboard (pure CSS/HTML) and lights up the keys you are typing as you press/hold them. Super fun, totally pointless. Try it out! (Doesn't work on phones yet... sorry)",
+    url: "https://keyboard.mcbrid.es",
+    source: "https://github.com/mikemcbride/virtual-keyboard",
+  },
+  {
     title: "convert-color-cli",
     description: "A CLI tool that can convert colors between HEX, RGB, and HSL.",
     url: "https://npmjs.com/package/convert-color-cli",
