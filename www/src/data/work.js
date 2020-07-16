@@ -13,14 +13,20 @@ export default [
   {
     title: "Sudoku Solver",
     description: "A web app that will solve sudoku puzzles for you. It uses a variation of a brute force search algorithm with backtracking to solve even the hardest puzzles.",
-    url: "https://sudoku.mcbrid.es",
+    url: "https://sudoku.mcbride.tech",
     source: "https://github.com/mikemcbride/vue-sudoku",
   },
   {
     title: "Virtual Keyboard",
     description: "A web app that displays a keyboard (pure CSS/HTML) and lights up the keys you are typing as you press/hold them. Super fun, totally pointless. Try it out! (Doesn't work on phones yet... sorry)",
-    url: "https://keyboard.mcbrid.es",
+    url: "https://keyboard.mcbride.tech",
     source: "https://github.com/mikemcbride/virtual-keyboard",
+  },
+  {
+    title: "Virtual Piano",
+    description: "Similar to the keyboard, this app that displays a section of a piano. Keys are assigned to letters on the keyboard, and when you press them the corresponding piano key lights up and emits the tone for that note. Turn up the sound!",
+    url: "https://piano.mcbride.tech",
+    source: "https://github.com/mikemcbride/virtual-piano",
   },
   {
     title: "convert-color-cli",
