@@ -25,6 +25,15 @@ export default {
     SiteHeader,
     SiteNav,
     SiteFooter
+  },
+  mounted() {
+    const { timeZone, locale } = Intl.DateTimeFormat().resolvedOptions()
+    const { pathname } = window.location
+    fetch('/api/pageview', {
+      method: 'POST',
+      body: JSON.stringify({ timeZone, locale, pathname }),
+      headers: { 'Content-Type': 'application/json' }
+    })
   }
 }
 </script>
