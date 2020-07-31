@@ -11,6 +11,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 if (process.env.NODE_ENV === 'production') {
   console.log('we are building for prod')
+} else {
+  console.log('NODE_ENV is:', process.env.NODE_ENV)
 }
 
 module.exports = {
