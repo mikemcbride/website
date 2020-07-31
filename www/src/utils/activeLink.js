@@ -11,10 +11,6 @@
  *
  */
 module.exports = function(activeUrl, segment, comparator = 'startsWith') {
-  console.log('activeUrl:', activeUrl)
-  console.log('segment:', segment)
-  console.log('comparator:', comparator)
-
   const activeClasses = 'text-black dark:text-white border-black dark:border-white'
   const inactiveClasses = 'text-grey-darker hover:text-black dark:text-grey-dark dark-hover:text-white'
 
