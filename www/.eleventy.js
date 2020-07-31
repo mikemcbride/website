@@ -1,7 +1,10 @@
 const { DateTime } = require('luxon');
 const util = require('util');
+const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
