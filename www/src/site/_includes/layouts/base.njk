@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>{{ title }}</title>
+    {% include "social.njk" %}
+  </head>
+  <body class="bg-white text-black w-full font-sans text-lg leading-tight">
+    {% include "header.njk" %}
+    {% include "navigation.njk" %}
+
+    <div class="bg-white text-black dark:bg-black dark:text-white w-full font-sans text-lg flex flex-col leading-tight sm:pl-16 lg:pl-24 px-4">
+      <main class="w-full flex-auto max-w-xl">
+        {{ content | safe }}
+      </main>
+    </div>
+
+    {% include "footer.njk" %}
+
+    {% set js %}
+      {% include "js/pageview.js" %}
+    {% endset %}
+    <script>{{ js | jsmin | safe }}</script>
+  </body>
+</html>

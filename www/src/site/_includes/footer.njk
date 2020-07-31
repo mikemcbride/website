@@ -1,0 +1,9 @@
+<footer class="text-center sm:text-left py-8 sm:pl-16 lg:pl-24 px-4">
+  {% for link in metadata.footerLinks %}
+  <a
+    title="{{ link.title }}"
+    href="{{ link.to }}"
+    class="text-grey-darker hover:text-black dark:text-grey dark-hover:text-white inline-block text-sm mr-4"
+    rel="noopener noreferrer nofollow">{{ link.title }}</a>
+  {% endfor %}
+</footer>
