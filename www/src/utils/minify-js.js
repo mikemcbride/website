@@ -1,10 +1,11 @@
-const UglifyJS = require("uglify-js");
+const { minify } = require('terser')
 
-module.exports = function(code) {
-  let minified = UglifyJS.minify(code);
-  if (minified.error) {
-      console.log("UglifyJS error: ", minified.error);
-      return code;
-  }
-  return minified.code;
+module.exports = async function(code) {
+  try {
+    let minified = await minify(code, { ecma: 2018 })
+    return minified.code
+  } catch (err) {
+    console.log('Terser error:', err)
+    return code
+  }  
 }
