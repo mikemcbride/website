@@ -9,11 +9,11 @@
     <title>{{ title }}</title>
     {% include "social.njk" %}
   </head>
-  <body class="bg-white text-black w-full font-sans text-lg leading-tight">
+  <body class="bg-white dark:bg-black text-black dark:text-white w-full font-sans text-lg leading-tight">
     {% include "header.njk" %}
     {% include "navigation.njk" %}
 
-    <div class="bg-white text-black dark:bg-black dark:text-white w-full font-sans text-lg flex flex-col leading-tight sm:pl-16 lg:pl-24 px-4">
+    <div class="flex flex-col sm:pl-16 lg:pl-24 px-4">
       <main class="w-full flex-auto max-w-xl">
         {{ content | safe }}
       </main>
@@ -22,6 +22,7 @@
     {% include "footer.njk" %}
 
     {% set js %}
+      {% include "js/checkDarkMode.js" %}
       {% include "js/pageview.js" %}
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>

@@ -9,11 +9,6 @@ templateEngineOverride: njk, md
     <time value="{{ item.date }}" class="mb-4 text-sm text-grey-darker dark:text-grey-dark">{{ date | readableDate }}</time>
   </header>
   <article class="mb-16 post-content leading-normal">
-    <div class="mb-4 text-lg font-medium">
-      {{ content | section | safe }}
-    </div>
-    <div>
-      {{ content | section('remainder') | safe }}
-    </div>
+    {{ content | safe }}
   </article>
 </section>

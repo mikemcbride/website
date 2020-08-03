@@ -194,7 +194,3 @@ setInterval(() => {
   console.log("Happy coding!")
 }, 1000)
 ```
-
-
-
-
