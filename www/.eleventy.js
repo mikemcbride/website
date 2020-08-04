@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("formatTitle", require("./src/utils/formatTitle.js"));
 
   // compress and combine js files
-  eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", require("./src/utils/minify-js.js"));
 
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
