@@ -12,7 +12,7 @@
  */
 module.exports = function(activeUrl, segment, comparator = 'startsWith') {
   const activeClasses = 'text-black dark:text-white border-black dark:border-white'
-  const inactiveClasses = 'text-grey-darker hover:text-black dark:text-grey-dark dark-hover:text-white'
+  const inactiveClasses = 'text-grey-darker border-transparent hover:text-black dark:text-grey-dark dark-hover:text-white'
 
   if (comparator === 'equals') {
     return activeUrl === segment ? activeClasses : inactiveClasses
