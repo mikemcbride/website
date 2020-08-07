@@ -7,8 +7,6 @@ excerpt: When I was learning Vue, one of the more confusing aspects was trying t
 
 When I was learning Vue, one of the more confusing aspects was trying to wrap my head around when to use computed properties, methods, or watchers. They have a lot of overlapping functionality, so let's jump in and see what they're all about.
 
-<!-- more -->
-
 First of all, this post is going to assume some basic working knowledge of [Vue](https://vuejs.org), but is definitely geared more towards beginners. If you've never seen or used Vue before this will probably make no sense, but if you've tinkered with it for any amount of time you should be fine.
 
 Okay with that out of the way, let's dive in. We should start by giving some context. Computed properties, methods, and watchers - what are they? All three options expose a way to react to changing data in a component. The manner in which they react to it and what they can do differs, so they each have their own proper time and place.

@@ -1,40 +1,40 @@
 ---json
 {
-  "permalink": "feed.json",
+  "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "Mike McBride",
     "subtitle": "Mike's own little corner of the internet",
     "url": "https://mikemcbride.me/",
-    "feedUrl": "https://mikemcbride.me/feed.json",
+    "feedUrl": "https://mikemcbride.me/feed.xml",
     "author": {
       "name": "Mike McBride",
-      "url": "https://mikemcbride.me/about-boaty/"
+      "url": "https://mikemcbride.me/",
+      "email": "mike.mcbride@hey.com"
     }
   }
 }
 ---
-{
-  "version": "https://jsonfeed.org/version/1",
-  "title": "{{ metadata.title }}",
-  "home_page_url": "{{ metadata.url }}",
-  "feed_url": "{{ metadata.feedUrl }}",
-  "description": "{{ metadata.subtitle }}",
-  "author": {
-    "name": "{{ metadata.author.name }}",
-    "url": "{{ metadata.author.url }}"
-  },
-  "items": [
-    {%- for post in collections.post | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
-    {
-      "id": "{{ absolutePostUrl }}",
-      "url": "{{ absolutePostUrl }}",
-      "title": "{{ post.data.title }}",
-      "content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}{% else %}""{% endif %},
-      "date_published": "{{ post.date | rssDate }}"
-    }
-    {% if not loop.last %},{% endif %}
-    {%- endfor %}
-  ]
-}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.posts | reverse %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

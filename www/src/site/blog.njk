@@ -6,7 +6,7 @@ layout: default
 <h1 class="text-3xl sm:text-4xl font-medium mb-3">Blog</h1>
 <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
 <section>
-  {% for item in collections.post | reverse %}
+  {% for item in collections.posts | reverse %}
   {% include 'components/post-teaser.njk' %}
   {% endfor %}
 </section>

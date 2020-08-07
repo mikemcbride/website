@@ -28,7 +28,7 @@
     },
     {
       "title": "RSS",
-      "to": "/feed.json"
+      "to": "/feed.xml"
     }
   ],
   "twitterUrl": "https://twitter.com/_mcbridem_",
