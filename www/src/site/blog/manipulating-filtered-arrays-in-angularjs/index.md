@@ -44,9 +44,9 @@ angular.module('myApp').controller('MainCtrl', function($scope){
 <input type="text" ng-model="caseFilter" />
 <table>
   <tr ng-repeat="case in cases | filter: caseFilter">
-    <td>{{ case.name }}</td>
-    <td>{{ case.group }}</td>
-    <td>{{ case.type }}</td>
+    <td>{% raw %}{{ case.name }}{% endraw %}</td>
+    <td>{% raw %}{{ case.group }}{% endraw %}</td>
+    <td>{% raw %}{{ case.type }}{% endraw %}</td>
   </tr>
 </table>
 <button ng-click="addCases()">Add cases to set</button>
@@ -61,7 +61,7 @@ According to most of the answers to this on Google and Stack Overflow (surprisin
 Angular's two-way data binding is one of it's best features, and one of the benefits is that it can evaluate statements on the view. Very smart. Here's an example:
 
 ```html
-<div>{{ 2 + 3 }}</div>
+<div>{% raw %}{{ 2 + 3 }}{% endraw %}</div>
 ```
 
 This will evaluate to 5 on the screen. It's a beautiful thing. That's a very simple example, but it sets the stage for showing you how we can solve our issue by modifying the code very slightly. See below:
@@ -101,9 +101,9 @@ angular.module('myApp').controller('MainCtrl', function($scope){
 
 <table>
   <tr ng-repeat="case in filteredCases = (cases | filter: caseFilter)">
-    <td>{{ case.name }}</td>
-    <td>{{ case.group }}</td>
-    <td>{{ case.type }}</td>
+    <td>{% raw %}{{ case.name }}{% endraw %}</td>
+    <td>{% raw %}{{ case.group }}{% endraw %}</td>
+    <td>{% raw %}{{ case.type }}{% endraw %}</td>
   </tr>
 </table>
 
