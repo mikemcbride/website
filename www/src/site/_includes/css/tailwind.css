@@ -10,6 +10,7 @@
   --code-red: #e20a00;
   --code-orange: #ec790e;
   --code-yellow: #ffa90a;
+  --outline-color: rgba(2, 97, 220, 0.5);
 }
 
 .mode-dark {
@@ -24,6 +25,7 @@
   --code-red: #ff5874;
   --code-orange: #ffbf7a;
   --code-yellow: #fffa9e;
+  --outline-color: rgba(130, 170, 255, 0.5);
 }
 
 html {
@@ -48,7 +50,7 @@ html {
  *
  * https://github.com/tailwindcss/tailwindcss/pull/116
  */
- 
+
 *,
 *::before,
 *::after {
@@ -80,6 +82,16 @@ a {
   color: var(--code-blue);
   text-decoration: inherit;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/**
+* Focus styles
+**/
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--outline-color);
 }
 
 /**
@@ -177,7 +189,7 @@ pre[class*="language-"] {
   background: none;
   border-radius: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: .825rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -210,6 +222,11 @@ pre[class*="language-"] {
     margin-left: 0;
     margin-right: 0;
     width: auto;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: 1rem;
   }
 }
 
