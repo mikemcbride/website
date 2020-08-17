@@ -1,24 +1,24 @@
 <article class="mb-16 w-full">
   <a
     href="{{ project.url }}"
-    class="text-black dark:text-white inline-block mb-2 text-2xl leading-tight hover:underline"
+    class="text-black dark:text-white font-semibold inline-block mb-2 text-2xl leading-tight hover:underline"
     target="_blank"
     rel="nofollow noreferrer noopener">
     {{ project.title }}
   </a>
-  <p class="text-base leading-normal mb-2">{{ project.description }}</p>
+  <p class="leading-normal mb-2">{{ project.description }}</p>
   <div class="flex items-center">
     {% if project.url %}
     <a
       href="{{ project.url }}"
-      class="text-blue dark:text-blue-light inline-block text-base hover:underline"
+      class="text-blue dark:text-blue-light inline-block hover:underline"
       target="_blank"
       rel="nofollow noreferrer noopener">Website</a>
     {% endif %}
     {% if project.source %}
     <a
       href="{{ project.source }}"
-      class="text-blue dark:text-blue-light inline-block text-base hover:underline {{ 'pl-2 ml-2 border-l border-grey-dark' if project.url }}"
+      class="text-blue dark:text-blue-light inline-block hover:underline {{ 'pl-2 ml-2 border-l border-grey-dark' if project.url }}"
       target="_blank"
       rel="nofollow noreferrer noopener">Source</a>
     {% endif %}

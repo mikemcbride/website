@@ -106,10 +106,6 @@ img {
   filter: brightness(.8) contrast(1.2);
 }
 
-@media all and (min-width: 768px) {
-  .post-content a:hover { text-decoration: underline; }
-}
-
 /**
 * Reset margins on these things
 */
@@ -142,7 +138,7 @@ ol {
 }
 
 pre, code, .code, .monospace {
-  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-family: 'MonoLisa','Operator Mono','SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
 code {
@@ -164,19 +160,6 @@ blockquote {
   margin: 0;
   margin-bottom: 1em;
 }
-
-.post-content h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 2rem 0 1rem;
-}
-
-.post-content h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
-}
-
 /**
 * prism.js theme
 */

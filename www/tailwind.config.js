@@ -147,6 +147,7 @@ module.exports = {
     display: ['responsive', 'dark']
   },
   plugins: [
+    require('@tailwindcss/typography'),
     require('tailwindcss-dark-mode')()
   ]
 }

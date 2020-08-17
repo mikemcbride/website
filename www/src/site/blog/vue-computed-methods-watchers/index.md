@@ -91,7 +91,7 @@ What's happening in this snippet is that we have a property in our data, `select
 
 Watchers can be quite powerful, but they're also fairly expensive. They're constantly watching the property, and so are generally more well suited for asynchronous operations. A great example that we recently used in a project at work is that we have a route with multiple nested child routes. Picture something like this:
 
-```
+```html
 mysite.com/author/1/bio
 mysite.com/author/1/works
 mysite.com/author/1/interviews

@@ -8,11 +8,11 @@
     <title>{{ title }}</title>
     {% include "social.njk" %}
   </head>
-  <body class="bg-white dark:bg-black text-black dark:text-white w-full px-4 font-sans text-lg leading-tight">
+  <body class="bg-white dark:bg-black text-black dark:text-white w-full min-h-screen flex flex-col font-sans text-lg leading-tight">
     {% include "header.njk" %}
     {% include "navigation.njk" %}
 
-    <div class="flex flex-col mx-auto w-full max-w-3xl">
+    <div class="flex flex-col flex-1 mx-auto w-full max-w-3xl px-4">
       <main class="w-full flex-auto">
         {{ content | safe }}
       </main>
