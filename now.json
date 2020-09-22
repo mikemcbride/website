@@ -8,6 +8,6 @@
   ],
   "routes": [
     { "src": "/api/pageview", "dest": "/api/trackPageview.js", "methods": ["POST"] },
-    { "src": "/(.*)", "headers": { "cache-control": "max-age=0,must-revalidate" }, "dest": "/www/$1" }
+    { "src": "/(.*)", "dest": "/www/$1" }
   ]
 }
