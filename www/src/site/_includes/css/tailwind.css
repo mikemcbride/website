@@ -116,8 +116,9 @@ ul, ol, dl, figure {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  margin-bottom: 1em;
+    font-weight: 600; /* prefer semibold over bold for heading elements */
+    margin: 0;
+    margin-bottom: 1em;
 }
 
 /**
