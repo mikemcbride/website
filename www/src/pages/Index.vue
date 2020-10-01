@@ -2,18 +2,16 @@
   <Layout>
     <section class="post-content md:flex">
       <div class="text-center mb-8 mt-4 md:mr-8">
-        <span class="inline-block overflow-hidden border border-grey-lighter dark:border-grey-darkest h-32 w-32 rounded-full shadow dark:shadow-light">
-          <Avatar class="w-full h-full rounded-full" />
-        </span>
+        <Avatar />
       </div>
-      <p class="mb-8 md:mt-4">
-        Hey there! I'm Mike. I'm a web developer based out of St. Louis, MO, 
-        where I live with <a href="https://instagram.com/putting.on.love" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a> and our
-        <span class="line-through mr-1">daughter</span>
-        <span class="line-through">two</span> three children.
-        I enjoy running, LSU football, good whiskey, and reading.
-        I am slightly obsessed with keyboard shortcuts and productivity hacks.
-      </p>
+      <div>
+          <h1 class="text-3xl font-semibold mb-4 md:mt-4">Hey there! 👋 I'm Mike.</h1>
+          <p class="mb-8">
+              I'm a web developer based out of St. Louis, MO,
+              where I live with <a href="https://instagram.com/putting.on.love" target="_blank" rel="nofollow noreferrer noopener">my amazing wife</a>
+              and our four children. I love running, LSU football, reading, keyboard shortcuts, and Oxford commas.
+          </p>
+      </div>
     </section>
   </Layout>
 </template>

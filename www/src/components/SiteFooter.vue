@@ -1,5 +1,5 @@
 <template lang="html">
-  <footer class="text-center sm:text-left py-8">
+  <footer class="text-center py-8">
     <HorizontalPad>
       <FooterLink
         v-for="(link, index) in settings"
