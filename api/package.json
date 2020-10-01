@@ -4,10 +4,10 @@
   "author": "mikemcbride",
   "license": "UNLICENSED",
   "engines": {
-    "node": "12.x"
+    "node": ">=12.x"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.0"
   }
 }
