@@ -1,14 +1,6 @@
-# dependecies installed by npm
-/node_modules
-
-# build artefacts
-/dist
-/src/site/css
-
-# secrets
-.env
-
-# macOS related files
+*.log
+.cache
 .DS_Store
-.AppleDouble
-.LSOverride
+src/.temp
+node_modules
+dist

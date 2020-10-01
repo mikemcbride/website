@@ -8,6 +8,9 @@
   ],
   "routes": [
     { "src": "/api/pageview", "dest": "/api/trackPageview.js", "methods": ["POST"] },
-    { "src": "/(.*)", "dest": "/www/$1" }
+    { "src": "/wp-login.php", "dest": "/www/wp-admin" },
+    { "src": "^/assets/(.*).js", "headers": { "cache-control": "max-age=31536000,immutable" }, "dest": "/www/assets/$1.js" },
+    { "src": "^/assets/(.*).css", "headers": { "cache-control": "max-age=31536000,immutable" }, "dest": "/www/assets/$1.css" },
+    { "src": "/(.*)", "headers": { "cache-control": "max-age=0,must-revalidate" }, "dest": "/www/$1" }
   ]
 }

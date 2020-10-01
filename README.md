@@ -1,3 +1,3 @@
 # Personal Website
 
-This is the source code for my personal website. It's built using [Eleventy](https://11ty.dev), uses [Tailwind](https://tailwindcss.com) for styles, and is deployed to [Vercel](https://vercel.com).
+This is the source code for my personal website. It's built using [Gridsome](https://gridsome.org), uses [Tailwind](https://tailwindcss.com) for styles, and is deployed to [Now](https://zeit.co/now).
