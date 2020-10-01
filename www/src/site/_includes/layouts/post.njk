@@ -1,0 +1,14 @@
+---
+layout: default
+pageClass: posts
+templateEngineOverride: njk, md
+---
+<section>
+  <header class="mb-8 leading-tight">
+    <h1 class="mb-0">{{ title | formatTitle }}</h1>
+    <time value="{{ item.date }}" class="mb-4 text-sm text-grey-darker dark:text-grey-dark">{{ date | readableDate }}</time>
+  </header>
+  <article>
+    {{ content | safe }}
+  </article>
+</section>
