@@ -2,7 +2,7 @@
   "name": "mikemcbride.me",
   "private": true,
   "engines": {
-    "node": "12.x"
+    "node": ">=12.x"
   },
   "scripts": {
     "build": "gridsome build",
