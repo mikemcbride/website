@@ -12,7 +12,7 @@
       </label>
       <Search class="inline-block w-4 h-4 absolute search-icon text-black dark:text-white opacity-50" />
     </div>
-    <div class="border-b border-grey-light dark:border-grey-darkest left-0 -ml-4 sm:-ml-16 md:-ml-24 lg:-ml-30 w-screen"></div>
+    <div class="border-b border-grey-light dark:border-grey-darkest absolute left-0 w-screen"></div>
     <section>
       <BlogListItem
         v-for="({ node: post }, $index) in filteredPosts"
