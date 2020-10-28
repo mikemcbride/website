@@ -18,7 +18,7 @@
     </section>
     <section class="mb-48">
       <h2 class="font-sans font-bold text-3xl mb-4 text-black">About Me</h2>
-      <p class="leading-loose text-lg lg:text-xl text-gray-800">
+      <div class="leading-loose text-lg lg:text-xl text-gray-800">
         I am a web developer from St. Louis, MO, where I live with
         <a
           class="text-blue underline hover:text-hot-pink hover:underline"
@@ -27,7 +27,7 @@
           >my wife</a>
         and our four children. I enjoy running, LSU football, reading, keyboard
         shortcuts<OxfordCommaJoke /> and Oxford commas.
-      </p>
+      </div>
     </section>
     <LikesDislikes />
     <section class="w-1/3 text-gray-400 mx-auto mb-20">
