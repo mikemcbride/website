@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-white text-black dark:bg-black dark:text-white w-full font-sans text-lg min-h-screen flex flex-col min-h-screen leading-tight">
-    <SiteHeader />
+  <div class="bg-white text-black dark:bg-black dark:text-white w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
     <SiteNav />
     <transition name="fade" appear>
       <HorizontalPad class="flex-1">
@@ -15,14 +14,12 @@
 
 <script>
 import HorizontalPad from '@/components/HorizontalPad'
-import SiteHeader from '@/components/SiteHeader'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 
 export default {
   components: {
     HorizontalPad,
-    SiteHeader,
     SiteNav,
     SiteFooter
   },

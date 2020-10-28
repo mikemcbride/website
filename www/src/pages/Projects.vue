@@ -3,7 +3,7 @@
     <h1 class="text-3xl md:text-4xl font-medium mb-4">Projects</h1>
     <p class="mb-16">
       Most of my work is private, since it is for my company,
-      but I do have a few open source projects and public websites which I have built. 
+      but I do have a few open source projects and public websites which I have built.
       You can find some of them listed below, and the rest you can find on my GitHub profile.
     </p>
 
@@ -11,6 +11,7 @@
       <ProjectListItem
         v-for="(project, $index) in projects"
         :key="$index"
+        :index="$index"
         :project="project" />
     </section>
   </Layout>

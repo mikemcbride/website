@@ -1,5 +1,5 @@
-import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/tailwind.css'
+import DefaultLayout from '~/layouts/Default.vue'
 import ExternalLink from '~/components/ExternalLink.vue'
 
 export default function (Vue, { head }) {
@@ -27,6 +27,46 @@ export default function (Vue, { head }) {
     href: "/inter/Inter-SemiBold-subset.woff2?v=3.11",
     as: "font",
     crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/inter/Inter-Bold-subset.woff2?v=3.11",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/code-saver/CodeSaver-Regular.woff2",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/code-saver/CodeSaver-Medium.woff2",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/code-saver/CodeSaver-Bold.woff2",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/code-saver/CodeSaver-Italic.woff2",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "stylesheet",
+    href: "/code-saver/code-saver.css",
   })
 
   head.link.push({

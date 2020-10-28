@@ -1,13 +1,13 @@
 <template>
   <Layout :title="$page.post.title">
     <ScrollProgress />
-    
-    <header class="mb-8 leading-tight">
-      <h1 class="font-medium text-3xl my-0">{{ $page.post.title | formatTitle }}</h1>
-      <p class="mb-4 text-sm text-grey-darker dark:text-grey-dark">{{ $page.post.date | formatDate }}</p>
+
+    <header class="mb-4 leading-tight font-mono inline-flex flex-col items-start">
+      <h1 class="font-medium py-2 px-4 bg-hot-pink inline-block transform rotate-1 text-white text-4xl my-0 relative">{{ $page.post.title | formatTitle }}</h1>
+      <p class="self-end inline-block bg-teal-400 text-white px-2 py-1 transform -rotate-2 -mt-1 -mr-3 z-10 relative mb-4 text-sm">{{ $page.post.date | formatDate }}</p>
     </header>
 
-    <article class="mb-16 post-content leading-normal">
+    <article class="mb-16 leading-normal prose lg:prose-lg">
       <div v-html="$page.post.content"></div>
     </article>
   </Layout>

@@ -1,32 +1,40 @@
-<template functional>
+<template>
   <g-link
-    class="inline-block mr-4 md:mr-6 mb-0 font-medium tracking-wider pb-2 border-b-2 border-transparent"
-    :class="{
-      'text-black dark:text-white border-black dark:border-white': props.active === true,
-      'text-grey-darker hover:text-black dark:text-grey-dark dark-hover:text-white': props.active === false
-    }"
-    :to="props.to">
-    {{ props.title }}
+    class="relative inline-block px-4 py-1"
+    :to="to">
+    <span v-if="active === true" class="transform top-1/2 -translate-y-1/2 absolute left-0 w-full text-blue">
+        <CircleSolidWide />
+    </span>
+    <span class="z-10 relative inline-block font-mono font-medium tracking-wider transform" :class="{
+      'text-blue -rotate-2': active === true,
+      'text-black hover:text-hot-pink': active === false
+    }">
+        {{ title }}
+    </span>
   </g-link>
 </template>
 
 <script>
+import CircleSolidWide from '@/components/icons/CircleSolidWide'
+
 export default {
-  name: 'NavLink',
+  name: "NavLink",
+  components: {
+    CircleSolidWide,
+  },
   props: {
     active: {
       type: Boolean,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     to: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
-

@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="fixed top-0 left-0 bg-blue dark:bg-blue-light z-50" :style="progress"></div>
+  <div class="fixed top-0 left-0 bg-hot-pink z-50" :style="progress"></div>
 </template>
 
 <script>

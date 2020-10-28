@@ -1,21 +1,10 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-3xl sm:text-4xl font-medium mb-3">Blog</h1>
+    <h1 class="text-3xl sm:text-4xl font-black text-center mb-3">Blog</h1>
     <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
-    <div class="block relative mb-6 search-input">
-      <label>
-        <input
-          v-model="searchText"
-          placeholder="Search blog posts"
-          aria-label="Search blog posts"
-          class="text-base lg:text-sm bg-transparent py-2 pl-8 text-black dark:text-white placeholder-grey-dark focus:outline-none w-full" />
-      </label>
-      <Search class="inline-block w-4 h-4 absolute search-icon text-black dark:text-white opacity-50" />
-    </div>
-    <div class="border-b border-grey-light dark:border-grey-darkest absolute left-0 w-screen"></div>
     <section>
       <BlogListItem
-        v-for="({ node: post }, $index) in filteredPosts"
+        v-for="({ node: post }, $index) in posts"
         :key="$index"
         :post="post" />
     </section>
@@ -24,28 +13,18 @@
 
 <script>
 import BlogListItem from '@/components/BlogListItem'
-import Search from '@/components/Search'
 
 export default {
   name: 'Blog',
   components: {
     BlogListItem,
-    Search
   },
   metaInfo: {
     title: 'Blog'
   },
-  data() {
-    return {
-      searchText: ''
-    }
-  },
   computed: {
-    filteredPosts() {
-      const lcTerm = this.searchText.toLowerCase()
-      return this.$page.allBlogPost.edges.filter(({ node }) => {
-        return node.title.toLowerCase().includes(lcTerm)
-      })
+    posts() {
+        return this.$page.allBlogPost.edges
     }
   },
 }

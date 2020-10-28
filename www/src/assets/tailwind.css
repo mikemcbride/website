@@ -1,5 +1,6 @@
 :root {
   --inline-code-bg: rgba(134, 38, 220, 0.08);
+  --inline-code-color: #8626dc;
   --code-bg: #f8fafc;
   --code-fg: #637484;
   --code-comment: #a8b3bd;
@@ -12,155 +13,14 @@
   --code-yellow: #ffa90a;
 }
 
-.mode-dark {
-  --inline-code-bg: rgba(199, 146, 234, .1);
-  --code-bg: #171c26;
-  --code-fg: #a8b5d1;
-  --code-comment: #506686;
-  --code-cyan: #4ff2f8;
-  --code-blue: #82aaff;
-  --code-purple: #c792ea;
-  --code-green: #6af699;
-  --code-red: #ff5874;
-  --code-orange: #ffbf7a;
-  --code-yellow: #fffa9e;
-}
+@tailwind base;
+@tailwind components;
 
-html {
-  box-sizing: border-box;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-}
-
-/**
- * Allow adding a border to an element by just adding a border-width.
- *
- * By default, the way the browser specifies that an element should have no
- * border is by setting it's border-style to `none` in the user-agent
- * stylesheet.
- *
- * In order to easily add borders to elements by just setting the `border-width`
- * property, we change the default border-style for all elements to `solid`, and
- * use border-width to hide them instead. This way our `border` utilities only
- * need to set the `border-width` property instead of the entire `border`
- * shorthand, making our border utilities much more straightforward to compose.
- *
- * https://github.com/tailwindcss/tailwindcss/pull/116
- */
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  border-width: 0;
-  border-style: solid;
-  border-color: currentColor;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  display: block;
-}
-
-hr {
-  border: 0px solid #b8c2cc;
-  border-bottom-width: 1px;
-  box-sizing: content-box;
-  height: 0;
-  margin: 2rem 0;
-  overflow: visible;
-}
-
-a {
-  background-color: transparent;
-  color: var(--code-blue);
-  text-decoration: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-/**
-* Images
-*/
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.mode-dark img {
-  filter: brightness(.8) contrast(1.2);
-}
-
-@media all and (min-width: 768px) {
-  .post-content a:hover { text-decoration: underline; }
-}
-
-/**
-* Reset margins on these things
-*/
-p, blockquote, pre,
-ul, ol, dl, figure {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-/**
-* Paragraphs, ul, ol
-*/
-ul, p, ol {
-  line-height: 1.8;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-}
-
-pre, code, .code, .monospace {
-  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-}
-
-code {
-  color: var(--code-purple);
+code, .prose code {
+  color: var(--inline-code-color);
   background: var(--inline-code-bg);
-  font-size: 1rem;
-  padding: .125rem .25rem;
-  border-radius: .125rem;
-}
-
-a > code {
-  color: var(--code-blue);
-  background: none;
-}
-
-blockquote {
-  font-size: 1.15rem;
-  font-style: italic;
-}
-
-.post-content h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 2rem 0 1rem;
-}
-
-.post-content h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
+  padding: .125em .25em;
+  border-radius: .125em;
 }
 
 /**
