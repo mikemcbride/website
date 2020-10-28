@@ -1,13 +1,11 @@
 <template>
   <div class="bg-white text-black dark:bg-black dark:text-white w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
     <SiteNav />
-    <transition name="fade" appear>
-      <HorizontalPad class="flex-1">
-        <main role="main" class="w-full flex-auto">
-          <slot />
-        </main>
-      </HorizontalPad>
-    </transition>
+    <HorizontalPad class="flex-1">
+    <main role="main" class="w-full flex-auto">
+        <slot />
+    </main>
+    </HorizontalPad>
     <SiteFooter/>
   </div>
 </template>
@@ -34,13 +32,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.fade-enter-active {
-  transition: opacity .4s ease;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-</style>
