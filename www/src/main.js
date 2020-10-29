@@ -17,21 +17,14 @@ export default function (Vue, { head }) {
 
   head.link.push({
     rel: "preload",
-    href: "/inter/Inter-Medium-subset.woff2?v=3.11",
-    as: "font",
-    crossorigin: "anonymous"
-  })
-
-  head.link.push({
-    rel: "preload",
-    href: "/inter/Inter-SemiBold-subset.woff2?v=3.11",
-    as: "font",
-    crossorigin: "anonymous"
-  })
-
-  head.link.push({
-    rel: "preload",
     href: "/inter/Inter-Bold-subset.woff2?v=3.11",
+    as: "font",
+    crossorigin: "anonymous"
+  })
+
+  head.link.push({
+    rel: "preload",
+    href: "/inter/Inter-Black-subset.woff2?v=3.11",
     as: "font",
     crossorigin: "anonymous"
   })

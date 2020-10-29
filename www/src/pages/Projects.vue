@@ -1,6 +1,6 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-3xl md:text-4xl font-medium mb-4">Projects</h1>
+    <PageHeader header-text="Projects" />
     <p class="mb-16">
       Most of my work is private, since it is for my company,
       but I do have a few open source projects and public websites which I have built.
@@ -19,6 +19,7 @@
 
 <script>
 import projects from '@/data/work'
+import PageHeader from '@/components/PageHeader'
 import ProjectListItem from '@/components/ProjectListItem'
 
 export default {
@@ -27,7 +28,8 @@ export default {
     title: 'Projects'
   },
   components: {
-    ProjectListItem
+      PageHeader,
+      ProjectListItem
   },
   created() {
     this.projects = projects

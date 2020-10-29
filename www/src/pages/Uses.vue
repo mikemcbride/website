@@ -1,7 +1,7 @@
 <template lang="html">
   <Layout>
       <HorizontalPad class="prose lg:prose-xl">
-          <h1 class="text-3xl font-semibold">Uses</h1>
+          <PageHeader header-text="Uses" />
           <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="nofollow noreferrer">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
           <h2 class="font-semibold text-2xl">Editor</h2>
@@ -205,11 +205,13 @@
 
 <script>
 import HorizontalPad from '@/components/HorizontalPad'
+import PageHeader from '@/components/PageHeader'
 
 export default {
   name: 'Uses',
   components: {
-    HorizontalPad
+    HorizontalPad,
+    PageHeader
   },
   metaInfo: {
     title: 'Uses'

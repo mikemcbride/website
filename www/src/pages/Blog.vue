@@ -1,6 +1,6 @@
 <template lang="html">
   <Layout>
-    <h1 class="text-3xl sm:text-4xl font-black text-center mb-3">Blog</h1>
+    <PageHeader header-text="Blog" />
     <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
     <section>
       <BlogListItem
@@ -12,12 +12,14 @@
 </template>
 
 <script>
+import PageHeader from '@/components/PageHeader'
 import BlogListItem from '@/components/BlogListItem'
 
 export default {
   name: 'Blog',
   components: {
     BlogListItem,
+    PageHeader,
   },
   metaInfo: {
     title: 'Blog'
