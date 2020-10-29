@@ -183,6 +183,9 @@ module.exports = {
     plugins: [
         require('@tailwindcss/typography')
     ],
+    variants: {
+        rotate: ['responsive', 'hover', 'focus', 'group-hover'],
+    },
     purge: {
         content: [
             './src/**/*.vue',

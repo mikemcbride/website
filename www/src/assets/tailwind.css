@@ -21,6 +21,7 @@ code, .prose code {
   background: var(--inline-code-bg);
   padding: .125em .25em;
   border-radius: .125em;
+  font-weight: inherit;
 }
 
 /**

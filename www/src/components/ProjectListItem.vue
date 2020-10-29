@@ -1,12 +1,13 @@
 <template>
   <article class="mb-16 w-full">
-    <a
+      <TitleLink :to="project.url" target="_blank" rel="nofollow noreferrer noopener">{{ project.title }}</TitleLink>
+    <!-- <a
       :href="project.url"
       class="font-bold inline-block mb-2 text-2xl leading-tight"
       target="_blank"
       rel="nofollow noreferrer noopener">
       {{ project.title }}
-    </a>
+    </a> -->
     <p class="text-base leading-normal mb-2">{{ project.description }}</p>
     <div class="flex items-center">
       <a
@@ -27,8 +28,13 @@
 </template>
 
 <script>
+import TitleLink from '@/components/TitleLink'
+
 export default {
   name: 'ProjectListItem',
+  components: {
+    TitleLink,
+  },
   props: {
     project: {
       type: Object,
