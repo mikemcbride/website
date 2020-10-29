@@ -29,7 +29,7 @@
       </div>
     </section>
     <LikesDislikes />
-    <section class="w-1/3 text-gray-400 mx-auto mb-20">
+    <section class="w-1/2 md:w-1/3 text-gray-400 mx-auto mb-20">
         <Divider class="w-full" />
     </section>
     <WhatOthersAreSaying />
