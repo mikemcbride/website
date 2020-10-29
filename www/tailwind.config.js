@@ -26,6 +26,9 @@ module.exports = {
             inset: {
                 '1/2': '50%'
             },
+            zIndex: {
+                '-1': '-1',
+            },
             opacity: {
                 '10': '0.1',
             }
