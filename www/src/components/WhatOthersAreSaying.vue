@@ -1,6 +1,6 @@
 <template>
     <div class="mb-40">
-        <h2 class="inline-block bg-purple-600 rounded text-white font-black font-sans text-3xl py-2 px-3 mb-8">What others are saying...</h2>
+        <h2 class="inline-block bg-gradient-to-r from-aqua to-blue rounded text-white font-black font-sans text-3xl py-2 px-3 mb-8">What others are saying...</h2>
         <p class="leading-loose text-lg md:text-xl text-gray-800 mb-16">...I mean, they might have said it. I can't say for certain that they did, but I also can't say for certain that they didn't. That has to count for something, right?</p>
         <div class="relative inline-block transform rotate-1 text-blue text-lg md:text-xl ml-3 mb-16">
             <BigQuote />

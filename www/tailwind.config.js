@@ -20,7 +20,7 @@ module.exports = {
                 'inherit': 'inherit',
                 'yellow': '#f7f474',
                 'deep-blue': '#002f3c',
-                'aqua': '#00ffff',
+                'aqua': '#5CEACE',
                 'hot-pink': '#fd2d78'
             },
             inset: {

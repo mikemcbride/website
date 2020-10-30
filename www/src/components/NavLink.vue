@@ -2,11 +2,11 @@
   <g-link
     class="relative inline-block px-4 py-1"
     :to="to">
-    <span v-if="active === true" class="transform top-1/2 -translate-y-1/2 absolute left-0 w-full text-blue">
+    <span v-if="active === true" class="transform top-1/2 -translate-y-1/2 absolute left-0 w-full text-hot-pink">
         <CircleSolidWide />
     </span>
     <span class="z-10 relative inline-block font-mono font-medium tracking-wider transform" :class="{
-      'text-blue -rotate-2': active === true,
+      'text-hot-pink -rotate-2': active === true,
       'text-black hover:text-hot-pink': active === false
     }">
         {{ title }}

@@ -10,7 +10,7 @@
       </ArrowLine>
       <nav class="py-20 bg-gradient-to-b from-hot-pink to-purple-700 -mt-1">
         <HorizontalPad>
-            <p class="text-yellow px-4 py-2 inline-block mb-20 mt-32 font-sans font-bold tracking-wide text-2xl rounded">this is a footer</p>
+            <p class="text-aqua px-4 py-2 inline-block mb-20 mt-32 font-sans font-bold tracking-wide text-2xl rounded">this is a footer</p>
             <div class="relative mb-32 transform rotate-6 ml-16">
                 <ArrowLine class="top-0 mt-0 w-12 transform -translate-x-1/2 left-1/2 rotate-180 text-yellow -ml-4">
                   <span class="absolute bottom-0 left-0 ml-2 w-48 transform rotate-180 -translate-x-1/2 translate-y-full text-sm font-mono text-yellow">these are some links</span>

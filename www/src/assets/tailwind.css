@@ -5,7 +5,7 @@
   --code-fg: #637484;
   --code-comment: #a8b3bd;
   --code-blue: #0261dc;
-  --code-cyan: #44dfc1;
+  --code-cyan: #36b9ac;
   --code-purple: #8626dc;
   --code-green: #19d23b;
   --code-red: #fd2d78;
@@ -14,6 +14,11 @@
 
 @tailwind base;
 @tailwind components;
+
+::selection {
+    color: theme('colors.black');
+    background: theme('colors.aqua');
+}
 
 code, .prose code {
   color: var(--inline-code-color);
@@ -25,7 +30,7 @@ code, .prose code {
 }
 
 .prose a {
-    color: var(--code-blue);
+    color: theme('colors.blue');
     text-decoration: none;
 }
 
@@ -35,7 +40,7 @@ code, .prose code {
 
 a > code,
 .prose a > code {
-    color: var(--code-blue);
+    color: theme('colors.blue');
     background: rgba(2, 97, 220, 0.08);
     text-decoration: none;
 }
@@ -46,7 +51,7 @@ a > code,
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    @apply font-sans;
+    font-family: theme('fontFamily.sans')
 }
 
 .prose hr {
