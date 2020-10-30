@@ -8,7 +8,7 @@
       <ArrowLine class="top-0 mt-28 w-12 transform -translate-x-1/2 left-1/2 text-yellow -ml-4">
         <span class="absolute bottom-0 left-0 ml-6 pt-2 w-48 transform -rotate-6 -translate-x-1/2 translate-y-full text-sm font-mono text-yellow">this is a sunset</span>
       </ArrowLine>
-      <nav class="py-20 bg-gradient-to-b from-hot-pink to-purple-700 -mt-1">
+      <nav class="pt-20 pb-8 bg-gradient-to-b from-hot-pink to-purple-700 -mt-1">
         <HorizontalPad>
             <p class="text-aqua px-4 py-2 inline-block mb-20 mt-32 font-sans font-bold tracking-wide text-2xl rounded">this is a footer</p>
             <div class="relative mb-32 transform rotate-6 ml-16">
@@ -24,6 +24,9 @@
             :title="link.title"
             :to="link.to">
         </FooterLink>
+        <section class="mt-16 text-center text-aqua text-base">
+            © Copyright 1988 Mike McBride
+        </section>
       </nav>
   </footer>
 </template>
