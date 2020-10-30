@@ -5,6 +5,7 @@
   --code-fg: #637484;
   --code-comment: #a8b3bd;
   --code-blue: #0261dc;
+  --code-cyan: #44dfc1;
   --code-purple: #8626dc;
   --code-green: #19d23b;
   --code-red: #fd2d78;
@@ -113,8 +114,7 @@ pre[class*="language-"] {
   color: var(--code-comment);
 }
 
-.token.punctuation,
-.token.operator {
+.token.punctuation {
   color: var(--code-fg);
 }
 
@@ -146,9 +146,13 @@ pre[class*="language-"] {
 .token.important,
 .token.atrule,
 .token.keyword,
-.token.builtin,
-.token.entity {
+.token.builtin {
   color: var(--code-purple);
+}
+
+.token.operator,
+.token.entity {
+    color: var(--code-cyan);
 }
 
 .token.string,
