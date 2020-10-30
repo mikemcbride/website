@@ -3,8 +3,8 @@
     <ScrollProgress />
 
     <header class="mb-4 leading-tight font-mono inline-flex flex-col items-start max-w-3xl">
-      <h1 class="font-medium py-2 px-4 bg-hot-pink inline-block text-white text-4xl my-0 relative">{{ $page.post.title | formatTitle }}</h1>
-      <p class="self-end inline-block bg-teal-400 text-white px-2 py-1 transform -rotate-2 -mt-1 -mr-3 z-10 relative mb-4 text-sm">{{ $page.post.date | formatDate }}</p>
+      <h1 class="font-sans font-bold shadow-md py-2 px-4 bg-hot-pink inline-block text-white text-4xl my-0 relative rounded">{{ $page.post.title | formatTitle }}</h1>
+      <p class="self-end inline-block bg-teal-400 text-white px-2 py-1 shadow rounded transform -rotate-2 -mt-2 -mr-3 z-10 relative mb-4 text-sm">{{ $page.post.date | formatDate }}</p>
     </header>
 
     <article class="mb-16 leading-normal prose md:prose-lg">

@@ -1,7 +1,10 @@
 <template lang="html">
     <HorizontalPad>
         <nav class="pt-6 sm:pt-12 mb-8 sm:mb-12 flex flex-col items-center justify-between md:flex-row text-base">
-            <g-link to="/" class="inline-block font-sans font-black text-white bg-blue hover:bg-hot-pink py-2 px-4 transform -rotate-1 uppercase text-4xl">Mike McBride</g-link>
+            <div class="inline-block relative z-10 group transform -rotate-1">
+                <g-link to="/" class="inline-block font-sans font-black text-white bg-blue py-2 px-4 transform group-hover:-rotate-2 transition-transform duration-100 ease-linear uppercase text-4xl rounded-md shadow-md">Mike McBride</g-link>
+                <div class="absolute inset-0 bg-gradient-to-r from-hot-pink to-purple-500 transform group-hover:rotate-2 transition-transform duration-100 ease-linear rounded-md -z-1"></div>
+            </div>
             <div class="flex items-center mt-12 md:mt-0">
                 <NavLink :index="0" to="/" :active="$route.path === '/'" title="About" />
                 <NavLink :index="1" to="/projects" :active="$route.path.startsWith('/projects')" title="Projects" />

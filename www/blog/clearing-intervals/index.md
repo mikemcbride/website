@@ -185,8 +185,6 @@ This approach would absolutely work, but what you lose is the ability to clear t
 </template>
 ```
 
----
-
 Hopefully this was a helpful explanation!
 
 ```js
@@ -194,7 +192,3 @@ setInterval(() => {
   console.log("Happy coding!")
 }, 1000)
 ```
-
-
-
-

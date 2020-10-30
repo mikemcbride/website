@@ -5,15 +5,15 @@
                 <svg class="w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 42.31"><path d="M80 40.67a37.84 37.84 0 00-.61-8c-26-1.26-51.87-3.83-77.9-3.91A35.92 35.92 0 000 38v3c26.7.89 79.94 1.28 79.94 1.28s.06-1.06.06-1.61zm-1.66-12.32a41.71 41.71 0 00-2-5.23l-1.2-.12q-17.85-1.83-35.77-2.77h.12c-11.37-.45-22.74-.69-34.11-.58a41.29 41.29 0 00-3.33 7.17c25.65 0 51.17 2.32 76.77 3.45-.09-.65-.29-1.27-.48-1.92zm-3.67-8.45a38.31 38.31 0 00-6.28-8.1c-17-1.35-33.91-3.57-50.91-4.9A39 39 0 006.73 17.61c6.57 0 13.13.12 19.7.26 5.4.24 10.8.36 16.19.73 3.56.24 7.13.46 10.7.71h-.11c4.28.36 8.55.78 12.83 1.15h-.11.25-.11.81c2.88.28 5.75.59 8.62.88-.28-.43-.56-.94-.83-1.44zM66.32 9.81a40.18 40.18 0 00-47.58-3.73C35 7.43 51.16 9.49 67.4 10.85z" fill="currentColor"/></svg>
           </span>
       </div>
-      <ArrowLine class="top-0 mt-28 w-12 transform -translate-x-1/2 left-1/2 text-aqua -ml-4">
-        <span class="absolute bottom-0 left-0 ml-6 pt-2 w-48 transform -rotate-6 -translate-x-1/2 translate-y-full text-sm font-mono text-aqua">this is a sunset</span>
+      <ArrowLine class="top-0 mt-28 w-12 transform -translate-x-1/2 left-1/2 text-yellow -ml-4">
+        <span class="absolute bottom-0 left-0 ml-6 pt-2 w-48 transform -rotate-6 -translate-x-1/2 translate-y-full text-sm font-mono text-yellow">this is a sunset</span>
       </ArrowLine>
       <nav class="py-20 bg-gradient-to-b from-hot-pink to-purple-700 -mt-1">
         <HorizontalPad>
-            <p class="bg-white px-4 py-2 text-blue inline-block mb-20 mt-32 font-sans font-bold tracking-wide text-xl">this is a footer</p>
-            <div class="relative mb-36">
-                <ArrowLine class="top-0 mt-0 w-12 transform -translate-x-1/2 left-1/2 rotate-180 text-aqua -ml-4">
-                  <span class="absolute bottom-0 left-0 ml-2 w-48 transform rotate-180 -translate-x-1/2 translate-y-full text-sm font-mono text-aqua">these are some links</span>
+            <p class="text-yellow px-4 py-2 inline-block mb-20 mt-32 font-sans font-bold tracking-wide text-2xl rounded">this is a footer</p>
+            <div class="relative mb-32 transform rotate-6 ml-16">
+                <ArrowLine class="top-0 mt-0 w-12 transform -translate-x-1/2 left-1/2 rotate-180 text-yellow -ml-4">
+                  <span class="absolute bottom-0 left-0 ml-2 w-48 transform rotate-180 -translate-x-1/2 translate-y-full text-sm font-mono text-yellow">these are some links</span>
                 </ArrowLine>
             </div>
         </HorizontalPad>

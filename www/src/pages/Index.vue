@@ -19,7 +19,7 @@
     <section class="mb-48">
       <PageHeader header-text="About Me" />
       <div class="leading-loose text-lg lg:text-xl text-gray-800">
-        I am a web developer from St. Louis, MO, where I live with
+        I'm a web developer from St. Louis, MO, where I live with
         <a
           class="text-blue underline hover:text-hot-pink hover:underline"
           href="https://instagram.com/putting.on.love"
