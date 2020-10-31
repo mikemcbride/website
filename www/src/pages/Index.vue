@@ -39,7 +39,6 @@
 <script>
 import Avatar from '@/components/Avatar'
 import OxfordCommaJoke from '@/components/OxfordCommaJoke'
-import ArrowLine from '@/components/ArrowLine'
 import LikesDislikes from '@/components/LikesDislikes'
 import WhatOthersAreSaying from '@/components/WhatOthersAreSaying'
 import Divider from '@/components/Divider'
@@ -50,7 +49,6 @@ export default {
   components: {
     Avatar,
     OxfordCommaJoke,
-    ArrowLine,
     LikesDislikes,
     WhatOthersAreSaying,
     Divider,

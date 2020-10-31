@@ -2,7 +2,7 @@
   <Layout>
     <PageHeader header-text="Blog" />
     <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
-    <section>
+    <section class="mb-20">
       <BlogListItem
         v-for="({ node: post }, $index) in posts"
         :key="$index"

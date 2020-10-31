@@ -105,6 +105,9 @@ module.exports = {
             '-180': '-180deg',
             '-90': '-90deg',
             '-45': '-45deg',
+            '-30': '-30deg',
+            '-22': '-22.5deg',
+            '-15': '-15deg',
             '-10': '-10deg',
             '-9': '-9deg',
             '-8': '-8deg',
@@ -126,6 +129,9 @@ module.exports = {
             '8': '8deg',
             '9': '9deg',
             '10': '10deg',
+            '15': '15deg',
+            '22': '22.5deg',
+            '30': '30deg',
             '45': '45deg',
             '90': '90deg',
             '180': '180deg',
@@ -185,6 +191,7 @@ module.exports = {
     ],
     variants: {
         rotate: ['responsive', 'hover', 'focus', 'group-hover'],
+        translate: ['responsive', 'hover', 'focus', 'group-hover'],
     },
     purge: {
         content: [

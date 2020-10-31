@@ -16,7 +16,7 @@
         </div>
         <div class="relative text-gray-700 text-lg md:text-xl md:ml-16 md:w-2/3 mb-16">
             <BigQuote />
-            <p class="mb-2">Unbelievably handsome. I mean, have you seen this guy? Just wow.</p>
+            <p class="mb-2">Unbelievably handsome. I mean, have you seen this guy? Just... wow.</p>
             <div class="text-right">- Ryan Reynolds, handsome actor</div>
         </div>
         <div class="relative transform -rotate-3 text-purple-600 text-lg md:text-xl ml-12 md:mx-auto w-2/3 md:w-2/5 mb-16">
