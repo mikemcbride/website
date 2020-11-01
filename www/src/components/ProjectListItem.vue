@@ -1,7 +1,7 @@
 <template>
     <article class="mb-16 w-full">
         <TitleLink v-if="project.url" :to="project.url" target="_blank" rel="nofollow noreferrer noopener">{{ project.title }}</TitleLink>
-        <p class="prose lg:prose-lg mb-4 -mt-2">{{ project.description }}</p>
+        <p class="prose lg:prose-lg mb-4 md:-mt-2">{{ project.description }}</p>
         <div class="flex items-center">
             <a
             v-if="project.url"
