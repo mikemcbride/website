@@ -1,5 +1,5 @@
-<template lang="html" functional>
-  <a :href="props.to" rel="nofollow noreferrer" target="_blank">
+<template lang="html">
+  <a :href="to" rel="nofollow noreferrer" target="_blank">
     <slot></slot>
   </a>
 </template>

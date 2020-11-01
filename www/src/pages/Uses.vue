@@ -1,7 +1,7 @@
 <template lang="html">
   <Layout>
         <PageHeader header-text="Uses" />
-        <article class="prose lg:prose-xl">
+        <article class="prose lg:prose-xl mb-16">
         <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="nofollow noreferrer">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
         <h2 class="font-semibold text-2xl">Editor</h2>

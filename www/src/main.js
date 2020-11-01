@@ -1,6 +1,5 @@
 import '~/assets/tailwind.css'
 import DefaultLayout from '~/layouts/Default.vue'
-import ExternalLink from '~/components/ExternalLink.vue'
 
 export default function (Vue, { head }) {
   head.meta.push({
@@ -68,5 +67,4 @@ export default function (Vue, { head }) {
   })
 
   Vue.component('Layout', DefaultLayout)
-  Vue.component('ExternalLink', ExternalLink)
 }
