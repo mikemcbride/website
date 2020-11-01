@@ -1,7 +1,7 @@
 :root {
   --inline-code-bg: rgba(134, 38, 220, 0.08);
   --inline-code-color: #8626dc;
-  --code-bg: #f8fafc;
+  --code-border: rgb(211, 219, 228);
   --code-fg: #637484;
   --code-comment: #a8b3bd;
   --code-blue: #0261dc;
@@ -95,7 +95,9 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  background: var(--code-bg);
+  background: transparent;
+  border-top: 1px solid var(--code-border);
+  border-bottom: 1px solid var(--code-border);
   margin: 1rem -1rem 2rem;
   overflow: auto;
   padding: 1rem;
@@ -105,6 +107,7 @@ pre[class*="language-"] {
 @media all and (min-width: 640px) {
   pre[class*="language-"] {
     border-radius: .25rem;
+    border: 1px solid var(--code-border);
     margin-left: 0;
     margin-right: 0;
     width: auto;
