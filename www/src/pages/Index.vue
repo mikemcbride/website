@@ -9,7 +9,7 @@
           Hey there! <span class="inline-block mx-1">👋</span> I'm Mike.
         </p>
         <div class="leading-loose text-lg md:text-xl text-gray-800">
-          <p class="mb-32">
+          <p class="mb-16 md:mb-32">
             And this is my website. I worked really hard on it just for you (yes, YOU), so I hope you like it. Let's
             get to know each other... I'll start.
           </p>
