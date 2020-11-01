@@ -112,26 +112,18 @@
         <ul>
             <li>
                 <p class="mb-0">
-                    <strong>Brave Browser</strong>
+                    <strong>Firefox</strong>
                 </p>
                 <p>
-                Brave is a browser that puts your privacy first and automatically blocks trackers and ads. I always loved the idea - especially because it made many sites load faster - but there were a few things that kept me away, mostly extensions. In late 2018 they switched from their own browser shell, called Muon, and began using Chromium, and along with that change we got access to every Chrome extension and the Chrome dev tools. I switched immediately and never looked back. At this point, it's essentially Chrome without Google tracking everything you do, plus built-in ad-blocking. <code>brew cask install brave-browser</code>
+                I am a big fan of the open web. Mozilla is one of the few companies that still seems like an advocate for that. Firefox is super fast, it looks great, and unlike Chrome, they're not tracking everything I do so they can sell personalized ads. It's got build in ad and tracker blocking. <code>brew cask install firefox</code>
                 </p>
             </li>
             <li>
                 <p class="mb-0">
-                    <strong>Apple Notes</strong>
+                    <strong>Notion</strong>
                 </p>
                 <p>
-                I was using Bear for a while and it's really great (LOVE the markdown support), but ultimately I switched back to Apple Notes because I can't have shared notes with my wife in Bear. If they ever add that, I'll probably switch back. Or, you know, Apple could just add Markdown support to Notes.
-            </p>
-            </li>
-            <li>
-                <p class="mb-0">
-                    <strong>Tweetbot</strong>
-                </p>
-                <p>
-                I love Twitter, and I use it as my primary source of news/information, but I can't stand the ads and their official desktop app wasn't updated for years. Years ago I got Tweetbot for iOS and fell in love. Then they came out with the desktop app, and it's awesome. Ever since I started using the desktop app, I find that I keep up with it much better.
+                Notion is where I organize notes on things I'm developing. I love that each project can have its own pages. It makes it super easy to organize things (and I'm notoriously not organized).
             </p>
             </li>
             <li>
@@ -147,7 +139,7 @@
                     <strong>Rectangle</strong>
                 </p>
                 <p>
-                This might be the most underrated app ever. Windows computers have some handy built-in capabilities for managing your application window placement, but macOS doesn't have that. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install rectangle</code>
+                This might be the most underrated app ever. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install rectangle</code>
                 </p>
             </li>
             <li>
@@ -163,7 +155,7 @@
                     <strong>MongoDB Compass</strong>
                 </p>
                 <p>
-                I use it for interacting with Mongo databases. It's pretty solid.
+                A really solid desktop GUI for interacting with Mongo.
             </p>
             </li>
             <li>
@@ -171,7 +163,7 @@
                     <strong>1Password</strong>
                 </p>
                 <p>
-                I use 1Password for password management across all my devices. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate. [<a href="https://1password.com" target="_blank" rel="noreferrer nofollow">website</a>]
+                I use 1Password for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate. [<a href="https://1password.com" target="_blank" rel="noreferrer nofollow">website</a>]
             </p>
             </li>
             <li>
@@ -188,7 +180,7 @@
 
         <h3 class="font-medium text-xl">At work:</h3>
 
-        <p>This isn't really relevant anymore, as we're working remotely due to the coronavirus.</p>
+        <p class="text-hot-pink italic">Note: This isn't really relevant anymore since our company is working remotely due to the coronavirus.</p>
 
         <ul>
             <li>I have two 23" monitors mounted on monitor arms to a sit/stand desk that I didn't pay for.</li>

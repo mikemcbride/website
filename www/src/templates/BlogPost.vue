@@ -4,7 +4,7 @@
 
     <header class="leading-tight font-mono inline-flex flex-col items-start max-w-3xl mt-12">
       <PageHeader :header-text="blogTitle" />
-      <p class="inline-block text-gray-600 mt-12">Posted on {{ $page.post.date | formatDate }}</p>
+      <p class="inline-block text-sm md:text-base text-gray-600 mt-8 md:mt-12">Posted on {{ $page.post.date | formatDate }}</p>
     </header>
 
     <article class="mb-16 leading-normal prose md:prose-lg">
