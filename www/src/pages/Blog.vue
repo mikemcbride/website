@@ -1,7 +1,7 @@
 <template lang="html">
   <Layout>
     <PageHeader header-text="Blog" />
-    <p class="text-sm sm:text-base mb-8">Sometimes I write things. You can read them here.</p>
+    <p class="text-base md:text-lg leading-loose mb-8">Sometimes I write things. You can read them here.</p>
     <section class="mb-20">
       <BlogListItem
         v-for="({ node: post }, $index) in posts"
