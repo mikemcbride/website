@@ -5,7 +5,7 @@ published: true
 excerpt: I recently had the opportunity to work on a really fun feature in an app where we built a color picker input component that needed validation for HEX codes.
 ---
 
-<p class="text-grey-darker dark:text-grey-dark italic">Note: this was written in an AngularJS app but the logic for evaluating a color picker is easily used in any JS application or framework - there's nothing Angular specific, it's just an implementation detail.</p>
+<p class="text-gray-600 italic">Note: this was written in an AngularJS app but the logic for evaluating a color picker is easily used in any JS application or framework - there's nothing Angular specific, it's just an implementation detail.</p>
 
 ---
 

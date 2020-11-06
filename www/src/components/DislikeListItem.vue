@@ -1,6 +1,6 @@
 <template>
   <li class="flex items-baseline leading-relaxed">
-      <span class="inline-block text-purple-600 w-4 h-4 mr-3 pt-1">
+      <span class="inline-block text-purple w-4 h-4 mr-3 pt-1">
           <XBrush class="w-full" />
       </span>
       <div class="flex-1">

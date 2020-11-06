@@ -1,11 +1,12 @@
 <template>
     <div></div>
 </template>
+
 <script>
 export default {
-  name: 'Blog',
+  name: 'BlogPost',
   created() {
-      this.$router.push('/writing')
+      this.$router.push(`/writing/${this.$route.params.id}`)
   }
 }
 </script>

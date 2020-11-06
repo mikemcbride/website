@@ -191,7 +191,7 @@
         </ul>
 
         <h3 class="font-medium text-xl">At home:</h3>
-
+        <p class="text-hot-pink italic">This is also in the process of changing, since I'm working from home all the time.</p>
         <ul>
             <li>I have one 23" Acer monitor</li>
             <li>To the left of the monitor, my laptop (15" MBP) sits on top of an <a href="http://smile.amazon.com/Rain-Design-10032-mStand-Laptop/dp/B000OOYECC" target="_blank" rel="nofollow noreferrer">mStand by Rain Design</a>. I love it. It also helps keep the laptop cool so it doesn't overheat.</li>

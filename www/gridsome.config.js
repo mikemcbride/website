@@ -9,7 +9,7 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'blog/**/index.md',
+                path: 'writing/**/index.md',
                 typeName: 'BlogPost',
                 remark: {
                     plugins: [
@@ -23,7 +23,7 @@ module.exports = {
             options: {
                 contentTypes: ['BlogPost'],
                 feedOptions: {
-                    title: "Mike McBride's Blog",
+                    title: "Mike McBride",
                     description: 'Sometimes Mike writes things. You can read them here.'
                 },
                 rss: {

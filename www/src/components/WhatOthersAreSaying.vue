@@ -19,7 +19,7 @@
             <p class="mb-2">Unbelievably handsome. I mean, have you seen this guy? Just... wow.</p>
             <div class="text-right">- Ryan Reynolds</div>
         </div>
-        <div class="relative transform -rotate-3 text-purple-600 text-lg md:text-xl ml-12 md:mx-auto w-2/3 md:w-2/5 mb-16">
+        <div class="relative transform -rotate-3 text-purple text-lg md:text-xl ml-12 md:mx-auto w-2/3 md:w-2/5 mb-16">
             <BigQuote />
             <p class="mb-2">Nice guy. Moderately funny.</p>
             <div class="text-right md:mr-8">- My wife</div>

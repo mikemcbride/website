@@ -19,7 +19,7 @@
     </section>
 
     <section class="mb-16">
-        <h2 class="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-blue to-purple-600 text-transparent bg-clip-text inline-block">Utilities</h2>
+        <h2 class="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-blue to-purple text-transparent bg-clip-text inline-block">Utilities</h2>
         <p class="prose lg:prose-lg mb-6">
             I also build a lot of stuff that makes developers jobs easier. Mostly because it makes my own job easier. Check out some of my favorites below and find more on my GitHub or npm.
         </p>
@@ -31,7 +31,7 @@
     </section>
 
     <section class="mb-16">
-        <h2 class="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-purple-600 to-hot-pink text-transparent bg-clip-text inline-block">Miscellaneous</h2>
+        <h2 class="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-purple to-hot-pink text-transparent bg-clip-text inline-block">Miscellaneous</h2>
         <p class="prose lg:prose-lg mb-6">
             This section is called "miscellaneous" but really it's just some themes I've built. Maybe someday it will have some other stuff too. Who knows. For now, these are the themes I use every day in my editor and terminal. I've made some other themes too, which you can find on GitHub.
         </p>

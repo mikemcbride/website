@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white text-black dark:bg-black dark:text-white w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
+    <div class="bg-white text-black w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
         <KonamiCode />
         <SiteNav />
         <HorizontalPad class="flex-1">
