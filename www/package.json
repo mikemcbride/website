@@ -1,25 +1,25 @@
 {
-  "name": "mikemcbride.me",
-  "private": true,
-  "engines": {
-    "node": ">=12.x"
-  },
-  "scripts": {
-    "build": "gridsome build",
-    "dev": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "gridsome": "^0.7.0"
-  },
-  "devDependencies": {
-    "@gridsome/remark-prismjs": "^0.3.0",
-    "@gridsome/source-filesystem": "^0.6.1",
-    "@gridsome/transformer-remark": "^0.4.0",
-    "gridsome-plugin-tailwindcss": "^2.2.30",
-    "gridsome-plugin-feed": "^1.0.2",
-    "marked": "^0.8.0",
-    "tailwindcss-dark-mode": "^1.1.3",
-    "title": "^3.4.1"
-  }
+    "name": "mikemcbride.dev",
+    "private": true,
+    "engines": {
+        "node": ">=12.x"
+    },
+    "scripts": {
+        "build": "gridsome build",
+        "dev": "gridsome develop",
+        "explore": "gridsome explore"
+    },
+    "dependencies": {
+        "gridsome": "^0.7.0",
+        "tailwindcss": "^1.9.5"
+    },
+    "devDependencies": {
+        "@gridsome/remark-prismjs": "^0.3.0",
+        "@gridsome/source-filesystem": "^0.6.1",
+        "@gridsome/transformer-remark": "^0.6.3",
+        "@tailwindcss/typography": "^0.2.0",
+        "gridsome-plugin-feed": "^1.0.2",
+        "marked": "^0.8.0",
+        "title": "^3.4.1"
+    }
 }

@@ -1,9 +1,9 @@
-<template functional>
+<template>
   <a
-    class="text-grey-darker hover:text-black dark:text-grey dark-hover:text-white inline-block text-sm mr-4"
-    :href="props.to"
-    :title="props.title">
-    {{ props.title }}
+    class="font-sans font-bold text-aqua hover:underline leading-normal transform inline-block text-base md:text-lg mx-4"
+    :href="to"
+    :title="title">
+    {{ title }}
   </a>
 </template>
 
@@ -19,6 +19,6 @@ export default {
       type: String,
       default: ''
     }
-  }
+  },
 }
 </script>

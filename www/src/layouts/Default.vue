@@ -1,30 +1,28 @@
 <template>
-  <div class="bg-white text-black dark:bg-black dark:text-white w-full font-sans text-lg min-h-screen flex flex-col min-h-screen leading-tight">
-    <SiteHeader />
-    <SiteNav />
-    <transition name="fade" appear>
-      <HorizontalPad class="flex-1">
+    <div class="bg-white text-black w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
+        <KonamiCode />
+        <SiteNav />
+        <HorizontalPad class="flex-1">
         <main role="main" class="w-full flex-auto">
-          <slot />
+            <slot />
         </main>
-      </HorizontalPad>
-    </transition>
-    <SiteFooter/>
-  </div>
+        </HorizontalPad>
+        <SiteFooter/>
+    </div>
 </template>
 
 <script>
 import HorizontalPad from '@/components/HorizontalPad'
-import SiteHeader from '@/components/SiteHeader'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
+import KonamiCode from '@/components/KonamiCode'
 
 export default {
   components: {
     HorizontalPad,
-    SiteHeader,
     SiteNav,
-    SiteFooter
+    SiteFooter,
+    KonamiCode,
   },
   mounted() {
     const { timeZone, locale } = Intl.DateTimeFormat().resolvedOptions()
@@ -37,13 +35,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.fade-enter-active {
-  transition: opacity .4s ease;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-</style>

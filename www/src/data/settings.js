@@ -14,5 +14,5 @@ export default {
     }
   ],
   twitterUrl: 'https://twitter.com/_mcbridem_',
-  email: 'mmcbride1007@gmail.com'
+  email: 'mike.mcbride@hey.com'
 }

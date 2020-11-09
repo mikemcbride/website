@@ -1,166 +1,66 @@
 :root {
   --inline-code-bg: rgba(134, 38, 220, 0.08);
-  --code-bg: #f8fafc;
+  --inline-code-color: #8626dc;
+  --code-border: rgb(211, 219, 228);
   --code-fg: #637484;
   --code-comment: #a8b3bd;
-  --code-cyan: #36b9ac;
   --code-blue: #0261dc;
+  --code-cyan: #36b9ac;
   --code-purple: #8626dc;
-  --code-green: #13b130;
-  --code-red: #e20a00;
-  --code-orange: #ec790e;
+  --code-green: #19d23b;
+  --code-red: #fd2d78;
   --code-yellow: #ffa90a;
 }
 
-.mode-dark {
-  --inline-code-bg: rgba(199, 146, 234, .1);
-  --code-bg: #171c26;
-  --code-fg: #a8b5d1;
-  --code-comment: #506686;
-  --code-cyan: #4ff2f8;
-  --code-blue: #82aaff;
-  --code-purple: #c792ea;
-  --code-green: #6af699;
-  --code-red: #ff5874;
-  --code-orange: #ffbf7a;
-  --code-yellow: #fffa9e;
+@tailwind base;
+@tailwind components;
+
+::selection {
+    color: theme('colors.black');
+    background: theme('colors.aqua');
 }
 
-html {
-  box-sizing: border-box;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-}
-
-/**
- * Allow adding a border to an element by just adding a border-width.
- *
- * By default, the way the browser specifies that an element should have no
- * border is by setting it's border-style to `none` in the user-agent
- * stylesheet.
- *
- * In order to easily add borders to elements by just setting the `border-width`
- * property, we change the default border-style for all elements to `solid`, and
- * use border-width to hide them instead. This way our `border` utilities only
- * need to set the `border-width` property instead of the entire `border`
- * shorthand, making our border utilities much more straightforward to compose.
- *
- * https://github.com/tailwindcss/tailwindcss/pull/116
- */
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  border-width: 0;
-  border-style: solid;
-  border-color: currentColor;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  display: block;
-}
-
-hr {
-  border: 0px solid #b8c2cc;
-  border-bottom-width: 1px;
-  box-sizing: content-box;
-  height: 0;
-  margin: 2rem 0;
-  overflow: visible;
-}
-
-a {
-  background-color: transparent;
-  color: var(--code-blue);
-  text-decoration: inherit;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-/**
-* Images
-*/
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.mode-dark img {
-  filter: brightness(.8) contrast(1.2);
-}
-
-@media all and (min-width: 768px) {
-  .post-content a:hover { text-decoration: underline; }
-}
-
-/**
-* Reset margins on these things
-*/
-p, blockquote, pre,
-ul, ol, dl, figure {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-/**
-* Paragraphs, ul, ol
-*/
-ul, p, ol {
-  line-height: 1.8;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-}
-
-pre, code, .code, .monospace {
-  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-}
-
-code {
-  color: var(--code-purple);
+code, .prose code {
+  color: var(--inline-code-color);
   background: var(--inline-code-bg);
-  font-size: 1rem;
-  padding: .125rem .25rem;
-  border-radius: .125rem;
+  padding: 0 .25em;
+  border-radius: .125em;
+  font-weight: inherit;
+  display: inline-block;
 }
 
-a > code {
-  color: var(--code-blue);
-  background: none;
+.prose a {
+    color: theme('colors.blue');
+    text-decoration: none;
 }
 
-blockquote {
-  font-size: 1.15rem;
-  font-style: italic;
+.prose a:hover {
+    text-decoration: underline;
 }
 
-.post-content h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 2rem 0 1rem;
+a > code,
+.prose a > code {
+    color: theme('colors.blue');
+    background: rgba(2, 97, 220, 0.08);
+    text-decoration: none;
 }
 
-.post-content h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
+.prose code::before,
+.prose code::after {
+    content: '';
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    font-family: theme('fontFamily.sans')
+}
+
+.prose hr {
+    border: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 178.91 51.46'><path d='M178.43 11.79c-3-12.17-45.59-15.6-32.51-7.07 67.71 7 4.11 38.07-40.7 20.52-1.5 5.58-3.51 4-2.76-.9-1.7-.57-3.39-1.16-5.09-1.76-.88 1.43-2 2.72-2.88 4.15 19.56 7.42 41.07 11.45 61.79 6.9 10.19-1.95 25.57-9.23 22.15-21.84zm-84.51 9.59c-25-10.25-57-19.14-79.72.74C7 29.07-2.85 40.42.78 51c1.46 1.33 4-.28 1.88-1.74.86-16.84 17.19-29.56 32.72-33 19.14-4.42 38.17 2.5 55.86 9.31a34.62 34.62 0 012.68-4.19z' fill='rgb(203, 213, 224)'/><path d='M97.37 22.58c.83-1.15.81-2.85 1.77-3.86-3.38-3.2-10.09 9.09-8.93 12.32 3.6-1.23 4.79-5.78 7.16-8.46zm5.2 5.42c1.78 3.73 3.84-7.78 4.69-9.29-4-.8-5.54 6.29-4.69 9.29z' fill='rgb(203, 213, 224)'/></svg>") no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+    height: 5rem;
 }
 
 /**
@@ -195,7 +95,9 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  background: var(--code-bg);
+  background: transparent;
+  border-top: 1px solid var(--code-border);
+  border-bottom: 1px solid var(--code-border);
   margin: 1rem -1rem 2rem;
   overflow: auto;
   padding: 1rem;
@@ -205,6 +107,7 @@ pre[class*="language-"] {
 @media all and (min-width: 640px) {
   pre[class*="language-"] {
     border-radius: .25rem;
+    border: 1px solid var(--code-border);
     margin-left: 0;
     margin-right: 0;
     width: auto;
@@ -227,18 +130,16 @@ pre[class*="language-"] {
 .token.namespace,
 .token.boolean,
 .token.deleted,
+.token.number,
 .token.interpolation-punctuation {
   color: var(--code-red);
 }
 
 .token.function-name,
-.token.function {
+.token.function,
+.token.attr-name,
+.token.url {
   color: var(--code-blue);
-}
-
-.token.number,
-.token.attr-name {
-  color: var(--code-orange);
 }
 
 .token.property,
@@ -257,18 +158,17 @@ pre[class*="language-"] {
   color: var(--code-purple);
 }
 
+.token.operator,
+.token.entity {
+    color: var(--code-cyan);
+}
+
 .token.string,
 .token.char,
 .token.attr-value,
 .token.regex,
 .token.inserted {
   color: var(--code-green);
-}
-
-.token.operator,
-.token.entity,
-.token.url {
-  color: var(--code-cyan);
 }
 
 .token.important,

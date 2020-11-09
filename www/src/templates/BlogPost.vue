@@ -1,13 +1,13 @@
 <template>
   <Layout :title="$page.post.title">
     <ScrollProgress />
-    
-    <header class="mb-8 leading-tight">
-      <h1 class="font-medium text-3xl my-0">{{ $page.post.title | formatTitle }}</h1>
-      <p class="mb-4 text-sm text-grey-darker dark:text-grey-dark">{{ $page.post.date | formatDate }}</p>
+
+    <header class="leading-tight font-mono inline-flex flex-col items-start max-w-3xl mt-12">
+      <PageHeader :header-text="blogTitle" />
+      <p class="inline-block text-sm md:text-base text-gray-600 mt-8 md:mt-12">Posted on {{ $page.post.date | formatDate }}</p>
     </header>
 
-    <article class="mb-16 post-content leading-normal">
+    <article class="mb-16 leading-normal prose md:prose-lg">
       <div v-html="$page.post.content"></div>
     </article>
   </Layout>
@@ -27,14 +27,21 @@ query Post ($path: String!) {
 import formatDate from '@/filters/formatDate'
 import formatTitle from '@/filters/formatTitle'
 import ScrollProgress from '@/components/ScrollProgress'
+import PageHeader from '@/components/PageHeader'
 
 export default {
   components: {
     ScrollProgress,
+    PageHeader,
   },
   metaInfo () {
     return {
       title: formatTitle(this.$page.post.title)
+    }
+  },
+  computed: {
+    blogTitle() {
+      return formatTitle(this.$page.post.title)
     }
   },
   filters: {

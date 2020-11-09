@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="w-full text-black text-2xl font-sans min-h-screen flex flex-col sm:pl-16 lg:pl-24 px-4 py-6 sm:py-12 leading-tight">
-    lol. wordpress... okay.
+  <div class="text-2xl font-sans pl-4 md:pl-16 pt-8">
+    lol, okay. nice try.
   </div>
 </template>

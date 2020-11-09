@@ -1,5 +1,8 @@
 <template lang="html">
-  <div class="fixed top-0 left-0 bg-blue dark:bg-blue-light z-50" :style="progress"></div>
+  <div class="fixed top-0 inset-x-0 z-50">
+      <div class="absolute top-0 inset-x-0 bg-gradient-to-r from-aqua to-blue z-10 h-1"></div>
+      <div class="z-20 bg-white absolute right-0 top-0 h-1" :style="progress"></div>
+  </div>
 </template>
 
 <script>
@@ -17,10 +20,10 @@ export default {
       return this.clientHeight - this.innerHeight
     },
     calculatedWidth() {
-      return (this.scrollY / this.offset) * 100
+      return 100 - ((this.scrollY / this.offset) * 100)
     },
     progress() {
-      return `height: 2px; width: ${this.calculatedWidth}%`
+      return `width: ${this.calculatedWidth}%`
     }
   },
   mounted() {
