@@ -115,7 +115,7 @@
                     <strong>Firefox</strong>
                 </p>
                 <p>
-                I am a big fan of the open web. Mozilla is one of the few companies that still seems like an advocate for that. Firefox is super fast, it looks great, and unlike Chrome, they're not tracking everything I do so they can sell personalized ads. It's got build in ad and tracker blocking. <code>brew cask install firefox</code>
+                I am a big fan of the open web. Mozilla is one of the few companies that still seems like an advocate for that. Firefox is super fast, it looks great, and unlike Chrome, they're not tracking everything I do so they can sell personalized ads. It's got built-in ad and tracker blocking. <code>brew cask install firefox</code>
                 </p>
             </li>
             <li>
