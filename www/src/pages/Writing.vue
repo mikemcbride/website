@@ -32,19 +32,6 @@ export default {
 }
 </script>
 
-<style scoped>
-.search-icon {
-  left: .25rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.search-input > input:focus + .search-icon,
-.search-input:hover > .search-icon {
-  opacity: 1;
-}
-</style>
-
 <page-query>
 query BlogList {
   allBlogPost(filter: { published: { eq: true }}) {
