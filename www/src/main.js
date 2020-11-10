@@ -2,31 +2,36 @@ import '~/assets/tailwind.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
-  head.meta.push({
-    name: 'description',
-    content: 'Personal website of Mike McBride'
-  })
+    head.meta.push({
+        name: 'description',
+        content: 'Personal website of Mike McBride'
+    })
+    head.link.push({
+        rel: "preload",
+        href: "/inter/Inter.var-subset.woff2",
+        as: "font",
+        crossorigin: "anonymous"
+    })
+//   head.link.push({
+//     rel: "preload",
+//     href: "/inter/Inter-Regular-subset.woff2?v=3.11",
+//     as: "font",
+//     crossorigin: "anonymous"
+//   })
+//
+//   head.link.push({
+//     rel: "preload",
+//     href: "/inter/Inter-Bold-subset.woff2?v=3.11",
+//     as: "font",
+//     crossorigin: "anonymous"
+//   })
 
-  head.link.push({
-    rel: "preload",
-    href: "/inter/Inter-Regular-subset.woff2?v=3.11",
-    as: "font",
-    crossorigin: "anonymous"
-  })
-
-  head.link.push({
-    rel: "preload",
-    href: "/inter/Inter-Bold-subset.woff2?v=3.11",
-    as: "font",
-    crossorigin: "anonymous"
-  })
-
-  head.link.push({
-    rel: "preload",
-    href: "/inter/Inter-Black-subset.woff2?v=3.11",
-    as: "font",
-    crossorigin: "anonymous"
-  })
+//   head.link.push({
+//     rel: "preload",
+//     href: "/inter/Inter-Black-subset.woff2?v=3.11",
+//     as: "font",
+//     crossorigin: "anonymous"
+//   })
 
   head.link.push({
     rel: "preload",
