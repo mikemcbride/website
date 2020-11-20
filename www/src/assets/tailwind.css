@@ -138,11 +138,15 @@ pre[class*="language-"] {
 .token.function-name,
 .token.function,
 .token.attr-name,
+.token.property,
+.language-html .token.attr-value,
 .token.url {
   color: var(--code-blue);
 }
 
-.token.property,
+.language-html .token.property,
+.language-html .token.attr-name,
+.language-html .token.namespace,
 .token.class-name,
 .token.constant,
 .token.variable,

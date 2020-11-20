@@ -8,10 +8,9 @@ excerpt: Let's look at how we can change the default branch in our git repos and
 GitHub is changing the default branch name on all new repositories from `master` to `main`. They obviously won't change it on existing repos (because, you know, that would be super uncool and break half the internet). So maybe you want to update some (or all) of your existing repositories to use `main` as well. Or maybe you want do go with something else, like `default` or `unicorns`. It's your repo, I won't judge.
 
 Surprisingly (maybe?) it's not too hard! It will likely take you less than 5 minutes. Let's dig in.
-<br>
-<br>
 
-## Step 1: rename the branch
+
+## Step 1: Rename the branch
 
 We'll stick with `main` for this post, but feel free to substitute that for whatever you want. In your terminal at the root of your project, run this command:
 
@@ -22,8 +21,7 @@ git branch -m master main
 This will rename the `master` branch to `main` without modifying any of the branch's history. Pretty nifty! If you run `git branch -a` in the terminal, you should no longer see `master` (but you *should* see `remotes/origin/master` - we'll deal with that in a bit).
 
 Cool, so now the branch is renamed on our machine. What's next?
-<br>
-<br>
+
 
 ## Step 2: Update the remote
 
@@ -35,8 +33,7 @@ git push -u origin main
 
 That's the command to tell the git remote that we have a new branch (`-u` flag sets "upstream tracking"). Nothing too crazy there.
 
-<br>
-<br>
+
 
 ## Step 3: Change the default branch in your repo
 
@@ -52,8 +49,7 @@ Now `main` is your default branch in the repo. Pull requests will automatically 
 
 Furthermore, we still have the remote branch on our local repository at `remotes/origin/master`. Let's clean that up too.
 
-<br>
-<br>
+
 
 ## Step 4: Remove the `master` remote
 
@@ -109,8 +105,7 @@ git remote set-head origin main
 
 All better! Let's wrap it up now.
 
-<br>
-<br>
+
 
 ## Step 5: Double check your work
 
@@ -144,8 +139,7 @@ We can fix up that broken ref by running the same command from earlier:
 git remote set-head origin main
 ```
 
-<br>
-<br>
+
 
 ## Conclusion
 

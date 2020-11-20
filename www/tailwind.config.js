@@ -1,9 +1,4 @@
 module.exports = {
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-        defaultLineHeights: true
-    },
     theme: {
         extend: {
             colors: {
@@ -70,10 +65,6 @@ module.exports = {
         },
         textColor: theme => theme('colors'),
         backgroundColor: theme => theme('colors'),
-        borderColor: theme => ({
-            default: theme('colors.grey-light'),
-            ...theme('colors')
-        }),
         height: {
             'auto': 'auto',
             'px': '1px',
