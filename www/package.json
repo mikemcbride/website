@@ -19,7 +19,7 @@
         "@gridsome/remark-prismjs": "^0.3.0",
         "@gridsome/source-filesystem": "^0.6.1",
         "@gridsome/transformer-remark": "^0.6.3",
-        "@tailwindcss/typography": "^0.2.0",
+        "@tailwindcss/typography": "^0.3.0",
         "gridsome-plugin-feed": "^1.0.2",
         "marked": "^0.8.0",
         "title": "^3.4.1"
