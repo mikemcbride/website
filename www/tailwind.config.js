@@ -3,13 +3,13 @@ module.exports = {
         extend: {
             colors: {
                 'black': '#1b212c',
-                'blue': '#0261dc',
+                'blue': '#2563EB',
                 'white': '#ffffff',
                 'inherit': 'inherit',
                 'yellow': '#f7f474',
                 'aqua': '#5CEACE',
                 'hot-pink': '#fd2d78',
-                'purple': '#8626dc'
+                'purple': '#6D28D9'
             },
             inset: {
                 '1/2': '50%'

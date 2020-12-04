@@ -6,7 +6,7 @@
         <CircleSolidWide class="w-full" />
     </span>
     <span class="z-10 relative inline-block font-mono font-medium tracking-wider" :class="{
-      'text-hot-pink transform -rotate-2': active === true,
+      'text-hot-pink': active === true,
       'text-black hover:text-hot-pink': active === false
     }">
         {{ title }}
