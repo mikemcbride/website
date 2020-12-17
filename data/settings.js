@@ -7,10 +7,6 @@ export default {
     {
       title: 'Twitter',
       to: 'https://twitter.com/_mcbridem_',
-    },
-    {
-      title: 'RSS',
-      to: '/feed.json'
     }
   ],
   twitterUrl: 'https://twitter.com/_mcbridem_',

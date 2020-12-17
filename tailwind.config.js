@@ -1,4 +1,6 @@
 module.exports = {
+    purge: ['./pages/**/*.js', './components/**/*.js'],
+    darkMode: false,
     theme: {
         extend: {
             colors: {
@@ -176,12 +178,5 @@ module.exports = {
     variants: {
         rotate: ['responsive', 'hover', 'focus', 'group-hover'],
         translate: ['responsive', 'hover', 'focus', 'group-hover'],
-    },
-    purge: {
-        content: [
-            './src/**/*.vue',
-            './writing/**/*.md',
-            './writing/**/*.html'
-        ],
     }
 }
