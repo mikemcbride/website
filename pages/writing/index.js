@@ -41,6 +41,13 @@ export async function getStaticProps() {
             }
         }).sort((a, b) => {
             return new Date(b.postDate) - new Date(a.postDate)
+        }).filter(post => {
+            // if we have a "published" field, respect that
+            if (post.frontmatter.published !== undefined) {
+                return post.frontmatter.published === true
+            }
+            // otherwise, default to true
+            return true
         }).map(x => {
             delete x.postDate
             return x
