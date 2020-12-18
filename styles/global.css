@@ -29,6 +29,10 @@ code, .prose code {
   display: inline-block;
 }
 
+.prose code {
+    margin: 0 !important; /* this fixes some weird margin stuff that prose sometimes adds */
+}
+
 .prose a {
     color: theme('colors.blue');
     text-decoration: none;

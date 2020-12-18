@@ -1,0 +1,16 @@
+{
+    "title": "Mike McBride",
+    "description": "Mike McBride is on the internet.",
+    "writing": {
+        "title": "Writing | Mike McBride",
+        "description": "Mike McBride is writing stuff on the internet."
+    },
+    "projects": {
+        "title": "Projects | Mike McBride",
+        "description": "Mike McBride is building stuff for the internet."
+    },
+    "uses": {
+        "title": "Uses | Mike McBride",
+        "description": "Mike McBride uses stuff to do stuff on the internet."
+    }
+}

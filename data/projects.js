@@ -6,17 +6,17 @@ export default [
     type: "website"
   },
   {
+    title: "Flexbox Playground",
+    description: "A web app that allows you to experiment with and understand how flexbox works.",
+    source: "https://github.com/mikemcbride/flexbox-playground",
+    url: "https://flexbox.tech",
+    type: "utility"
+  },
+  {
     title: "Box Shadows",
     description: "A web app for visualizing and generating code for box-shadows.",
     source: "https://github.com/two-beards/box-shadows",
     url: "https://box-shadow.dev",
-    type: "utility"
-  },
-  {
-    title: "Flexbox Playground",
-    description: "A web app that allows you to experiment with and understand how flexbox works. Note that while this app will technically load on a phone, it's definitely intended to be used on a larger screen and probably won't work very well on smaller devices.",
-    source: "https://github.com/mikemcbride/flexbox-playground",
-    url: "https://flexbox.tech",
     type: "utility"
   },
   {

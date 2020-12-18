@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = 'Personal website of Mike McBride'
+const defaultDescription = 'Mike McBride is making stuff for the internet'
 const defaultOGURL = ''
 const defaultOGImage = ''
 
@@ -12,11 +12,11 @@ const Head = (props) => (
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="preload" href="/inter/Inter.var-subset.woff2" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Regular.woff2" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Medium.woff2" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Bold.woff2" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Italic.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/inter/Inter.var-subset.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/code-saver/CodeSaver-Regular.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/code-saver/CodeSaver-Medium.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/code-saver/CodeSaver-Bold.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/code-saver/CodeSaver-Italic.woff2" as="font" crossOrigin="anonymous" />
     <link rel="stylesheet" href="/code-saver/code-saver.css" />
     <link rel="stylesheet" href="/inter/inter.css" />
     <meta property="og:url" content={props.url || defaultOGURL} />

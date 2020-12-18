@@ -39,13 +39,13 @@ That's the command to tell the git remote that we have a new branch (`-u` flag s
 
 In your repo on GitHub.com, go to `Settings > Branches`, or navigate to `https://github.com/your-user-name/your-repo/settings/branches` and you should see an option at the top for "Default branch". Click the dropdown and change it from `master` to `main`:
 
-![Change default branch](./default-branch.png)
+![Change default branch](/img/git-default-branch.png)
 
 > Don't forget to click "Update" once you've selected a new branch!
 
 Now `main` is your default branch in the repo. Pull requests will automatically go against this branch, etc. - but we still have a little work to do. If you go to the main page for your repo, you'll notice the `master` branch is still hanging around:
 
-![List branches](./list-branches.png)
+![List branches](/img/git-list-branches.png)
 
 Furthermore, we still have the remote branch on our local repository at `remotes/origin/master`. Let's clean that up too.
 

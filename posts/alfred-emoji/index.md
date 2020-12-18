@@ -31,7 +31,7 @@ First thing you'll have to do is download and install the pack from the link abo
 
 In order for snippets to auto-expand in any application, you need to enable this setting:
 
-![Enable auto expansion in Alfred app](./auto-expansion.png)
+![Enable auto expansion in Alfred app](/img/alfred-auto-expansion.png)
 
 That gets you part of the way there - if you know the keyword for your emoji, you can type `:keyword:` in any app and it will auto-expand, no extra work required.
 
@@ -41,20 +41,20 @@ Cool... but what if you don't know the name of the emoji EXACTLY?
 
 You have two other options for searching through your snippets. The first is to open Alfred and type your snippet keyword (defined in that same settings page), then start typing your snippet name:
 
-![Picking an emoji using snippet search](./snippet-search.png)
+![Picking an emoji using snippet search](/img/alfred-snippet-search.png)
 
 The other option for searching through snippets is to enable a global hotkey:
 
-![Alfred snippet settings](./snippet-settings.png)
+![Alfred snippet settings](/img/alfred-snippet-settings.png)
 
 A few things to note about these settings:
 
-- Make sure you set your viewer hotkey if you want a global hotkey. Click into the field and then press your desirerd key combo. I like `cmd` + `;` because that's what I used on Mojibar and it was very natural since the semicolon is the same key used to trigger it in apps like Slack and GitHub, except using `cmd` instead of `shift`. I also found that it's not a key combo that is used very often as a shortcut so I'm not overriding things.
+- Make sure you set your viewer hotkey if you want a global hotkey. Click into the field and then press your desired key combo. I like `cmd` + `;` because that's what I used on Mojibar and it was very natural since the semicolon is the same key used to trigger it in apps like Slack and GitHub, except using `cmd` instead of `shift`. I also found that it's not a key combo that is used very often as a shortcut so I'm not overriding things.
 - You'll want to make sure "Word based" is NOT checked. I found myself wanting to trigger the shortcut and start typing the emoji name. When it's a single word, the snippet search sees the `:` as part of the word, and so searching "whiskey" would return no results. Unchecking "Word based" makes it act more like a fuzzy search.
 
 Here's what that looks like:
 
-![Selecting a snippet with the snippet hotkey search](./select-snippet.png)
+![Selecting a snippet with the snippet hotkey search](/img/alfred-select-snippet.png)
 
 In either of the two approaches to searching snippets, Alfred will automatically paste the snippet into the underlying application.
 
@@ -62,7 +62,7 @@ In either of the two approaches to searching snippets, Alfred will automatically
 
 That's all great, but sometimes I don't remember a keyword for an emoji and it drives me nuts trying to remember. It would be sweet if I could add an alias. Rocket allows you to add custom keywords and map that to an emoji. In Alfred, all we have to do is go into our snippets and add a new one. You'll want to follow the convention in the Emoji Pack, where the Name of the snippet is the emoji plus the keyword. This helps when searching to see which emoji you'll be picking.
 
-![Adding a custom snippet](./custom-snippet.png)
+![Adding a custom snippet](/img/alfred-custom-snippet.png)
 
 ## Recap
 
@@ -73,4 +73,4 @@ By using the Alfred Emoji Pack and tweaking a few of our Alfred snippet settings
 - paste the selected emoji into the underlying application, like qmoji or Rocket
 - auto-expansion (no other Mac emoji apps do this, but apps like Slack and GitHub do it)
 
-Hopefully this was helpful! I love productivity hacks and automating stuff, so if you have any other great Alfred workflows you want to share I'd love to hear them. <a href="https://twitter.com/_mcbridem_" target="_blank" rel="nofollow noreferrer">Hit me up on Twitter</a>!
+Hopefully this was helpful! I love productivity hacks and automating stuff, so if you have any other great Alfred workflows you want to share I'd love to hear them.

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '../components/Link'
 import Layout from '../components/Layout'
 import Avatar from '../components/Avatar'
 import PageHeader from '../components/PageHeader'
@@ -7,8 +7,8 @@ import WhatOthersAreSaying from '../components/WhatOthersAreSaying'
 import OxfordCommaJoke from '../components/OxfordCommaJoke'
 import Divider from '../components/Divider'
 
-const Index = ({ title, description, ...props }) => (
-    <Layout pageTitle={title}>
+const Index = ({ title, description }) => (
+    <Layout pageTitle={title} description={description}>
         <section className="md:flex">
           <div className="text-center mb-8 mt-4 md:mr-8">
             <Avatar />
@@ -39,10 +39,21 @@ const Index = ({ title, description, ...props }) => (
         </section>
         <WhatOthersAreSaying />
         <p className="leading-loose text-lg md:text-xl text-gray-800 mb-12">
-             I like meeting new people. If you do too, you can hit me up on <a rel="nofollow noreferrer" target="_blank" className="text-blue underline hover:text-hot-pink hover:underline" href="https://twitter.com/_mcbridem_">Twitter</a> and return the favor. If you're still not sure, you can keep browsing this site and make up your mind. Maybe <Link href="/projects"><a className="text-blue underline hover:text-hot-pink hover:underline">check out some stuff I've built</a></Link> or <Link href="/writing"><a className="text-blue underline hover:text-hot-pink hover:underline">read some words I've written</a></Link>.
+             I like meeting new people. If you do too, you can hit me up on <a rel="nofollow noreferrer" target="_blank" className="text-blue underline hover:text-hot-pink hover:underline" href="https://twitter.com/_mcbridem_">Twitter</a> and return the favor. If you're still not sure, you can keep browsing this site and make up your mind. Maybe <Link href="/projects" className="text-blue underline hover:text-hot-pink hover:underline">check out some stuff I've built</Link> or <Link href="/writing" className="text-blue underline hover:text-hot-pink hover:underline">read some words I've written</Link>.
         </p>
         <p className="mb-24 text-lg md:text-xl">Thanks for stopping by!</p>
     </Layout>
 )
 
 export default Index
+
+export async function getStaticProps() {
+  const configData = await import('../siteconfig.json')
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.description,
+    },
+  }
+}

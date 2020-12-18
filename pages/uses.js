@@ -1,8 +1,8 @@
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 
-const Uses = ({ title, description, ...props}) => (
-    <Layout pageTitle={title}>
+const Uses = ({ title, description }) => (
+    <Layout pageTitle={title} description={description}>
           <PageHeader>Uses</PageHeader>
           <article className="prose lg:prose-xl mb-16">
           <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="nofollow noreferrer">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
@@ -206,3 +206,14 @@ const Uses = ({ title, description, ...props}) => (
 )
 
 export default Uses
+
+export async function getStaticProps() {
+    const configData = await import('../siteconfig.json')
+
+    return {
+        props: {
+            title: configData.default.uses.title,
+            description: configData.default.uses.description
+        },
+    }
+}
