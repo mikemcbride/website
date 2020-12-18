@@ -1,5 +1,15 @@
 {
   "name": "website",
+  "license": "ISC",
+  "engines": {
+      "node": "^12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemcbride/website.git"
+  },
+  "author": "mikemcbride",
+  "description": "Personal website",
   "scripts": {
     "dev": "next",
     "build": "next build",
