@@ -2,7 +2,7 @@
   "name": "website",
   "license": "ISC",
   "engines": {
-      "node": "^12.x"
+    "node": "^12.x"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.3",
+    "react-syntax-highlighter": "^15.4.3",
     "tailwindcss": "^2.0.2",
     "title": "^3.4.2"
   }

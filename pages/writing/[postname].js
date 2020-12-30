@@ -5,6 +5,7 @@ import formatDate from '../../utils/formatDate'
 import formatTitle from '../../utils/formatTitle'
 import ScrollProgress from '../../components/ScrollProgress'
 import PageHeader from '../../components/PageHeader'
+import CodeBlock from '../../components/CodeBlock'
 
 export default function BlogPost({ frontmatter, markdownBody }) {
     if (!frontmatter) return <></>
@@ -19,7 +20,7 @@ export default function BlogPost({ frontmatter, markdownBody }) {
           </header>
 
           <article className="mb-16 leading-normal prose md:prose-lg">
-            <ReactMarkdown source={markdownBody} />
+            <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
           </article>
         </Layout>
     )

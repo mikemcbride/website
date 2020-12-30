@@ -74,7 +74,9 @@ a > code,
 /* purgecss start ignore */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre.prismjs,
+.prose code[class*="language-"],
+.prose pre.prismjs {
   color: var(--code-fg);
   background: none;
   border-radius: 0;
@@ -98,7 +100,8 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre.prismjs,
+.prose pre.prismjs {
   background: transparent;
   border-top: 1px solid var(--code-border);
   border-bottom: 1px solid var(--code-border);
@@ -109,7 +112,8 @@ pre[class*="language-"] {
 }
 
 @media all and (min-width: 640px) {
-  pre[class*="language-"] {
+  .prose pre.prismjs,
+  pre.prismjs {
     border-radius: .25rem;
     border: 1px solid var(--code-border);
     margin-left: 0;
@@ -118,6 +122,11 @@ pre[class*="language-"] {
   }
 }
 
+.prose .token.comment,
+.prose .token.block-comment,
+.prose .token.prolog,
+.prose .token.doctype,
+.prose .token.cdata,
 .token.comment,
 .token.block-comment,
 .token.prolog,
@@ -126,10 +135,17 @@ pre[class*="language-"] {
   color: var(--code-comment);
 }
 
+.prose .token.punctuation,
 .token.punctuation {
   color: var(--code-fg);
 }
 
+.prose .token.tag,
+.prose .token.namespace,
+.prose .token.boolean,
+.prose .token.deleted,
+.prose .token.number,
+.prose .token.interpolation-punctuation,
 .token.tag,
 .token.namespace,
 .token.boolean,
@@ -139,6 +155,12 @@ pre[class*="language-"] {
   color: var(--code-red);
 }
 
+.prose .token.function-name,
+.prose .token.function,
+.prose .token.attr-name,
+.prose .token.property,
+.prose .language-html .token.attr-value,
+.prose .token.url,
 .token.function-name,
 .token.function,
 .token.attr-name,
@@ -148,6 +170,13 @@ pre[class*="language-"] {
   color: var(--code-blue);
 }
 
+.prose .language-html .token.property,
+.prose .language-html .token.attr-name,
+.prose .language-html .token.namespace,
+.prose .token.class-name,
+.prose .token.constant,
+.prose .token.variable,
+.prose .token.symbol,
 .language-html .token.property,
 .language-html .token.attr-name,
 .language-html .token.namespace,
@@ -158,6 +187,11 @@ pre[class*="language-"] {
   color: var(--code-yellow);
 }
 
+.prose .token.selector,
+.prose .token.important,
+.prose .token.atrule,
+.prose .token.keyword,
+.prose .token.builtin,
 .token.selector,
 .token.important,
 .token.atrule,
@@ -166,11 +200,18 @@ pre[class*="language-"] {
   color: var(--code-purple);
 }
 
+.prose .token.operator,
+.prose .token.entity,
 .token.operator,
 .token.entity {
     color: var(--code-cyan);
 }
 
+.prose .token.string,
+.prose .token.char,
+.prose .token.attr-value,
+.prose .token.regex,
+.prose .token.inserted,
 .token.string,
 .token.char,
 .token.attr-value,
@@ -179,14 +220,19 @@ pre[class*="language-"] {
   color: var(--code-green);
 }
 
+.prose .token.important,
+.prose .token.bold,
 .token.important,
 .token.bold {
   font-weight: bold;
 }
+
+.prose .token.italic,
 .token.italic {
   font-style: italic;
 }
 
+.prose .token.entity,
 .token.entity {
   cursor: help;
 }
