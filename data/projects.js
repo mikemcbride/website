@@ -41,6 +41,13 @@ export default [
     type: "utility"
   },
   {
+    title: "VSCode Theme Builder",
+    description: "A library that makes it easier to build VSCode themes. Allows you to use variables and interpolation with a config file for consistent theming.",
+    url: "https://npmjs.com/package/@two-beards/vscode-theme-builder",
+    source: "https://github.com/two-beards/vscode-theme-builder",
+    type: "utility"
+  },
+  {
     title: "object-has-value",
     description: "A function to efficiently test whether an object contains the specified value. Very useful when filtering arrays of objects.",
     url: "https://npmjs.com/package/object-has-value",
