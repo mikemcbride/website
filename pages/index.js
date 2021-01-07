@@ -29,7 +29,7 @@ const Index = ({ title, description }) => (
           <PageHeader>About Me</PageHeader>
           <div className="leading-loose text-lg md:text-xl text-gray-800">
             I'm a web developer from St. Louis, MO, where I live with&nbsp;
-            <a rel="nofollow noreferrer" target="_blank" className="text-blue underline hover:text-hot-pink hover:underline" href="https://instagram.com/putting.on.love">my wife</a>
+            <a rel="nofollow noreferrer" target="_blank" className="default-link" href="https://instagram.com/putting.on.love">my wife</a>
             &nbsp;and our four children. I enjoy running, LSU football, reading, Oxford commas<OxfordCommaJoke /> and keyboard shortcuts.
           </div>
         </section>
@@ -39,7 +39,7 @@ const Index = ({ title, description }) => (
         </section>
         <WhatOthersAreSaying />
         <p className="leading-loose text-lg md:text-xl text-gray-800 mb-12">
-             I like meeting new people. If you do too, you can hit me up on <a rel="nofollow noreferrer" target="_blank" className="text-blue underline hover:text-hot-pink hover:underline" href="https://twitter.com/_mcbridem_">Twitter</a> and return the favor. If you're still not sure, you can keep browsing this site and make up your mind. Maybe <Link href="/projects" className="text-blue underline hover:text-hot-pink hover:underline">check out some stuff I've built</Link> or <Link href="/writing" className="text-blue underline hover:text-hot-pink hover:underline">read some words I've written</Link>.
+             I like meeting new people. If you do too, you can hit me up on <a rel="nofollow noreferrer" target="_blank" className="default-link" href="https://twitter.com/_mcbridem_">Twitter</a> and return the favor. If you're still not sure, you can keep browsing this site and make up your mind. Maybe <Link href="/projects" className="default-link">check out some stuff I've built</Link> or <Link href="/writing" className="default-link">read some words I've written</Link>.
         </p>
         <p className="mb-24 text-lg md:text-xl">Thanks for stopping by!</p>
     </Layout>

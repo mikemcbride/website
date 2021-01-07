@@ -33,13 +33,17 @@ code, .prose code {
     margin: 0 !important; /* this fixes some weird margin stuff that prose sometimes adds */
 }
 
+.default-link,
 .prose a {
-    color: theme('colors.blue');
     text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid theme('colors.teal');
+    position: relative;
 }
 
+.default-link:hover,
 .prose a:hover {
-    text-decoration: underline;
+    border-bottom-color: theme('colors.hot-pink');
 }
 
 a > code,

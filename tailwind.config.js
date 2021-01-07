@@ -10,6 +10,7 @@ module.exports = {
                 'inherit': 'inherit',
                 'yellow': '#f7f474',
                 'aqua': '#5CEACE',
+                'teal': '#27ffbc',
                 'hot-pink': '#fd2d78',
                 'purple': '#6D28D9'
             },
