@@ -2,9 +2,9 @@
   --inline-code-bg: #F5F3FF;
   --inline-code-color: #6D28D9;
   --code-border: #CBD5E1;
-  --code-fg: #637484;
+  --code-fg: #6e7f91;
   --code-comment: #a8b3bd;
-  --code-blue: #1D4ED8;
+  --code-blue: #2563eb;
   --code-cyan: #06B6D4;
   --code-purple: #7C3AED;
   --code-green: #10B981;
@@ -36,7 +36,6 @@ code, .prose code {
 .default-link,
 .prose a {
     text-decoration: none;
-    font-weight: bold;
     border-bottom: 3px solid theme('colors.teal');
     position: relative;
 }
