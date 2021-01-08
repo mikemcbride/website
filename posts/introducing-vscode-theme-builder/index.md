@@ -5,7 +5,7 @@ published: true
 excerpt: I made a new library to make authoring VS Code Themes easier to manage. Check it out!
 ---
 
-This is a post announcing a new package I've been working on intermittently throughout 2020 and I'm thrilled that it's finally ready for everyone to use. I have been using it locally in one of my own themes to work out the kinks. [Here's a link](https://www.npmjs.com/package/@two-beards/vscode-theme-builder), and you can read on to learn more about it.
+This is a post announcing a new package I've been working on intermittently throughout 2020 and I'm thrilled that it's finally ready for everyone to use. I have been using it locally in one of my own themes to work out the kinks. [Here's a link to the package](https://www.npmjs.com/package/@two-beards/vscode-theme-builder), and you can read on to learn more about it. The [GitHub repo](https://github.com/two-beards/vscode-theme-builder) has a more in-depth walkthrough on how to set it up in your project if you prefer that.
 
 ### So what is it?
 
@@ -25,9 +25,11 @@ Fair question. Authoring a VS Code theme can be pretty tedious. The JSON theme f
 }
 ```
 
-Then you create a config file in your project that might look like this:
+Then you create a config file (the library looks for `theme.config.js`) in your project that looks something like this:
 
 ```js
+// theme.config.js
+
 module.exports = {
     name: 'Early Riser',
     inputFile: 'theme.json',
@@ -41,7 +43,7 @@ module.exports = {
 }
 ```
 
-Once you install the package in your project using Yarn or npm, you can create a build script that will take the input file (in our example, `theme.json`), parse it and replace the variables defined in our config, then output the new JSON file in the location specified in the config. In this example, it would create a new file (or overwite an existing one) at `./themes/early-riser-color-theme.json`.
+Once you install the dependency using Yarn or npm, the `build-theme` binary becomes available to us. By default, it will look for a file called `theme.config.js` in the root of our project, but we can specify a different file if we choose. We do that by passing a second parameter to our build script. The build script will take the input file defined in our config (in this example, `theme.json`), parse it, replace the variables with the values defined in our config, then output the new JSON file in the location specified in the config. In this example, it would create a new file (or overwite an existing one) at `./themes/early-riser-color-theme.json`.
 
 I do it like this in my theme:
 
@@ -54,8 +56,17 @@ I do it like this in my theme:
 }
 ```
 
-The `build-theme` binary is available to us when we install the package. By default, it will look for a file called `theme.config.js` in the root of our project, but we can specify a different file if we choose.
+If you wanted to use a different file or put the config file elsewhere in your project, you would tell the `build-theme` script by passing a second parameter:
 
-If you think this might be helpful for you, check it out [on GitHub](https://github.com/two-beards/vscode-theme-builder). If you'd like to see an example of it out in the wild, my [Electron Highlighter theme](https://github.com/mikemcbride/vscode-electron-highlighter) uses this package.
+```json
+{
+    "scripts": {
+        "build": "build-theme ./config/theme.config.js",
+        "publish": "npm run build && vsce publish"
+    }
+}
+```
+
+If you think this might be helpful for you, there's a lot more detailed information [on GitHub](https://github.com/two-beards/vscode-theme-builder). If you'd like to see an example of it out in the wild, my [Electron Highlighter](https://github.com/mikemcbride/vscode-electron-highlighter) and [Early Riser](https://github.com/mikemcbride/vscode-early-riser) themes use this library.
 
 Enjoy!
