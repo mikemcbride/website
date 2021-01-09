@@ -14,7 +14,7 @@ export default function WhatOthersAreSaying() {
                 <div className="relative transform -rotate-2 text-hot-pink text-lg md:text-xl md:w-2/3 md:mr-12">
                     <BigQuote />
                     <p className="mb-2">Mike writes the most elegant JavaScript I have ever seen. If you’re looking for the pinnacle of web development talent, look no further.</p>
-                    <div className="text-right">- Mark Zuckerberg</div>
+                    <div className="text-right">- Tim Cook</div>
                 </div>
             </div>
             <div className="relative text-gray-700 text-lg md:text-xl md:ml-16 md:w-1/2 mb-16">
