@@ -1,7 +1,6 @@
 import Link from './Link'
 
 const TitleLink = ({ href, children }) => {
-    console.log(children, children.length)
     let rotation = '-rotate-2 group-hover:-rotate-2'
     if (children.length < 15) {
         rotation = '-rotate-4 group-hover:-rotate-4'
