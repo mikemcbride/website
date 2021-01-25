@@ -10,6 +10,8 @@ GitHub is changing the default branch name on all new repositories from `master`
 Surprisingly (maybe?) it's not too hard! It will likely take you less than 5 minutes. Let's dig in.
 
 
+**Update:** GitHub recently [introduced a new feature](https://github.blog/changelog/2021-01-19-support-for-renaming-an-existing-branch/) that makes it significantly easier to rename an existing branch in their UI. The steps below will still help you if you're using GitLab or Bitbucket, but if you use GitHub you can use the built-in feature.
+
 ## Step 1: Rename the branch
 
 We'll stick with `main` for this post, but feel free to substitute that for whatever you want. In your terminal at the root of your project, run this command:
