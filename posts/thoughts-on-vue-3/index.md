@@ -5,9 +5,9 @@ published: true
 excerpt: Vue 3 is out of beta, and I've tried it out on a few projects. Here are some early thoughts.
 ---
 
-I've been a big fan of Vue for a number of years now. Our organization at work was updating our tech stack when AngularJS went to version 2.0 and became Angular and was a complete rewrite. I'm sure I'm not alone in that experience. We evaluated a number of frameworks and landed on Vue because of it's familiarity in coming from AngularJS and it's ease of adoption. Vue has incredible documentation and the learning curve was not very steep. This was ideal when trying to onboard 300+ developers with varying levels of skill to a new framework. Overall the switch was largely successful.
+I've been a big fan of Vue for a number of years now. Our organization at work was updating our tech stack when AngularJS went to version 2.0 and became Angular and was a complete rewrite. I'm sure I'm not alone in that experience. We evaluated a number of frameworks and landed on Vue because of its familiarity in coming from AngularJS and its ease of adoption. Vue has incredible documentation and the learning curve was not very steep. This was ideal when trying to onboard 300+ developers with varying levels of skill to a new framework. Overall the switch was largely successful.
 
-That was over 5 years ago, and in that time I've invested a ton of time becoming a go-to person within our company for all things Vue related. So when Vue 3 went into beta and eventually out of beta, I started playing around with it on some side projects to get a feel for what it's like. Here are some thoughts about that.
+That was nearly 5 years ago, and in that time I've invested a ton of time becoming a go-to person within our company for all things Vue related. So when Vue 3 went into beta and eventually out of beta, I started playing around with it on some side projects to get a feel for what it's like. Here are some thoughts about that.
 
 _NB: As you read this, please keep in mind that I have not used Vue 3 on any large-scale project. It's all been smaller stuff, so while I have been able to get a general feel for what it's like to work with, building a large app is significantly different than the type of stuff I'm doing with these side projects._
 
@@ -27,11 +27,11 @@ I also stumbled a few times with certain things. For instance, the concept of us
 
 ## Comparisons
 
-Now let's look at Vue compared to some other major players in the front-end game/
+Now let's look at Vue compared to some other major players in the front-end game.
 
 ### Following the Leader
 
-React has been the main name in front-end JS frameworks for a long time. Vue seems to be taking innovative features that React introduces and porting them over to Vue, although the features may look a little different. Hooks were introduced a couple years ago, which heavily inspired the Composition API. React introduced Fragments (multiple root-nodes in a single component), and Vue added support for multi-root components. React came out with Portals, and Vue followed up with Teleport. These features are all taken directly from the innovative things the React team is doing. Even meta frameworks started with React and then similar frameworks were created for Vue - Next.js and Gatsby for React paved the way for Nuxt and Gridsome. I have no doubts that the Vue team has some unreal talent, and Evan is brilliant. Vue will continue to be very successful, I just worry that they're not innovating and are just following.
+React has been the main name in front-end JS frameworks for a long time. Vue seems to be taking innovative features that React introduces and porting them over to Vue, although the features may look a little different. Hooks were introduced a couple years ago, which heavily inspired the Composition API. React introduced Fragments (multiple root-nodes in a single component), and Vue added support for multi-root components. React came out with Portals, and Vue followed up with Teleport. These features are all taken directly from the innovative things the React team is doing. Even meta frameworks started with React and then similar frameworks were created for Vue - Next.js and Gatsby for React paved the way for Nuxt and Gridsome. I have no doubts that the Vue team has some unreal talent, and Evan is brilliant. Vue will continue to be very successful, I just worry that they're not innovating and are simply following in the footsteps of giants.
 
 ### Simplicity
 
@@ -41,4 +41,4 @@ On the other hand, Svelte has continued to impress me with its simplicity. It fe
 
 ## Closing Thoughts
 
-Overall, I think Vue 3 is a good update. I have been reading a lot of things from people who say it took them a bit to get ramped up but once they did they have found they are vastly more productive. I love Vue and I want to get to that point, but I'll be honest - I'm worried. I worry that it went from a framework that felt easy to pick up to something more complex to try and keep up with the features from other frameworks.
+Overall, I think Vue 3 is a good update. I have been reading a lot of things from people who say it took them a bit to get ramped up but once they did they have found they are vastly more productive. I love Vue and I want to get to that point, but I'll be honest - I'm worried. I worry that it went from a framework that felt easy to pick up to something more complex to try and keep up with the features from other frameworks. Here's to hoping I'm wrong.
