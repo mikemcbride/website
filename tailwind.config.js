@@ -45,7 +45,7 @@ module.exports = {
                 'serif',
             ],
             'mono': [
-                'Code Saver',
+                'MonoLisa',
                 'SFMono-Regular',
                 'Menlo',
                 'Monaco',

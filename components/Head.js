@@ -13,11 +13,11 @@ const Head = (props) => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="preload" href="/inter/Inter.var-subset.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Regular.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Medium.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Bold.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="preload" href="/code-saver/CodeSaver-Italic.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="stylesheet" href="/code-saver/code-saver.css" />
+    <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/monolisa/MonoLisa-Medium.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/monolisa/MonoLisa-Bold.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/monolisa/MonoLisa-Italic.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="/monolisa/monolisa.css" />
     <link rel="stylesheet" href="/inter/inter.css" />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || 'Mike McBride'} />
