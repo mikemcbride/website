@@ -1,6 +1,6 @@
 import Link from './Link'
 import HorizontalPad from './HorizontalPad'
-import NavLink from './NavLink'
+import NavMenu from './NavMenu'
 
 const SiteNav = () => (
     <HorizontalPad>
@@ -11,12 +11,7 @@ const SiteNav = () => (
                 </Link>
                 <div className="absolute inset-0 bg-gradient-to-r from-hot-pink to-purple transform rotate-3 md:rotate-0 group-hover:rotate-2 transition-transform duration-100 ease-linear rounded-md -z-1"></div>
             </div>
-            <div className="flex items-center mt-12 md:mt-0">
-                <NavLink href="/">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/writing">Writing</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
-            </div>
+            <NavMenu />
         </nav>
     </HorizontalPad>
 )

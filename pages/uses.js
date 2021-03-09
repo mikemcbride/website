@@ -23,7 +23,7 @@ const Uses = ({ title, description }) => (
                     </p>
                     <p>
                         I am probably one of the last people to make the switch to VS Code. I'll probably do a write-up on why I switched, because it took a lot for me to leave Atom. For now, I'm really enjoying VS Code.
-              </p>
+                    </p>
                 </li>
                 <li>
                     <p className="mb-0">
@@ -42,7 +42,7 @@ const Uses = ({ title, description }) => (
                         </strong>
                     </p>
                     <p>
-                        I have used a number of fonts over the years. MonoLisa is what I currently use in my editor and terminal. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at.
+                        I have used a number of fonts over the years. MonoLisa is what I currently use in my editor and terminal (and also on this website). It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at.
                     </p>
                 </li>
                 <li>
