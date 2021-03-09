@@ -3,16 +3,14 @@
   font-style:  normal;
   font-weight: 400;
   font-display: swap;
-  src: url("MonoLisa-Regular.woff2") format("woff2"),
-       url("MonoLisa-Regular.woff") format("woff");
+  src: url("MonoLisa-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: 'MonoLisa';
   font-style:  italic;
   font-weight: 400;
   font-display: swap;
-  src: url("MonoLisa-Italic.woff2") format("woff2"),
-       url("MonoLisa-Italic.woff") format("woff");
+  src: url("MonoLisa-RegularItalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,16 +18,14 @@
   font-style:  normal;
   font-weight: 500;
   font-display: swap;
-  src: url("MonoLisa-Medium.woff2") format("woff2"),
-       url("MonoLisa-Medium.woff") format("woff");
+  src: url("MonoLisa-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: 'MonoLisa';
   font-style:  italic;
   font-weight: 500;
   font-display: swap;
-  src: url("MonoLisa-MediumItalic.woff2") format("woff2"),
-       url("MonoLisa-MediumItalic.woff") format("woff");
+  src: url("MonoLisa-MediumItalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -37,14 +33,12 @@
   font-style:  normal;
   font-weight: 700;
   font-display: swap;
-  src: url("MonoLisa-Bold.woff2") format("woff2"),
-       url("MonoLisa-Bold.woff") format("woff");
+  src: url("MonoLisa-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: 'MonoLisa';
   font-style:  italic;
   font-weight: 700;
   font-display: swap;
-  src: url("MonoLisa-BoldItalic.woff2") format("woff2"),
-       url("MonoLisa-BoldItalic.woff") format("woff");
+  src: url("MonoLisa-BoldItalic.woff2") format("woff2");
 }
