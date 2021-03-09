@@ -16,7 +16,7 @@ const Head = (props) => (
     <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" crossOrigin="anonymous" />
     <link rel="preload" href="/monolisa/MonoLisa-Medium.woff2" as="font" crossOrigin="anonymous" />
     <link rel="preload" href="/monolisa/MonoLisa-Bold.woff2" as="font" crossOrigin="anonymous" />
-    <link rel="preload" href="/monolisa/MonoLisa-Italic.woff2" as="font" crossOrigin="anonymous" />
+    <link rel="preload" href="/monolisa/MonoLisa-RegularItalic.woff2" as="font" crossOrigin="anonymous" />
     <link rel="stylesheet" href="/monolisa/monolisa.css" />
     <link rel="stylesheet" href="/inter/inter.css" />
     <meta property="og:url" content={props.url || defaultOGURL} />
