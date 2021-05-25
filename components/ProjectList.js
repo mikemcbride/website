@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => {
     return (
         <>
             <h3 class="font-bold">Jump to a section:</h3>
-            <ul class="-ml-4 mt-4 mb-16 inline-flex items-center divide-x divide-gray-400">
+            <ul class="-ml-4 mt-4 mb-16 md:inline-flex items-center space-y-2 md:space-y-0 md:divide-x md:divide-gray-400">
                 <li class="px-4"><a class="text-blue hover:underline underline md:no-underline" href="#websites">Websites</a></li>
                 <li class="px-4"><a class="text-blue hover:underline underline md:no-underline" href="#utilities">Utilities</a></li>
                 <li class="px-4"><a class="text-blue hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
