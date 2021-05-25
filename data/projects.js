@@ -1,11 +1,5 @@
 export default [
   {
-    title: "Catholic AF",
-    description: "My best friend and I built a website where we design and sell snarky Catholic stickers and apparel and donate the proceeds to Catholic charities. Completely real, totally a joke. Check it out.",
-    url: "https://catholic.af",
-    type: "website"
-  },
-  {
     title: "Flexbox Playground",
     description: "A web app that allows you to experiment with and understand how flexbox works.",
     source: "https://github.com/mikemcbride/flexbox-playground",
