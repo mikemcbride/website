@@ -9,11 +9,14 @@ module.exports = {
                 'blue': '#2563EB',
                 'white': '#ffffff',
                 'inherit': 'inherit',
-                'yellow': '#f7f474',
+                'yellow': {
+                    'DEFAULT': '#f7f474'
+                },
                 'aqua': '#5CEACE',
                 'teal': '#27ffbc',
                 'hot-pink': '#fd2d78',
-                'purple': '#6D28D9'
+                'purple': '#6D28D9',
+                'code-gray': '#CBD5E1'
             },
             inset: {
                 '1/2': '50%'

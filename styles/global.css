@@ -106,23 +106,10 @@ pre.prismjs,
 pre.prismjs,
 .prose pre.prismjs {
   background: transparent;
-  border-top: 1px solid var(--code-border);
-  border-bottom: 1px solid var(--code-border);
-  margin: 1rem -1rem 2rem;
+  margin: 0;
   overflow: auto;
   padding: 1rem;
-  width: 100vw;
-}
-
-@media all and (min-width: 640px) {
-  .prose pre.prismjs,
-  pre.prismjs {
-    border-radius: .25rem;
-    border: 1px solid var(--code-border);
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
-  }
+  width: 100%;
 }
 
 .prose .token.comment,
@@ -136,6 +123,11 @@ pre.prismjs,
 .token.doctype,
 .token.cdata {
   color: var(--code-comment);
+}
+
+.prismjs .linenumber {
+    color: var(--code-border);
+    font-size: 85%;
 }
 
 .prose .token.punctuation,
