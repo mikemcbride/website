@@ -35,14 +35,17 @@ code, .prose code {
 
 .default-link,
 .prose a {
-    text-decoration: none;
-    border-bottom: 3px solid theme('colors.teal');
-    position: relative;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: .15em;
+    text-decoration-thickness: .08em;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: theme('colors.aqua');
 }
 
 .default-link:hover,
 .prose a:hover {
-    border-bottom-color: theme('colors.hot-pink');
+    text-decoration-color: theme('colors.hot-pink');
 }
 
 a > code,
