@@ -5,7 +5,6 @@ import PageHeader from '../components/PageHeader'
 import LikesDislikes from '../components/LikesDislikes'
 import WhatOthersAreSaying from '../components/WhatOthersAreSaying'
 import OxfordCommaJoke from '../components/OxfordCommaJoke'
-import Divider from '../components/Divider'
 
 const Index = ({ title, description }) => (
     <Layout pageTitle={title} description={description}>
@@ -34,9 +33,6 @@ const Index = ({ title, description }) => (
           </div>
         </section>
         <LikesDislikes />
-        <section className="w-1/2 md:w-1/3 text-gray-400 mx-auto mb-20">
-            <Divider className="w-full" />
-        </section>
         <WhatOthersAreSaying />
         <p className="leading-loose text-lg md:text-xl text-gray-800 mb-12">
              I like meeting new people. If you do too, you can hit me up on <a rel="nofollow noreferrer" target="_blank" className="default-link" href="https://twitter.com/_mcbridem_">Twitter</a> and return the favor. If you're still not sure, you can keep browsing this site and make up your mind. Maybe <Link href="/projects" className="default-link">check out some stuff I've built</Link> or <Link href="/writing" className="default-link">read some words I've written</Link>.

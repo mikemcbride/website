@@ -13,7 +13,7 @@ const ProjectList = ({ projects }) => {
                 <li class="px-4"><a class="text-blue hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
             </ul>
             <section className="mb-16">
-                <h2 id="websites" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-aqua to-blue text-transparent bg-clip-text inline-block">Websites</h2>
+                <h2 id="websites" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-aqua to-blue uppercase transform -skew-x-6 px-4 py-2 text-white inline-block">Websites</h2>
                 <p className="prose lg:prose-lg mb-8">
                     I like building websites. Here are a few of the ones I've made.
                 </p>
@@ -23,7 +23,7 @@ const ProjectList = ({ projects }) => {
             </section>
 
             <section className="mb-16">
-                <h2 id="utilities" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-blue to-purple text-transparent bg-clip-text inline-block">Utilities</h2>
+                <h2 id="utilities" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-blue to-purple uppercase transform -skew-x-6 px-4 py-2 text-white inline-block">Utilities</h2>
                 <p className="prose lg:prose-lg mb-8">
                     I also build a lot of stuff that makes developers jobs easier. Mostly because it makes my own job easier. Check out some of my favorites below and find more on my GitHub or npm.
                 </p>
@@ -33,7 +33,7 @@ const ProjectList = ({ projects }) => {
             </section>
 
             <section className="mb-16">
-                <h2 id="miscellaneous" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-purple to-hot-pink text-transparent bg-clip-text inline-block">Miscellaneous</h2>
+                <h2 id="miscellaneous" className="font-sans font-black text-4xl mb-2 bg-gradient-to-r from-purple to-hot-pink uppercase transform -skew-x-6 px-4 py-2 text-white inline-block">Miscellaneous</h2>
                 <p className="prose lg:prose-lg mb-8">
                     This section is called "miscellaneous" but really it's just some themes I've built. Maybe someday it will have some other stuff too. Who knows. For now, these are the themes I use every day in my editor and terminal. I've made some other themes too, which you can find on GitHub.
                 </p>

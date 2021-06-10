@@ -39,7 +39,7 @@ code, .prose code {
     text-decoration-style: wavy;
     text-underline-offset: .15em;
     text-decoration-thickness: .08em;
-    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
     text-decoration-color: theme('colors.aqua');
 }
 
