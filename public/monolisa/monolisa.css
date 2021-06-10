@@ -5,13 +5,6 @@
   font-display: swap;
   src: url("MonoLisa-Regular.woff2") format("woff2");
 }
-@font-face {
-  font-family: 'MonoLisa';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("MonoLisa-RegularItalic.woff2") format("woff2");
-}
 
 @font-face {
   font-family: 'MonoLisa';
@@ -34,11 +27,4 @@
   font-weight: 700;
   font-display: swap;
   src: url("MonoLisa-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'MonoLisa';
-  font-style:  italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("MonoLisa-BoldItalic.woff2") format("woff2");
 }
