@@ -11,15 +11,8 @@ function NavLink({ href, children }) {
         isActiveRoute = router.pathname.startsWith(href)
     }
     return (
-        <Link href={href} className="relative inline-block px-4 py-1">
-            {isActiveRoute === true &&
-            <span className="transform top-1/2 -translate-y-1/2 absolute left-0 w-full inline-block text-hot-pink">
-                <CircleSolidWide className="w-full" />
-            </span>
-            }
-            <span className={`z-10 relative inline-block font-mono font-medium tracking-wider ${isActiveRoute === true ? 'text-hot-pink' : 'text-black hover:text-hot-pink'}`}>
-                {children}
-            </span>
+        <Link href={href} className={`relative inline-block p-8 text-2xl uppercase text-center font-mono font-medium tracking-wider md:text-base w-full md:w-auto md:px-4 md:py-2 text-white ${isActiveRoute === true ? 'bg-hot-pink' : 'bg-black hover:bg-hot-pink'}`}>
+            {children}
         </Link>
     )
 }
