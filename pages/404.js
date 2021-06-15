@@ -2,6 +2,7 @@ import HorizontalPad from '../components/HorizontalPad'
 import Link from '../components/Link'
 import Image from 'next/image'
 import Head from '../components/Head'
+import lost from '../img/lost.jpg'
 
 const Lost = () => (
     <>
@@ -9,7 +10,7 @@ const Lost = () => (
         <HorizontalPad>
             <div className="bg-white text-black text-center font-mono mt-6">
                 <div className="mx-auto w-full">
-                    <Image src="/img/lost.jpg" width="667" height="325" />
+                    <Image src={lost} alt="Photo of the TV show Lost" />
                 </div>
                 <p className="my-12 text-xl leading-loose">Well this is embarrassing...</p>
                 <div className="text-center">

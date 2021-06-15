@@ -45,6 +45,7 @@ code, .prose code {
 
 .default-link:hover,
 .prose a:hover {
+    color: theme('colors.hot-pink');
     text-decoration-color: theme('colors.hot-pink');
 }
 

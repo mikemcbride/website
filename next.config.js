@@ -1,6 +1,4 @@
-const withPreact = require('next-plugin-preact')
-
-module.exports = withPreact({
+module.exports = {
     target: 'serverless',
     i18n: {
         locales: ['en-US'],
@@ -13,4 +11,4 @@ module.exports = withPreact({
         })
         return config
     }
-})
+}
