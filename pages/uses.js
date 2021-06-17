@@ -1,23 +1,25 @@
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
+import BigQuote from '../components/BigQuote'
 
 const Uses = ({ title, description }) => (
     <Layout pageTitle={title} description={description}>
         <PageHeader>Uses</PageHeader>
-        <article className="prose lg:prose-xl mb-16">
+        <article className="prose lg:prose-xl mb-16 text-black dark:text-gray-300">
             <p>Inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="nofollow noreferrer">Wes Bos</a>, this page details the things I use to stay productive. Let's dive in.</p>
 
-            <h2 className="font-semibold text-2xl">Editor &amp; Terminal</h2>
+            <h2 className="font-semibold text-2xl text-black dark:text-gray-100">Editor &amp; Terminal</h2>
 
-            <blockquote>
-                Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.
-              <div className="text-right -mt-1">&ndash;&nbsp;<a href="https://twitter.com/addyosmani" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
-            </blockquote>
+            <div className="relative text-blue-600 dark:text-blue-400 text-lg md:text-xl ml-2 md:ml-4">
+                <BigQuote />
+                <p className="mb-2">Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.</p>
+                <div className="text-right -mt-4">- <a href="https://twitter.com/addyosmani" className="default-link" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
+            </div>
 
             <ul>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://code.visualstudio.com" target="_blank" rel="nofollow noreferrer">VS Code</a>
                         </strong>
                     </p>
@@ -27,7 +29,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter" target="_blank" rel="noreferrer nofollow">Electron Highlighter Syntax</a>
                         </strong>
                     </p>
@@ -37,7 +39,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://monolisa.dev" target="_blank" rel="nofollow noreferrer">MonoLisa</a>
                         </strong>
                     </p>
@@ -47,7 +49,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a>
                         </strong>
                     </p>
@@ -57,7 +59,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://fishshell.com" target="_blank" rel="nofollow noreferrer">fish</a>
                         </strong>
                     </p>
@@ -67,7 +69,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>
+                        <strong className="text-black dark:text-gray-200">
                             <a href="https://github.com/mikemcbride/hyper-electron-highlighter" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
                         </strong>
                     </p>
@@ -101,14 +103,14 @@ const Uses = ({ title, description }) => (
                 </li>
             </ul>
 
-            <h2 className="font-semibold text-2xl">Desktop Apps</h2>
+            <h2 className="font-semibold text-2xl text-black dark:text-gray-100">Desktop Apps</h2>
 
             <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
 
             <ul>
                 <li>
                     <p className="mb-0">
-                        <strong>Firefox</strong>
+                        <strong className="text-black dark:text-gray-200">Firefox</strong>
                     </p>
                     <p>
                         I am a big fan of the open web. Mozilla is one of the few companies that still seems like an advocate for that. Firefox is super fast, it looks great, and unlike Chrome, they're not tracking everything I do so they can sell personalized ads. It's got built-in ad and tracker blocking. <code>brew cask install firefox</code>
@@ -116,7 +118,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>Notion</strong>
+                        <strong className="text-black dark:text-gray-200">Notion</strong>
                     </p>
                     <p>
                         Notion is where I organize notes on things I'm developing. I love that each project can have its own pages. It makes it super easy to organize things (and I'm notoriously not organized).
@@ -124,7 +126,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>Kap</strong>
+                        <strong className="text-black dark:text-gray-200">Kap</strong>
                     </p>
                     <p>
                         Kep is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code>brew cask install kap</code>
@@ -132,7 +134,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>Rectangle</strong>
+                        <strong className="text-black dark:text-gray-200">Rectangle</strong>
                     </p>
                     <p>
                         This might be the most underrated app ever. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install rectangle</code>
@@ -140,7 +142,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>Insomnia</strong>
+                        <strong className="text-black dark:text-gray-200">Insomnia</strong>
                     </p>
                     <p>
                         A REST client, used for testing API calls. I previously used Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew cask install insomnia</code>
@@ -148,7 +150,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>MongoDB Compass</strong>
+                        <strong className="text-black dark:text-gray-200">MongoDB Compass</strong>
                     </p>
                     <p>
                         A really solid desktop GUI for interacting with Mongo.
@@ -156,7 +158,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>1Password</strong>
+                        <strong className="text-black dark:text-gray-200">1Password</strong>
                     </p>
                     <p>
                         I use 1Password for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate. [<a href="https://1password.com" target="_blank" rel="noreferrer nofollow">website</a>]
@@ -164,7 +166,7 @@ const Uses = ({ title, description }) => (
                 </li>
                 <li>
                     <p className="mb-0">
-                        <strong>HEY</strong>
+                        <strong className="text-black dark:text-gray-200">HEY</strong>
                     </p>
                     <p>
                         HEY is a radically different approach to email, from the makers of Basecamp. It's definitely not for everyone, but I've been loving it. [<a href="https://hey.com" target="_blank" rel="noreferrer nofollow">website</a>]
@@ -172,11 +174,11 @@ const Uses = ({ title, description }) => (
                 </li>
             </ul>
 
-            <h2 className="font-semibold text-2xl">Desk Setup</h2>
+            <h2 className="font-semibold text-2xl text-black dark:text-gray-100">Desk Setup</h2>
 
-            <h3 className="font-medium text-xl">At work:</h3>
+            <h3 className="font-medium text-xl text-black dark:text-gray-200">At work:</h3>
 
-            <p className="text-hot-pink italic">Note: This isn't really relevant anymore since our company is working remotely due to the coronavirus.</p>
+            <p className="text-hot-pink dark:text-pink-400 italic">Note: This isn't really relevant anymore since our company is working remotely due to the coronavirus.</p>
 
             <ul>
                 <li>I have two 23" monitors mounted on monitor arms to a sit/stand desk that I didn't pay for.</li>
@@ -186,8 +188,8 @@ const Uses = ({ title, description }) => (
                 <li>I use an <a href="https://smile.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI" target="_blank" rel="nofollow noreferrer">Apple Magic Keyboard</a> and <a href="http://smile.amazon.com/Apple-MJ2R2LL-A-Magic-Trackpad/dp/B016QO5YWC" target="_blank" rel="nofollow noreferrer">Apple Magic Trackpad</a>. I love the gestures on the MacBook touchpad, so I opted for the Magic Trackpad instead of a Magic Mouse, but I do hear excellent things about the mouse.</li>
             </ul>
 
-            <h3 className="font-medium text-xl">At home:</h3>
-            <p className="text-hot-pink italic">This is also in the process of changing, since I'm working from home all the time.</p>
+            <h3 className="font-medium text-xl text-black dark:text-gray-200">At home:</h3>
+            <p className="text-hot-pink dark:text-pink-400 italic">This is also in the process of changing, since I'm working from home all the time.</p>
             <ul>
                 <li>I have one 23" Acer monitor</li>
                 <li>To the left of the monitor, my laptop (15" MBP) sits on top of an <a href="http://smile.amazon.com/Rain-Design-10032-mStand-Laptop/dp/B000OOYECC" target="_blank" rel="nofollow noreferrer">mStand by Rain Design</a>. I love it. It also helps keep the laptop cool so it doesn't overheat.</li>

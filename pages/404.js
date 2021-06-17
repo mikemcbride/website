@@ -14,7 +14,7 @@ const Lost = () => (
                 </div>
                 <p className="my-12 text-xl leading-loose">Well this is embarrassing...</p>
                 <div className="text-center">
-                    <Link href="/" className="inline-block bg-blue hover:bg-hot-pink text-white text-lg rounded px-4 py-2">Take me home, please!</Link>
+                    <Link href="/" className="inline-block bg-blue hover:bg-hot-pink dark:bg-blue-500 dark:hover:bg-pink-500 text-white text-lg rounded px-4 py-2">Take me home, please!</Link>
                 </div>
             </div>
         </HorizontalPad>

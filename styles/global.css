@@ -2,7 +2,9 @@
   --inline-code-bg: #F5F3FF;
   --inline-code-color: #6D28D9;
   --code-border: #CBD5E1;
+  --code-linenumbers: #CBD5E1;
   --code-fg: #6e7f91;
+  --code-bg: #fff;
   --code-comment: #a8b3bd;
   --code-blue: #2563eb;
   --code-cyan: #06B6D4;
@@ -12,12 +14,33 @@
   --code-yellow: #F59E0B;
 }
 
+.dark {
+    --inline-code-bg: rgba(167, 139, 250, 0.15);
+    --inline-code-color: theme('colors.purple.400');
+    --code-linenumbers: theme('colors.gray.500');
+    --code-red: #ff5874;
+    --code-yellow: #fffa9e;
+    --code-green: #6af699;
+    --code-cyan: #4ff2f8;
+    --code-blue: #82aaff;
+    --code-purple: #c792ea;
+    --code-bg: #141820;
+    --code-comment: #506686;
+    --code-gray: #99a3b8;
+    --code-fg: #a8b5d1;
+    --code-white: #f8fafd;
+}
+
 @tailwind base;
 @tailwind components;
 
 ::selection {
     color: theme('colors.black');
-    background: theme('colors.aqua');
+    background: theme('colors.aqua.DEFAULT');
+}
+
+.dark .prose {
+    color: theme('colors.gray.300')
 }
 
 code, .prose code {
@@ -40,7 +63,13 @@ code, .prose code {
     text-underline-offset: .15em;
     text-decoration-thickness: .08em;
     text-decoration-skip-ink: none;
-    text-decoration-color: theme('colors.aqua');
+    text-decoration-color: theme('colors.aqua.DEFAULT');
+}
+
+.dark .prose a,
+.dark .default-link {
+    color: theme('colors.gray.300');
+    text-decoration-color: theme('colors.teal.DEFAULT')
 }
 
 .default-link:hover,
@@ -49,11 +78,22 @@ code, .prose code {
     text-decoration-color: theme('colors.hot-pink');
 }
 
+.dark .default-link:hover,
+.dark .prose a:hover {
+    color: theme('colors.pink.400');
+    text-decoration-color: theme('colors.pink.400');
+}
+
 a > code,
 .prose a > code {
-    color: theme('colors.blue');
+    color: theme('colors.blue.DEFAULT');
     background: rgba(2, 97, 220, 0.08);
     text-decoration: none;
+}
+
+.dark a > code,
+.dark .prose a > code {
+    color: theme('colors.blue.400')
 }
 
 .prose code::before,
@@ -62,7 +102,16 @@ a > code,
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    font-family: theme('fontFamily.sans')
+    font-family: theme('fontFamily.sans');
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+    color: theme('colors.gray.200');
 }
 
 .prose hr {
@@ -71,18 +120,21 @@ a > code,
     margin: 2rem 0;
 }
 
+.dark .prose hr {
+    border-top: 1px solid theme('colors.gray.600');
+}
+
 /**
 * prism.js theme
 */
 
 /* purgecss start ignore */
-
 code[class*="language-"],
 pre.prismjs,
 .prose code[class*="language-"],
 .prose pre.prismjs {
   color: var(--code-fg);
-  background: none;
+  background: var(--code-bg);
   border-radius: 0;
   padding: 0;
   font-size: 1rem;
@@ -127,7 +179,7 @@ pre.prismjs,
 }
 
 .prismjs .linenumber {
-    color: var(--code-border);
+    color: var(--code-linenumbers);
     font-size: 85%;
 }
 
