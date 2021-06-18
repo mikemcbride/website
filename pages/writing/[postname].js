@@ -16,7 +16,7 @@ export default function BlogPost({ frontmatter, markdownBody }) {
 
           <header className="leading-tight font-mono inline-flex flex-col items-start max-w-3xl mt-12 mb-8">
             <PageHeader>{frontmatter.title}</PageHeader>
-            <p className="inline-block leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">Posted on {frontmatter.date}</p>
+            <p className="inline-block leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
           </header>
 
           <article className="mb-16 prose prose-lg md:prose-xl font-sans">
