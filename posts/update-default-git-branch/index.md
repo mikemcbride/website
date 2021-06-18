@@ -43,7 +43,7 @@ In your repo on GitHub.com, go to `Settings > Branches`, or navigate to `https:/
 
 ![Change default branch](/img/git-default-branch.png)
 
-> Don't forget to click "Update" once you've selected a new branch!
+Don't forget to click "Update" once you've selected a new branch!
 
 Now `main` is your default branch in the repo. Pull requests will automatically go against this branch, etc. - but we still have a little work to do. If you go to the main page for your repo, you'll notice the `master` branch is still hanging around:
 
