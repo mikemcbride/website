@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: mikemcbride.me
-Token: ca79faf34971b13f2700af0f1603a83a5eae99b20e97706ec0c61f8ea1bf497c
+Domain: mikemcbride.dev
+Token: 64e713e72685e34bfe4fa0e700eb7429376b54af33e7e438586bd72ec9ed4d1f
