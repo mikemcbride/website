@@ -5,7 +5,7 @@ published: true
 excerpt: Let's look at how we can change the default branch in our git repos and sync it with a remote repository on GitHub.com
 ---
 
-GitHub is changing the default branch name on all new repositories from `master` to `main`. They obviously won't change it on existing repos (because, you know, that would be super uncool and break half the internet). So maybe you want to update some (or all) of your existing repositories to use `main` as well. Or maybe you want do go with something else, like `default` or `unicorns`. It's your repo, I won't judge.
+GitHub is changing the default branch name on all new repositories from `master` to `main`. They obviously won't change it on existing repos (because, you know, that would be super uncool and break half the internet). So maybe you want to update some (or all) of your existing repositories to use `main` as well. Or maybe you want to go with something else, like `default` or `unicorns`. It's your repo, I won't judge.
 
 Surprisingly (maybe?) it's not too hard! It will likely take you less than 5 minutes. Let's dig in.
 
