@@ -18,7 +18,7 @@ export default function Layout({ children, pageTitle, description }) {
     return (
         <>
             <Head title={pageTitle} description={description} />
-            <div className="bg-white text-black w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
+            <div className="bg-white text-black dark:bg-black dark:text-gray-200 w-full font-mono text-lg min-h-screen flex flex-col leading-tight">
                 <SiteNav />
                 <HorizontalPad className="flex-1">
                     <main role="main" className="w-full flex-auto">

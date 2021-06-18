@@ -1,21 +1,29 @@
 module.exports = {
     mode: 'jit',
     purge: ['./pages/**/*.js', './components/**/*.js'],
-    darkMode: false,
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
                 'black': '#1b212c',
-                'blue': '#2563EB',
+                'blue': {
+                    'DEFAULT': '#2563EB'
+                },
                 'white': '#ffffff',
                 'inherit': 'inherit',
                 'yellow': {
                     'DEFAULT': '#f7f474'
                 },
-                'aqua': '#5CEACE',
-                'teal': '#27ffbc',
+                'aqua': {
+                    'DEFAULT': '#5CEACE'
+                },
+                'teal': {
+                    'DEFAULT': '#27ffbc'
+                },
                 'hot-pink': '#fd2d78',
-                'purple': '#6D28D9',
+                'purple': {
+                    'DEFAULT': '#6D28D9'
+                },
                 'code-gray': '#CBD5E1'
             },
             inset: {
