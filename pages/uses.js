@@ -50,11 +50,11 @@ const Uses = ({ title, description }) => (
                 <li>
                     <p className="mb-0">
                         <strong className="text-black dark:text-gray-200">
-                            <a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a>
+                            <a href="https://iterm2.com/" target="_blank" rel="nofollow noreferrer">iTerm 2</a>
                         </strong>
                     </p>
                     <p>
-                        Hyper is my terminal app. It's an electron app, so it's built with HTML, CSS, and JavaScript which is pretty impressive... and it's quite fast. Also, it looks gorgeous.
+                        I use iTerm for a terminal. It's got a lot more features than the default macOS terminal, it's fast, and it looks great. I used <a href="https://hyper.is/" target="_blank" rel="nofollow noreferrer">Hyper</a> for a long time but would occasionally run into weird issues, and development has slowed considerably on that app so I'm back to iTerm. It's stable and works great.
                     </p>
                 </li>
                 <li>
@@ -65,7 +65,7 @@ const Uses = ({ title, description }) => (
                     </p>
                     <p>
                         Fish is my shell. Much better than bash in my opinion. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize. It used to have a lot of incompatibilities with bash scripts which was annoying because you couldn't copy them and run them, but many of these things have been made compatible so it's much better than it used to be.
-              </p>
+                    </p>
                 </li>
                 <li>
                     <p className="mb-0">
@@ -105,15 +105,15 @@ const Uses = ({ title, description }) => (
 
             <h2 className="font-semibold text-2xl text-black dark:text-gray-100">Desktop Apps</h2>
 
-            <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew Cask</a> I will include the install command.</p>
+            <p>I use a variety of other desktop applications to get things done. I'll elaborate a little on why I chose some of them, especially in lieu of other popular applications. If you can install the app via <a href="https://formulae.brew.sh/cask" target="_blank" rel="noreferrer nofollow">Homebrew</a> I will include the install command.</p>
 
             <ul>
                 <li>
                     <p className="mb-0">
-                        <strong className="text-black dark:text-gray-200">Firefox</strong>
+                        <strong className="text-black dark:text-gray-200">Brave</strong>
                     </p>
                     <p>
-                        I am a big fan of the open web. Mozilla is one of the few companies that still seems like an advocate for that. Firefox is super fast, it looks great, and unlike Chrome, they're not tracking everything I do so they can sell personalized ads. It's got built-in ad and tracker blocking. <code>brew cask install firefox</code>
+                        I am a big fan of the open web. Brave Software is one of the few companies that still seems like an advocate for that. Brave is super fast, it looks great, and it's built on Chromium so you get the great dev tools and extensions, but unlike Chrome they're not tracking everything I do so they can sell personalized ads. It's also got excellent built-in ad and tracker blocking. <code>brew install brave-browser</code>
                     </p>
                 </li>
                 <li>
@@ -122,14 +122,14 @@ const Uses = ({ title, description }) => (
                     </p>
                     <p>
                         Notion is where I organize notes on things I'm developing. I love that each project can have its own pages. It makes it super easy to organize things (and I'm notoriously not organized).
-              </p>
+                    </p>
                 </li>
                 <li>
                     <p className="mb-0">
                         <strong className="text-black dark:text-gray-200">Kap</strong>
                     </p>
                     <p>
-                        Kep is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code>brew cask install kap</code>
+                        Kep is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs. [<a href="https://ketcap.co" target="_blank" rel="noreferrer nofollow">website</a>, <a href="https://getkap.co/download" target="_blank" rel="nofollow noreferrer">download</a>] <code>brew install kap</code>
                     </p>
                 </li>
                 <li>
@@ -137,7 +137,7 @@ const Uses = ({ title, description }) => (
                         <strong className="text-black dark:text-gray-200">Rectangle</strong>
                     </p>
                     <p>
-                        This might be the most underrated app ever. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew cask install rectangle</code>
+                        This might be the most underrated app ever. Rectangle gives you keyboard shortcuts for rearranging and resizing your windows, and also gives you "window snapping", where if you drag a window to a certain edge of the screen it will snap to fill part of the screen. I will never be able to use a Mac without this app again. [<a href="https://rectangleapp.com/" target="_blank" rel="nofollow noreferrer">website</a>] <code>brew install rectangle</code>
                     </p>
                 </li>
                 <li>
@@ -145,7 +145,7 @@ const Uses = ({ title, description }) => (
                         <strong className="text-black dark:text-gray-200">Insomnia</strong>
                     </p>
                     <p>
-                        A REST client, used for testing API calls. I previously used Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew cask install insomnia</code>
+                        A REST client, used for testing API calls. I previously used Postman for a REST client, but I came across Insomnia and it's really great. It also has excellent GraphQL support. <code>brew install insomnia</code>
                     </p>
                 </li>
                 <li>
@@ -154,7 +154,7 @@ const Uses = ({ title, description }) => (
                     </p>
                     <p>
                         A really solid desktop GUI for interacting with Mongo.
-              </p>
+                    </p>
                 </li>
                 <li>
                     <p className="mb-0">
@@ -162,15 +162,15 @@ const Uses = ({ title, description }) => (
                     </p>
                     <p>
                         I use 1Password for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate. [<a href="https://1password.com" target="_blank" rel="noreferrer nofollow">website</a>]
-              </p>
+                    </p>
                 </li>
                 <li>
                     <p className="mb-0">
                         <strong className="text-black dark:text-gray-200">HEY</strong>
                     </p>
                     <p>
-                        HEY is a radically different approach to email, from the makers of Basecamp. It's definitely not for everyone, but I've been loving it. [<a href="https://hey.com" target="_blank" rel="noreferrer nofollow">website</a>]
-              </p>
+                        HEY is a radically different approach to email, from the makers of Basecamp. It's definitely not for everyone, but I've been loving it. If you're interested in something new and different, check it out. Their website will do a much better job of pitching it than I could. [<a href="https://hey.com" target="_blank" rel="noreferrer nofollow">website</a>]
+                    </p>
                 </li>
             </ul>
 
