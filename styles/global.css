@@ -39,6 +39,15 @@
     background: theme('colors.aqua.DEFAULT');
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.dark img {
+  filter: brightness(.85) contrast(1.15) !important;
+}
+
 .dark .prose {
     color: theme('colors.gray.300')
 }

@@ -19,7 +19,7 @@ export default function BlogPost({ frontmatter, markdownBody }) {
             <p className="inline-block leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
           </header>
 
-          <article className="mb-16 prose prose-lg md:prose-xl font-sans">
+          <article className="mb-16 prose prose-lg md:prose-xl font-mono">
             <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
           </article>
         </Layout>
