@@ -67,14 +67,6 @@ const Uses = ({ title, description }) => (
                         Fish is my shell. Much better than bash in my opinion. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life. It's amazing. Also super easy to customize. It used to have a lot of incompatibilities with bash scripts which was annoying because you couldn't copy them and run them, but many of these things have been made compatible so it's much better than it used to be.
                     </p>
                 </li>
-                <li>
-                    <p className="mb-0">
-                        <strong className="text-black dark:text-gray-200">
-                            <a href="https://github.com/mikemcbride/hyper-electron-highlighter" target="_blank" rel="nofollow noreferrer">Hyper Electron Highlighter</a>
-                        </strong>
-                    </p>
-                    <p>The theme is my Electron color scheme from Atom, ported to Hyper.</p>
-                </li>
             </ul>
 
             <p>Here are a few of my favorite aliases I've set up:</p>
