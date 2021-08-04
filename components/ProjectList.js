@@ -6,11 +6,11 @@ const ProjectList = ({ projects }) => {
     const extras = projects.filter(p => p.type === 'extra')
     return (
         <>
-            <h3 class="font-bold">Jump to a section:</h3>
-            <ul class="-ml-4 mt-4 mb-16 md:inline-flex items-center space-y-2 md:space-y-0 md:divide-x md:divide-gray-500">
-                <li class="px-4"><a class="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#utilities">Utilities</a></li>
-                <li class="px-4"><a class="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#websites">Websites</a></li>
-                <li class="px-4"><a class="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
+            <h3 className="font-bold">Jump to a section:</h3>
+            <ul className="-ml-4 mt-4 mb-16 md:inline-flex items-center space-y-2 md:space-y-0 md:divide-x md:divide-gray-500">
+                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#utilities">Utilities</a></li>
+                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#websites">Websites</a></li>
+                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
             </ul>
             <section className="mb-16">
                 <h2 id="utilities" className="font-sans font-black text-4xl mb-2 -ml-2 bg-gradient-to-r from-blue to-purple dark:from-blue-500 dark:to-purple-500 uppercase transform -skew-x-6 px-4 py-2 text-white inline-block">Utilities</h2>
