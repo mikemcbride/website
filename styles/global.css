@@ -12,6 +12,8 @@
   --code-green: #10B981;
   --code-red: #EF4444;
   --code-yellow: #F59E0B;
+  --scrollbar-bg: theme('colors.white');
+  --thumb-bg: theme('colors.purple.DEFAULT');
 }
 
 .dark {
@@ -29,6 +31,8 @@
     --code-gray: #99a3b8;
     --code-fg: #a8b5d1;
     --code-white: #f8fafd;
+    --scrollbar-bg: theme('colors.black');
+    --thumb-bg: theme('colors.purple.500');
 }
 
 @tailwind base;
@@ -37,6 +41,21 @@
 ::selection {
     color: theme('colors.black');
     background: theme('colors.aqua.DEFAULT');
+}
+
+body::-webkit-scrollbar {
+    width: 1.2rem;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumb-bg) var(--scrollbar-bg);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumb-bg);
+    border-radius: 0px;
 }
 
 img {
@@ -78,7 +97,7 @@ code, .prose code {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-underline-offset: .15em;
-    text-decoration-thickness: .2ch;
+    text-decoration-thickness: .1ch;
     text-decoration-skip-ink: none;
     text-decoration-color: theme('colors.aqua.DEFAULT');
 }
