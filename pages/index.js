@@ -24,7 +24,7 @@ const Index = ({ title, description }) => (
             </div>
           </div>
         </section>
-        <section className="mb-48">
+        <section className="mb-64">
           <PageHeader>About Me</PageHeader>
           <div className="leading-loose text-lg md:text-xl text-gray-800 dark:text-gray-300">
             I'm a web developer from St. Louis, MO, where I live with&nbsp;
