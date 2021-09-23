@@ -14,7 +14,7 @@ const Index = ({ title, description }) => (
           </div>
           <div>
             <p className="md:mt-4 mb-4 text-4xl inline-block font-slab font-bold">
-              Hey there! <span className="inline-block mx-1">👋</span> I'm Mike.
+              Hey there! <span className="inline-block mx-1 text-3xl">👋</span> I'm Mike.
             </p>
             <div className="leading-loose text-lg md:text-xl text-gray-800 dark:text-gray-300">
               <p className="mb-16 md:mb-32">
