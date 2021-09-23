@@ -79,6 +79,14 @@ img {
     border-left-color: theme('colors.gray.700');
 }
 
+blockquote {
+    font-family: theme('fontFamily.slab');
+}
+
+pre, code {
+    font-family: theme('fontFamily.mono');
+}
+
 code, .prose code {
   color: var(--inline-code-color);
   background: var(--inline-code-bg);
@@ -138,7 +146,7 @@ a > code,
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    font-family: theme('fontFamily.sans');
+    font-family: theme('fontFamily.slab');
 }
 
 .dark .prose h1,

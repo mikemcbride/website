@@ -12,8 +12,8 @@ const Uses = ({ title, description }) => (
 
             <div className="relative text-blue-600 dark:text-blue-400 text-lg md:text-xl ml-2 md:ml-4">
                 <BigQuote />
-                <p className="mb-2">Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.</p>
-                <div className="text-right -mt-4">- <a href="https://twitter.com/addyosmani" className="default-link" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
+                <p className="mb-2 font-slab text-2xl">Time is a huge factor in staying productive. Your editor is the one tool you spend most of yours in and you should invest in optimizing your workflow skills. You'll benefit from them every day.</p>
+                <div className="text-right -mt-4 font-slab text-2xl">- <a href="https://twitter.com/addyosmani" className="default-link" target="_blank" rel="nofollow noreferrer">Addy Osmani</a></div>
             </div>
 
             <ul>

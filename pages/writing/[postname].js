@@ -14,12 +14,12 @@ export default function BlogPost({ frontmatter, markdownBody }) {
         <Layout pageTitle={frontmatter.title}>
           <ScrollProgress />
 
-          <header className="leading-tight font-mono inline-flex flex-col items-start max-w-3xl mt-12 mb-8">
+          <header className="leading-tight font-slab font-medium inline-flex flex-col items-start max-w-3xl mt-12 mb-8">
             <PageHeader>{frontmatter.title}</PageHeader>
-            <p className="inline-block leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
+            <p className="inline-block font-sans font-normal -mt-2 leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
           </header>
 
-          <article className="mb-16 prose prose-lg md:prose-xl font-mono">
+          <article className="mb-16 prose prose-lg md:prose-xl font-sans">
             <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
           </article>
         </Layout>

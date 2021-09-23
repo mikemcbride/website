@@ -52,6 +52,10 @@ module.exports = {
                 'Helvetica Neue',
                 'sans-serif',
             ],
+            'slab': [
+                'ZillaSlab',
+                'serif'
+            ],
             'serif': [
                 'Georgia',
                 'serif',

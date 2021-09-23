@@ -13,7 +13,7 @@ const Index = ({ title, description }) => (
             <Avatar />
           </div>
           <div>
-            <p className="md:mt-4 mb-4 text-4xl inline-block font-sans font-black">
+            <p className="md:mt-4 mb-4 text-4xl inline-block font-slab font-bold">
               Hey there! <span className="inline-block mx-1">👋</span> I'm Mike.
             </p>
             <div className="leading-loose text-lg md:text-xl text-gray-800 dark:text-gray-300">
