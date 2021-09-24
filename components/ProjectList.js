@@ -9,9 +9,9 @@ const ProjectList = ({ projects }) => {
         <>
             <h3 className="font-bold">Jump to a section:</h3>
             <ul className="-ml-4 mt-4 mb-16 md:inline-flex items-center space-y-2 md:space-y-0 md:divide-x md:divide-gray-500">
-                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#utilities">Utilities</a></li>
-                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#websites">Websites</a></li>
-                <li className="px-4"><a className="text-blue dark:text-blue-400 hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
+                <li className="px-4"><a className="text-blue-600 dark:text-blue-400 hover:underline underline md:no-underline" href="#utilities">Utilities</a></li>
+                <li className="px-4"><a className="text-blue-600 dark:text-blue-400 hover:underline underline md:no-underline" href="#websites">Websites</a></li>
+                <li className="px-4"><a className="text-blue-600 dark:text-blue-400 hover:underline underline md:no-underline" href="#miscellaneous">Miscellaneous</a></li>
             </ul>
             <section className="mb-16">
                 <span id="utilities" />

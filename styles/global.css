@@ -130,7 +130,7 @@ code, .prose code {
 
 a > code,
 .prose a > code {
-    color: theme('colors.blue.DEFAULT');
+    color: theme('colors.blue.600');
     background: rgba(2, 97, 220, 0.08);
     text-decoration: none;
 }
@@ -147,6 +147,16 @@ a > code,
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     font-family: theme('fontFamily.slab');
+}
+
+.prose h1, .prose h2 {
+    padding-bottom: .25em;
+    border-bottom: 2px solid theme('colors.blue.600');
+}
+
+.dark .prose h1,
+.dark .prose h2 {
+    border-bottom-color: theme('colors.blue.400');
 }
 
 .dark .prose h1,

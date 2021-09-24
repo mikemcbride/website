@@ -20,7 +20,7 @@ export default function LikesDislikes() {
           </section>
           <section className="mb-20 md:ml-10">
             <h2
-            className="font-slab font-bold text-3xl mb-4 border-b-2 border-blue py-1 block"
+            className="font-slab font-bold text-3xl mb-4 border-b-2 border-blue-600 py-1 block"
             >
             Things I Dislike
             </h2>

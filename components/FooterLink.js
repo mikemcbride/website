@@ -1,6 +1,6 @@
 const FooterLink = ({ href, title }) => (
     <a
-      className="font-mono font-bold text-aqua dark:text-white hover:underline leading-normal transform inline-block text-base md:text-lg mx-4"
+      className="font-slab font-medium text-gray-400 hover:text-black dark:hover:text-white leading-normal transform inline-block text-xl md:text-2xl"
       href={href}
       title={title}>
       {title}
