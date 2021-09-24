@@ -81,12 +81,14 @@ module.exports = {
             '3xl': '1.75rem',   // 28px
             '4xl': '2.25rem',   // 36px
             '5xl': '3rem',      // 48px
+            '6xl': '4rem'       // 64px
         },
         textColor: theme => theme('colors'),
         backgroundColor: theme => theme('colors'),
         height: {
             'auto': 'auto',
             'px': '1px',
+            '0.5': '0.125rem',
             '1': '0.25rem',
             '2': '0.5rem',
             '3': '0.75rem',

@@ -12,7 +12,7 @@ export default function NavMenu() {
                         {open ? <MenuClose className="w-8 h-8" /> : <MenuIcon className="w-8 h-8" />}
                     </Menu.Button>
 
-                    <Menu.Items className="bg-white dark:bg-black rounded-lg shadow-md border border-gray-100 dark:border-gray-800 py-4 w-56 absolute top-full right-0 mt-2 space-y-2">
+                    <Menu.Items className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 py-4 w-64 absolute top-full right-0 mt-2 space-y-2">
                         <Menu.Item>
                             <NavLink href="/">About</NavLink>
                         </Menu.Item>
