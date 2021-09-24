@@ -10,7 +10,7 @@ function NavLink({ href, children }) {
         isActiveRoute = router.pathname.startsWith(href)
     }
     return (
-        <Link href={href} className={`relative inline-block p-8 text-2xl uppercase text-center font-sans font-bold tracking-wider w-full text-white focus:outline-none focus:ring ${isActiveRoute === true ? 'bg-hot-pink dark:bg-pink-500' : 'bg-black dark:bg-gray-700 hover:bg-hot-pink dark:hover:bg-pink-500'}`}>
+        <Link href={href} className={`text-2xl font-sans font-bold block px-4 py-2 w-full dark:text-white focus:outline-none focus:ring ${isActiveRoute === true ? 'bg-hot-pink text-hot-pink bg-opacity-10 dark:bg-pink-500 dark:text-white dark:bg-opacity-100' : 'text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'}`}>
             {children}
         </Link>
     )

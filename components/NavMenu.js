@@ -1,19 +1,33 @@
 import NavLink from './NavLink'
-import React, { useState } from 'react'
-import MenuToggle from './MenuToggle'
+import MenuIcon from './icons/MenuIcon'
+import MenuClose from './icons/MenuClose'
+import { Menu } from '@headlessui/react'
 
 export default function NavMenu() {
-    const [menuOpen, setMenuOpen] = useState(false)
-
     return (
-        <div className="relative">
-            <MenuToggle handleClick={() => setMenuOpen(!menuOpen)} isOpen={menuOpen} />
-            <div className={`absolute flex-col items-center space-y-1 px-4 w-screen md:w-60 z-30 right-0 -mr-6 mt-12 md:mt-4 transform -skew-y-4 ${menuOpen ? 'flex' : 'hidden'}`}>
-                <NavLink href="/">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/writing">Writing</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
-            </div>
-        </div>
+        <Menu as="div" className="relative z-50">
+            {({ open }) => (
+                <>
+                    <Menu.Button className="block rounded bg-transparent text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 p-2 focus:outline-none focus:ring">
+                        {open ? <MenuClose className="w-8 h-8" /> : <MenuIcon className="w-8 h-8" />}
+                    </Menu.Button>
+
+                    <Menu.Items className="bg-white dark:bg-black rounded-lg shadow-md border border-gray-100 dark:border-gray-800 py-4 w-56 absolute top-full right-0 mt-2 space-y-2">
+                        <Menu.Item>
+                            <NavLink href="/">About</NavLink>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <NavLink href="/projects">Projects</NavLink>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <NavLink href="/writing">Writing</NavLink>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <NavLink href="/uses">Uses</NavLink>
+                        </Menu.Item>
+                    </Menu.Items>
+                </>
+            )}
+        </Menu >
     )
 }
