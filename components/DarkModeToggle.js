@@ -26,7 +26,7 @@ export default function DarkModeToggle() {
 
     return (
         <button onClick={() => cycleTheme()} className="mr-2 md:mr-4 rounded hover:bg-gray-100 text-black dark:hover:bg-gray-700 dark:text-gray-300 p-2 focus:outline-none focus:ring">
-            {theme === 'system' ? <Sparkles /> : theme === 'dark' ? <Moon /> : <Sun />}
+            {theme === 'system' ? <Sparkles className="h-6 w-6 md:w-10 md:h-10" /> : theme === 'dark' ? <Moon className="h-6 w-6 md:w-10 md:h-10" /> : <Sun className="h-6 w-6 md:w-10 md:h-10" />}
         </button>
     )
 }

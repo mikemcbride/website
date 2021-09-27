@@ -4,16 +4,16 @@ const ProjectListItem = ({ project }) => (
     <article className="mb-16 w-full">
         <TitleLink href={project.url} target="_blank" rel="nofollow noreferrer noopener">{project.title}</TitleLink>
         <p className="prose lg:prose-xl my-4 md:mt-2">{project.description}</p>
-        <div className="flex items-center">
+        <div className="flex items-center divide-x divide-gray-400 dark:divide-gray-500">
             {project.url &&
                 <a href={project.url}
-                    className="text-blue-600 dark:text-blue-400 inline-block text-base underline md:no-underline hover:underline"
+                    className="default-link pr-4"
                     target="_blank"
                     rel="nofollow noreferrer noopener">Website</a>
             }
             {project.source &&
                 <a href={project.source}
-                    className={`text-blue-600 dark:text-blue-400 inline-block text-base underline md:no-underline hover:underline ${project.url ? 'pl-4 ml-4 border-l border-gray-400 dark:border-gray-500' : ''}`}
+                    className="default-link pl-4"
                     target="_blank"
                     rel="nofollow noreferrer noopener">Source</a>
             }

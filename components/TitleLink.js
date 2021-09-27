@@ -2,7 +2,7 @@ import Link from './Link'
 
 const TitleLink = ({ href, children }) => {
     return (
-        <Link href={href} className="font-slab font-bold leading-normal md:inline-block text-xl md:text-2xl border-b-2 border-teal hover:border-hot-pink dark:hover:border-pink-400">
+        <Link href={href} className="font-slab font-bold leading-normal underline md:inline-block text-xl md:text-2xl hover:text-blue-600 dark:hover:text-blue-400">
             {children}
         </Link>
     )
