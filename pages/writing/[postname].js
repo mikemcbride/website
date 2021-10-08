@@ -1,5 +1,6 @@
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import remarkSlug from 'remark-slug'
 import Layout from '../../components/Layout'
 import formatDate from '../../utils/formatDate'
 import formatTitle from '../../utils/formatTitle'
@@ -12,16 +13,16 @@ export default function BlogPost({ frontmatter, markdownBody }) {
 
     return (
         <Layout pageTitle={frontmatter.title}>
-          <ScrollProgress />
+            <ScrollProgress />
 
-          <header className="leading-tight font-slab font-medium inline-flex flex-col items-start max-w-3xl mt-12 mb-8">
-            <PageHeader>{frontmatter.title}</PageHeader>
-            <p className="inline-block font-sans font-normal -mt-2 leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
-          </header>
+            <header className="leading-tight font-slab font-medium mt-12 mb-8">
+                <PageHeader>{frontmatter.title}</PageHeader>
+                <p className="block font-sans font-normal -mt-2 leading-relaxed text-sm md:text-base text-gray-600 dark:text-gray-400">Posted on {frontmatter.date}</p>
+            </header>
 
-          <article className="mb-16 prose prose-lg md:prose-xl font-sans">
-            <ReactMarkdown source={markdownBody} renderers={{ code: CodeBlock }} />
-          </article>
+            <article className="mb-16 prose prose-lg md:prose-xl font-sans">
+                <ReactMarkdown children={markdownBody} remarkPlugins={[remarkSlug]} components={{code: CodeBlock}} />
+            </article>
         </Layout>
     )
 }
