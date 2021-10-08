@@ -12,5 +12,9 @@
     "uses": {
         "title": "Uses | Mike McBride",
         "description": "Mike McBride uses stuff to do stuff on the internet."
+    },
+    "gumbo": {
+        "title": "Gumbo | Mike McBride",
+        "description": "The best chicken and sausage gumbo recipe."
     }
 }
