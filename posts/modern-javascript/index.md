@@ -27,7 +27,7 @@ I'll include a link to the MDN entry for each of these topics if you'd like to d
 
 I'm starting out with this one because it's the one I understood least when it first came out, yet the one I now use probably more frequently than anything else on this list. The basic idea behind this is that you are extracting the values out of something on the right hand side of the operation and immediately setting them to variables on the left hand side. This only works when the right hand side of the operation is an Array or Object.
 
-#### Example scenario #1:
+### Example scenario #1:
 
 You are building an online store and when your page loads, you need to fetch data from multiple API calls. You don't want those calls to run in series because they'll take longer, so you do something like this to fetch the items for the page as well as the user's cart:
 
@@ -66,7 +66,7 @@ console.log(fox) // 'fox'
 console.log(others) // ['owl', 'rabbit', 'deer']
 ```
 
-#### Example scenario #2:
+### Example scenario #2:
 
 We get some JSON back from an API representing a user and we want to grab a few properties off of that object:
 
@@ -124,7 +124,7 @@ We use both array and object destructuring assignment to make our code far more 
 
 The spread syntax allows iterables (such as Arrays or Objects) to be expanded in place. From a practical standpoint, this gives us an easy way to copy, combine, or update arrays and objects in a non-destructive manner.
 
-#### Simpler Array Operations
+### Simpler Array Operations
 
 We can easily copy an array and not keep references to the old array:
 
@@ -146,7 +146,7 @@ Or add items to an array without modifying the existing array. `Array.push` modi
 const updated = [...oldArray, newItem]
 ```
 
-#### Object Operations
+### Object Operations
 
 We can do some similar things using the spread syntax with Objects. First let's take a look at combining two Objects. In the past you may have used `Object.assign`:
 
@@ -208,7 +208,7 @@ Now we have two variables, `firstName` and `lastName`, set to those respective p
 
 Arrow functions were one of the most talked about features that landed in the massive ES2015 spec. Many people saw them as a shorthand for functions, which they certainly can be, but there's a whole lot more to them that makes them especially useful. I'll cover two aspects of arrow functions that I find particularly handy. The MDN article on Arrow Functions is quite excellent. I've put links in the next two sections that take you directly to the part of the entry that references the features I'm talking about.
 
-#### No `this` context
+### No `this` context
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_separate_this)
 
@@ -274,7 +274,7 @@ mike.greet = function() {
 
 How great is that? No `let that = this`, no `fn.bind()`. Super clean!
 
-#### Implicit Returns
+### Implicit Returns
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Function_body)
 
@@ -308,7 +308,7 @@ const doubled = nums.map(num => num * 2)
 console.log(doubled) // [2, 4, 6, 8, 10]
 ```
 
-#### Caveat: returning Object literals
+### Caveat: returning Object literals
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Returning_object_literals)
 
@@ -458,7 +458,7 @@ It's been discussed for years now, and I'm super excited to see it finally make 
 
 These are just some quick hits of things that I find useful. They are not necessarily confusing, but they may not be quite as well-known features.
 
-#### Flatten Arrays
+### Flatten Arrays
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
 
@@ -472,7 +472,7 @@ const flattened = mixed.flat()
 [1, 'hello', 'a', 'b', 'c', null, 4, 1, 8, 'fun']
 ```
 
-#### Array Includes
+### Array Includes
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
@@ -492,7 +492,7 @@ const arrayHasValue = someArray.includes('value-you-care-about')
 
 Pretty useful!
 
-#### Find in Array
+### Find in Array
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
@@ -532,7 +532,7 @@ if (foundUser) {
 
 `Array.find` gives us a mechanism for easily determining whether an item exists in an Array and simultaneously setting that value to a variable. If it reaches the end of the array without finding a match, it returns `undefined`.
 
-#### Iterable Object Methods
+### Iterable Object Methods
 
 [MDN Reference - Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) | [MDN Reference - Object.values ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
 

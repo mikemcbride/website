@@ -1,38 +1,17 @@
 :root {
   --inline-code-bg: #F5F3FF;
   --inline-code-color: #6D28D9;
-  --code-border: #CBD5E1;
-  --code-linenumbers: #CBD5E1;
-  --code-fg: #6e7f91;
-  --code-bg: #fff;
-  --code-comment: #a8b3bd;
-  --code-blue: #2563eb;
-  --code-cyan: #06B6D4;
-  --code-purple: #7C3AED;
-  --code-green: #10B981;
-  --code-red: #EF4444;
-  --code-yellow: #F59E0B;
-  --scrollbar-bg: theme('colors.white');
-  --thumb-bg: theme('colors.purple.DEFAULT');
+  --code-fg: theme('colors.gray.800');
+  --code-bg: theme('colors.gray.50');
+  --code-border: theme('colors.gray.200');
 }
 
 .dark {
     --inline-code-bg: rgba(167, 139, 250, 0.15);
     --inline-code-color: theme('colors.purple.400');
-    --code-linenumbers: theme('colors.gray.500');
-    --code-red: #ff5874;
-    --code-yellow: #fffa9e;
-    --code-green: #6af699;
-    --code-cyan: #4ff2f8;
-    --code-blue: #82aaff;
-    --code-purple: #c792ea;
-    --code-bg: #141820;
-    --code-comment: #506686;
-    --code-gray: #99a3b8;
-    --code-fg: #a8b5d1;
-    --code-white: #f8fafd;
-    --scrollbar-bg: theme('colors.black');
-    --thumb-bg: theme('colors.purple.500');
+    --code-bg: theme('colors.gray.800');
+    --code-fg: theme('colors.gray.200');
+    --code-border: theme('colors.gray.700');
 }
 
 @tailwind base;
@@ -41,21 +20,6 @@
 ::selection {
     color: theme('colors.black');
     background: theme('colors.aqua.DEFAULT');
-}
-
-body::-webkit-scrollbar {
-    width: 1.2rem;
-}
-body {
-    scrollbar-width: thin;
-    scrollbar-color: var(--thumb-bg) var(--scrollbar-bg);
-}
-body::-webkit-scrollbar-track {
-    background: var(--scrollbar-bg);
-}
-body::-webkit-scrollbar-thumb {
-    background-color: var(--thumb-bg);
-    border-radius: 0px;
 }
 
 img {
@@ -98,6 +62,18 @@ code, .prose code {
 
 .prose code {
     margin: 0 !important; /* this fixes some weird margin stuff that prose sometimes adds */
+}
+
+.prose pre {
+    background-color: var(--code-bg);
+    color: var(--code-fg);
+    border: 1px solid var(--code-border);
+}
+
+.dark .prose pre {
+    background-color: var(--code-bg);
+    color: var(--code-fg);
+    border: 1px solid var(--code-border);
 }
 
 .default-link,
@@ -147,6 +123,7 @@ a > code,
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     font-family: theme('fontFamily.slab');
+    padding-top: 1em;
 }
 
 .prose h1, .prose h2 {
@@ -177,168 +154,5 @@ a > code,
 .dark .prose hr {
     border-top: 1px solid theme('colors.gray.600');
 }
-
-/**
-* prism.js theme
-*/
-
-/* purgecss start ignore */
-code[class*="language-"],
-pre.prismjs,
-.prose code[class*="language-"],
-.prose pre.prismjs {
-  color: var(--code-fg);
-  background: var(--code-bg);
-  border-radius: 0;
-  padding: 0;
-  font-size: 1rem;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre.prismjs,
-.prose pre.prismjs {
-  background: transparent;
-  margin: 0;
-  overflow: auto;
-  padding: 1rem;
-  width: 100%;
-}
-
-.prose .token.comment,
-.prose .token.block-comment,
-.prose .token.prolog,
-.prose .token.doctype,
-.prose .token.cdata,
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: var(--code-comment);
-}
-
-.prismjs .linenumber {
-    color: var(--code-linenumbers);
-    font-size: 85%;
-}
-
-.prose .token.punctuation,
-.token.punctuation {
-  color: var(--code-fg);
-}
-
-.prose .token.tag,
-.prose .token.namespace,
-.prose .token.boolean,
-.prose .token.deleted,
-.prose .token.number,
-.prose .token.interpolation-punctuation,
-.token.tag,
-.token.namespace,
-.token.boolean,
-.token.deleted,
-.token.number,
-.token.interpolation-punctuation {
-  color: var(--code-red);
-}
-
-.prose .token.function-name,
-.prose .token.function,
-.prose .token.attr-name,
-.prose .token.property,
-.prose .language-html .token.attr-value,
-.prose .token.url,
-.token.function-name,
-.token.function,
-.token.attr-name,
-.token.property,
-.language-html .token.attr-value,
-.token.url {
-  color: var(--code-blue);
-}
-
-.prose .language-html .token.property,
-.prose .language-html .token.attr-name,
-.prose .language-html .token.namespace,
-.prose .token.class-name,
-.prose .token.constant,
-.prose .token.variable,
-.prose .token.symbol,
-.language-html .token.property,
-.language-html .token.attr-name,
-.language-html .token.namespace,
-.token.class-name,
-.token.constant,
-.token.variable,
-.token.symbol {
-  color: var(--code-yellow);
-}
-
-.prose .token.selector,
-.prose .token.important,
-.prose .token.atrule,
-.prose .token.keyword,
-.prose .token.builtin,
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: var(--code-purple);
-}
-
-.prose .token.operator,
-.prose .token.entity,
-.token.operator,
-.token.entity {
-    color: var(--code-cyan);
-}
-
-.prose .token.string,
-.prose .token.char,
-.prose .token.attr-value,
-.prose .token.regex,
-.prose .token.inserted,
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.inserted {
-  color: var(--code-green);
-}
-
-.prose .token.important,
-.prose .token.bold,
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.prose .token.italic,
-.token.italic {
-  font-style: italic;
-}
-
-.prose .token.entity,
-.token.entity {
-  cursor: help;
-}
-
-/* purgecss end ignore */
 
 @tailwind utilities;
