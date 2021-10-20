@@ -22,9 +22,6 @@ export default function NavMenu() {
                         <Menu.Item>
                             <NavLink href="/writing">Writing</NavLink>
                         </Menu.Item>
-                        <Menu.Item>
-                            <NavLink href="/uses">Uses</NavLink>
-                        </Menu.Item>
                     </Menu.Items>
                 </>
             )}

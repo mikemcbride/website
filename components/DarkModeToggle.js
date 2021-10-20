@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import ThemeButton from './ThemeButton'
 import Sparkles from './icons/Sparkles'
 import Sun from './icons/Sun'
 import Moon from './icons/Moon'
@@ -10,23 +11,19 @@ export default function DarkModeToggle() {
 
     useEffect(() => setMounted(true), [])
 
-    function cycleTheme() {
-        let newTheme = 'system' // default to system in case something weird happens
-        if (theme === 'system') {
-            newTheme = 'dark'
-        } else if (theme === 'dark') {
-            newTheme = 'light'
-        } else if (theme === 'light') {
-            newTheme = 'system'
-        }
-        setTheme(newTheme)
-    }
-
     if (!mounted) return null
 
     return (
-        <button onClick={() => cycleTheme()} className="mr-2 md:mr-4 rounded hover:bg-gray-100 text-black dark:hover:bg-gray-700 dark:text-gray-300 p-2 focus:outline-none focus:ring">
-            {theme === 'system' ? <Sparkles className="h-6 w-6 md:w-10 md:h-10" /> : theme === 'dark' ? <Moon className="h-6 w-6 md:w-10 md:h-10" /> : <Sun className="h-6 w-6 md:w-10 md:h-10" />}
-        </button>
+        <div className="flex items-center mr-2 md:mr-4 rounded border border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600 overflow-hidden">
+            <ThemeButton handleClick={() => setTheme('system')} isActive={theme === 'system'}>
+                <Sparkles />
+            </ThemeButton>
+            <ThemeButton handleClick={() => setTheme('light')} isActive={theme === 'light'}>
+                <Sun />
+            </ThemeButton>
+            <ThemeButton handleClick={() => setTheme('dark')} isActive={theme === 'dark'}>
+                <Moon />
+            </ThemeButton>
+        </div>
     )
 }
