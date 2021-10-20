@@ -7,7 +7,7 @@ export default function SiteFooter() {
     return (
         <footer className="text-left relative">
             <nav className="py-12 border-t border-gray-300 dark:border-gray-700">
-                <HorizontalPad className="space-x-8">
+                <HorizontalPad className="space-x-6">
                     {footerLinks.map((link, index) => (
                         <FooterLink
                             key={index}
