@@ -14,7 +14,7 @@ export default function DarkModeToggle() {
     if (!mounted) return null
 
     return (
-        <div className="flex items-center mr-2 md:mr-4 rounded border border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600 overflow-hidden">
+        <div className="flex items-center mr-2 md:mr-4 space-x-2">
             <ThemeButton handleClick={() => setTheme('system')} isActive={theme === 'system'}>
                 <Sparkles />
             </ThemeButton>
