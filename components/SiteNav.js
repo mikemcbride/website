@@ -9,7 +9,7 @@ const SiteNav = () => (
             <Link href="/" className="md:-ml-4 mr-auto inline-block font-slab font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 py-2 px-4 uppercase text-2xl md:text-4xl">
                 Mike McBride
             </Link>
-            <div className="inline-flex items-center space-x-6">
+            <div className="inline-flex items-center space-x-2 md:space-x-6">
                 <DarkModeToggle />
                 <NavMenu />
             </div>
