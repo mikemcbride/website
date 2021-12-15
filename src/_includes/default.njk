@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- https://github.com/joshbuchea/HEAD -->
+
+        <!-- Recommended -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Elements -->
+        <meta charset="utf-8">
+
+        <!-- Meta -->
+        <meta name="description" content="{{ metadata.description }}">
+        <meta name="generator" content="11ty">
+
+        <!-- Icons -->
+        <!-- https://favicon.io/ -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"/>
+
+        <!-- Fonts -->
+        <link rel="preload" href="/notulen/notulen-display.woff2" as="font" crossOrigin="anonymous"/>
+        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" crossOrigin="anonymous"/>
+        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" crossOrigin="anonymous"/>
+        <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" crossOrigin="anonymous"/>
+
+        <title>{{ title or metadata.title }}</title>
+
+        <link rel="stylesheet" href="/notulen/notulen.css"/>
+        <link rel="stylesheet" href="/atkinson/atkinson.css"/>
+        <link rel="stylesheet" href="/monolisa/monolisa.css"/>
+        <link rel="stylesheet" href="{{ '/site.css' | url }}">
+    </head>
+
+    <body class="font-sans text-zinc-900 bg-white dark:bg-zinc-900 dark:text-zinc-300 w-full text-lg min-h-screen">
+        <div class="mx-auto w-full px-6 lg:px-0 max-w-4xl">
+            {% include 'nav.njk' %}
+            {{ content | safe }}
+            {% include 'footer.njk' %}
+        </div>
+    </body>
+</html>

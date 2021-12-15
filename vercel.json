@@ -1,5 +1,0 @@
-{
-  "env": {
-    "JWT_SECRET": "@analytics-api-jwt-secret"
-  }
-}

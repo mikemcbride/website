@@ -1,0 +1,17 @@
+---
+layout: default
+title: Writing
+---
+
+<h1 class="text-6xl lg:text-8xl font-display mb-4">{{ title }}</h1>
+
+<p class="text-2xl mb-20">Sometimes I write things. Not often enough to call it a blog. You can read them here.</p>
+
+<ul class="space-y-16">
+{%- for post in collections.post -%}
+    <li>
+        <a href="{{ post.url }}" class="font-display text-4xl underline decoration-zinc-500 hover:decoration-violet-500">{{ post.data.title }}</a>
+        <p class="text-lg lg:text-xl mt-4">{{ post.data.excerpt }}</p>
+    </li>
+{%- endfor -%}
+</ul>
