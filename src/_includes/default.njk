@@ -20,10 +20,10 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"/>
 
         <!-- Fonts -->
-        <link rel="preload" href="/notulen/notulen-display.woff2" as="font" crossOrigin="anonymous"/>
-        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" crossOrigin="anonymous"/>
-        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" crossOrigin="anonymous"/>
-        <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" crossOrigin="anonymous"/>
+        <link rel="preload" href="/notulen/notulen-display.woff2" as="font" cross-origin="anonymous"/>
+        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" cross-origin="anonymous"/>
+        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" cross-origin="anonymous"/>
+        <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" cross-origin="anonymous"/>
 
         <title>{{ title or metadata.title }}</title>
 
@@ -33,7 +33,7 @@
         <link rel="stylesheet" href="{{ '/site.css' | url }}">
     </head>
 
-    <body class="font-serif text-stone-900 bg-white dark:bg-stone-900 dark:text-stone-300 w-full text-lg min-h-screen flex flex-col">
+    <body class="font-sans text-stone-900 bg-white dark:bg-stone-900 dark:text-stone-300 w-full text-lg min-h-screen flex flex-col">
         {% include 'nav.njk' %}
         <div class="mx-auto w-full px-6 lg:px-0 max-w-4xl flex-grow">
             {{ content | safe }}
