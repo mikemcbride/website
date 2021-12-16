@@ -1,7 +1,7 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const format = require('date-fns/format')
+const format = require("date-fns/format");
 
 module.exports = function (eleventyConfig) {
 
@@ -12,16 +12,15 @@ module.exports = function (eleventyConfig) {
     }
 
     // Collections
-    eleventyConfig.addCollection("publishedPosts", function(collectionApi) {
-      const posts = collectionApi.getFilteredByTag("post");
-      // filter out posts where published is explicitly false.
-      // if it's undefined, we'll assume it should be published.
-      const filtered = posts.filter(p => p.data.published !== false)
-      filtered.reverse()
-      return filtered.map(post => {
-          post.data.formattedDate = format(new Date(post.data.date), 'PPPP')
-          return post
-      })
+    eleventyConfig.addCollection("publishedPosts", function (collectionApi) {
+        const posts = collectionApi.getFilteredByTag("post");
+        // filter out posts where published is explicitly false.
+        // if it's undefined, we'll assume it should be published.
+        const filtered = posts.filter(p => p.data.published !== false);
+        return filtered.map(post => {
+            post.data.formattedDate = format(new Date(post.data.date), 'PPPP');
+            return post;
+        }).reverse();
     });
 
     // Plugins
