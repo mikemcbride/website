@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Pagination in Fauna
-date: 2020-12-20T12:00:00Z
+date: 2020-12-20
 published: false
 excerpt: I recently refactored some data for an API that uses Fauna as the database and needed to add pagination to a query. Here are some things I learned that weren't immediately obvious or well-documented.
 ---

@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: CSS Conventions
-date: 2015-09-12T12:00:00Z
+date: 2015-09-12
 published: true
 excerpt: As I've worked on more web sites and applications, I've come across and developed a number of standards for writing and using cleaner, more useful CSS.
 ---

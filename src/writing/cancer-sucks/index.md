@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Cancer Sucks
-date: 2014-09-10T12:00:00Z
+date: 2014-09-10
 published: true
 excerpt: My wife is a pediatric nurse and sees a wide range of patients on her floor, but a large percentage of those patients are cancer kids. Today she lost another patient to cancer. That makes 5 or 6 so far this year. How unfair is that?
 ---

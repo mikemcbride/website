@@ -1,6 +1,6 @@
 ---
 title: Comparing Vue Computed Properties, Methods, and Watchers
-date: 2020-04-14T12:00:00Z
+date: 2020-04-14
 published: true
 excerpt: When I was learning Vue, one of the more confusing aspects was trying to wrap my head around when to use computed properties, methods, or watchers. They have a lot of overlapping functionality, so let's jump in and see what they're all about.
 layout: post

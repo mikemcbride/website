@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Clearing an Interval in JavaScript
-date: 2020-04-02T12:00:00Z
+date: 2020-04-02
 published: true
 excerpt: Sometimes you need to set an interval in JavaScript... and sometimes you need to make it stop. We'll go over the basics of how to do this and also cover clearing an interval in a Vue component.
 ---

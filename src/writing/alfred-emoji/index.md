@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Using Alfred as a macOS Emoji picker
-date: 2020-01-07T12:00:00Z
+date: 2020-01-07
 published: true
 excerpt: Alfred is a powerful application with vast capabilities for automation. In this post we'll explore how to make it dead simple to use it as a system-wide emoji picker in macOS.
 ---

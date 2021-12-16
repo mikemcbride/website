@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Designing in the Browser
-date: 2016-03-04T12:00:00Z
+date: 2016-03-04
 published: true
 excerpt: I want to spend some time talking about why I design in the browser, and the merits of doing that. I am not a designer, however, I spend a lot of time working on UI, both for my job and for personal or side projects.
 ---

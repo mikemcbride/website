@@ -12,7 +12,7 @@ title: Projects
 <ul class="space-y-12 mt-20">
     {%- for project in projects -%}
         <li>
-            <a href="{{ project.links[0].url }}" target="_blank" rel="nofollow noreferrer" class="font-display text-4xl underline decoration-zinc-500">{{ project.title }}</a>
+            <a href="{{ project.links[0].url }}" target="_blank" rel="nofollow noreferrer" class="font-display text-4xl underline decoration-sage-600 dark:decoration-sage-400 hover:decoration-gold">{{ project.title }}</a>
             <p class="text-xl lg:text-2xl mt-4">{{ project.description }}</p>
         </li>
     {%- endfor -%}

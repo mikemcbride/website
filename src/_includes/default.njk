@@ -33,11 +33,11 @@
         <link rel="stylesheet" href="{{ '/site.css' | url }}">
     </head>
 
-    <body class="font-sans text-zinc-900 bg-white dark:bg-zinc-900 dark:text-zinc-300 w-full text-lg min-h-screen">
-        <div class="mx-auto w-full px-6 lg:px-0 max-w-4xl">
-            {% include 'nav.njk' %}
+    <body class="font-serif text-stone-900 bg-white dark:bg-stone-900 dark:text-stone-300 w-full text-lg min-h-screen flex flex-col">
+        {% include 'nav.njk' %}
+        <div class="mx-auto w-full px-6 lg:px-0 max-w-4xl flex-grow">
             {{ content | safe }}
-            {% include 'footer.njk' %}
         </div>
+        {% include 'footer.njk' %}
     </body>
 </html>

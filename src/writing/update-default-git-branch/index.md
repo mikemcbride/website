@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Change the default branch on your git repo
-date: 2020-09-30T12:00:00Z
+date: 2020-09-30
 published: true
 excerpt: Let's look at how we can change the default branch in our git repos and sync it with a remote repository on GitHub.com
 ---

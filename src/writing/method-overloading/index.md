@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Method Overloading
-date: 2020-09-17T12:00:00Z
+date: 2020-09-17
 published: true
 excerpt: Method overloading is a concept used in many programming languages, but it doesn't really exist in JavaScript. Let's explore what it is, why we might use it, and what it looks like in JavaScript.
 ---

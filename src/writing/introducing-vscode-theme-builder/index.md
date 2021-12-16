@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Introducing VS Code Theme Builder
-date: 2020-12-30T12:00:00Z
+date: 2020-12-30
 published: true
 excerpt: I made a new library to make authoring VS Code Themes easier to manage. Check it out!
 ---

@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: 'Paper: The Last Great Medium'
-date: 2014-07-23T12:00:00Z
+date: 2014-07-23
 published: true
 excerpt: Paper is just the best. Go use some paper.
 ---

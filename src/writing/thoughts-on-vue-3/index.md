@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Thoughts on Vue 3 and Simplicity
-date: 2021-02-24T12:00:00Z
+date: 2021-02-24
 published: true
 excerpt: Vue 3 is out of beta, and I've tried it out on a few projects. Here are some early thoughts.
 ---

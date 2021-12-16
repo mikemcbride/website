@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: "Better Console Logs"
-date: 2016-11-23T12:00:00Z
+date: 2016-11-23
 published: true
 excerpt: This is just a quick tip to improve your experience with console logging with some alternative methods.
 ---

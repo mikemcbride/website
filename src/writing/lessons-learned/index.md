@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Lessons Learned as a Senior Developer
-date: 2016-09-22T12:00:00Z
+date: 2016-09-22
 published: true
 excerpt: I reflect on some lessons learned after being promoted to a senior developer.
 ---
