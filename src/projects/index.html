@@ -1,15 +1,10 @@
 ---
-layout: default
+layout: landing
 title: Projects
+subheading: When I'm not making stuff for my day job, I like to build websites, apps, and utilities to help other developers. You can find some of them listed below, and the rest you can find on my GitHub profile.
 ---
 
-<h1 class="font-display text-6xl lg:text-8xl">{{ title }}</h1>
-<p class="mt-8 text-xl lg:text-3xl">
-  When I'm not making stuff for my day job, I like to build websites, apps, and utilities to help other developers.
-  You can find some of them listed below, and the rest you can find on my GitHub profile.
-</p>
-
-<ul class="space-y-12 mt-20">
+<ul class="space-y-12">
     {%- for project in projects -%}
         <li>
             <a href="{{ project.links[0].url }}" target="_blank" rel="nofollow noreferrer" class="font-display text-4xl underline decoration-sage-600 dark:decoration-sage-400 hover:decoration-gold">{{ project.title }}</a>

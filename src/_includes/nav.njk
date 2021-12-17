@@ -1,7 +1,7 @@
 <header class="mb-8 py-8 px-6 lg:px-0">
     <nav class="flex flex-wrap gap-6 lg:gap-8 md:justify-end mx-auto max-w-4xl">
-        <a href="/" class="text-sage-600 dark:text-sage-400 text-lg lg:text-2xl hover:underline">About</a>
-        <a href="/projects" class="text-sage-600 dark:text-sage-400 text-lg lg:text-2xl hover:underline">Projects</a>
-        <a href="/writing" class="text-sage-600 dark:text-sage-400 text-lg lg:text-2xl hover:underline">Writing</a>
+        <a href="/" class="{% if page.url === '/' %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-lg lg:text-2xl hover:underline">About</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-lg lg:text-2xl hover:underline">Projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-lg lg:text-2xl hover:underline">Writing</a>
     </nav>
 </header>
