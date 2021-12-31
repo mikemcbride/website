@@ -97,6 +97,11 @@ pre.prismjs,
   width: 100%;
 }
 
+pre code[class*="language-"],
+.prose pre code[class*="language-"] {
+    background: transparent;
+}
+
 .prose .token.comment,
 .prose .token.block-comment,
 .prose .token.prolog,
