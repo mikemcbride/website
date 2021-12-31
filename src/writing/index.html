@@ -1,0 +1,15 @@
+---
+layout: landing
+title: Writing
+subheading: Sometimes I write things. Not often enough to call it a blog. You can read them here.
+---
+
+<ul class="space-y-16">
+{%- for post in collections.publishedPosts -%}
+    <li>
+        <a href="{{ post.url }}" class="font-display text-4xl underline decoration-sage-600 hover:decoration-gold">{{ post.data.title }}</a>
+        <time class="block mt-4 text-sage-600 dark:text-sage-400">{{ post.data.formattedDate }}</time>
+        <p class="text-lg lg:text-xl mt-4">{{ post.data.excerpt }}</p>
+    </li>
+{%- endfor -%}
+</ul>

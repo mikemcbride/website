@@ -1,0 +1,14 @@
+---
+layout: landing
+title: Projects
+subheading: When I'm not making stuff for my day job, I like to build websites, apps, and utilities to help other developers. You can find some of them listed below, and the rest you can find on my GitHub profile.
+---
+
+<ul class="space-y-12">
+    {%- for project in projects -%}
+        <li>
+            <a href="{{ project.links[0].url }}" target="_blank" rel="nofollow noreferrer" class="font-display text-4xl underline decoration-sage-600 dark:decoration-sage-400 hover:decoration-gold">{{ project.title }}</a>
+            <p class="text-xl lg:text-2xl mt-4">{{ project.description }}</p>
+        </li>
+    {%- endfor -%}
+</ul>

@@ -1,0 +1,290 @@
+---
+layout: landing
+title: Uses
+---
+
+<article class="prose prose-2xl prose-stone dark:prose-invert mt-8">
+    <p>
+        Inspired by
+        <a
+            href="https://wesbos.com/uses/"
+            target="_blank"
+            class="font-bold"
+            rel="nofollow noreferrer"
+            >Wes Bos</a
+        >, this page details the things I use to stay productive. Let's dive in.
+    </p>
+
+    <h2>Editor &amp; Terminal</h2>
+    <ul class="-ml-4">
+        <li>
+            My editor is
+            <a
+                href="https://code.visualstudio.com"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >VS Code</a
+            >. I am probably one of the last people to make the switch to VS
+            Code. I'll probably do a write-up on why I switched, because it took
+            a lot for me to leave Atom.
+        </li>
+        <li>
+            I wrote my own theme called
+            <a
+                href="https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter"
+                target="_blank"
+                class="font-bold"
+                rel="noreferrer nofollow"
+                >Electron Highlighter Syntax</a
+            >. It's a slightly more vibrant version of Atom's iconic One Dark
+            syntax theme that I've customized to my liking. I have spent way
+            more time on this theme than I care to admit. Seriously.
+        </li>
+        <li>
+            My font in my editor and terminal is
+            <a
+                href="https://monolisa.dev"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >MonoLisa</a
+            >. It's also the monospace font you see on this website. It's highly
+            readable and looks excellent. If I have to stare at a font all day,
+            it's worth paying for one I enjoy looking at.
+        </li>
+        <li>
+            I use
+            <a
+                href="https://hyper.is/"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Hyper</a
+            >
+            for my terminal. It's fast, customizable, and looks great.
+        </li>
+        <li>
+            <a
+                href="https://fishshell.com"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Fish</a
+            >
+            is my shell. I used zsh for years (both oh-my-zsh and prezto) and
+            fish is a much more enjoyable experience. The intelligent
+            autocomplete has changed my life.
+        </li>
+        <li>
+            I use a terminal prompt called
+            <a
+                href="https://starship.rs"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Starship</a
+            >. It's built in Rust so it's blazing fast and customizing is done
+            via a TOML file, so it's dead simple. I can't recommend it highly
+            enough.
+        </li>
+    </ul>
+
+    <p>
+        I have a lot of terminal aliases and scripts to help me be more
+        productive. Here are a few of my favorites:
+    </p>
+
+    <ul class="-ml-4">
+        <li><code>afk</code> starts my screensaver</li>
+        <li>
+            <code>weather</code> gets the current weather in your area - try it
+            out! Run <code>curl wttr.in</code> in your own terminal.
+        </li>
+        <li>
+            <code>please</code> = <code>sudo</code>. Stole this idea from
+            <a
+                href="https://github.com/paulirish/dotfiles"
+                target="_blank"
+                class="font-bold"
+                rel="noreferrer nofollow"
+                >Paul Irish</a
+            >, but I can't seem to find it in his dotfiles anymore.
+        </li>
+        <li>
+            <code>rm</code> = <code>trash</code>. I installed
+            <a
+                href="https://github.com/sindresorhus/trash-cli"
+                target="_blank"
+                rel="nofollow noreferrer"
+                >trash-cli</a
+            >, so setting <code>rm</code> equal to <code>trash</code> means
+            instead of losing something forever when I run <code>rm</code>, it
+            dumps it into my trash so I can still recover it if I need to. I've
+            been burned too many times.
+        </li>
+        <li>
+            <code>gpub</code> =
+            <code>git push -u origin $(git_current_branch)</code>. When you
+            start a new branch in git, it's super annoying to have to set the
+            upstream origin the first time you're pushing that branch. This
+            alias makes it easy to publish a new branch.
+        </li>
+    </ul>
+
+    <h2>Desktop Apps</h2>
+    <ul class="-ml-4">
+        <li>
+            <a
+                href="https://firefox.com"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Firefox</a
+            >
+            is my browser. I occasionally use Brave to test out Chromium stuff, but mostly stick with
+            Firefox. <code>brew install firefox</code> and <code>brew install brave-browser</code>
+        </li>
+        <li>
+            <a
+                href="https://getkap.co"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Kap</a
+            >
+            is the best app I've found for doing screen captures. You can easily
+            export them to MP4 or GIF. Super useful for showing UI changes in
+            GitHub PRs.<code>brew install kap</code>
+        </li>
+        <li>
+            I use
+            <a
+                href="https://rectangleapp.com"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Rectangle</a
+            >
+            for window management. It gives you keyboard shortcuts for
+            rearranging and resizing your windows, and also gives you "window
+            snapping", where if you drag a window to a certain edge of the
+            screen it will snap to fill part of the screen. I will never be able
+            to use a Mac without this app again.
+            <code>brew install rectangle</code>
+        </li>
+        <li>
+            <a
+                href="https://insomnia.reset"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Insomnia</a
+            >
+            is an excellent REST client, used for testing API calls that also
+            has top notch GraphQL support. <code>brew install insomnia</code>
+        </li>
+        <li>
+            I use
+            <a
+                href="https://1password.com"
+                target="_blank"
+                class="font-bold"
+                rel="noreferrer nofollow"
+                >1Password</a
+            >
+            for password management across all my devices, and at this point I
+            think it's safe to say that I couldn't live without it. I use the
+            Family Plan because it gives me shared folders so my wife and I can
+            both use it for shared logins and also keep our own logins separate.
+        </li>
+    </ul>
+
+    <h2>Desk Setup</h2>
+    <ul class="-ml-4">
+        <li>
+            I have one 23" HP monitor that work gave us when we went remote.
+            It's mounted to the wall with a swivel wall mount I got on Amazon. I'm looking to upgrade to a 27" at some point.
+        </li>
+        <li>
+            To the left of my monitor, my laptop (currently a 16" M1 Pro MacBook) sits on a <a
+                href="https://www.twelvesouth.com/products/curve-for-macbook"
+                target="_blank"
+                class="font-bold"
+                rel="norollow noreferrer"
+                >Curve stand by TwelveSouth</a
+            >. It frees up desk space and is really minimal.
+        </li>
+        <li>
+            I have some <strong>AudioTechnica over-ear headphones</strong> when I'm in meetings
+            or listening to music. The model I have isn't available anymore, but
+            <a
+                href="https://www.audio-technica.com/en-us/headphones/type/over-ear/ath-m40x"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >this model</a
+            >
+            looks to be pretty much the same thing.
+        </li>
+        <li>
+            I have a
+            <a
+                href="https://www.amazon.com/Microphone-TONOR-Podcasting-Compatible-TC30/dp/B08CVP2HXP"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Tonor USB Microphone</a
+            >
+            for meetings. It's pretty affordable and gives better sound quality
+            than the built-in laptop mic.
+        </li>
+        <li>
+            I use a Logitech webcam that work provided. Even a cheap webcam has
+            far superior video quality than the built-in camera on the MacBooks.
+        </li>
+        <li>
+            I use an
+            <a
+                href="https://smile.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Apple Magic Keyboard</a
+            >
+            and
+            <a
+                href="http://smile.amazon.com/Apple-MJ2R2LL-A-Magic-Trackpad/dp/B016QO5YWC"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >Apple Magic Trackpad</a
+            >. I love the gestures on the MacBook touchpad, so I opted for the
+            Magic Trackpad instead of a Magic Mouse, but I do hear excellent
+            things about the mouse.
+        </li>
+        <li>
+            I have
+            <a
+                href="https://www.amazon.com/gp/product/B07YFY7H7J"
+                target="_blank"
+                class="font-bold"
+                rel="nofollow noreferrer"
+                >this light</a
+            >
+            set up behind my monitor and webcam for better lighting on video
+            calls. I built my desk into a shallow closet in my bedroom and the
+            lighting situation is awful. If I don't have this turned on during
+            meetings, my face is totally dark.
+        </li>
+        <li>
+            The desk itself is one that I custom built. When we moved in 2020,
+            our master bedroom had a walk-in closet and a smaller closet with
+            sliding doors. We didn't need both, and I needed an office, so I
+            ripped out the shelves, painted the interior of the closet, and
+            built a desk that mounts inside the walls. I used 2x4's for the
+            frame and made a slab from a few pieces of pine that I then glued
+            up, stained, and sealed. It's worked out really well.
+        </li>
+    </ul>
+</article>
