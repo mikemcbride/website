@@ -19,6 +19,26 @@ html {
   --code-yellow: #F59E0B;
 }
 
+.prose pre {
+    background-color: var(--code-bg);
+    color: var(--code-fg);
+    border: 1px solid var(--code-border);
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+    @apply font-display;
+}
+
+.prose a {
+    @apply underline text-red-600 decoration-stone-300
+}
+
+.prose a:hover {
+    @apply decoration-red-500
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --code-border: theme('colors.stone.800');
@@ -34,26 +54,14 @@ html {
         --code-fg: #a8b5d1;
         --code-white: #f8fafd;
     }
-}
 
-.prose pre {
-    background-color: var(--code-bg);
-    color: var(--code-fg);
-    border: 1px solid var(--code-border);
-}
+    .prose a {
+        @apply underline text-gold decoration-stone-400
+    }
 
-.prose h1,
-.prose h2,
-.prose h3 {
-    @apply font-display;
-}
-
-.prose a {
-    @apply underline decoration-gold
-}
-
-.prose a:hover {
-    @apply text-gold
+    .prose a:hover {
+        @apply decoration-gold
+    }
 }
 
 /**

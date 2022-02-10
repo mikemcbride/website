@@ -1,7 +1,7 @@
 <header class="py-8 px-6 lg:px-0">
-    <nav class="flex flex-wrap gap-6 lg:gap-8 md:justify-end mx-auto max-w-4xl">
-        <a href="/" class="{% if page.url === '/' %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-2xl hover:underline">About</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-2xl hover:underline">Projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}text-gold{% else %}text-sage-600 dark:text-sage-400{% endif %} text-2xl hover:underline">Writing</a>
+    <nav class="flex flex-wrap gap-4 lg:gap-6 md:justify-end mx-auto max-w-4xl">
+        <a href="/" class="{% if page.url === '/' %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">About</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">Projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">Writing</a>
     </nav>
 </header>
