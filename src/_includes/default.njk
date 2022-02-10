@@ -43,6 +43,7 @@
         {% include 'footer.njk' %}
     </body>
     <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear()
         const {timeZone, locale} = Intl
             .DateTimeFormat()
             .resolvedOptions()
