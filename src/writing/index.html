@@ -4,12 +4,47 @@ title: Writing
 subheading: Sometimes I write things. Not often enough to call it a blog. You can read them here.
 ---
 
-<ul class="space-y-16">
+<fieldset class="w-full max-w-sm flex items-center border-b border-stone-500 space-x-4 p-2 mb-16">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+    <input type="text" id="search-posts" placeholder="Search posts..." class="bg-transparent flex-1 text-stone-600 dark:text-stone-400 placeholder:text-stone-400 dark:placeholder:text-stone-500 text-xl font-sans border-none focus:outline-none" />
+</fieldset>
+
+<ul>
 {%- for post in collections.publishedPosts -%}
-    <li>
-        <a href="{{ post.url }}" class="font-display text-4xl underline hover:text-red-600 hover:dark:text-gold">{{ post.data.title }}</a>
+    <li class="post-wrapper mb-16">
+        <a href="{{ post.url }}" data-searchable="true" class="font-display text-4xl underline hover:text-red-600 hover:dark:text-gold">{{ post.data.title }}</a>
         <time class="block mt-4 text-sage-600 dark:text-sage-400">{{ post.data.formattedDate }}</time>
-        <p class="text-lg lg:text-xl mt-4">{{ post.data.excerpt }}</p>
+        <p data-searchable="true" class="text-lg lg:text-xl mt-4">{{ post.data.excerpt }}</p>
     </li>
 {%- endfor -%}
 </ul>
+
+<script type="text/javascript">
+const searchInput = document.getElementById('search-posts');
+const postNodes = document.querySelectorAll('.post-wrapper');
+
+searchInput.addEventListener('input', (e) => {
+    for (let node of postNodes) {
+        if (!e.target.value) {
+            node.classList.remove('hidden')
+        } else {
+            let show = false
+            const searchableNodes = []
+            node.childNodes.forEach(cn => {
+                if (cn.attributes && cn.attributes['data-searchable']) {
+                    if (cn.innerText.toLowerCase().includes(e.target.value.toLowerCase())) {
+                        show = true
+                    }
+                }
+            })
+            if (show) {
+                node.classList.remove('hidden')
+            } else {
+                node.classList.add('hidden')
+            }
+        }
+    }
+});
+</script>
