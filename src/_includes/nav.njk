@@ -1,7 +1,7 @@
 <header class="py-8 px-6 lg:px-0">
     <nav class="flex flex-wrap gap-4 lg:gap-6 md:justify-end mx-auto max-w-4xl">
-        <a href="/" class="{% if page.url === '/' %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">About</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">Projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}text-red-600 dark:text-gold hover:decoration-red-600 hover:dark:decoration-gold{% else %}text-stone-500 dark:text-stone-400 hover:decoration-red-500 hover:dark:decoration-gold{% endif %} decoration-stone-300 dark:decoration-stone-600 text-lg lg:text-xl underline">Writing</a>
+        <a href="/" class="{% if page.url === '/' %}text-red-600 dark:text-gold{% else %}text-stone-500 dark:text-stone-400 hover:text-red-600 hover:dark:text-gold{% endif %} text-lg lg:text-xl">/about</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}text-red-600 dark:text-gold{% else %}text-stone-500 dark:text-stone-400 hover:text-red-600 hover:dark:text-gold{% endif %} text-lg lg:text-xl">/projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}text-red-600 dark:text-gold{% else %}text-stone-500 dark:text-stone-400 hover:text-red-600 hover:dark:text-gold{% endif %} text-lg lg:text-xl">/writing</a>
     </nav>
 </header>
