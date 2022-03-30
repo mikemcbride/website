@@ -15,14 +15,14 @@ Fair question. Authoring a VS Code theme can be pretty tedious. The JSON theme f
 
 ```json
 {
-    "name": "{{ name }}",
+    "name": "{% raw %}{{ name }}{% endraw %}",
     "type": "light",
     "colors": {
-        "activityBar.background": "{{ colors.lightGray }}",
-        "activityBar.border": "{{ colors.gray }}",
-        "activityBar.activeBackground": "{{ colors.lightGray }}",
-        "activityBar.activeBorder": "{{ colors.blue }}",
-        "activityBar.foreground": "{{ colors.blue }}"
+        "activityBar.background": "{% raw %}{{ colors.lightGray }}{% endraw %}",
+        "activityBar.border": "{% raw %}{{ colors.gray }}{% endraw %}",
+        "activityBar.activeBackground": "{% raw %}{{ colors.lightGray }}{% endraw %}",
+        "activityBar.activeBorder": "{% raw %}{{ colors.blue }}{% endraw %}",
+        "activityBar.foreground": "{% raw %}{{ colors.blue }}{% endraw %}"
     }
 }
 ```
