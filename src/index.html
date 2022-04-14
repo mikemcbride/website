@@ -10,24 +10,17 @@ layout: default
         <section>
             <h2>Some things I like...</h2>
             <ul class="-ml-2 md:-ml-4">
-                <li>Peanut butter and jelly sandwiches</li>
-                <li>Hammocks</li>
-                <li>Jesus</li>
-                <li><a href="/gumbo">Chicken and sausage gumbo</a></li>
-                <li>Hugs</li>
-                <li>Playing piano</li>
-                <li>Pineapple on pizza</li>
+                {%- for like in likes -%}
+                    <li>{{ like }}</li>
+                {%- endfor -%}
             </ul>
         </section>
         <section>
             <h2>Some things I don't...</h2>
             <ul class="-ml-2 md:-ml-4">
-                <li>Glitter 🤮</li>
-                <li>Hair spray</li>
-                <li>Bug bites</li>
-                <li>Washing dishes</li>
-                <li>Cottage cheese</li>
-                <li>Glitter (again)</li>
+                {%- for dislike in dislikes -%}
+                    <li>{{ dislike }}</li>
+                {%- endfor -%}
             </ul>
         </section>
     </div>
@@ -37,57 +30,22 @@ layout: default
         <p>Well, they might have said it. I can't say for certain that they did, but I also can't say for certain that they didn't... That has to count for something, right?</p>
 
         <section class="px-2 not-prose mt-12 lg:mt-20">
-            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-              <div class="relative text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300 md:flex-grow rounded-lg lg:rounded-xl p-4 lg:p-8 bg-gray-100 dark:bg-gray-800">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 h-8 w-8 lg:h-12 lg:w-12 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">An absolute freak athlete. Mike is on another level.</p>
-                <footer class="mt-4">
-                    <div class="text-sm md:text-base font-medium">LeBron James</div>
-                    <div class="text-sm md:text-base font-medium text-gray-500">18x NBA All Star, 4x NBA MVP</div>
-                </footer>
-              </div>
-            </blockquote>
-
-            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-              <div class="relative text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300 md:flex-grow rounded-lg lg:rounded-xl p-4 lg:p-8 bg-gray-100 dark:bg-gray-800">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 h-8 w-8 lg:h-12 lg:w-12 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">Mike writes the most elegant code I have ever seen. If you're looking for the pinnacle of development talent, look no further.</p>
-                <footer class="mt-4">
-                  <div class="text-sm md:text-base font-medium">Brendan Eich</div>
-                  <div class="text-sm md:text-base font-medium text-gray-500">Creator of JavaScript, Co-founder of Mozilla</div>
-                </footer>
-              </div>
-            </blockquote>
-
-            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-              <div class="relative text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300 md:flex-grow rounded-lg lg:rounded-xl p-4 lg:p-8 bg-gray-100 dark:bg-gray-800">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 h-8 w-8 lg:h-12 lg:w-12 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">Unbelievably handsome. I mean, have you seen this guy? Just... wow.</p>
-                <footer class="mt-4">
-                    <div class="text-sm md:text-base font-medium">Paul Rudd</div>
-                    <div class="text-sm md:text-base font-medium text-gray-500">People's 2021 Sexiest Man Alive</div>
-                </footer>
-              </div>
-            </blockquote>
-
-            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-              <div class="relative text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300 md:flex-grow rounded-lg lg:rounded-xl p-4 lg:p-8 bg-gray-100 dark:bg-gray-800">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 h-8 w-8 lg:h-12 lg:w-12 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">Nice guy. Moderately funny.</p>
-                <footer class="mt-4">
-                    <div class="text-sm md:text-base font-medium">Becky McBride</div>
-                    <div class="text-sm md:text-base font-medium text-gray-500">My wife</div>
-                </footer>
-              </div>
-            </blockquote>
+            {%- for quote in quotes -%}
+                <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
+                    <div class="relative text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300 md:flex-grow rounded-lg lg:rounded-xl p-4 lg:p-8 bg-gray-100 dark:bg-gray-800">
+                        <span class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 lg:-translate-x-6 flex items-center justify-center p-2 lg:p-3 rounded-full bg-gray-300 dark:bg-gray-600">
+                            <svg class="h-6 w-6 lg:h-8 lg:w-8 text-gray-600 dark:text-gray-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+                            </svg>
+                        </span>
+                        <p class="relative">{{ quote.text }}</p>
+                        <footer class="mt-4 lg:mt-6 flex flex-col items-end">
+                            <div class="text-base md:text-lg font-medium">{{ quote.author }}</div>
+                            <div class="text-sm md:text-base font-medium text-gray-500">{{ quote.title }}</div>
+                        </footer>
+                    </div>
+                </blockquote>
+            {%- endfor -%}
         </section>
     </div>
     <p>
