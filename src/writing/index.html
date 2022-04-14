@@ -17,7 +17,7 @@ subheading: Sometimes I write things. Not often enough to call it a blog. You ca
         <li class="post-wrapper space-y-2">
             <time class="block text-sm lg:text-base text-gray-600 dark:text-gray-400" datetime="{{ post.data.date }}">{{ post.data.formattedDate }}</time>
             <a href="{{ post.url }}" data-searchable="true" class="block bold">{{ post.data.title }}</a>
-            <p data-searchable="true" class=>{{ post.data.excerpt }}</p>
+            <p data-searchable="true">{{ post.data.excerpt }}</p>
             <div class="mt-3">
                 <a href="{{ post.url }}" class="text-base font-semibold text-blue-600 dark:text-blue-300 hover:underline">Read more</a>
             </div>
