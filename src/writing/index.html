@@ -4,22 +4,27 @@ title: Writing
 subheading: Sometimes I write things. Not often enough to call it a blog. You can read them here.
 ---
 
-<fieldset class="w-full max-w-sm flex items-center border-b border-stone-500 space-x-4 p-2 mb-16">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-    </svg>
-    <input type="text" id="search-posts" placeholder="Search posts..." class="bg-transparent flex-1 text-stone-600 dark:text-stone-400 placeholder:text-stone-400 dark:placeholder:text-stone-500 text-xl font-sans border-none focus:outline-none" />
-</fieldset>
+<section class="prose lg:prose-2xl dark:prose-invert">
+    <fieldset class="w-full max-w-sm relative mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-0 translate-y-4 h-6 w-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="search-posts" placeholder="Search posts..." class="border border-gray-500 rounded shadow-sm dark:shadow-gray-600 bg-transparent pl-10 pr-2 py-3 w-full text-gray-700 dark:text-gray-200 placeholder:text-gray-500 dark:placeholder:text-gray-400 text-sm lg:text-base xl:text-lg font-sans focus:outline-none focus:ring focus:ring-blue-600 dark:focus:ring-blue-300 focus:border-blue-600 dark:focus:border-blue-300" />
+    </fieldset>
 
-<ul>
-{%- for post in collections.publishedPosts -%}
-    <li class="post-wrapper mb-16">
-        <a href="{{ post.url }}" data-searchable="true" class="font-display text-4xl underline">{{ post.data.title }}</a>
-        <time class="block mt-4 text-sage-600 dark:text-sage-400">{{ post.data.formattedDate }}</time>
-        <p data-searchable="true" class="text-lg lg:text-xl mt-4">{{ post.data.excerpt }}</p>
-    </li>
-{%- endfor -%}
-</ul>
+    <ul class="list-none !pl-0 space-y-16 lg:space-y-20">
+    {%- for post in collections.publishedPosts -%}
+        <li class="post-wrapper space-y-2">
+            <time class="block text-sm lg:text-base text-gray-600 dark:text-gray-400" datetime="{{ post.data.date }}">{{ post.data.formattedDate }}</time>
+            <a href="{{ post.url }}" data-searchable="true" class="block bold">{{ post.data.title }}</a>
+            <p data-searchable="true" class=>{{ post.data.excerpt }}</p>
+            <div class="mt-3">
+                <a href="{{ post.url }}" class="text-base font-semibold text-blue-600 dark:text-blue-300 hover:underline">Read more</a>
+            </div>
+        </li>
+    {%- endfor -%}
+    </ul>
+</section>
 
 <script type="text/javascript">
 const searchInput = document.getElementById('search-posts');

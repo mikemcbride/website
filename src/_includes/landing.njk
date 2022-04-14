@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<h1 class="font-display text-6xl lg:text-8xl">{{ title }}</h1>
-{%- if subheading -%}
-<p class="mt-8 text-xl lg:text-3xl mb-20">{{ subheading }}</p>
-{%- endif -%}
+<section class="prose lg:prose-2xl dark:prose-invert mb-12 lg:mb-20">
+    <h1>{{ title }}</h1>
+    {%- if subheading -%}
+    <p>{{ subheading }}</p>
+    {%- endif -%}
+</section>
 {{ content | safe }}

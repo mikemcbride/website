@@ -4,7 +4,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 'sans': [
-                    'Atkinson Hyperlegible',
+                    'Inter',
                     'system-ui',
                     'BlinkMacSystemFont',
                     '-apple-system',
@@ -24,7 +24,7 @@ module.exports = {
                 ],
                 'display': [
                     'Notulen Display',
-                    'Atkinson Hyperlegible',
+                    'Inter',
                     'system-ui',
                     'BlinkMacSystemFont',
                     '-apple-system',
@@ -49,15 +49,6 @@ module.exports = {
                     'monospace',
                 ],
             },
-            colors: {
-                gold: {
-                    DEFAULT: '#dd971a'
-                },
-                sage: {
-                    400: '#838775',
-                    600: '#52544a'
-                }
-            }
         },
     },
     plugins: [

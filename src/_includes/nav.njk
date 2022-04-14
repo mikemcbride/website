@@ -1,7 +1,7 @@
-<header class="py-8 px-6 lg:px-0">
-    <nav class="flex flex-wrap gap-4 lg:gap-6 md:justify-end mx-auto max-w-4xl font-mono">
-        <a href="/" class="{% if page.url === '/' %}font-bold text-stone-900 dark:text-white{% else %}text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white{% endif %} text-lg lg:text-xl">/about</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-stone-900 dark:text-white{% else %}text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white{% endif %} lg:text-xl">/projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-stone-900 dark:text-white{% else %}text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white{% endif %} lg:text-xl">/writing</a>
+<header class="pt-12 px-4 lg:px-0">
+    <nav class="flex flex-wrap gap-4 lg:gap-6 md:justify-end mx-auto max-w-4xl">
+        <a href="/" class="{% if page.url === '/' %}font-bold text-gray-900 dark:text-white{% else %}text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">About</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-gray-900 dark:text-white{% else %}text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">Projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-gray-900 dark:text-white{% else %}text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">Writing</a>
     </nav>
 </header>

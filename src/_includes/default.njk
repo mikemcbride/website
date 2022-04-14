@@ -21,21 +21,20 @@
 
         <!-- Fonts -->
         <link rel="preload" href="/notulen/notulen-display.woff2" as="font" cross-origin="anonymous"/>
-        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" cross-origin="anonymous"/>
-        <link rel="preload" href="/atkinson/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" cross-origin="anonymous"/>
+        <link rel="preload" href="/inter/Inter.var-subset.woff2" as="font" cross-origin="anonymous"/>
         <link rel="preload" href="/monolisa/MonoLisa-Regular.woff2" as="font" cross-origin="anonymous"/>
 
         <title>{{ title or metadata.title }}</title>
 
         <link rel="stylesheet" href="/notulen/notulen.css"/>
-        <link rel="stylesheet" href="/atkinson/atkinson.css"/>
+        <link rel="stylesheet" href="/inter/inter.css"/>
         <link rel="stylesheet" href="/monolisa/monolisa.css"/>
         <link rel="stylesheet" href="{{ '/site.css' | url }}">
     </head>
 
-    <body class="font-sans text-stone-700 bg-white dark:bg-stone-900 dark:text-stone-200 w-full text-lg min-h-screen flex flex-col">
+    <body class="font-sans text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-200 w-full text-lg min-h-screen flex flex-col">
         {% include 'nav.njk' %}
-        <div class="mt-12 lg:mt-20 mx-auto w-full px-6 lg:px-0 max-w-4xl flex-grow">
+        <div class="mt-12 lg:mt-20 mx-auto w-full px-4 lg:px-0 max-w-4xl flex-grow">
             {{ content | safe }}
         </div>
         {% include 'footer.njk' %}

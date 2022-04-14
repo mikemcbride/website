@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-  --code-border: theme('colors.stone.300');
+  --code-border: theme('colors.gray.300');
   --code-fg: #6e7f91;
   --code-bg: #fff;
   --code-comment: #a8b3bd;
@@ -17,6 +17,10 @@ html {
   --code-green: #10B981;
   --code-red: #EF4444;
   --code-yellow: #F59E0B;
+}
+
+.prose {
+    --tw-prose-links: theme('colors.blue.600');
 }
 
 .prose pre {
@@ -31,9 +35,16 @@ html {
     @apply font-display;
 }
 
+.prose a {
+    text-decoration: none;
+}
+.prose a:hover {
+    text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
-        --code-border: theme('colors.stone.800');
+        --code-border: theme('colors.gray.800');
         --code-red: #ff5874;
         --code-yellow: #fffa9e;
         --code-green: #6af699;
@@ -45,6 +56,11 @@ html {
         --code-gray: #99a3b8;
         --code-fg: #a8b5d1;
         --code-white: #f8fafd;
+    }
+
+    .dark\:prose-invert {
+        --tw-prose-links: theme('colors.blue.300');
+        --tw-prose-invert-links: theme('colors.blue.300');
     }
 }
 

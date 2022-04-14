@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<main class="prose prose-stone prose-2xl dark:prose-invert prose-img:rounded-lg dark:prose-img:rounded-lg">
-    <h1 class="font-display text-6xl lg:text-8xl">{{ title }}</h1>
+<main class="prose prose-2xl dark:prose-invert prose-img:rounded-lg dark:prose-img:rounded-lg">
+    <h1>{{ title }}</h1>
     {% if page.formattedDate %}
-        <p class="-mt-8 text-stone-500">{{ formattedDate }}</p>
+        <p class="-mt-8 text-gray-500">{{ formattedDate }}</p>
     {% endif %}
     {{ content | safe }}
 </main>
