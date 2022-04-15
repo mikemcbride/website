@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Chicken and Sausage Gumbo
+back_url: /extras
 ---
 
 This is my mom's chicken and sausage gumbo recipe. It's here for me to pull up easily, but you're welcome to use it. You'll want to cook this in an enameled cast iron pot or dutch oven for best results.

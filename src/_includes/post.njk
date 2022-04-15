@@ -9,6 +9,6 @@ layout: default
     {% endif %}
     {{ content | safe }}
     <div class="mt-12">
-        <a href="/writing">Back</a>
+        <a href="{{ back_url if back_url else '/writing' }}">Go Back</a>
     </div>
 </main>
