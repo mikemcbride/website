@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<main class="prose prose-2xl dark:prose-invert prose-img:rounded-lg dark:prose-img:rounded-lg">
+<main class="prose lg:prose-2xl dark:prose-invert prose-img:rounded-lg dark:prose-img:rounded-lg">
     <h1>{{ title }}</h1>
     {% if page.formattedDate %}
-        <p class="-mt-8 text-gray-500">{{ formattedDate }}</p>
+        <p class="-mt-8 text-zinc-500">{{ formattedDate }}</p>
     {% endif %}
     {{ content | safe }}
+    <div class="mt-12">
+        <a href="/writing">Back</a>
+    </div>
 </main>
