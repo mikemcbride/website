@@ -5,10 +5,10 @@ subheading: When I'm not making stuff for my day job, I like to build websites, 
 ---
 
 <section class="prose prose-zinc lg:prose-2xl dark:prose-invert">
-    <ul class="space-y-12 list-none !pl-0">
+    <ul class="space-y-12 lg:space-y-24 list-none !pl-0">
         {%- for project in projects -%}
             <li class="space-y-2">
-                <h2 class="mb-0">{{ project.title }}</h2>
+                <h2 class="!my-0">{{ project.title }}</h2>
                 <p>{{ project.description }}</p>
                 <div class="mt-3">
                     <a href="{{ project.links[0].url }}" rel="nofollow noreferrer" target="_blank">View project</a>

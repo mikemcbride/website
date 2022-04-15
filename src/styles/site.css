@@ -35,13 +35,6 @@ html {
     @apply font-display;
 }
 
-.prose a {
-    text-decoration: none;
-}
-.prose a:hover {
-    text-decoration: underline;
-}
-
 @media (prefers-color-scheme: dark) {
     :root {
         --code-border: theme('colors.gray.800');
