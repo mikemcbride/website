@@ -18,7 +18,7 @@
         "clean": "rimraf _site"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^1.0.0",
+        "@11ty/eleventy": "^2.0.0-canary.5",
         "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
         "@tailwindcss/typography": "^0.5.2",
         "autoprefixer": "^10.4.4",
