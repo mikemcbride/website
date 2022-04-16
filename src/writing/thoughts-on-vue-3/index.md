@@ -11,10 +11,10 @@ I've been a big fan of Vue for a number of years now. Our organization at work w
 
 That was nearly 5 years ago, and in that time I've invested a ton of time becoming a go-to person within our company for all things Vue related. So when Vue 3 went into beta and eventually out of beta, I started playing around with it on some side projects to get a feel for what it's like. Here are some thoughts about that.
 
-<div class="not-prose">
-    <div class="rounded-md bg-yellow-50 dark:bg-yellow-100 p-4 lg:p-6">
+<div class="not-prose my-12">
+    <div class="border border-yellow-500 dark:border-yellow-600 rounded-md bg-yellow-100 dark:bg-yellow-700 dark:bg-opacity-10 px-4 py-6 lg:p-6">
         <div class="flex">
-            <div class="ml-3 text-yellow-700 text-base lg:text-2xl !leading-relaxed">
+            <div class="ml-3 text-yellow-800 dark:text-yellow-500 text-base lg:text-2xl !leading-loose">
             <p>As you read this, please keep in mind that I have not used Vue 3 on any large-scale project. It's all been smaller stuff, so while I have been able to get a general feel for what it's like to work with, building a large app is significantly different than the type of stuff I'm doing with these side projects.</p>
             </div>
         </div>
