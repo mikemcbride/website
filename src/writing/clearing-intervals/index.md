@@ -25,7 +25,7 @@ When the code above executes, the word "Hello" will be printed to the console, a
 
 ## setInterval
 
-The `setInterval` method looks very similar. It also takes a callback function and an a delay/interval parameter. The main difference is that instead of running the callback function once after the provided delay, it continuously runs the function. So if we have this:
+The `setInterval` method looks very similar. It also takes a callback function and a delay/interval parameter. The main difference is that instead of running the callback function once after the provided delay, it continuously runs the function. So if we have this:
 
 ```js
 setInterval(function() {
