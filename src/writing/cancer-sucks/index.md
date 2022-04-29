@@ -10,7 +10,7 @@ My wife is a pediatric nurse and sees a wide range of patients on her floor, but
 
 September is Pediatric Cancer Awareness month. I'd like you to take the time to watch this video -- it's short and very much worth your time.
 
-[![The Childhood Cancer Ripple Effect](http://img.youtube.com/vi/oBMd_CKEyIY/0.jpg)](http://www.youtube.com/watch?v=oBMd_CKEyIY "The Childhood Cancer Ripple Effect")
+[![The Childhood Cancer Ripple Effect](https://img.youtube.com/vi/oBMd_CKEyIY/0.jpg)](https://www.youtube.com/watch?v=oBMd_CKEyIY "The Childhood Cancer Ripple Effect")
 
 I see the effects of pediatric cancer almost daily. It spreads far beyond the patients and their families. I can tell you from experience that the nurses and doctors who treat and comfort those patients and families come home and cry for them. Theirs is not just another job where you walk out the door to your car and leave it behind until you walk back in the next morning. You can't just shut it out when a baby dies in the arms of its parents because of this terrible disease. They spend hours of every shift for weeks and months at a time caring for these kids, comforting these parents, doing everything they can medically and beyond to help fight this. Sometimes they win. Far too often cancer wins.
 
