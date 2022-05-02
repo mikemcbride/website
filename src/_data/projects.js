@@ -45,7 +45,7 @@ module.exports = [
         description: "A web app that will solve sudoku puzzles for you. It uses a variation of a brute force search algorithm with backtracking to solve even the hardest puzzles.",
         links: [
             {
-                url: "https://sudoku.mcbrid.es",
+                url: "https://sudoku.mikemcbride.dev",
                 title: "Website"
             },
             {
