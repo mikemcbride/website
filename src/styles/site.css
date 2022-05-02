@@ -6,6 +6,11 @@ html {
     text-rendering: optimizeSpeed;
 }
 
+::selection {
+  background: #5aeace;
+  color: #111;
+}
+
 :root {
   --code-border: theme('colors.gray.300');
   --code-fg: #6e7f91;
