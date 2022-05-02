@@ -157,21 +157,6 @@ module.exports = [
         type: "extra"
     },
     {
-        title: "Electron Highlighter Syntax",
-        description: "The same electron highlighter color scheme, but for Atom. This was the original before I switched to VS Code, and is the first theme I ever made.",
-        links: [
-            {
-                url: "https://atom.io/packages/electron-highlighter-syntax",
-                title: "View Package"
-            },
-            {
-                url: "https://github.com/mikemcbride/electron-highlighter-syntax",
-                title: "Source"
-            }
-        ],
-        type: "extra"
-    },
-    {
         title: "Hyper Electron Highlighter",
         description: "The same syntax theme, but for the terminal app Hyper.",
         links: [
