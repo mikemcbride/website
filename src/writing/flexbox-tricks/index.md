@@ -15,7 +15,7 @@ First things first, there are a couple of resources that are worth their weight 
 
 The second resource is an interactive game called [Flexbox Froggy](https://flexboxfroggy.com/). It's a fun way to solve increasingly more challenging puzzles using flexbox to place frogs onto their lily pads.
 
-Lastly, if you don't mind a shameless plug, I wrote a little web app that allows you to play around with flexbox layouts. You can also view the HTML and CSS required to generate the layout you build, so it can be pretty handy if you need to troubleshoot a flex layout issue. [Check it out here](https://flexbox.mcbride.tech/). *Note:* the app is not mobile-friendly. PR's welcome!
+Lastly, if you don't mind a shameless plug, I wrote a little web app that allows you to play around with flexbox layouts. You can also view the HTML and CSS required to generate the layout you build, so it can be pretty handy if you need to troubleshoot a flex layout issue. [Check it out here](https://flexbox.tech/). *Note:* the app is not mobile-friendly. PR's welcome!
 
 ## Use Cases
 
