@@ -30,15 +30,19 @@ module.exports = [
         type: "utility"
     },
     {
-        title: "Catholic AF",
-        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David wrote more about this on his site, check it out.",
+        title: "convert-color-cli",
+        description: "A CLI tool that can convert colors between HEX, RGB, and HSL.",
         links: [
             {
-                url: "https://leininger.tech/work/catholic-af/",
-                title: "David's Blog"
+                url: "https://npmjs.com/package/convert-color-cli",
+                title: "npm"
+            },
+            {
+                url: "https://github.com/mikemcbride/convert-color-cli",
+                title: "Source"
             }
         ],
-        type: "website"
+        type: "utility"
     },
     {
         title: "Sudoku Solver",
@@ -56,19 +60,15 @@ module.exports = [
         type: "website"
     },
     {
-        title: "convert-color-cli",
-        description: "A CLI tool that can convert colors between HEX, RGB, and HSL.",
+        title: "Catholic AF",
+        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David wrote more about this on his site, check it out.",
         links: [
             {
-                url: "https://npmjs.com/package/convert-color-cli",
-                title: "npm"
-            },
-            {
-                url: "https://github.com/mikemcbride/convert-color-cli",
-                title: "Source"
+                url: "https://leininger.tech/work/catholic-af/",
+                title: "David's Blog"
             }
         ],
-        type: "utility"
+        type: "website"
     },
     {
         title: "VSCode Theme Builder",
