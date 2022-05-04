@@ -9,7 +9,7 @@ Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I 
 ## Editor & Terminal
 
 - Most of the time now my editor is Vim. I used VS Code for years but finally made the jump after using a vim plugin inside VS Code. Depending on the project or my needs at the moment, I'll still jump into VS Code as I'm still figuring out parts of my Vim workflow.
-- I use a theme called Everforest in my terminal, in Vim, and in VS Code.
+- My theme in terminal, Vim, and VS Code is [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 - My font in my editor and terminal is [MonoLisa](https://monolisa.dev). It's also the monospace font you see on this website. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the nerd-font font patcher script to add a bunch of extra icons to it.
 - I use [iTerm2](https://iterm2.com) for my terminal. It's a great improvement over the default macOS terminal.
 - [Fish](https://fishshell.com) is my shell. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life.
@@ -19,8 +19,7 @@ I have a lot of terminal aliases and scripts to help me be more
 productive. Here are a few of my favorites:
 
 - `afk` starts my screensaver
-- `weather` gets the current weather in your area - try it
-    out! Run `curl wttr.in` in your own terminal.
+- `weather` gets the current weather in your area - try it out! Run `curl wttr.in` in your own terminal.
 - `please` = `sudo`. Stole this idea from [Paul Irish](https://github.com/paulirish/dotfiles), but I can't seem to find it in his dotfiles anymore.
 - `rm` = `trash`. I installed [trash-cli](https://github.com/sindresorhus/trash-cli), so setting `rm` equal to `trash` means instead of losing something forever when I run `rm`, it dumps it into my trash so I can still recover it if I need to. I've been burned too many times.
 - `gpub` = `git push -u origin $(git_current_branch)`. When you start a new branch in git, it's super annoying to have to set the upstream origin the first time you're pushing that branch. This alias makes it easy to publish a new branch.
