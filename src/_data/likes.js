@@ -1,6 +1,6 @@
 module.exports = [
     "Hammocks",
-    "Jesus",
+    "The month of October",
     "Chicken and sausage gumbo",
     "Hugs",
     "Playing piano",
