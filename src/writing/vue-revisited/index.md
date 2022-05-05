@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: "One Year Later: Thoughts on Vue 3"
-date: 2021-03-27
+date: 2022-03-27
 published: true
 excerpt: A year ago I wrote some very early thoughts on Vue 3. Let's see how they hold up.
 ---
