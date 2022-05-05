@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: Auto-delete branches after merging
-date: 2022-05-04
+date: 2021-08-02
 published: true
 excerpt: Here's a quick tip to help keep your branches clean on GitHub.
 ---
