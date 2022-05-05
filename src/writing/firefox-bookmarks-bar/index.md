@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: A Better Bookmarks Bar Experience in Firefox
-date: 2022-05-01
+date: 2022-02-16
 published: true
 excerpt: Let's take a quick look at how to make the bookmarks toolbar in Firefox better.
 ---
