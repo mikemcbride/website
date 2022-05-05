@@ -1,6 +1,7 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const format = require("date-fns/format");
 
 module.exports = function (eleventyConfig) {
@@ -25,6 +26,11 @@ module.exports = function (eleventyConfig) {
 
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(pluginRss);
+
+    // Filters
+    eleventyConfig.addLiquidFilter('dateToRfc3339', pluginRss.dateToRfc3339);
+    eleventyConfig.addLiquidFilter('getNewestCollectionItemDate', pluginRss.getNewestCollectionItemDate);
 
     // Passthrough
     eleventyConfig.addPassthroughCopy({ "src/static": "." });
