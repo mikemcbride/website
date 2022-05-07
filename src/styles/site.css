@@ -6,22 +6,18 @@ html {
     text-rendering: optimizeSpeed;
 }
 
-::selection {
-  background: #5aeace;
-  color: #111;
-}
-
 :root {
-  --code-border: theme('colors.gray.300');
-  --code-fg: #6e7f91;
-  --code-bg: #fff;
-  --code-comment: #a8b3bd;
-  --code-blue: #2563eb;
-  --code-cyan: #06B6D4;
-  --code-purple: #7C3AED;
-  --code-green: #10B981;
-  --code-red: #EF4444;
-  --code-yellow: #F59E0B;
+    --code-border: theme('colors.gray.300');
+    --code-fg: #6e7f91;
+    --code-bg: #fff;
+    --code-comment: #a8b3bd;
+    --code-blue: #2563eb;
+    --code-cyan: #06B6D4;
+    --code-purple: #7C3AED;
+    --code-green: #10B981;
+    --code-red: #EF4444;
+    --code-yellow: #F59E0B;
+    --selection-color: rgba(122, 115, 254, 0.3);
 }
 
 .prose {
@@ -48,12 +44,18 @@ html {
         --code-gray: #99a3b8;
         --code-fg: #a8b5d1;
         --code-white: #f8fafd;
+        --selection-color: rgba(122, 115, 254, 0.75);
     }
 
     .dark\:prose-invert {
         --tw-prose-links: theme('colors.blue.300');
         --tw-prose-invert-links: theme('colors.blue.300');
     }
+}
+
+::selection {
+    background: var(--selection-color);
+    color: #111;
 }
 
 /**
@@ -65,36 +67,36 @@ code[class*="language-"],
 pre.prismjs,
 .prose code[class*="language-"],
 .prose pre.prismjs {
-  color: var(--code-fg);
-  background: var(--code-bg);
-  border-radius: 0;
-  padding: 0;
-  font-size: 1rem;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
+    color: var(--code-fg);
+    background: var(--code-bg);
+    border-radius: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
 
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
 }
 
 /* Code blocks */
 pre.prismjs,
 .prose pre.prismjs {
-  background: transparent;
-  margin: 0;
-  overflow: auto;
-  padding: 1rem;
-  width: 100%;
+    background: transparent;
+    margin: 0;
+    overflow: auto;
+    padding: 1rem;
+    width: 100%;
 }
 
 pre code[class*="language-"],
@@ -112,7 +114,7 @@ pre code[class*="language-"],
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: var(--code-comment);
+    color: var(--code-comment);
 }
 
 .prismjs .linenumber {
@@ -122,7 +124,7 @@ pre code[class*="language-"],
 
 .prose .token.punctuation,
 .token.punctuation {
-  color: var(--code-fg);
+    color: var(--code-fg);
 }
 
 .prose .token.tag,
@@ -137,7 +139,7 @@ pre code[class*="language-"],
 .token.deleted,
 .token.number,
 .token.interpolation-punctuation {
-  color: var(--code-red);
+    color: var(--code-red);
 }
 
 .prose .token.function-name,
@@ -152,7 +154,7 @@ pre code[class*="language-"],
 .token.property,
 .language-html .token.attr-value,
 .token.url {
-  color: var(--code-blue);
+    color: var(--code-blue);
 }
 
 .prose .language-html .token.property,
@@ -169,7 +171,7 @@ pre code[class*="language-"],
 .token.constant,
 .token.variable,
 .token.symbol {
-  color: var(--code-yellow);
+    color: var(--code-yellow);
 }
 
 .prose .token.selector,
@@ -182,7 +184,7 @@ pre code[class*="language-"],
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: var(--code-purple);
+    color: var(--code-purple);
 }
 
 .prose .token.operator,
@@ -202,24 +204,24 @@ pre code[class*="language-"],
 .token.attr-value,
 .token.regex,
 .token.inserted {
-  color: var(--code-green);
+    color: var(--code-green);
 }
 
 .prose .token.important,
 .prose .token.bold,
 .token.important,
 .token.bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .prose .token.italic,
 .token.italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 .prose .token.entity,
 .token.entity {
-  cursor: help;
+    cursor: help;
 }
 
 /* purgecss end ignore */
