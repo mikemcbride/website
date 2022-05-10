@@ -1,7 +1,8 @@
-<header class="pt-12 px-4 lg:px-0">
+<header class="py-8 px-4 lg:px-0 bg-zinc-900">
     <nav class="flex flex-wrap gap-4 lg:gap-6 md:justify-end mx-auto max-w-4xl">
-        <a href="/" class="{% if page.url === '/' %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">About</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">Projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white{% endif %} text-sm lg:text-lg">Writing</a>
+        <a href="/" class="{% if page.url === '/' %}font-bold text-white{% else %}text-zinc-200 hover:text-white{% endif %} text-sm lg:text-lg">About</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-white{% else %}text-zinc-200 hover:text-white{% endif %} text-sm lg:text-lg">Projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-white{% else %}text-zinc-200 hover:text-white{% endif %} text-sm lg:text-lg">Writing</a>
     </nav>
 </header>
+<div class="h-2 bg-gradient-to-r from-green-400 via-blue-500 to-purple-400 w-screen"></div>

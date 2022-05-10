@@ -16,7 +16,7 @@ subheading: Sometimes I write things. Not often enough to call it a blog. You ca
     {%- for post in collections.publishedPosts -%}
         <li class="post-wrapper space-y-2">
             <time class="block text-sm lg:text-base text-zinc-600 dark:text-zinc-400" datetime="{{ post.data.date }}">{{ post.data.formattedDate }}</time>
-            <h2 class="mb-0 not-prose"><a href="{{ post.url }}" data-searchable="true">{{ post.data.title }}</a></h2>
+            <h2 class="mb-0 not-prose"><a href="{{ post.url }}" class="hover:underline" data-searchable="true">{{ post.data.title }}</a></h2>
             <p data-searchable="true">{{ post.data.excerpt }}</p>
             <div class="mt-3">
                 <a href="{{ post.url }}">Read more</a>

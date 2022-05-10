@@ -58,6 +58,9 @@ html {
     color: #111;
 }
 
+h1, h2, h3 {
+    @apply font-display;
+}
 /**
 * prism.js theme
 */
