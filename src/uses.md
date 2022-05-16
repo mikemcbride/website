@@ -9,7 +9,7 @@ Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I 
 ## Editor & Terminal
 
 - My editor is Vim. I used VS Code with a Vim plugin for years, but recently made the jump to ditch VS Code. I'm pretty excited about a new editor currently in development called [Zed](https://zed.dev) - it's built by some guys who worked on the Atom team and it's built entirely in Rust so it is very performant. They're building some great collaboration features into it as well. I've been testing the Insiders builds for a while now and I'm impressed at how well it's coming along. If it gets proper Vim support I'd consider ditching the terminal.
-- My theme in terminal and Vim is [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- My theme in terminal and Vim is either [gruvbox-material](https://github.com/sainnhe/gruvbox-material) or [tokyonight](https://github.com/folke/tokyonight.nvim). I'm currently bouncing between the two.
 - My font in my editor and terminal is [MonoLisa](https://monolisa.dev). It's also the monospace font you see on this website. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the nerd-font font patcher script to add a bunch of extra icons to it.
 - I use [iTerm2](https://iterm2.com) for my terminal. It gives me everything I need in a terminal and it's really easy to customize the options.
 - [Fish](https://fishshell.com) is my shell. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life.
