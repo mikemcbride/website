@@ -60,17 +60,6 @@ module.exports = [
         type: "website"
     },
     {
-        title: "Catholic AF",
-        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David wrote more about this on his site, check it out.",
-        links: [
-            {
-                url: "https://leininger.tech/work/catholic-af/",
-                title: "David's Blog"
-            }
-        ],
-        type: "website"
-    },
-    {
         title: "VSCode Theme Builder",
         description: "A library that makes it easier to build VSCode themes. Allows you to use variables and interpolation with a config file for consistent theming.",
         links: [
@@ -99,6 +88,32 @@ module.exports = [
             }
         ],
         type: "utility"
+    },
+    {
+        title: "VS Code Electron Highlighter Syntax",
+        description: "A dark syntax theme for VS Code. I've invested far more time into this color theme than I care to admit.",
+        links: [
+            {
+                url: "https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter",
+                title: "View Extension"
+            },
+            {
+                url: "https://github.com/mikemcbride/vscode-electron-highlighter",
+                title: "Source"
+            }
+        ],
+        type: "extra"
+    },
+    {
+        title: "Catholic AF",
+        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David wrote more about this on his site, check it out.",
+        links: [
+            {
+                url: "https://leininger.tech/work/catholic-af/",
+                title: "David's Blog"
+            }
+        ],
+        type: "website"
     },
     {
         title: "uniq-by",
@@ -140,21 +155,6 @@ module.exports = [
             }
         ],
         type: "website"
-    },
-    {
-        title: "VS Code Electron Highlighter Syntax",
-        description: "A dark syntax theme for VS Code. I've invested far more time into this color theme than I care to admit.",
-        links: [
-            {
-                url: "https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter",
-                title: "View Extension"
-            },
-            {
-                url: "https://github.com/mikemcbride/vscode-electron-highlighter",
-                title: "Source"
-            }
-        ],
-        type: "extra"
     },
     {
         title: "Hyper Electron Highlighter",
