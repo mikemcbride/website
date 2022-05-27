@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const format = require("date-fns/format");
+const anchors_plugin = require('@orchidjs/eleventy-plugin-ids');
 
 module.exports = function (eleventyConfig) {
 
@@ -27,6 +28,7 @@ module.exports = function (eleventyConfig) {
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(anchors_plugin);
 
     // Filters
     eleventyConfig.addLiquidFilter('dateToRfc3339', pluginRss.dateToRfc3339);
