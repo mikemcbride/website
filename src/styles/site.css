@@ -18,6 +18,7 @@ html {
     --code-red: #EF4444;
     --code-yellow: #F59E0B;
     --selection-color: rgba(122, 115, 254, 0.3);
+    --selection-foreground: #111;
 }
 
 .prose {
@@ -45,6 +46,7 @@ html {
         --code-fg: #a8b5d1;
         --code-white: #f8fafd;
         --selection-color: rgba(122, 115, 254, 0.75);
+        --selection-foreground: #fff;
     }
 
     .dark\:prose-invert {
@@ -55,7 +57,7 @@ html {
 
 ::selection {
     background: var(--selection-color);
-    color: #111;
+    color: var(--selection-foreground);
 }
 
 /**
