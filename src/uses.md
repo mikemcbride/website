@@ -8,12 +8,12 @@ Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I 
 
 ## Editor & Terminal
 
-- My editor is Vim. I used VS Code with a Vim plugin for years, but recently made the jump to ditch VS Code. I'm pretty excited about a new editor currently in development called [Zed](https://zed.dev) - it's built by some guys who worked on the Atom team and it's built entirely in Rust so it is very performant. They're building some great collaboration features into it as well. I've been testing the Insiders builds for a while now and I'm impressed at how well it's coming along. If it gets proper Vim support I'd consider ditching the terminal.
-- My theme in terminal and Vim is either [gruvbox-material](https://github.com/sainnhe/gruvbox-material) or [tokyonight](https://github.com/folke/tokyonight.nvim). I'm currently bouncing between the two.
+- My editor is Vim (specifically Neovim). I used VS Code with a Vim plugin for years, but recently made the jump to ditch VS Code. I'm pretty excited about a new editor currently in development called [Zed](https://zed.dev) and have been testing out the pre-alpha builds - it's built by some guys who worked on the Atom team and it's built entirely in Rust so it is extremely performant. They're building some great collaboration features into it as well. I've been testing the Insiders builds for a while now and I'm impressed at how well it's coming along. If it gets proper Vim support I'd consider ditching the terminal.
+- My theme is [Electron Highlighter](/electron-highlighter) - a theme I initially developed for Atom and have spent far too much time on. I've ported it to VS Code, iTerm, Neovim, and Insomnia. I use it basically everywhere I have the ability to use a custom theme.
 - My font in my editor and terminal is [MonoLisa](https://monolisa.dev). It's also the monospace font you see on this website. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the nerd-font font patcher script to add a bunch of extra icons to it.
 - I use [iTerm2](https://iterm2.com) for my terminal. It gives me everything I need in a terminal and it's really easy to customize the options.
-- [Fish](https://fishshell.com) is my shell. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience. The intelligent autocomplete has changed my life.
-- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast, and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
+- [Fish](https://fishshell.com) is my shell. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience for me. The intelligent autocomplete has changed my life.
+- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast (slow prompts should be banned), and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
 
 I have a lot of terminal aliases and scripts to help me be more
 productive. Here are a few of my favorites:
@@ -26,7 +26,7 @@ productive. Here are a few of my favorites:
 
 ## Desktop Apps
 
-- [Firefox](https://firefox.com) is my browser. I occasionally use Brave or Opera to test out Chromium stuff, but mostly stick with Firefox. `brew install --cask firefox`
+- [Firefox](https://firefox.com) is my browser. I prefer basically everything about it to any Chromium browser. `brew install --cask firefox`
 - [Kap](https://getkap.co) is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs.`brew install --cask kap`
 - [Insomnia](https://insomnia.rest) is an excellent REST client, used for testing API calls that also has top notch GraphQL support. `brew install --cask insomnia`
 - I use [1Password](https://1password.com) for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate.
