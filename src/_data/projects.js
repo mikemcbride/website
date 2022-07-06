@@ -90,16 +90,12 @@ module.exports = [
         type: "utility"
     },
     {
-        title: "VS Code Electron Highlighter Syntax",
-        description: "A dark syntax theme for VS Code. I've invested far more time into this color theme than I care to admit.",
+        title: "Electron Highlighter Syntax",
+        description: "A dark syntax theme that I created for various applications. Check out the project page for more details.",
         links: [
             {
-                url: "https://marketplace.visualstudio.com/items?itemName=mikemcbride.electron-highlighter",
-                title: "View Extension"
-            },
-            {
-                url: "https://github.com/mikemcbride/vscode-electron-highlighter",
-                title: "Source"
+                url: "/electron-highlighter",
+                title: "View Project"
             }
         ],
         type: "extra"
