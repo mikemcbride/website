@@ -143,7 +143,7 @@ module.exports = [
     },
     {
         title: "LSU Phoenix Alumni Association",
-        description: "I designed and built the new website for the LSU Phoenix Alumni Association.",
+        description: "I designed and built the website for the LSU Phoenix Alumni Association.",
         links: [
             {
                 url: "https://lsuphoenix.org",
@@ -151,46 +151,5 @@ module.exports = [
             }
         ],
         type: "website"
-    },
-    {
-        title: "Hyper Electron Highlighter",
-        description: "The same syntax theme, but for the terminal app Hyper.",
-        links: [
-            {
-                url: "https://hyper.is/plugins/hyper-electron-highlighter",
-                title: "View Plugin"
-            },
-            {
-                url: "https://github.com/mikemcbride/hyper-electron-highlighter",
-                title: "Source"
-            }
-        ],
-        type: "extra"
-    },
-    {
-        title: "VS Code Early Riser",
-        description: "A light syntax theme for VS Code. Sometimes it's really bright or I'm working outside and I need a light theme, but I didn't care for any that I found, so I made this.",
-        links: [
-            {
-                url: "https://marketplace.visualstudio.com/items?itemName=mikemcbride.early-riser",
-                title: "View Extension"
-            },
-            {
-                url: "https://github.com/two-beards/vscode-early-riser",
-                title: "Source"
-            }
-        ],
-        type: "extra"
-    },
-    {
-        title: "Hyper Early Riser",
-        description: "Yeah, you guessed it... The same light syntax theme, but for Hyper, so I can do terminal stuff when it's bright out too.",
-        links: [
-            {
-                url: "https://github.com/mikemcbride/hyper-early-riser",
-                title: "Source"
-            }
-        ],
-        type: "extra"
     },
 ]
