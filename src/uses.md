@@ -13,7 +13,7 @@ Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I 
 - My font in my editor and terminal is [MonoLisa](https://monolisa.dev). It's also the monospace font you see on this website. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the nerd-font font patcher script to add a bunch of extra icons to it.
 - I use [iTerm2](https://iterm2.com) for my terminal. It gives me everything I need in a terminal and it's really easy to customize the options.
 - [Fish](https://fishshell.com) is my shell. I used zsh for years (both oh-my-zsh and prezto) and fish is a much more enjoyable experience for me. The intelligent autocomplete has changed my life.
-- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast (slow prompts should be banned), and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
+- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast (slow prompts should be illegal), and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
 
 I have a lot of terminal aliases and scripts to help me be more
 productive. Here are a few of my favorites:
@@ -26,7 +26,7 @@ productive. Here are a few of my favorites:
 
 ## Desktop Apps
 
-- [Firefox](https://firefox.com) is my browser. I prefer basically everything about it to any Chromium browser. `brew install --cask firefox`
+- I'm using Arc from [The Browser Company](https://thebrowser.company), it's still in early release. It's Chromium based, but is a totally rethought browser experience. Before Arc I used [Firefox](https://firefox.com) for years.  `brew install --cask firefox`
 - [Kap](https://getkap.co) is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs.`brew install --cask kap`
 - [Insomnia](https://insomnia.rest) is an excellent REST client, used for testing API calls that also has top notch GraphQL support. `brew install --cask insomnia`
 - I use [1Password](https://1password.com) for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate.
@@ -34,11 +34,11 @@ productive. Here are a few of my favorites:
 
 ## Desk Setup
 
-- I have one 23" HP monitor that work gave us when we went remote. It's mounted to the wall with a swivel wall mount I got on Amazon. I'm looking to upgrade to a 27" at some point.
+- I have a 32" 4K curved monitor mounted to the wall with a swivel wall mount I got on Amazon.
 - To the left of my monitor, my laptop (currently a 16" M1 Pro MacBook) sits on a [Curve stand by TwelveSouth](https://www.twelvesouth.com/products/curve-for-macbook). It frees up desk space and is really minimal.
-- I have some **AudioTechnica over-ear headphones** when I'm in meetings or listening to music. The model I have isn't available anymore, but [this model](https://www.audio-technica.com/en-us/headphones/type/over-ear/ath-m40x) looks to be pretty much the same thing.
-- I have a [Tonor USB Microphone](https://www.amazon.com/Microphone-TONOR-Podcasting-Compatible-TC30/dp/B08CVP2HXP) for meetings. It's pretty affordable and gives better sound quality than the built-in laptop mic, but it's probably not good enough quality for anyone doing podcasting or recording audio tracks. If you want a mic for simple stuff like video calls while your laptop is closed, this is pretty decent.
-- I use a Logitech webcam that work provided. Even a cheap webcam has far superior video quality than the built-in camera on the MacBooks.
-- I use an [Apple Magic Keyboard](https://smile.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI) and [Apple Magic Trackpad](http://smile.amazon.com/Apple-MJ2R2LL-A-Magic-Trackpad/dp/B016QO5YWC). I love the gestures on the MacBook touchpad, so I opted for the Magic Trackpad instead of a Magic Mouse, but I do hear excellent things about the mouse.
+- I use a [ZSA Moonlander](https://zsa.io/moonlander) keyboard.
+- I use [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8) gaming headphones. I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
+- I used to use a standalone USB microphone but it took up a bunch of space on my desk. Now I just use the builtin microphone on my headphones, it works well enough for my needs.
+- I use a Logitech C920x webcam. Any standalone webcam will be a significant upgrade over the builtin webcam on your laptop.
 - I have [this light](https://www.amazon.com/gp/product/B07YFY7H7J) set up behind my monitor and webcam for better lighting on video calls. I built my desk into a shallow closet in my bedroom and the lighting situation is awful. If I don't have this turned on during meetings, my face is totally dark. I'm considering switching to a nicer ring light because it can be pretty bright sometimes, but it's better than nothing.
 - The desk itself is one that I custom built. When we moved in 2020, our master bedroom had a walk-in closet and a smaller closet with sliding doors. We didn't need both, and I needed an office, so I ripped out the shelves, painted the interior of the closet, and built a desk that mounts inside the walls. I used 2x4's for the frame and made a slab from a few pieces of pine that I then glued up, stained, and sealed. It's worked out really well.
