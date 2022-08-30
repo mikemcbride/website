@@ -19,6 +19,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 'serif': [
+                    'Source Serif Pro',
                     'Georgia',
                     'serif',
                 ],
