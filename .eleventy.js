@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
         // if it's undefined, we'll assume it should be published.
         const filtered = posts.filter(p => p.data.published !== false);
         return filtered.map(post => {
-            post.data.formattedDate = format(new Date(post.data.date), 'PPPP');
+            post.data.formattedDate = format(new Date(post.data.date), 'PP');
             return post;
         }).reverse();
     });
