@@ -580,4 +580,4 @@ This is another one of those things where it's not something you'll be reaching 
 
 ---
 
-I hope this was helpful! I'd love feedback, or if you just want to talk about JavaScript, I'm always down for that too. Find me on Twitter in the link down there. 👇
+I hope this was helpful! I'd love feedback, or if you just want to talk about JavaScript, I'm always down for that too. Find me on Mastodon in the link down there. 👇

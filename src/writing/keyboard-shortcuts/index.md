@@ -89,4 +89,4 @@ Calendar:
 - `cmd + right`: next (day/week/month/year depending on view)
 
 
-If you have any other shortcuts that you use a lot, I'd love to hear about it! Throw it in the comments below or [hit me up on Twitter](https://twitter.com/_mcbridem_)!
+If you have any other shortcuts that you use a lot, I'd love to hear about it!
