@@ -20,7 +20,7 @@ is on a different line, so I wouldn't be able to find the SHA. Here's the defaul
 
 ```
 commit 76357cc11ca1975c44cef0f23d2c9bb622888771 (HEAD -> main, origin/main, origin/HEAD)
-Author: Mike McBride <mike.mcbride@hey.com>
+Author: Mike McBride <mike@mikemcbride.dev>
 Date:   2022-05-11 17:15:23 -0500
 
     update uses, nav

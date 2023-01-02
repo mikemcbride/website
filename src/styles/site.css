@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-    --code-border: theme('colors.gray.300');
+    --code-border: theme('colors.zinc.300');
     --code-fg: #6e7f91;
     --code-bg: #fff;
     --code-comment: #a8b3bd;
@@ -33,7 +33,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --code-border: theme('colors.gray.800');
+        --code-border: theme('colors.zinc.800');
         --code-red: #ff5874;
         --code-yellow: #fffa9e;
         --code-green: #6af699;

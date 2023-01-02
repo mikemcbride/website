@@ -52,6 +52,8 @@ So frequently, in fact, that I was tired of not having a simple way to do it fro
 that gets the remote origin url from the git config, parses the URL, then opens the URL in my browser. I alias this to `gopen`
 and I love everything about it. [Source](https://github.com/mikemcbride/dotfiles/tree/main/scripts/openGitRepo.mjs)
 
+**Update:** I still use `gopen` but it is just an alias for `gh repo open --web` which uses the GitHub CLI.
+
 ## Open a pull request
 
 This was a fairly natural successor to opening the current project at its remote URL. When I'm done making my commits, I push
@@ -90,4 +92,4 @@ Finally, after cloning, the script immediately `cd`s into the new directory. [So
 
 Hopefully this was helpful or enlightening. I love writing little scripts to speed up my workflow (queue up the classic [XKCD](https://xkcd.com/1319/)),
 and I'm glad I finally found the time to share some of them here. If you have any scripts that are part of your workflow I'd love to hear about it.
-Drop me a line on [Mastodon](https://fosstodon.org/@mcbridem).
+Drop me a line on [Mastodon](https://hachyderm.io/@mcbridem).
