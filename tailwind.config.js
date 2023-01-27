@@ -40,6 +40,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 'mono': [
+                    'Berkeley Mono',
                     'MonoLisa',
                     'SFMono-Regular',
                     'Menlo',

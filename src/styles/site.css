@@ -7,18 +7,18 @@ html {
 }
 
 :root {
-    --code-border: theme('colors.zinc.300');
-    --code-fg: #6e7f91;
-    --code-bg: #fff;
-    --code-comment: #a8b3bd;
-    --code-blue: #2563eb;
-    --code-cyan: #06B6D4;
-    --code-purple: #7C3AED;
-    --code-green: #10B981;
-    --code-red: #EF4444;
-    --code-yellow: #F59E0B;
-    --selection-color: rgba(122, 115, 254, 0.3);
-    --selection-foreground: #111;
+    --code-border: theme('colors.zinc.200');
+    --code-fg: #555;
+    --code-bg: #fffdfb;
+    --code-comment: #999;
+    --code-blue: #0B5A7A;
+    --code-cyan: #107684;
+    --code-purple: #FC9B56;
+    --code-green: #5FA28E;
+    --code-red: #FB1E15;
+    --code-yellow: #FC9B56;
+    --selection-color: theme('colors.emerald.300');
+    --selection-foreground: theme('colors.zinc.900');
 }
 
 .prose {
@@ -29,29 +29,30 @@ html {
     background-color: var(--code-bg);
     color: var(--code-fg);
     border: 1px solid var(--code-border);
+    border-radius: 0;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --code-border: theme('colors.zinc.800');
-        --code-red: #ff5874;
-        --code-yellow: #fffa9e;
-        --code-green: #6af699;
-        --code-cyan: #4ff2f8;
-        --code-blue: #82aaff;
-        --code-purple: #c792ea;
-        --code-bg: rgba(0,0,0,0.15);
-        --code-comment: #506686;
-        --code-gray: #99a3b8;
-        --code-fg: #a8b5d1;
-        --code-white: #f8fafd;
-        --selection-color: rgba(122, 115, 254, 0.75);
-        --selection-foreground: #fff;
+        --code-border: rgba(50,50,50,0.1);
+        --code-red: #cc6666;
+        --code-yellow: #f0c674;
+        --code-green: #b5bd68;
+        --code-cyan: #8abeb7;
+        --code-blue: #81a2be;
+        --code-purple: #b294bb;
+        --code-bg: #1d1f21;
+        --code-comment: #969896;
+        --code-gray: #1d1f21;
+        --code-fg: #c5c8c6;
+        --code-white: #eeeeee;
+        --selection-color: theme('colors.yellow.500');
+        --selection-foreground: theme('colors.zinc.900');
     }
 
     .dark\:prose-invert {
-        --tw-prose-links: theme('colors.blue.300');
-        --tw-prose-invert-links: theme('colors.blue.300');
+        --tw-prose-links: theme('colors.yellow.500');
+        --tw-prose-invert-links: theme('colors.yellow.500');
     }
 }
 

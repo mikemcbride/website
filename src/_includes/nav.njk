@@ -1,7 +1,7 @@
 <header class="py-8 px-4 lg:px-0">
-    <nav class="font-sans flex flex-wrap gap-1 justify-start -ml-3 md:justify-end md:mx-auto max-w-4xl">
-        <a href="/" class="{% if page.url === '/' %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300{% endif %} text-sm lg:text-md uppercase py-2 px-3 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800">About</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 {% endif %} text-sm lg:text-md uppercase px-3 py-2 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800">Projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300{% endif %} text-sm lg:text-md uppercase px-3 py-2 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800">Writing</a>
+    <nav class="flex flex-wrap gap-6 justify-start md:justify-end md:mx-auto max-w-4xl">
+        <a href="/" class="{% if page.url === '/' %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline {% endif %} text-sm lg:text-md uppercase">About</a>
+        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline {% endif %} text-sm lg:text-md uppercase">Projects</a>
+        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline{% endif %} text-sm lg:text-md uppercase">Writing</a>
     </nav>
 </header>

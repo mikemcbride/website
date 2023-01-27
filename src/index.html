@@ -1,39 +1,55 @@
 ---
 layout: default
 ---
-<main class="prose prose-zinc sm:prose-lg md:prose-xl lg:prose-2xl dark:prose-invert">
-    <h1 class="font-black tracking-tight leading-snug">Hey there! 👋&nbsp;<br class="sm:hidden"> I'm Mike.</h1>
+<main class="prose prose-zinc sm:prose-lg md:prose-lg lg:prose-xl xl:prose-2xl dark:prose-invert">
+    <h1 class="font-black tracking-tight leading-snug">Hey there! 👋<br class="sm:hidden"> I'm Mike.</h1>
     <p>And this is my website. I worked really hard on it just for you (yes, YOU), so I hope you like it. Let's get to know each other... I'll start.</p>
     <p>I'm a software engineer from St. Louis, MO, where I live with my wife and our four children. I enjoy reading, LSU football, Oxford commas, and keyboard shortcuts.</p>
 
-    <div class="grid md:grid-cols-2 lg:mb-20 lg:gap-12">
-        <section>
-            <h3 class="font-bold">Some things I like...</h3>
-            <ul class="-ml-2 md:-ml-4">
-                {%- for like in likes -%}
-                    <li>{{ like }}</li>
-                {%- endfor -%}
-            </ul>
-        </section>
-        <section>
-            <h3 class="font-bold">Some things I don't...</h3>
-            <ul class="-ml-2 md:-ml-4">
-                {%- for dislike in dislikes -%}
-                    <li>{{ dislike }}</li>
-                {%- endfor -%}
-            </ul>
-        </section>
-    </div>
+    <section class="my-16 lg:my-20">
+        <table>
+            <thead class="uppercase">
+                <th>Some things I like</th>
+                <th>Some things I don't</th>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Hammocks</td>
+                        <td>Glitter</td>
+                    </tr>
+                    <tr>
+                        <td>The month of October</td>
+                        <td>Hair spray</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken & sausage gumbo</td>
+                        <td>Bug bites</td>
+                    </tr>
+                    <tr>
+                        <td>Hugs</td>
+                        <td>Washing dishes</td>
+                    </tr>
+                    <tr>
+                        <td>Playing piano</td>
+                        <td>Glitter (again)</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple on pizza</td>
+                        <td>Cottage cheese</td>
+                    </tr>
+            </tbody>
+        </table>
+    </section>
 
     <div class="max-w-full">
-        <h3>What others are saying...</h3>
+        <h3 class="uppercase">What others are saying...</h3>
         <p>Well, they might have said it. I can't say for certain that they did, but I also can't say for certain that they didn't... That has to count for something, right?</p>
 
         <section class="px-2 not-prose mt-12 lg:mt-20">
             {%- for quote in quotes -%}
                 <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-                    <div class="relative text-lg md:text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-300 md:flex-grow rounded-lg lg:rounded-xl px-4 py-6 lg:p-8 bg-zinc-100 dark:bg-zinc-800">
-                        <span class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 lg:-translate-x-6 flex items-center justify-center p-2 lg:p-3 rounded-full bg-zinc-200 dark:bg-zinc-700 shadow-sm dark:shadow-zinc-600">
+                    <div class="relative text-lg md:text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-300 md:flex-grow p-6 lg:p-8 border border-zinc-300 dark:border-zinc-700">
+                        <span class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 lg:-translate-x-6 flex items-center justify-center p-2 lg:p-3 border bg-white dark:bg-zinc-900 border-zinc-300 dark:border-zinc-700">
                             <svg class="h-5 w-5 lg:h-8 lg:w-8 text-zinc-600 dark:text-zinc-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
                             </svg>
@@ -41,7 +57,7 @@ layout: default
                         <p class="relative">{{ quote.text }}</p>
                         <footer class="mt-6 flex flex-col items-end">
                             <div class="text-md md:text-lg font-medium">{{ quote.author }}</div>
-                            <div class="font-sans text-sm md:text-base font-medium text-zinc-500 dark:text-zinc-400">{{ quote.title }}</div>
+                            <div class="text-sm md:text-base font-medium text-zinc-500 dark:text-zinc-400">{{ quote.title }}</div>
                         </footer>
                     </div>
                 </blockquote>

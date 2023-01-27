@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Berkeley Mono';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("BerkeleyMono-Regular-subset.woff2") format("woff2"),
+       url("BerkeleyMono-Regular-subset.woff") format("woff");
+}
+@font-face {
+  font-family: 'Berkeley Mono';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("BerkeleyMono-Italic-subset.woff2") format("woff2"),
+       url("BerkeleyMono-Italic-subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("BerkeleyMono-Bold-subset.woff2") format("woff2"),
+       url("BerkeleyMono-Bold-subset.woff") format("woff");
+}
+@font-face {
+  font-family: 'Berkeley Mono';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("BerkeleyMono-BoldItalic-subset.woff2") format("woff2"),
+       url("BerkeleyMono-BoldItalic-subset.woff") format("woff");
+}
