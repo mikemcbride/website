@@ -6,12 +6,14 @@ back_url: /lists
 
 Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I use to stay productive. Let's dive in.
 
+> Last updated: February 21, 2023
+
 ## Editor & Terminal
 
 - My editor is [Neovim](https://github.com/neovim/neovim).
 - My theme is [Tokyo Night](https://github.com/folke/tokyonight.nvim). I made a theme called [Electron Highlighter](/electron-highlighter) and spent an absurd amount of time on it and eventually came to realize I didn't want to keep tweaking it or making versions of it for new apps. Tokyonight is great, and there are plugins for lots of applications.
-- My font in my editor and terminal is [MonoLisa](https://monolisa.dev). It's also the monospace font you see on this website. It's highly readable and looks excellent. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the nerd-font font patcher script to add a bunch of extra icons to it.
-- I use [Kitty](https://sw.kovidgoyal.net/kitty/) for my terminal. I used iTerm for a very long time, but what sold me on Kitty was how every option is in a single config file, so it's super portable, and it's also cross-platform.
+- My font in my editor and terminal switches between [Berkeley Mono](https://berkeleygraphics.com) and [MonoLisa](https://monolisa.dev). Berkeley Mono feels like a font from the early days of computers and I freaking love it (it's the font you see on this website). Mono Lisa is highly readable and looks excellent. Both fonts are an aboslute joy to use. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the [nerd-font font patcher script](https://github.com/ryanoasis/nerd-fonts/blob/master/font-patcher) to add a bunch of extra icons to it.
+- I use [Kitty](https://sw.kovidgoyal.net/kitty/) for my terminal. I used iTerm for a very long time, but what sold me on Kitty was how every option is in a single config file, so it's super portable, and it's also cross-platform. The single config file works great for my dotfiles setup.
 - I use zsh as my shell, specifically oh-my-zsh. Their plugin system makes it super easy to add functionality.
 - I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast (nobody likes slow terminal prompts), and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
 
