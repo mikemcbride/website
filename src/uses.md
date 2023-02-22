@@ -6,7 +6,7 @@ back_url: /lists
 
 Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I use to stay productive. Let's dive in.
 
-> Last updated: February 21, 2023
+Last updated: February 21, 2023
 
 ## Editor & Terminal
 
@@ -28,13 +28,13 @@ productive. Here are a few of my favorites:
 
 ## Desktop Apps
 
-I have a lot of apps I use, but here are the more relevant ones that I couldn't live without.
+I used to prefer having desktop apps for everything, but these days I try not to use too many apps, and generally prefer to use web apps for most things (because portability). Things like Notion and email that I could use an app for I just use the web app. Most of my time is spent in a browser, terminal, or Slack (I tried Slack in the browser and just couldn't make it stick. Might give it another go sometime). Here's the rest:
 
-- I'm using Arc from [The Browser Company](https://thebrowser.company), it's still in early release. It's Chromium based, but is a totally rethought browser experience. I'm absolutely loving it. Before Arc I used [Firefox](https://firefox.com) for years.  `brew install --cask firefox`
-- [Kap](https://getkap.co) is the best app I've found for doing screen captures. You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs.`brew install --cask kap`
-- [Insomnia](https://insomnia.rest) is an excellent REST client, used for testing API calls that also has top notch GraphQL support. `brew install --cask insomnia`
+- For my browser, I'm using [Arc](https://arc.net) from [The Browser Company](https://thebrowser.company). It's still in early release. It's Chromium based, but is a totally rethought browser experience. I'm absolutely loving it. Before Arc I used [Firefox](https://firefox.com) for years.  `brew install --cask firefox`
 - I use [1Password](https://1password.com) for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate.
 - I use [Raycast](https://raycast.com) for launching apps, emoji picker, dark/light mode toggle, lorem ipsum generator, snippet manager, clipboard history, window management, and a confetti cannon (seriously). It took a lot for me to leave Alfred but Raycast is really incredible. `brew install --cask raycast`
+- [Kap](https://getkap.co) is the best app I've found for doing screen captures (for videos only - the builtin macOS screenshot utility is perfectly fine for screenshots). You can easily export them to MP4 or GIF. Super useful for showing UI changes in GitHub PRs.`brew install --cask kap`
+- [Insomnia](https://insomnia.rest) is an excellent REST client, used for testing API calls that also has top notch GraphQL support. `brew install --cask insomnia`
 
 ## Desk Setup
 
@@ -44,5 +44,4 @@ I have a lot of apps I use, but here are the more relevant ones that I couldn't 
 - I use [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8) gaming headphones. I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
 - I use the microphone built in to my headphones.
 - I use a Logitech C920x webcam. Any standalone webcam will be a significant upgrade over the builtin webcam on your laptop.
-- I have [this light](https://www.amazon.com/gp/product/B07YFY7H7J) set up behind my monitor and webcam for better lighting on video calls. I built my desk into a shallow closet in my bedroom and the lighting situation is awful. If I don't have this turned on during meetings, my face is totally dark. I'm considering switching to a nicer ring light because it can be pretty bright sometimes, but it's better than nothing.
-- The desk itself is one that I custom built. When we moved in 2020, our master bedroom had a walk-in closet and a smaller closet with sliding doors. We didn't need both, and I needed an office, so I ripped out the shelves, painted the interior of the closet, and built a desk that mounts inside the walls. I used 2x4's for the frame and made a slab from a few pieces of pine that I then glued up, stained, and sealed. It's worked out really well.
+- I'm currently in the process of renovating an unfinished area of my basement and converting it to my office. So right now my desk is a folding table. The ultimate goal is a 72" IKEA table top mounted to Fully Jarvis adjustable desk frame, with the monitor and my laptop sitting on mounts. I'll post pictures eventually.
