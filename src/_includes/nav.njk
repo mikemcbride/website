@@ -1,7 +1,39 @@
-<header class="py-8 px-4 lg:px-0">
-    <nav class="flex flex-wrap gap-6 justify-start md:justify-end md:mx-auto max-w-4xl">
-        <a href="/" class="{% if page.url === '/' %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline {% endif %} text-sm lg:text-md uppercase">About</a>
-        <a href="/projects" class="{% if '/projects/' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline {% endif %} text-sm lg:text-md uppercase">Projects</a>
-        <a href="/writing" class="{% if '/writing' in page.url %}font-bold text-zinc-900 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:underline{% endif %} text-sm lg:text-md uppercase">Writing</a>
+<header class="py-8 px-4 lg:px-0 mx-auto max-w-4xl w-full">
+    <div class="border-b border-zinc-600 uppercase pb-4 mb-4 text-lg">Mike McBride</div>
+    <nav class="flex flex-wrap gap-4 justify-start md:mx-auto max-w-4xl">
+        <a href="/" class="group inline-flex items-center text-sm text-zinc-700 dark:text-zinc-100 hover:bg-zinc-700 hover:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-700 border border-zinc-600 px-3 py-1 shadow-nav dark:shadow-nav-dark">
+            {% if page.url === '/' %}
+            <span class="h-2 w-2 rounded-full mr-2 inline-block bg-emerald-600 group-hover:bg-emerald-400 dark:bg-yellow-500 dark:group-hover:bg-yellow-600"></span>
+            {% endif %}
+            Home
+        </a>
+
+        <a href="/projects" class="group inline-flex items-center text-sm text-zinc-700 dark:text-zinc-100 hover:bg-zinc-700 hover:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-700 border border-zinc-600 px-3 py-1 shadow-nav dark:shadow-nav-dark">
+            {% if '/projects' in page.url %}
+            <span class="h-2 w-2 rounded-full mr-2 inline-block bg-emerald-600 group-hover:bg-emerald-400 dark:bg-yellow-500 dark:group-hover:bg-yellow-600"></span>
+            {% endif %}
+            Projects
+        </a>
+
+        <a href="/writing" class="group inline-flex items-center text-sm text-zinc-700 dark:text-zinc-100 hover:bg-zinc-700 hover:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-700 border border-zinc-600 px-3 py-1 shadow-nav dark:shadow-nav-dark">
+            {% if '/writing' in page.url %}
+            <span class="h-2 w-2 rounded-full mr-2 inline-block bg-emerald-600 group-hover:bg-emerald-400 dark:bg-yellow-500 dark:group-hover:bg-yellow-600"></span>
+            {% endif %}
+            Writing
+        </a>
+
+        <a href="/extras" class="group inline-flex items-center text-sm text-zinc-700 dark:text-zinc-100 hover:bg-zinc-700 hover:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-700 border border-zinc-600 px-3 py-1 shadow-nav dark:shadow-nav-dark">
+            {% if '/extras' in page.url or '/lists' in page.url %}
+            <span class="h-2 w-2 rounded-full mr-2 inline-block bg-emerald-600 group-hover:bg-emerald-400 dark:bg-yellow-500 dark:group-hover:bg-yellow-600"></span>
+            {% endif %}
+            Extras
+        </a>
+
+        <a href="/uses" class="group inline-flex items-center text-sm text-zinc-700 dark:text-zinc-100 hover:bg-zinc-700 hover:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-700 border border-zinc-600 px-3 py-1 shadow-nav dark:shadow-nav-dark">
+            {% if page.url === '/uses/' %}
+            <span class="h-2 w-2 rounded-full mr-2 inline-block bg-emerald-600 group-hover:bg-emerald-400 dark:bg-yellow-500 dark:group-hover:bg-yellow-600"></span>
+            {% endif %}
+            Uses
+        </a>
     </nav>
 </header>

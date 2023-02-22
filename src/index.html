@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<main class="prose prose-zinc sm:prose-lg md:prose-lg lg:prose-xl xl:prose-2xl dark:prose-invert">
-    <h1 class="font-black tracking-tight leading-snug">Hey there! 👋<br class="sm:hidden"> I'm Mike.</h1>
+<main class="prose prose-zinc dark:prose-invert">
+    <h2 class="font-black tracking-tight leading-snug">Hey there! 👋<br class="sm:hidden"> I'm Mike.</h2>
     <p>And this is my website. I worked really hard on it just for you (yes, YOU), so I hope you like it. Let's get to know each other... I'll start.</p>
     <p>I'm a software engineer from St. Louis, MO, where I live with my wife and our four children. I enjoy reading, LSU football, Oxford commas, and keyboard shortcuts.</p>
 
@@ -48,16 +48,16 @@ layout: default
         <section class="px-2 not-prose mt-12 lg:mt-20">
             {%- for quote in quotes -%}
                 <blockquote class="mt-6 md:flex-grow md:flex md:flex-col mb-12 lg:mb-20">
-                    <div class="relative text-lg md:text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-300 md:flex-grow p-6 lg:p-8 border border-zinc-300 dark:border-zinc-700">
-                        <span class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 lg:-translate-x-6 flex items-center justify-center p-2 lg:p-3 border bg-white dark:bg-zinc-900 border-zinc-300 dark:border-zinc-700">
-                            <svg class="h-5 w-5 lg:h-8 lg:w-8 text-zinc-600 dark:text-zinc-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                    <div class="relative text-lg text-zinc-900 dark:text-zinc-300 md:flex-grow py-8 px-6 border border-zinc-500 dark:border-zinc-700 shadow-nav dark:shadow-nav-dark">
+                        <span class="absolute top-0 left-0 transform -translate-x-3 -translate-y-4 flex items-center justify-center p-2 border bg-white dark:bg-zinc-900 border-zinc-500 dark:border-zinc-700 shadow-nav dark:shadow-nav-dark">
+                            <svg class="h-5 w-5 text-zinc-600 dark:text-zinc-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
                             </svg>
                         </span>
                         <p class="relative">{{ quote.text }}</p>
                         <footer class="mt-6 flex flex-col items-end">
-                            <div class="text-md md:text-lg font-medium">{{ quote.author }}</div>
-                            <div class="text-sm md:text-base font-medium text-zinc-500 dark:text-zinc-400">{{ quote.title }}</div>
+                            <div class="text-base font-medium">{{ quote.author }}</div>
+                            <div class="text-sm font-medium text-zinc-500 dark:text-zinc-400">{{ quote.title }}</div>
                         </footer>
                     </div>
                 </blockquote>

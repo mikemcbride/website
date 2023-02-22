@@ -32,6 +32,26 @@ html {
     border-radius: 0;
 }
 
+/* table overrides */
+
+/* give borders to all sides */
+.prose :where(thead):not(:where([class~="not-prose"] *)),
+.prose :where(th):not(:where([class~="not-prose"] *)) {
+    border-width: 1px;
+    border-color: var(--tw-prose-th-borders);
+}
+
+.prose :where(td):not(:where([class~="not-prose"] *)) {
+    border-width: 1px;
+    border-color: var(--tw-prose-td-borders);
+}
+
+/* consistent padding on all sides within a cell, no matter what */
+.prose :where(th):not(:where([class~="not-prose"] *)),
+.prose :where(td):not(:where([class~="not-prose"] *)) {
+    padding: 0.5714286em !important;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --code-border: rgba(50,50,50,0.1);

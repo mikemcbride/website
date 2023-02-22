@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Uses
-back_url: /extras
+back_url: /lists
 ---
 
 Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I use to stay productive. Let's dive in.
