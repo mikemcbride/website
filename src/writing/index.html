@@ -14,11 +14,11 @@ subheading: Sometimes I write things. Not often enough to call it a blog. You ca
 
     <ul class="list-none !pl-0 space-y-12 divide-y divide-zinc-200 dark:divide-zinc-700 not-prose">
     {%- for post in collections.publishedPosts -%}
-        <li class="post-wrapper space-y-2 pt-12">
+        <li class="post-wrapper space-y-2 pt-12" data-title="{{ post.data.title }}" data-excerpt="{{ post.data.excerpt }}">
             <time class="font-mono block uppercase text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 w-1/4" datetime="{{ post.data.date }}">{{ post.data.formattedDate }}</time>
             <div class="space-y-2 flex-1">
-                <h2 class="font-bold text-lg lg:text-xl"><a href="{{ post.url }}" class="hover:underline text-blue-600 dark:text-yellow-500" data-searchable="true">{{ post.data.title }}</a></h2>
-                <p data-searchable="true">{{ post.data.excerpt }}</p>
+                <h2 class="font-bold text-lg lg:text-xl"><a href="{{ post.url }}" class="hover:underline text-blue-600 dark:text-yellow-500">{{ post.data.title }}</a></h2>
+                <p>{{ post.data.excerpt }}</p>
             </div>
         </li>
     {%- endfor -%}
@@ -26,31 +26,20 @@ subheading: Sometimes I write things. Not often enough to call it a blog. You ca
 </section>
 
 <script type="text/javascript">
-const searchInput = document.getElementById('search-posts');
-const postNodes = document.querySelectorAll('.post-wrapper');
+let _searchInput = document.getElementById('search-posts');
+let _postNodes = document.querySelectorAll('.post-wrapper');
 
-searchInput.addEventListener('input', (e) => {
-    for (let node of postNodes) {
-        if (!e.target.value) {
+_searchInput.addEventListener('input', (e) => {
+    for (let node of _postNodes) {
+        const title = node.attributes['data-title'].value
+        const excerpt = node.attributes['data-excerpt'].value
+
+        if (new RegExp(e.target.value, 'gi').test(`${title} ${excerpt}`)) {
             node.classList.remove('hidden')
             node.classList.remove('md:hidden')
         } else {
-            let show = false
-            const searchableNodes = []
-            node.childNodes[3].childNodes.forEach(cn => {
-                if (cn.attributes && cn.attributes['data-searchable']) {
-                    if (cn.innerText.toLowerCase().includes(e.target.value.toLowerCase())) {
-                        show = true
-                    }
-                }
-            })
-            if (show) {
-                node.classList.remove('hidden')
-                node.classList.remove('md:hidden')
-            } else {
-                node.classList.add('hidden')
-                node.classList.add('md:hidden')
-            }
+            node.classList.add('hidden')
+            node.classList.add('md:hidden')
         }
     }
 });
