@@ -25,7 +25,7 @@
     <body class="font-mono bg-[#212836] text-[#f8fafd] w-full text-lg min-h-screen flex flex-col">
         <div class="mt-12 lg:mt-24 mx-auto w-full px-4 lg:px-0 max-w-4xl flex-grow">
             <h1 class="font-black text-3xl md:text-4xl lg:text-6xl text-center">Electron Highlighter</h1>
-            <section class="prose prose-lg prose-invert prose-slate lg:prose-2xl lg:prose-invert prose-a:text-[#4ff2f8] prose-p:text-[#f8fafd] prose-headings:text-[#f8fafd] lg:prose-a:text-[#4ff2f8] lg:prose-headings:text-[#f8fafd] mt-12 lg:mt-20">
+            <section class="prose prose-lg prose-invert prose-slate lg:prose-2xl lg:prose-invert prose-a:text-[#4ff2f8] prose-p:text-[#f8fafd] prose-headings:text-[#f8fafd] lg:prose-a:text-[#4ff2f8] lg:prose-headings:text-[#f8fafd] mx-auto mt-12 lg:mt-20">
                 <section class="grid grid-cols-6 sm:grid-cols-12 gap-2 my-12">
                     <div class="h-4 sm:h-8 bg-[#ff5874]"></div>
                     <div class="h-4 sm:h-8 bg-[#ffbf7a]"></div>
@@ -41,17 +41,17 @@
                     <div class="h-4 sm:h-8 bg-[#f8fafd]"></div>
                 </section>
                 <p>This is my theme pretty much everywhere I can possibly add a theme. I've spent WAY more time on it than I care to admit - I'd be ashamed to even estimate the time I've spent working on it.</p>
-                <p>I've included some screenshots and links to various places you can install the theme. It's available for iTerm, Hyper, VS Code, Neovim, and Insomnia REST Client.</p>
+                <p>I've included some screenshots and links to various places you can install the theme. It's available for a bunch of applications, which are listed below.</p>
                 <h2>Downloads</h2>
-                <ul>
-                    <li><a href="https://github.com/electron-highlighter/vscode" target="_blank">VS Code</a></li>
-                    <li><a href="https://github.com/electron-highlighter/hyper" target="_blank">Hyper</a></li>
-                    <li><a href="https://github.com/electron-highlighter/iterm" target="_blank">iTerm 2</a></li>
-                    <li><a href="https://github.com/electron-highlighter/nvim" target="_blank">Neovim</a></li>
-                    <li><a href="https://github.com/mikemcbride/insomnia-plugin-extra-themes" target="_blank">Insomnia</a></li>
-                    <li><a href="https://github.com/electron-highlighter/sublime" target="_blank">Sublime Text</a></li>
-                    <li><a href="https://github.com/electron-highlighter/slack" target="_blank">Slack</a></li>
-                    <li><a href="https://github.com/electron-highlighter/terminal" target="_blank">Terminals</a></li>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 list-none !ml-0 !pl-0">
+                    {%- for repo in electron_highlighter -%}
+                    <li class="rounded-md !ml-0 p-0.5 lg:p-1 bg-[#a8b5d1] hover:bg-gradient-to-br from-[#82aaff] via-[#c792ea] to-[#6af699] flex items-center justify-center">
+                        <a href="{{ repo.url }}" target="_blank" class="!no-underline bg-[#212836] p-4 rounded flex-grow h-full w-full">
+                            <h3 class="!mt-0 !text-[#4ff2f8]">{{ repo.title }}</h3>
+                            <p class="!no-underline text-sm lg:text-base">Color scheme for {{ repo.title }}</p>
+                        </a>
+                    </li>
+                    {%- endfor -%}
                 </ul>
                 <h2>Screenshots</h2>
                 <p>Screenshots are all of the theme running inside VS Code.</p>
