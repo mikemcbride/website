@@ -6,16 +6,16 @@ back_url: /lists
 
 Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I use to stay productive. Let's dive in.
 
-Last updated: February 21, 2023
+Last updated: June 22, 2023
 
 ## Editor & Terminal
 
-- My editor is [Neovim](https://github.com/neovim/neovim).
-- ~~My theme is [Tokyo Night](https://github.com/folke/tokyonight.nvim). I made a theme called [Electron Highlighter](/electron-highlighter) and spent an absurd amount of time on it and eventually came to realize I didn't want to keep tweaking it or making versions of it for new apps. Tokyonight is great, and there are plugins for lots of applications. Maybe someday I'll spend the time necessary to get Electron Highlighter working how I want in Neovim, but until then, I'm happy with Tokyo Night.~~ Update: I spent the time to get it working how I want in Neovim, so here we are.
-- My font in my editor and terminal switches between [Berkeley Mono](https://berkeleygraphics.com) and [MonoLisa](https://monolisa.dev). Berkeley Mono feels like a font from the early days of computers and I freaking love it (it's the font you see on this website). Mono Lisa is highly readable and looks excellent. Both fonts are an aboslute joy to use. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the [nerd-font font patcher script](https://github.com/ryanoasis/nerd-fonts/blob/master/font-patcher) to add a bunch of extra icons to it.
-- I use [Kitty](https://sw.kovidgoyal.net/kitty/) for my terminal. I used iTerm for a very long time, but what sold me on Kitty was how every option is in a single config file, so it's super portable, and it's also cross-platform. The single config file works great for my dotfiles setup.
-- I use fish as my shell. It's not POSIX compliant, but I rarely need that and can always pop into zsh to run a script if I need to.
-- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast (nobody likes slow terminal prompts), and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
+- My editor is [Neovim](https://github.com/neovim/neovim). 
+- I made a theme called [Electron Highlighter](/electron-highlighter) and have spent an absurd amount of time on it. I have made this theme for a bunch of different apps, and use it pretty much everywhere that I can use a theme.
+- My font in my editor and terminal switches between [Berkeley Mono](https://berkeleygraphics.com) and [MonoLisa](https://monolisa.dev). Berkeley Mono feels like a font from the early days of computers and I freaking love it (it's the font you see on this website). Mono Lisa is highly readable and looks excellent (I'm currently using it in my editor, though I switch back and forth). Both fonts are an aboslute joy to use. If I have to stare at a font all day, it's worth paying for one I enjoy looking at. For my terminal, I used the [nerd-font font patcher script](https://github.com/ryanoasis/nerd-fonts/blob/master/font-patcher) to add a bunch of extra icons to it.
+- I use [Kitty](https://sw.kovidgoyal.net/kitty/) for my terminal. I used iTerm for a very long time, but what sold me on Kitty was how every option is in a single config file so it's super portable, and it's also cross-platform. The single config file works great for my dotfiles setup.
+- I use fish as my shell. It's not POSIX compliant, but I rarely need that and can always pop into zsh to run a script if I need to. Fish is fast, has really killer autocomplete suggestions, and the scripting feels a lot less archaic than zsh or bash.
+- I use a terminal prompt called [Starship](https://starship.rs). It's built in Rust so it's super fast, it has support for a ton of different shells, and customizing is done via a TOML file so it's dead simple to make it look exactly how you want. I can't recommend it highly enough.
 
 I have a lot of terminal aliases and scripts to help me be more
 productive. Here are a few of my favorites:
@@ -38,10 +38,11 @@ I used to prefer having desktop apps for everything, but these days I try not to
 
 ## Desk Setup
 
-- I have a 32" 4K curved monitor mounted to the wall with a swivel wall mount.
-- To the left of my monitor, my laptop (currently a 16" MacBook Pro) sits on a [Curve stand by TwelveSouth](https://www.twelvesouth.com/products/curve-for-macbook). It frees up desk space and is really minimal.
-- I use a [ZSA Moonlander](https://zsa.io/moonlander) keyboard.
+- My desk is an IKEA countertop that I cut down to 84" mounted to Fully Jarvis adjustable desk frame. They unfortunately no longer sell this (as far as I can tell).
+- I have a 32" 4K curved monitor mounted to the desk with Fully Jarvis dual adjustable monitor arms.
+- To the left of my monitor, my laptop (currently a 16" MacBook Pro) sits on a laptop stand attachment to the dual monitor arms.
+- I use a [ZSA Moonlander](https://zsa.io/moonlander) keyboard and can't imagine going back to a normal keyboard anymore.
 - I use [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8) gaming headphones. I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
 - I use the microphone built in to my headphones.
 - I use a Logitech C920x webcam. Any standalone webcam will be a significant upgrade over the builtin webcam on your laptop.
-- I'm currently in the process of renovating an unfinished area of my basement and converting it to my office. So right now my desk is a folding table. The ultimate goal is a 72" IKEA table top mounted to Fully Jarvis adjustable desk frame, with the monitor and my laptop sitting on mounts. I'll post pictures eventually.
+- I use a Logitech MX Master 3 bluetooth mouse. I like that Logitech has software for mapping the different keys to Mac-specific actions that I typically use trackpad gestures for (like switching between desktops or Mission Control).
