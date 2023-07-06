@@ -48,7 +48,7 @@
                     <li class="rounded-md !ml-0 p-0.5 lg:p-1 bg-[#a8b5d1] hover:bg-gradient-to-br from-[#82aaff] via-[#c792ea] to-[#6af699] flex items-center justify-center">
                         <a href="{{ repo.url }}" target="_blank" class="!no-underline bg-[#212836] p-4 rounded flex-grow h-full w-full">
                             <h3 class="!mt-0 !text-[#4ff2f8]">{{ repo.title }}</h3>
-                            <p class="!no-underline text-sm lg:text-base">Color scheme for {{ repo.title }}</p>
+                            <p class="!no-underline text-sm lg:text-base">{{ repo.description }}</p>
                         </a>
                     </li>
                     {%- endfor -%}
