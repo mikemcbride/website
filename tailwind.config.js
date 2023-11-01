@@ -23,13 +23,13 @@ module.exports = {
                     'sans-serif',
                 ],
                 'serif': [
-                    'Source Serif Pro',
+                    'Source Serif',
                     'Georgia',
                     'serif',
                 ],
                 'display': [
-                    'Notulen Display',
                     'Inter',
+                    'Notulen Display',
                     'system-ui',
                     'BlinkMacSystemFont',
                     '-apple-system',

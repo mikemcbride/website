@@ -4,14 +4,16 @@ title: Projects
 subheading: When I'm not making stuff for my day job, I like to build websites, apps, and utilities to help other developers. You can find some of them listed below, and the rest you can find on my GitHub profile.
 ---
 
-<section class="prose prose-zinc dark:prose-invert">
+<section class="prose prose-zinc sm:prose-lg md:prose-xl lg:prose-2xl dark:prose-invert">
     <ul class="space-y-12 list-none !pl-0 divide-y divide-zinc-200 dark:divide-zinc-700 not-prose">
         {%- for project in projects -%}
         <li class="space-y-2 pt-12">
-            <h2 class="text-lg lg:text-xl font-bold text-blue-600 dark:text-yellow-500 hover:underline">
-                <a href="{{ project.links[0].url }}" rel="nofollow noreferrer" target="_blank">{{ project.title }}</a>
-            </h2>
+            <h2 class="font-bold text-xl lg:text-3xl">{{ project.title }}</h2>
             <p>{{ project.description }}</p>
+            <div class="flex items-center gap-4 font-mono ">
+            {%- for link in project.links -%}
+                <a href="{{ link.url }}" rel="nofollow noreferrer" target="_blank" class="text-blue-600 dark:text-yellow-500 text-xs md:text-sm">{{ link.title }}</a>
+            {%- endfor -%}
         </li>
         {%- endfor -%}
     </ul>

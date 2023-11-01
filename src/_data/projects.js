@@ -102,7 +102,7 @@ module.exports = [
     },
     {
         title: "Catholic AF",
-        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David wrote more about this on his site, check it out.",
+        description: "My friend David and I built this site for fun and also to learn a little about doing e-commerce on a site. Sadly it is dead now, but the project was fun to design and build. David designed apparel and stickers and we sold them. 50% of the price covered our costs, 25% paid the designer, and the remaining 25% was donated to a Catholic charity. David did the design, I wrote the API, and we both worked on the frontend. David wrote a lot more about this on his site, so if you're interested you can read more there.",
         links: [
             {
                 url: "https://leininger.tech/work/catholic-af/",

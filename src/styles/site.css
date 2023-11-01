@@ -6,6 +6,14 @@ html {
     text-rendering: optimizeSpeed;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+}
+
+pre, code {
+    @apply font-mono;
+}
+
 :root {
     --code-border: theme('colors.zinc.200');
     --code-fg: #555;
