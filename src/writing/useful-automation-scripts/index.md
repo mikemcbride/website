@@ -92,4 +92,4 @@ Finally, after cloning, the script immediately `cd`s into the new directory. [So
 
 Hopefully this was helpful or enlightening. I love writing little scripts to speed up my workflow (queue up the classic [XKCD](https://xkcd.com/1319/)),
 and I'm glad I finally found the time to share some of them here. If you have any scripts that are part of your workflow I'd love to hear about it.
-Drop me a line on [Mastodon](https://hachyderm.io/@mcbridem).
+Drop me a line on [Mastodon](https://vmst.io/@mcbridem).
