@@ -30,6 +30,17 @@ module.exports = [
         type: "utility"
     },
     {
+        title: "Electron Highlighter Syntax",
+        description: "A dark syntax theme that I created for various applications. Check out the project page for more details.",
+        links: [
+            {
+                url: "https://electron-highlighter.github.io",
+                title: "View Project"
+            }
+        ],
+        type: "extra"
+    },
+    {
         title: "convert-color-cli",
         description: "A CLI tool that can convert colors between HEX, RGB, and HSL.",
         links: [
@@ -88,17 +99,6 @@ module.exports = [
             }
         ],
         type: "utility"
-    },
-    {
-        title: "Electron Highlighter Syntax",
-        description: "A dark syntax theme that I created for various applications. Check out the project page for more details.",
-        links: [
-            {
-                url: "/electron-highlighter",
-                title: "View Project"
-            }
-        ],
-        type: "extra"
     },
     {
         title: "Catholic AF",
