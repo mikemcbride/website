@@ -1,0 +1,13 @@
+---
+layout: '../layouts/Landing.astro'
+title: "Extras!"
+subheading: "Here are a few extra sprinkles of goodness. A little lagniappe, if you will (and I will, because my family is from Louisiana)."
+---
+
+<section class="prose prose-zinc sm:prose-lg md:prose-xl lg:prose-2xl dark:prose-invert">
+    <ul>
+        <li><a href="/gumbo">Chicken and Sausage Gumbo</a>. My mom's recipe. It's good. You should make it.</li>
+        <li><a href="/rice-dressing">Cajun Rice Dressing</a>. A south Louisiana holiday staple. Your new favorite Thanksgiving side dish.</li>
+        <li><a href="/lists">Lists</a>. A list of lists. Super meta.</li>
+    </ul>
+</section>

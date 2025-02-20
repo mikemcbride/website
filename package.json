@@ -1,41 +1,24 @@
 {
-    "name": "website",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mikemcbride/website.git"
-    },
-    "main": ".eleventy.js",
-    "author": "mikemcbride",
-    "description": "Personal website",
-    "scripts": {
-        "dev": "run-p start:*",
-        "start:eleventy": "eleventy --serve",
-        "start:postcss": "postcss src/styles/*.css --dir _site --watch",
-        "build": "run-s clean build:eleventy build:postcss",
-        "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
-        "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir _site",
-        "clean": "rimraf _site"
-    },
-    "devDependencies": {
-        "@11ty/eleventy": "^2.0.0",
-        "@11ty/eleventy-plugin-rss": "^1.1.2",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-        "@tailwindcss/forms": "^0.5.1",
-        "@tailwindcss/typography": "^0.5.2",
-        "autoprefixer": "^10.4.4",
-        "cross-env": "^7.0.3",
-        "cssnano": "^5.1.7",
-        "date-fns": "^2.28.0",
-        "html-minifier": "^4.0.0",
-        "npm-run-all": "^4.1.5",
-        "postcss": "^8.4.12",
-        "postcss-cli": "^9.1.0",
-        "postcss-nested": "^5.0.6",
-        "rimraf": "^3.0.2",
-        "tailwindcss": "^3.0.24"
-    },
-    "dependencies": {
-        "@orchidjs/eleventy-plugin-ids": "^0.1.1"
-    }
+  "name": "website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.3",
+    "@tailwindcss/vite": "^4.0.4",
+    "@types/alpinejs": "^3.13.11",
+    "alpinejs": "^3.14.8",
+    "astro": "^5.2.5",
+    "tailwindcss": "^4.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "prettier": "^3.5.1",
+    "prettier-plugin-astro": "^0.14.1"
+  }
 }
