@@ -6,7 +6,7 @@ back_url: /lists
 
 Inspired by [Wes Bos](https://wesbos.com/uses/), this page details the things I use to stay productive. Let's dive in.
 
-Last updated: June 22, 2023
+Last updated: Feburary 20, 2025
 
 ## Editor & Terminal
 
