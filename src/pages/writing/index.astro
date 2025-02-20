@@ -7,19 +7,6 @@ let allBlogPosts = await getCollection("posts", ({ data }) => {
 allBlogPosts = allBlogPosts.sort((a, b) => {
     return new Date(b.data.date) > new Date(a.data.date) ? 1 : -1;
 });
-function blogSearch() {
-    return {
-        posts: allBlogPosts,
-        search: "",
-        filteredPosts() {
-            return this.posts.filter((post) => {
-                return post.data.title
-                    .toLowerCase()
-                    .includes(this.search.toLowerCase());
-            });
-        },
-    };
-}
 ---
 
 <LandingLayout
@@ -60,7 +47,7 @@ function blogSearch() {
             />
         </fieldset>
         <div
-            class="mx-auto grid max-w-4xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2"
+            class="mx-auto grid max-w-4xl grid-cols-1 gap-y-20 lg:max-w-none" 
         >
             <div class="flex flex-col gap-16">
                 {
