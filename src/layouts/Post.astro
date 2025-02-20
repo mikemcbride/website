@@ -1,0 +1,34 @@
+---
+import DefaultLayout from "./Layout.astro";
+import Prose from "../components/Prose.astro";
+const { frontmatter } = Astro.props;
+let formattedDate = null;
+if (frontmatter.date) {
+	formattedDate = new Date(frontmatter.date).toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
+}
+---
+
+<DefaultLayout>
+	<main>
+		<Prose>
+			<h1>{frontmatter.title}</h1>
+			{
+				formattedDate && (
+					<p class="-mt-8 text-zinc-500">{formattedDate}</p>
+				)
+			}
+			<slot />
+			<div class="mt-12">
+				<a
+					href={frontmatter.back_url
+						? frontmatter.back_url
+						: "/writing"}>Go Back</a
+				>
+			</div>
+		</Prose>
+	</main>
+</DefaultLayout>

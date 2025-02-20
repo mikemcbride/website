@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import quotes from "../data/quotes.js";
+import Testimonial from "../components/Testimonial.astro";
+---
+
+<Layout>
+    <main class="prose prose-zinc prose-lg xl:prose-xl dark:prose-invert">
+        <h2 class="font-black tracking-tight leading-snug">
+            Hey there! 👋&nbsp;<br class="sm:hidden" />I'm Mike.
+        </h2>
+        <p>
+            And this is my website. I worked really hard on it just for you
+            (yes, YOU), so I hope you like it. Let's get to know each other...
+            I'll start.
+        </p>
+        <p>
+            I'm a software engineer from St. Louis, MO, where I live with my
+            wife and our four children. I enjoy reading, LSU football, Oxford
+            commas, and keyboard shortcuts.
+        </p>
+
+        <section class="my-16 lg:my-20">
+            <h3>Some things I like</h3>
+            <ul>
+                <li>Hammocks</li>
+                <li>The month of October</li>
+                <li>Chicken & sausage gumbo</li>
+                <li>Hugs</li>
+                <li>Playing piano</li>
+                <li>Pineapple on pizza</li>
+            </ul>
+            <h3>Some things I don't</h3>
+            <ul>
+                <li>Glitter</li>
+                <li>Hair spray</li>
+                <li>Bug bites</li>
+                <li>Washing dishes</li>
+                <li>Whales</li>
+                <li>Cottage cheese</li>
+            </ul>
+        </section>
+
+        <div class="max-w-full">
+            <h3>What others are saying...</h3>
+            <p>
+                Well, they might have said it. I can't say for certain that they
+                did, but I also can't say for certain that they didn't... That
+                has to count for something, right?
+            </p>
+
+            <section class="px-2 not-prose mt-12 lg:mt-20 space-y-8 lg:space-y-12">
+                {quotes.map((quote: any) => <Testimonial quote={quote} />)}
+            </section>
+        </div>
+        <p>
+            Feel free to poke around a bit, maybe <a href="/projects"
+                >check out some stuff I've built</a
+            >, <a href="/writing">read some words I've written</a>, or <a href="/extras">stumble upon something more random</a>.
+        </p>
+        <p>Thanks for stopping by!</p>
+    </main>
+</Layout>

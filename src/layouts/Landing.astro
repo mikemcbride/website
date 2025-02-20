@@ -1,0 +1,14 @@
+---
+import DefaultLayout from './Layout.astro';
+const { frontmatter } = Astro.props;
+const title = frontmatter?.title || Astro.props.title;
+const subheading = frontmatter?.subheading || Astro.props.subheading;
+---
+<DefaultLayout>
+<section class="prose prose-zinc sm:prose-lg md:prose-xl lg:prose-2xl dark:prose-invert mb-12">
+	<h1>{title}</h1>
+	{subheading && <p>{subheading}</p>}
+</section>
+<slot />
+</DefaultLayout>
+

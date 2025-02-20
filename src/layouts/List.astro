@@ -1,0 +1,20 @@
+---
+import DefaultLayout from "./Layout.astro";
+import Prose from '../components/Prose.astro';
+const { frontmatter } = Astro.props;
+const title = frontmatter?.title || Astro.props.title;
+const subtitle = frontmatter?.subtitle || Astro.props.subtitle;
+---
+
+<DefaultLayout>
+	<main>
+		<Prose>
+		<h1>{title}</h1>
+		<p>{subtitle}</p>
+		<slot />
+		<p class="mt-12">
+			<a href="/lists">Go Back</a>
+		</p>
+		</Prose>
+	</main>
+</DefaultLayout>
