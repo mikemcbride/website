@@ -57,14 +57,16 @@ import Prose from "../components/Prose.astro";
                     {quotes.map((quote: any) => <Testimonial quote={quote} />)}
                 </section>
             </div>
-            <p>
-                Feel free to poke around a bit, maybe <a href="/projects"
-                    >check out some stuff I've built</a
-                >, <a href="/writing">read some words I've written</a>, or <a
-                    href="/extras">stumble upon something more random</a
-                >.
-            </p>
-            <p>Thanks for stopping by!</p>
+            <section class="md:mt-20">
+                <p>
+                    Feel free to poke around a bit, maybe <a href="/projects"
+                        >check out some stuff I've built</a
+                    >, <a href="/writing">read some words I've written</a>, or <a
+                        href="/extras">stumble upon something more random</a
+                    >.
+                </p>
+                <p>Thanks for stopping by!</p>
+            </section>
         </Prose>
     </main>
 </Layout>
