@@ -1,5 +1,8 @@
 ---
+const isActive = Astro.props.href === '/' ?
+    Astro.routePattern === '/' :
+    Astro.routePattern.startsWith(Astro.props.href);
 ---
 <li>
-    <a class="relative block px-3 py-2 transition hover:text-violet-600 dark:hover:text-violet-400" href={Astro.props.href}><slot /></a>
+    <a class={`relative block px-3 rounded-full py-2 transition hover:text-violet-600 dark:hover:text-violet-400 ${isActive ? 'bg-violet-100 text-violet-800 dark:bg-violet-700 dark:text-violet-200' : ''}`} href={Astro.props.href}><slot /></a>
 </li>
