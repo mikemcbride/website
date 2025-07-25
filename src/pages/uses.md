@@ -28,7 +28,7 @@ productive. Here are a few of my favorites:
 
 ## Desktop Apps
 
-I used to prefer having desktop apps for everything, but these days I try not to use too many apps, and generally prefer to use web apps for most things (because portability). Things like Notion and email that I could use an app for I just use the web app. Most of my time is spent in a browser, terminal, or Slack (I tried Slack in the browser and just couldn't make it stick. Might give it another go sometime). Here's the rest:
+I used to prefer having desktop apps for everything, but these days I try not to use too many apps, and generally prefer to use web apps for most things (because portability). Things like Notion and email that I could use an app for I just use the web app. Most of my time is spent in a browser or terminal. Here's the rest:
 
 - For my browser, I'm using [Arc](https://arc.net) from [The Browser Company](https://thebrowser.company).
 - I use [1Password](https://1password.com) for password management across all my devices, and at this point I think it's safe to say that I couldn't live without it. I use the Family Plan because it gives me shared folders so my wife and I can both use it for shared logins and also keep our own logins separate.
@@ -40,9 +40,9 @@ I used to prefer having desktop apps for everything, but these days I try not to
 - My desk is an IKEA countertop that I cut down to 84" mounted to Fully Jarvis adjustable desk frame. Unfortunately, Fully was purchased by another company and no longer sells the frame-only model.
 - I have a 32" 4K curved monitor mounted to the desk with Fully Jarvis dual adjustable monitor arms.
 - To the left of my monitor, my laptop (currently a 16" MacBook Pro) sits on a laptop stand attachment to the dual monitor arms.
-- I use a [ZSA Moonlander](https://zsa.io/moonlander) keyboard and can't imagine going back to a normal keyboard anymore. I have it tented quite aggressively using the [ZSA Platform](https://www.zsa.io/moonlander/platform) for ergonomics.
-- I use [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8) gaming headphones. I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
-- I use a USB microphone that I bought on Amazon. Couldn't tell you which one. It's nothing special, but it works significantly better than my laptop or webcam microphone.
-- I use a Logitech C920x webcam. Any standalone webcam will be a significant upgrade over the builtin webcam on your laptop. If you have suggestions here, I am all ears.
-- I use a Logitech MX Master 3 bluetooth mouse. I like that Logitech has software for mapping the different keys to Mac-specific actions that I typically use trackpad gestures for (like switching between desktops or Mission Control).
+- Keyboard: [ZSA Moonlander](https://zsa.io/moonlander). I have it tented quite aggressively using the [ZSA Platform](https://www.zsa.io/moonlander/platform) for ergonomics.
+- Headphones: [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8). I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
+- Microphone: [Elgato Wave 3](https://www.elgato.com/us/en/p/wave-3-black).
+- Webcam: [OBSBOT Meet 2](https://www.obsbot.com/store/products/meet-2).
+- Mouse: [Logitech MX Master 3](https://www.logitech.com/en-us/shop/p/mx-master-3s.910-006556).
 - I have two Logitech Litra Glow lights mounted behind my monitor. My office is in the unfinished part of my basement, and the lighting is horrible for video calls. These help a lot.

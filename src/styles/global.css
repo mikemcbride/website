@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('/fonts/general-sans/GeneralSans-Bold.woff2') format('woff2'),
+       url('/fonts/general-sans/GeneralSans-Bold.woff') format('woff'),
+       url('/fonts/general-sans/GeneralSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 @theme {
     --font-sans: 'Inter', 'system-ui', '-apple-system', 'Roboto', 'Arial', sans-serif;
     --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    --font-display: 'GeneralSans', 'Inter', 'system-ui', sans-serif;
 }
