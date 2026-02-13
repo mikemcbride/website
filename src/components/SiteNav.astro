@@ -2,24 +2,14 @@
 import NavItem from './NavItem.astro'
 import NavCloseButton from './NavCloseButton.astro'
 ---
-<nav class="md:hidden block">
-    <NavCloseButton class="absolute" />
-    <ul class="flex gap-3 bg-white/90 p-1 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+<nav class="p-4 relative">
+    <ul class="flex gap-3 p-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
         <NavItem href="/">Home</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/writing">Writing</NavItem>
         <NavItem href="/extras">Extras</NavItem>
         <NavItem href="/uses">Uses</NavItem>
     </ul>
+    <div class="w-screen absolute left-0 -bottom-px h-px bg-zinc-200 dark:bg-zinc-700"></div>
+    <div class="w-screen absolute right-0 -bottom-px h-px bg-zinc-200 dark:bg-zinc-700"></div>
 </nav>
-
-<nav class="hidden md:block pointer-events-auto w-auto mx-auto px-4 md:mt-8">
-    <ul class="flex gap-3 rounded-full bg-white/90 p-1 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/writing">Writing</NavItem>
-        <NavItem href="/extras">Extras</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
-    </ul>
-</nav>
-
