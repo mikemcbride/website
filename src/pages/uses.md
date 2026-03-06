@@ -38,11 +38,11 @@ I used to prefer having desktop apps for everything, but these days I try not to
 ## Desk Setup
 
 - My desk is an IKEA countertop that I cut down to 84" mounted to Fully Jarvis adjustable desk frame. Unfortunately, Fully was purchased by another company and no longer sells the frame-only model.
-- I have a 32" 4K curved monitor mounted to the desk with Fully Jarvis dual adjustable monitor arms.
+- I have a 32" [Benq monitor designed for programming](https://www.benq.com/en-us/monitor/programming.html) mounted to the desk with Fully Jarvis dual adjustable monitor arms.
 - To the left of my monitor, my laptop (currently a 16" MacBook Pro) sits on a laptop stand attachment to the dual monitor arms.
 - I use a [ZSA Moonlander](https://zsa.io/moonlander) keyboard and can't imagine going back to a normal keyboard anymore. I have it tented quite aggressively using the [ZSA Platform](https://www.zsa.io/moonlander/platform) for ergonomics.
 - I use [HyperX Cloud Alpha](https://smile.amazon.com/gp/product/B074NBSF9N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8) gaming headphones. I'm fully remote and have these on nearly all day, so comfort is super important, and they are ridiculously comfortable.
-- I use a USB microphone that I bought on Amazon. Couldn't tell you which one. It's nothing special, but it works significantly better than my laptop or webcam microphone.
-- I use a Logitech C920x webcam. Any standalone webcam will be a significant upgrade over the builtin webcam on your laptop. If you have suggestions here, I am all ears.
-- I use a Logitech MX Master 3 bluetooth mouse. I like that Logitech has software for mapping the different keys to Mac-specific actions that I typically use trackpad gestures for (like switching between desktops or Mission Control).
+- I use an [Elgato Wave 3](https://www.elgato.com/us/en/p/wave-3) microphone with a pop filter.
+- I use an [OBSBOT Meet 2 webcam](https://www.obsbot.com/store/products/meet-2).
+- I use a [Logitech MX Master 4](https://www.logitech.com/en-us/shop/p/mx-master-4) bluetooth mouse. I like that Logitech has software for mapping the different keys to Mac-specific actions that I typically use trackpad gestures for (like switching between desktops or Mission Control).
 - I have two Logitech Litra Glow lights mounted behind my monitor. My office is in the unfinished part of my basement, and the lighting is horrible for video calls. These help a lot.
