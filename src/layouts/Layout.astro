@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import SiteNav from "../components/SiteNav.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+const { title } = Astro.props;
+const pageTitle = title || "Mike McBride";
 ---
 
 <!doctype html>
@@ -21,7 +23,11 @@ import SiteFooter from "../components/SiteFooter.astro";
 			rel="stylesheet"
 		/>
 		<meta name="generator" content={Astro.generator} />
-		<title>Mike McBride</title>
+		<title>{pageTitle}</title>
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:site_name" content="Mike McBride" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:title" content={pageTitle} />
 		<link
 			rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"

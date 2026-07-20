@@ -6,7 +6,7 @@ const title = frontmatter?.title || Astro.props.title;
 const subheading = frontmatter?.subheading || Astro.props.subheading;
 ---
 
-<DefaultLayout>
+<DefaultLayout title={title}>
 	<Prose>
 		<section class="mb-12">
 			<h1>{title}</h1>
