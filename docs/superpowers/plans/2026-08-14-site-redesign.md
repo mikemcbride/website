@@ -19,7 +19,10 @@
 - **Fonts:** headings `font-mono` (JetBrains Mono), body `font-sans` (Inter). Both are already in the Google Fonts `<link>` — do not add font loading.
 - **Out of scope:** card layouts, stat grids, badge/tag systems from the reference screenshots. Do not build them.
 - **No logo or site name in the nav** — none exists.
-- **No automated test suite exists in this repo.** It is a static Astro site with no test runner, and adding one is out of scope. The verification cycle for every task is: `npm run build` must exit 0, plus the specific visual assertions listed in that task, checked in a browser against `npm run dev`. Never claim a task passes without having actually run the build and looked at the page.
+- **No automated test suite exists in this repo, and no browser automation is available.** It is a static Astro site with no test runner; adding one (or adding Playwright) is out of scope. The verification cycle for every task has two halves, and they belong to different actors:
+  - **Machine-checkable, done by the implementer:** `npm run build` must exit 0, plus `grep` assertions against the build output (`dist/_astro/*.css`, `dist/**/*.html`) and against source files, proving the CSS rules, selectors, custom properties, markup, and scripts the task requires are actually emitted. Each task's steps name the specific greps.
+  - **Visual and aesthetic, deferred to a human pass:** anything requiring eyes on a rendered page in a real browser — contrast, spacing, whether headings wrap sanely, whether the grid "reads" right. Implementers and reviewers have no browser. **Never claim a visual check was performed.** Report such items as `NOT VERIFIED (needs human visual pass)` and list them; they are collected for a single human review at the end.
+  - The visual assertions written into each task below are the checklist for that human pass, not implementer steps.
 
 ## Verification Setup (do this once, before Task 1)
 
@@ -195,8 +198,8 @@ git commit -m "Add class-based dark mode, accent token, and grid background"
 
 ### Task 2: Accent sweep — replace every violet with the blue accent
 
-Six occurrences across five files. Doing this before the nav rewrite means the
-new nav inherits correct colors.
+Eleven lines across five files (verified with `grep -rn "violet" src/`). Doing
+this before the nav rewrite means the new nav inherits correct colors.
 
 **Files:**
 - Modify: `src/components/NavItem.astro:7`

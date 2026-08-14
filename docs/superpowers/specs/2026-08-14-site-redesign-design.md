@@ -52,7 +52,7 @@ uses, post/list pages).
 - Add `--color-accent` theme token: `blue-600` light, `blue-400` dark. The
   value is swapped by overriding the custom property under `.dark`, so a
   single `text-accent` utility resolves correctly in both themes.
-- Replace every `violet-*` usage site-wide with the accent. Six occurrences
+- Replace every `violet-*` usage site-wide with the accent. Eleven lines
   across five files: `NavItem.astro` (hover + active pill), `Prose.astro`
   (link hover), `Testimonial.astro` (quote-mark stroke), `projects.astro`
   (meta text), `writing/index.astro` (search field focus states + "read more"
