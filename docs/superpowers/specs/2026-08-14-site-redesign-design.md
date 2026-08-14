@@ -29,9 +29,15 @@ uses, post/list pages).
 
 ### Typography
 
-- Headings (`h1`–`h6` inside `Prose.astro`, plus standalone headings in
-  `Landing.astro`, `List.astro`, `Post.astro`) get `font-mono` + bold + tight
-  leading.
+- Headings get `font-mono` + tight tracking. Applied via
+  `prose-headings:font-mono` on `Prose.astro` — every heading in
+  `Landing.astro`, `List.astro`, `Post.astro`, `index.astro`,
+  `projects.astro`, and `extras.astro` renders inside `<Prose>`, so that one
+  change covers them. The post-list `<h2>` in `writing/index.astro` sits
+  outside `Prose` and needs an explicit `font-mono`.
+- Eyebrow/label text gets small-caps mono with wide letter-spacing, matching
+  the reference's `CORE WEB MONOREPO · ...` treatment. Applied to the post
+  date in `Post.astro`.
 - Body text stays `font-sans` (Inter) — no change.
 
 ### Background grid
@@ -43,10 +49,16 @@ uses, post/list pages).
 
 ### Color
 
-- Add `--color-accent` theme token: `blue-600` light, `blue-400` dark.
-- Replace violet usage in `NavItem.astro` (`hover:text-violet-600`,
-  `bg-violet-100 text-violet-800` active state, and dark equivalents) with
-  the new accent.
+- Add `--color-accent` theme token: `blue-600` light, `blue-400` dark. The
+  value is swapped by overriding the custom property under `.dark`, so a
+  single `text-accent` utility resolves correctly in both themes.
+- Replace every `violet-*` usage site-wide with the accent. Six occurrences
+  across five files: `NavItem.astro` (hover + active pill), `Prose.astro`
+  (link hover), `Testimonial.astro` (quote-mark stroke), `projects.astro`
+  (meta text), `writing/index.astro` (search field focus states + "read more"
+  link). The active nav pill keeps explicit `blue-100`/`blue-800` shades
+  rather than the accent, since a filled blue-600 pill behind dark text would
+  fail contrast.
 - Existing zinc grays for text/surfaces are unchanged.
 
 ### Border radius
@@ -91,9 +103,12 @@ uses, post/list pages).
 - `src/components/SiteNav.astro` — full rewrite: static bar layout,
   hamburger/flyout, toggle button.
 - `src/components/NavItem.astro` — accent color swap (violet → blue).
-- `src/components/Prose.astro`, `src/layouts/Post.astro`,
-  `src/layouts/Landing.astro`, `src/layouts/List.astro` — heading font swap
-  to `font-mono`.
+- `src/components/Prose.astro` — `prose-headings:font-mono`, accent link
+  hover.
+- `src/layouts/Post.astro` — post date as mono eyebrow label.
+- `src/components/Testimonial.astro`, `src/pages/projects.astro`,
+  `src/pages/writing/index.astro` — accent color swap, plus explicit
+  `font-mono` on the post-list heading in `writing/index.astro`.
 
 ## Testing
 
