@@ -9,6 +9,17 @@ const pageTitle = title || "Mike McBride";
 <!doctype html>
 <html lang="en" class="w-full h-full m-0">
 	<head>
+		<script is:inline>
+			// Runs before first paint so the correct theme is applied with no flash.
+			const stored = localStorage.getItem("theme");
+			const prefersDark = window.matchMedia(
+				"(prefers-color-scheme: dark)",
+			).matches;
+			document.documentElement.classList.toggle(
+				"dark",
+				stored ? stored === "dark" : prefersDark,
+			);
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -34,7 +45,7 @@ const pageTitle = title || "Mike McBride";
 		/>
 	</head>
 	<body
-		class="font-sans text-zinc-900 bg-white dark:bg-zinc-900 dark:text-zinc-200 w-full text-lg min-h-screen flex flex-col"
+		class="font-sans text-zinc-900 dark:text-zinc-200 w-full text-lg min-h-screen flex flex-col"
 	>
 		<SiteNav />
 		<div
