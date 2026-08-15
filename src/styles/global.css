@@ -16,6 +16,15 @@
     /* Opaque surface color for cards/inputs sitting on the grid background.
        Slightly lighter than the page bg in light mode; swapped under .dark. */
     --color-surface: #f8fafc;
+
+    /* Opaque accent-washed surface for focus/hover on surfaces where a
+       translucent bg-accent/5 would let the grid show through. Matches the
+       header buttons' hover wash (accent/5 light, accent/10 dark). */
+    --color-surface-accent: color-mix(
+        in oklab,
+        var(--color-accent) 5%,
+        var(--color-surface)
+    );
 }
 
 :root {
@@ -28,6 +37,11 @@
 .dark {
     --color-accent: var(--color-blue-400);
     --color-surface: var(--color-zinc-800);
+    --color-surface-accent: color-mix(
+        in oklab,
+        var(--color-accent) 10%,
+        var(--color-surface)
+    );
     --grid-bg: #18181b;
     --grid-line: rgb(255 255 255 / 0.11);
 }
