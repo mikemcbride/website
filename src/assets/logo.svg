@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Mike McBride nested MM graph logo</title>
+  <desc id="desc">Two connected capital M shapes constructed from graph edges and circular nodes.</desc>
+
+  <!--
+    All edges terminate at node centers. Nodes are painted afterward so each
+    junction is symmetrical. The mask punches truly transparent node centers.
+  -->
+  <defs>
+    <mask id="node-holes" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="800">
+      <rect width="800" height="800" fill="white"/>
+      <g fill="black">
+        <circle cx="160" cy="150" r="17"/>
+        <circle cx="400" cy="390" r="17"/>
+        <circle cx="640" cy="150" r="17"/>
+        <circle cx="270" cy="390" r="17"/>
+        <circle cx="400" cy="520" r="17"/>
+        <circle cx="530" cy="390" r="17"/>
+        <circle cx="160" cy="650" r="17"/>
+        <circle cx="270" cy="650" r="17"/>
+        <circle cx="530" cy="650" r="17"/>
+        <circle cx="640" cy="650" r="17"/>
+      </g>
+    </mask>
+  </defs>
+
+  <g color="inherit" mask="url(#node-holes)">
+    <g fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="butt" stroke-linejoin="miter">
+      <path d="M160 650V150L400 390L640 150V650"/>
+      <path d="M270 650V390L400 520L530 390V650"/>
+      <path d="M400 390V520"/>
+    </g>
+
+    <g fill="currentColor">
+      <circle cx="160" cy="150" r="33"/>
+      <circle cx="400" cy="390" r="33"/>
+      <circle cx="640" cy="150" r="33"/>
+      <circle cx="270" cy="390" r="33"/>
+      <circle cx="400" cy="520" r="33"/>
+      <circle cx="530" cy="390" r="33"/>
+      <circle cx="160" cy="650" r="33"/>
+      <circle cx="270" cy="650" r="33"/>
+      <circle cx="530" cy="650" r="33"/>
+      <circle cx="640" cy="650" r="33"/>
+    </g>
+  </g>
+</svg>
