@@ -9,9 +9,20 @@ const pageTitle = title || "Mike McBride";
 <!doctype html>
 <html lang="en" class="w-full h-full m-0">
 	<head>
+		<script is:inline>
+			// Runs before first paint so the correct theme is applied with no flash.
+			const stored = localStorage.getItem("theme");
+			const prefersDark = window.matchMedia(
+				"(prefers-color-scheme: dark)",
+			).matches;
+			document.documentElement.classList.toggle(
+				"dark",
+				stored ? stored === "dark" : prefersDark,
+			);
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/mm-graph-favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
 			rel="preconnect"
@@ -28,17 +39,13 @@ const pageTitle = title || "Mike McBride";
 		<meta property="og:site_name" content="Mike McBride" />
 		<meta property="og:type" content="website" />
 		<meta name="twitter:title" content={pageTitle} />
-		<link
-			rel="icon"
-			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
-		/>
 	</head>
 	<body
-		class="font-sans text-zinc-900 bg-white dark:bg-zinc-900 dark:text-zinc-200 w-full text-lg min-h-screen flex flex-col"
+		class="font-sans text-zinc-900 dark:text-zinc-200 w-full text-lg min-h-screen flex flex-col"
 	>
 		<SiteNav />
 		<div
-			class="mt-16 lg:mt-20 mx-auto w-full px-4 lg:px-0 max-w-4xl flex-grow"
+			class="mt-12 lg:mt-16 mx-auto w-full px-4 lg:px-0 max-w-4xl flex-grow"
 		>
 			<slot />
 		</div>

@@ -141,15 +141,4 @@ export default [
         ],
         type: "utility"
     },
-    {
-        title: "LSU Phoenix Alumni Association",
-        description: "I designed and built the website for the LSU Phoenix Alumni Association.",
-        links: [
-            {
-                url: "https://lsuphoenix.org",
-                title: "Website"
-            }
-        ],
-        type: "website"
-    },
 ]

@@ -1,7 +1,61 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Class-based dark mode instead of Tailwind v4's default prefers-color-scheme.
+   Required so the header toggle can drive the theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --font-sans: 'Inter', 'system-ui', '-apple-system', 'Roboto', 'Arial', sans-serif;
     --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+
+    /* Utilities generated: text-accent, bg-accent, border-accent, ring-accent.
+       The value is swapped under .dark below. */
+    --color-accent: var(--color-blue-600);
+
+    /* Opaque surface color for cards/inputs sitting on the grid background.
+       Slightly lighter than the page bg in light mode; swapped under .dark. */
+    --color-surface: #f8fafc;
+
+    /* Opaque accent-washed surface for focus/hover on surfaces where a
+       translucent bg-accent/5 would let the grid show through. Matches the
+       header buttons' hover wash (accent/5 light, accent/10 dark). */
+    --color-surface-accent: color-mix(
+        in oklab,
+        var(--color-accent) 5%,
+        var(--color-surface)
+    );
+}
+
+:root {
+    --grid-size: 24px;
+    --grid-dot-space: 4px;
+    --grid-bg: #f1f4f9;
+    --grid-line: rgb(30 41 59 / 0.14);
+}
+
+.dark {
+    --color-accent: var(--color-blue-400);
+    --color-surface: var(--color-zinc-800);
+    --color-surface-accent: color-mix(
+        in oklab,
+        var(--color-accent) 10%,
+        var(--color-surface)
+    );
+    --grid-bg: #18181b;
+    --grid-line: rgb(255 255 255 / 0.11);
+}
+
+body {
+    background-color: var(--grid-bg);
+    /* Dotted grid lines: gradients are one-dimensional, so a broken line is
+       drawn as tiny radial dots tiled every --grid-dot-space along one axis
+       and every --grid-size along the other. First layer forms the vertical
+       lines, second the horizontal. */
+    background-image:
+        radial-gradient(circle, var(--grid-line) 0.5px, transparent 1px),
+        radial-gradient(circle, var(--grid-line) 0.5px, transparent 1px);
+    background-size:
+        var(--grid-size) var(--grid-dot-space),
+        var(--grid-dot-space) var(--grid-size);
 }

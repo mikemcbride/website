@@ -18,7 +18,9 @@ if (frontmatter.date) {
 			<h1>{frontmatter.title}</h1>
 			{
 				formattedDate && (
-					<p class="-mt-8 text-zinc-500">{formattedDate}</p>
+					<p class="-mt-8 font-mono text-sm tracking-widest uppercase text-zinc-500 dark:text-zinc-400">
+						{formattedDate}
+					</p>
 				)
 			}
 			<slot />
