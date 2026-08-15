@@ -2,7 +2,7 @@
 layout: post
 tags: post
 title: One Year After My Stroke
-date: 2026-07-19
+date: 2026-07-20
 published: true
 excerpt: A reflection on life one year after my stroke.
 ---
