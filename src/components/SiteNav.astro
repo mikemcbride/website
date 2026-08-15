@@ -3,6 +3,43 @@ import NavItem from './NavItem.astro'
 ---
 <header class="w-full max-md:bg-[var(--grid-bg)] max-md:shadow-sm max-md:shadow-zinc-900/10 dark:max-md:shadow-black/40">
     <nav class="mx-auto flex h-16 w-full max-w-4xl items-center justify-between px-4 lg:px-0">
+        <div class="flex items-center gap-3 md:gap-5">
+            <a
+                href="/"
+                aria-label="Home"
+                class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-accent text-white transition hover:bg-blue-700 dark:hover:bg-blue-500"
+            >
+                <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="100 100 600 600"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M155 650V160L400 405L645 160V650M270 650V470L400 600L530 470V650"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="50"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></path>
+                    <g fill="currentColor">
+                        <circle cx="155" cy="160" r="51"></circle>
+                        <circle cx="400" cy="405" r="51"></circle>
+                        <circle cx="645" cy="160" r="51"></circle>
+                        <circle cx="270" cy="650" r="51"></circle>
+                        <circle cx="530" cy="650" r="51"></circle>
+                    </g>
+                </svg>
+            </a>
+            <ul class="hidden items-center gap-1 font-mono text-sm font-medium uppercase md:flex text-zinc-700 dark:text-zinc-300">
+                <NavItem href="/">Home</NavItem>
+                <NavItem href="/projects">Projects</NavItem>
+                <NavItem href="/writing">Writing</NavItem>
+                <NavItem href="/extras">Extras</NavItem>
+                <NavItem href="/uses">Uses</NavItem>
+            </ul>
+        </div>
         <button
             type="button"
             id="menu-button"
@@ -24,13 +61,6 @@ import NavItem from './NavItem.astro'
                 <path d="M4 7h16M4 12h16M4 17h16"></path>
             </svg>
         </button>
-        <ul class="hidden items-center gap-1 font-mono text-sm font-medium uppercase md:flex text-zinc-700 dark:text-zinc-300">
-            <NavItem href="/">Home</NavItem>
-            <NavItem href="/projects">Projects</NavItem>
-            <NavItem href="/writing">Writing</NavItem>
-            <NavItem href="/extras">Extras</NavItem>
-            <NavItem href="/uses">Uses</NavItem>
-        </ul>
         <button
             type="button"
             data-theme-toggle

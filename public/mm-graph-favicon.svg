@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Mike McBride compact MM graph favicon</title>
+  <desc id="desc">A compact nested double M constructed from graph edges and five circular nodes.</desc>
+  <style>
+    :root { color: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #60a5fa; }
+    }
+  </style>
+  <path d="M155 650V160L400 405L645 160V650M270 650V470L400 600L530 470V650"
+        fill="none" stroke="currentColor" stroke-width="50"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="currentColor">
+    <circle cx="155" cy="160" r="51"/>
+    <circle cx="400" cy="405" r="51"/>
+    <circle cx="645" cy="160" r="51"/>
+    <circle cx="270" cy="650" r="51"/>
+    <circle cx="530" cy="650" r="51"/>
+  </g>
+</svg>
