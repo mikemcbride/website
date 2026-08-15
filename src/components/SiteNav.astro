@@ -1,7 +1,7 @@
 ---
 import NavItem from './NavItem.astro'
 ---
-<header class="w-full border-b border-zinc-200 dark:border-zinc-800">
+<header class="w-full max-md:bg-[var(--grid-bg)] max-md:shadow-sm max-md:shadow-zinc-900/10 dark:max-md:shadow-black/40">
     <nav class="mx-auto flex h-16 w-full max-w-4xl items-center justify-between px-4 lg:px-0">
         <button
             type="button"
@@ -24,7 +24,7 @@ import NavItem from './NavItem.astro'
                 <path d="M4 7h16M4 12h16M4 17h16"></path>
             </svg>
         </button>
-        <ul class="hidden items-center gap-1 font-mono text-sm font-medium md:flex text-zinc-700 dark:text-zinc-300">
+        <ul class="hidden items-center gap-1 font-mono text-sm font-medium uppercase md:flex text-zinc-700 dark:text-zinc-300">
             <NavItem href="/">Home</NavItem>
             <NavItem href="/projects">Projects</NavItem>
             <NavItem href="/writing">Writing</NavItem>
@@ -35,7 +35,7 @@ import NavItem from './NavItem.astro'
             type="button"
             data-theme-toggle
             aria-label="Toggle dark mode"
-            class="hidden h-9 w-9 items-center justify-center rounded-md text-zinc-600 transition hover:bg-zinc-200/60 hover:text-accent md:inline-flex dark:text-zinc-400 dark:hover:bg-zinc-800/60"
+            class="hidden h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-surface text-zinc-600 transition hover:border-accent hover:text-accent md:inline-flex dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-accent"
         >
             <svg
                 class="h-5 w-5 dark:hidden"
@@ -69,9 +69,9 @@ import NavItem from './NavItem.astro'
     <div
         id="mobile-menu"
         hidden
-        class="border-t border-zinc-200 bg-[var(--grid-bg)] px-4 py-3 md:hidden dark:border-zinc-800"
+        class="border-t border-zinc-200 px-4 py-3 md:hidden dark:border-zinc-800"
     >
-        <ul class="flex flex-col gap-1 font-mono text-base font-medium text-zinc-700 dark:text-zinc-300">
+        <ul class="flex flex-col gap-1 font-mono text-base font-medium uppercase text-zinc-700 dark:text-zinc-300">
             <NavItem href="/">Home</NavItem>
             <NavItem href="/projects">Projects</NavItem>
             <NavItem href="/writing">Writing</NavItem>
@@ -83,7 +83,7 @@ import NavItem from './NavItem.astro'
                 type="button"
                 data-theme-toggle
                 aria-label="Toggle dark mode"
-                class="inline-flex h-9 items-center gap-2 rounded-md px-2 font-mono text-sm text-zinc-600 transition hover:bg-zinc-200/60 hover:text-accent dark:text-zinc-400 dark:hover:bg-zinc-800/60"
+                class="inline-flex h-9 items-center gap-2 rounded-md border border-zinc-300 bg-surface px-2 font-mono text-sm text-zinc-600 transition hover:border-accent hover:text-accent dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-accent"
             >
                 <svg
                     class="h-5 w-5 dark:hidden"

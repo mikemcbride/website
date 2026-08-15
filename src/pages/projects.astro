@@ -1,6 +1,5 @@
 ---
 import LandingLayout from "../layouts/Landing.astro";
-import Prose from "../components/Prose.astro";
 import projects from "../data/projects.js";
 ---
 
@@ -8,36 +7,32 @@ import projects from "../data/projects.js";
     title="Projects"
     subheading="When I'm not making stuff for my day job, I like to build websites, apps, and utilities to help other developers. You can find some of them listed below, and the rest you can find on my GitHub profile."
 >
-    <Prose>
     <section>
-        <ul
-            class="space-y-12 list-none !pl-0 divide-y divide-zinc-200 dark:divide-zinc-700 not-prose"
-        >
+        <div class="flex flex-col gap-16">
             {
-                projects.map((project: any) => {
-                    return (
-                        <li class="space-y-2 pb-12">
-                            <h2 class="font-extrabold tracking-tight text-2xl md:text-4xl">
-                                {project.title}
-                            </h2>
-                            <p>{project.description}</p>
-                            <div class="flex items-center gap-4 font-mono">
-                                {project.links.map((link: any) => (
-                                    <a
-                                        href={link.url}
-                                        rel="nofollow noreferrer"
-                                        target="_blank"
-                                        class="text-accent text-xs md:text-sm"
-                                    >
-                                        {link.title}
-                                    </a>
-                                ))}
-                            </div>
-                        </li>
-                    );
-                })
+                projects.map((project: any) => (
+                    <article class="flex flex-col items-start">
+                        <h2 class="font-mono text-2xl md:text-4xl font-extrabold tracking-tight text-zinc-800 dark:text-zinc-100">
+                            {project.title}
+                        </h2>
+                        <p class="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+                            {project.description}
+                        </p>
+                        <div class="mt-4 flex items-center gap-6 font-mono text-xs md:text-sm font-medium uppercase tracking-widest">
+                            {project.links.map((link: any) => (
+                                <a
+                                    href={link.url}
+                                    rel="nofollow noreferrer"
+                                    target="_blank"
+                                    class="text-accent transition hover:underline"
+                                >
+                                    {link.title}
+                                </a>
+                            ))}
+                        </div>
+                    </article>
+                ))
             }
-        </ul>
+        </div>
     </section>
-    </Prose>
 </LandingLayout>
