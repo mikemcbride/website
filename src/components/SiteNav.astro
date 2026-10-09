@@ -1,8 +1,13 @@
 ---
-import NavItem from './NavItem.astro'
+import NavItem from "./NavItem.astro";
 ---
-<header class="w-full max-md:bg-[var(--grid-bg)] max-md:shadow-sm max-md:shadow-zinc-900/10 dark:max-md:shadow-black/40">
-    <nav class="mx-auto flex h-16 w-full max-w-4xl items-center justify-between px-4 lg:px-0">
+
+<header
+    class="w-full max-md:bg-[var(--grid-bg)] max-md:shadow-sm max-md:shadow-zinc-900/10 dark:max-md:shadow-black/40"
+>
+    <nav
+        class="mx-auto flex h-16 w-full max-w-4xl items-center justify-between px-4 lg:px-0"
+    >
         <div class="flex items-center gap-3 md:gap-5">
             <a
                 href="/"
@@ -10,29 +15,31 @@ import NavItem from './NavItem.astro'
                 class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-transparent bg-accent text-white transition hover:bg-blue-700 dark:border-zinc-700 dark:bg-zinc-800 dark:text-accent dark:hover:bg-zinc-700"
             >
                 <svg
-                    class="h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="100 100 600 600"
-                    aria-hidden="true"
+                    viewBox="0 0 1000 1000"
+                    class="h-7 w-7"
                 >
-                    <path
-                        d="M155 650V160L400 405L645 160V650M270 650V470L400 600L530 470V650"
+                    <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="50"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                    ></path>
+                    >
+                        <path
+                            d="M 150 850 L 150 150 L 500 500 L 850 150 L 850 850"
+                            stroke-width="85"></path>
+                    </g>
                     <g fill="currentColor">
-                        <circle cx="155" cy="160" r="51"></circle>
-                        <circle cx="400" cy="405" r="51"></circle>
-                        <circle cx="645" cy="160" r="51"></circle>
-                        <circle cx="270" cy="650" r="51"></circle>
-                        <circle cx="530" cy="650" r="51"></circle>
+                        <circle cx="150" cy="150" r="92"></circle>
+                        <circle cx="850" cy="150" r="92"></circle>
+                        <circle cx="150" cy="850" r="92"></circle>
+                        <circle cx="850" cy="850" r="92"></circle>
                     </g>
                 </svg>
             </a>
-            <ul class="hidden items-center gap-1 font-mono text-sm font-medium uppercase md:flex text-zinc-700 dark:text-zinc-300">
+            <ul
+                class="hidden items-center gap-1 font-mono text-sm font-medium uppercase md:flex text-zinc-700 dark:text-zinc-300"
+            >
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="/projects">Projects</NavItem>
                 <NavItem href="/writing">Writing</NavItem>
@@ -101,7 +108,9 @@ import NavItem from './NavItem.astro'
         hidden
         class="border-t border-zinc-200 px-4 py-3 md:hidden dark:border-zinc-800"
     >
-        <ul class="flex flex-col gap-1 font-mono text-base font-medium uppercase text-zinc-700 dark:text-zinc-300">
+        <ul
+            class="flex flex-col gap-1 font-mono text-base font-medium uppercase text-zinc-700 dark:text-zinc-300"
+        >
             <NavItem href="/">Home</NavItem>
             <NavItem href="/projects">Projects</NavItem>
             <NavItem href="/writing">Writing</NavItem>
@@ -152,8 +161,7 @@ import NavItem from './NavItem.astro'
 <script is:inline>
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
         button.addEventListener("click", () => {
-            const isDark =
-                document.documentElement.classList.toggle("dark");
+            const isDark = document.documentElement.classList.toggle("dark");
             localStorage.setItem("theme", isDark ? "dark" : "light");
         });
     });
@@ -166,7 +174,7 @@ import NavItem from './NavItem.astro'
         menuButton.setAttribute("aria-expanded", String(open));
         menuButton.setAttribute(
             "aria-label",
-            open ? "Close menu" : "Open menu",
+            open ? "Close menu" : "Open menu"
         );
     }
 
