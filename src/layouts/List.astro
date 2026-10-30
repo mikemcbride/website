@@ -1,6 +1,6 @@
 ---
 import DefaultLayout from "./Layout.astro";
-import Prose from '../components/Prose.astro';
+import Prose from "../components/Prose.astro";
 const { frontmatter } = Astro.props;
 const title = frontmatter?.title || Astro.props.title;
 const subtitle = frontmatter?.subtitle || Astro.props.subtitle;
@@ -9,12 +9,22 @@ const subtitle = frontmatter?.subtitle || Astro.props.subtitle;
 <DefaultLayout title={title}>
 	<main>
 		<Prose>
-		<h1>{title}</h1>
-		<p>{subtitle}</p>
-		<slot />
-		<p class="mt-12">
-			<a href="/lists">Go Back</a>
-		</p>
+			<h1 class={subtitle ? "mb-2" : ""}>{title}</h1>
+			{
+				subtitle && (
+					<p class="mt-0 text-zinc-600 dark:text-zinc-400">
+						{subtitle}
+					</p>
+				)
+			}
+			<slot />
 		</Prose>
+		<p class="mt-12 text-sm">
+			<a
+				href="/lists"
+				class="text-zinc-500 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				>&larr; Lists</a
+			>
+		</p>
 	</main>
 </DefaultLayout>

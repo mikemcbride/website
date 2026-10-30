@@ -7,11 +7,17 @@ const subheading = frontmatter?.subheading || Astro.props.subheading;
 ---
 
 <DefaultLayout title={title}>
-	<Prose>
-		<section class="mb-12">
-			<h1>{title}</h1>
-			{subheading && <p>{subheading}</p>}
-		</section>
-	</Prose>
+	<header class="mb-10">
+		<Prose>
+			<h1 class={subheading ? "mb-2" : ""}>{title}</h1>
+			{
+				subheading && (
+					<p class="mt-0 text-zinc-600 dark:text-zinc-400">
+						{subheading}
+					</p>
+				)
+			}
+		</Prose>
+	</header>
 	<slot />
 </DefaultLayout>

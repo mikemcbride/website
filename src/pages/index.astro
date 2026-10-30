@@ -1,72 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import quotes from "../data/quotes.js";
-import Testimonial from "../components/Testimonial.astro";
 import Prose from "../components/Prose.astro";
+import { getCollection } from "astro:content";
+import { formatDate } from "../utils/formatDate";
+
+const recentPosts = (
+    await getCollection("posts", ({ data }) => data.published === true)
+)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 5);
 ---
 
 <Layout>
     <main>
         <Prose>
-            <h1>
-                Hey there! 👋&nbsp;<br class="sm:hidden" />I'm Mike.
-            </h1>
+            <h1>Hi, I'm Mike.</h1>
             <p>
-                And this is my website. I worked really hard on it just for you
-                (yes, YOU), so I hope you like it. Let's get to know each
-                other... I'll start.
+                I'm a senior software engineer at The New York Times, where I
+                work on the core infrastructure behind <a
+                    href="https://www.nytimes.com"
+                    target="_blank"
+                    rel="noreferrer">nytimes.com</a
+                >. Before
+                that I spent eleven years at World Wide Technology working
+                on a little bit of everything. The common thread, it turns
+                out, is that I like building platforms and tools for other
+                engineers.
             </p>
             <p>
-                I'm a software engineer from St. Louis, MO, where I live with my
-                wife and our four children. I enjoy reading, LSU football,
-                Oxford commas, and keyboard shortcuts.
+                I live in St. Louis with my wife and our four kids. I like
+                reading, LSU football, Oxford commas, keyboard shortcuts,
+                hammocks, the month of October, and pineapple on pizza. I
+                don't like glitter, whales, or cottage cheese.
             </p>
-
-            <section class="my-16 lg:my-20">
-                <h3>Some things I like</h3>
-                <ul>
-                    <li>Hammocks</li>
-                    <li>The month of October</li>
-                    <li>Chicken & sausage gumbo</li>
-                    <li>Hugs</li>
-                    <li>Playing piano</li>
-                    <li>Pineapple on pizza</li>
-                </ul>
-                <h3>Some things I don't</h3>
-                <ul>
-                    <li>Glitter</li>
-                    <li>Hair spray</li>
-                    <li>Bug bites</li>
-                    <li>Washing dishes</li>
-                    <li>Whales</li>
-                    <li>Cottage cheese</li>
-                </ul>
-            </section>
-
-            <div class="max-w-full">
-                <h3>What others are saying...</h3>
-                <p>
-                    Well, they might have said it. I can't say for certain that
-                    they did, but I also can't say for certain that they
-                    didn't... That has to count for something, right?
-                </p>
-
-                <section
-                    class="px-2 not-prose mt-12 lg:mt-20 space-y-8 lg:space-y-12"
-                >
-                    {quotes.map((quote: any) => <Testimonial quote={quote} />)}
-                </section>
-            </div>
-            <section class="md:mt-20">
-                <p>
-                    Feel free to poke around a bit, maybe <a href="/projects"
-                        >check out some stuff I've built</a
-                    >, <a href="/writing">read some words I've written</a>, or <a
-                        href="/extras">stumble upon something more random</a
-                    >.
-                </p>
-                <p>Thanks for stopping by!</p>
-            </section>
         </Prose>
+
+        <section class="mt-14">
+            <h2
+                class="mb-5 text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100"
+            >
+                Recent writing
+            </h2>
+            <ul class="flex flex-col gap-3">
+                {
+                    recentPosts.map((post) => (
+                        <li class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                            <a
+                                href={`/writing/${post.id}`}
+                                class="font-medium text-zinc-900 transition hover:text-accent dark:text-zinc-100"
+                            >
+                                {post.data.title}
+                            </a>
+                            <time
+                                class="shrink-0 text-sm text-zinc-500 dark:text-zinc-400"
+                                datetime={post.data.date.toISOString()}
+                            >
+                                {formatDate(post.data.date)}
+                            </time>
+                        </li>
+                    ))
+                }
+            </ul>
+            <p class="mt-5 text-sm">
+                <a
+                    href="/writing"
+                    class="font-medium text-accent hover:underline"
+                    >All writing &rarr;</a
+                >
+            </p>
+        </section>
+
+        <section class="mt-14">
+            <Prose>
+                <p>
+                    You can also see <a href="/projects"
+                        >some tools I've built</a
+                    > or poke around <a href="/extras">the extras</a>.
+                </p>
+            </Prose>
+        </section>
     </main>
 </Layout>

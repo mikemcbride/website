@@ -1,36 +1,41 @@
 ---
 import DefaultLayout from "./Layout.astro";
 import Prose from "../components/Prose.astro";
+import { formatDate } from "../utils/formatDate";
 const { frontmatter } = Astro.props;
-let formattedDate = null;
-if (frontmatter.date) {
-	formattedDate = new Date(frontmatter.date).toLocaleDateString("en-US", {
-		year: "numeric",
-		month: "long",
-		day: "numeric",
-	});
-}
+const formattedDate = frontmatter.date
+	? formatDate(frontmatter.date, "long")
+	: null;
+const backUrl = frontmatter.back_url || "/writing";
+const backLabel =
+	backUrl === "/writing"
+		? "Writing"
+		: backUrl === "/extras"
+			? "Extras"
+			: backUrl === "/lists"
+				? "Lists"
+				: "Back";
 ---
 
 <DefaultLayout title={frontmatter.title}>
 	<main>
 		<Prose>
-			<h1>{frontmatter.title}</h1>
+			<h1 class={formattedDate ? "mb-2" : ""}>{frontmatter.title}</h1>
 			{
 				formattedDate && (
-					<p class="-mt-8 font-mono text-sm tracking-widest uppercase text-zinc-500 dark:text-zinc-400">
+					<p class="mt-0 text-sm text-zinc-500 dark:text-zinc-400">
 						{formattedDate}
 					</p>
 				)
 			}
 			<slot />
-			<div class="mt-12">
-				<a
-					href={frontmatter.back_url
-						? frontmatter.back_url
-						: "/writing"}>Go Back</a
-				>
-			</div>
 		</Prose>
+		<p class="mt-12 text-sm">
+			<a
+				href={backUrl}
+				class="text-zinc-500 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				>&larr; {backLabel}</a
+			>
+		</p>
 	</main>
 </DefaultLayout>

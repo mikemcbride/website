@@ -7,10 +7,11 @@ const pageTitle = title || "Mike McBride";
 ---
 
 <!doctype html>
-<html lang="en" class="w-full h-full m-0">
+<html lang="en" class="h-full">
 	<head>
 		<script is:inline>
 			// Runs before first paint so the correct theme is applied with no flash.
+			// Follows the OS unless the user has explicitly toggled.
 			const stored = localStorage.getItem("theme");
 			const prefersDark = window.matchMedia(
 				"(prefers-color-scheme: dark)",
@@ -22,7 +23,13 @@ const pageTitle = title || "Mike McBride";
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/mm-graph-favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Mike McBride"
+			href="/rss.xml"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
 			rel="preconnect"
@@ -30,7 +37,7 @@ const pageTitle = title || "Mike McBride";
 			crossorigin
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="generator" content={Astro.generator} />
@@ -41,12 +48,10 @@ const pageTitle = title || "Mike McBride";
 		<meta name="twitter:title" content={pageTitle} />
 	</head>
 	<body
-		class="font-sans text-zinc-900 dark:text-zinc-200 w-full text-lg min-h-screen flex flex-col"
+		class="min-h-full flex flex-col font-sans text-base md:text-[17px] leading-relaxed bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200"
 	>
 		<SiteNav />
-		<div
-			class="mt-12 lg:mt-16 mx-auto w-full px-4 lg:px-0 max-w-4xl flex-grow"
-		>
+		<div class="mx-auto w-full max-w-2xl px-5 pt-10 md:pt-14 flex-grow">
 			<slot />
 		</div>
 		<SiteFooter />
