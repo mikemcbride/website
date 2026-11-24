@@ -30,15 +30,12 @@ const pageTitle = title || "Mike McBride";
 			title="Mike McBride"
 			href="/rss.xml"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
+			rel="preload"
+			href="/fonts/jetbrains-mono-latin.woff2"
+			as="font"
+			type="font/woff2"
 			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
 		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
@@ -48,7 +45,7 @@ const pageTitle = title || "Mike McBride";
 		<meta name="twitter:title" content={pageTitle} />
 	</head>
 	<body
-		class="min-h-full flex flex-col font-sans text-base md:text-[17px] leading-relaxed bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200"
+		class="min-h-full flex flex-col font-mono text-[15px] md:text-base leading-relaxed bg-surface text-body"
 	>
 		<SiteNav />
 		<div class="mx-auto w-full max-w-2xl px-5 pt-10 md:pt-14 flex-grow">

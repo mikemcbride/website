@@ -12,7 +12,7 @@ const subtitle = frontmatter?.subtitle || Astro.props.subtitle;
 			<h1 class={subtitle ? "mb-2" : ""}>{title}</h1>
 			{
 				subtitle && (
-					<p class="mt-0 text-zinc-600 dark:text-zinc-400">
+					<p class="mt-0 text-muted">
 						{subtitle}
 					</p>
 				)
@@ -22,7 +22,7 @@ const subtitle = frontmatter?.subtitle || Astro.props.subtitle;
 		<p class="mt-12 text-sm">
 			<a
 				href="/lists"
-				class="text-zinc-500 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				class="text-muted hover:text-ink"
 				>&larr; Lists</a
 			>
 		</p>

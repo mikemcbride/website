@@ -8,9 +8,9 @@ export default defineConfig({
   site: "https://mikemcbride.dev",
 
   markdown: {
-    shikiConfig: {
-      theme: "github-dark",
-    },
+    // Code blocks are a single color to match the rest of the site; styled
+    // via `.prose pre` in src/styles/global.css.
+    syntaxHighlight: false,
   },
 
   vite: {

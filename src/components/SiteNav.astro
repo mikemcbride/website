@@ -15,7 +15,7 @@ const links = [
     >
         <a
             href="/"
-            class="font-semibold text-zinc-900 transition hover:text-accent dark:text-zinc-100"
+            class="font-medium text-ink no-underline hover:underline"
         >
             Mike McBride
         </a>
@@ -27,7 +27,7 @@ const links = [
                 type="button"
                 data-theme-toggle
                 aria-label="Toggle dark mode"
-                class="inline-flex h-8 w-8 items-center justify-center rounded-md text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-sm text-muted transition hover:bg-chip hover:text-ink"
             >
                 <svg
                     class="h-[18px] w-[18px] dark:hidden"
@@ -64,7 +64,7 @@ const links = [
                 aria-label="Open menu"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
-                class="inline-flex h-8 w-8 items-center justify-center rounded-md text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-900 md:hidden dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-sm text-muted transition hover:bg-chip hover:text-ink md:hidden"
             >
                 <svg
                     class="h-5 w-5"
@@ -84,7 +84,7 @@ const links = [
     <div
         id="mobile-menu"
         hidden
-        class="mx-auto max-w-2xl border-b border-zinc-200 px-5 pb-4 md:hidden dark:border-zinc-800"
+        class="mx-auto max-w-2xl border-b border-line px-5 pb-4 md:hidden"
     >
         <ul class="-mx-3 flex flex-col">
             {links.map((l) => <NavItem href={l.href}>{l.label}</NavItem>)}

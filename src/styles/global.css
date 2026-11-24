@@ -1,48 +1,198 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* JetBrains Mono, self-hosted (OFL). Variable weight 400–600 upright plus
+   400 italic, split into latin / latin-ext subsets so a page only downloads
+   the ranges it actually uses. Files in public/fonts/. */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-italic-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-italic-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+
 /* Class-based dark mode instead of Tailwind v4's default prefers-color-scheme.
    Required so the header toggle can drive the theme. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
 
-    /* Utilities generated: text-accent, bg-accent, border-accent, ring-accent.
-       Swapped under .dark below. Used for links and the active nav item only. */
-    --color-accent: var(--color-blue-600);
+    /* One hue, a few strengths. Hierarchy comes from lightness, not color.
+       Utilities generated: text-ink, text-body, text-muted, bg-surface,
+       bg-chip, border-line, etc. Swapped under .dark below. */
+    --color-ink: var(--color-zinc-950); /* headings, links, strong */
+    --color-body: var(--color-zinc-800); /* running text */
+    --color-muted: var(--color-zinc-500); /* dates, captions, inactive nav */
+    --color-surface: var(--color-white); /* page background */
+    --color-chip: var(--color-zinc-100); /* code backgrounds */
+    --color-line: var(--color-zinc-200); /* borders, rules */
 }
 
 .dark {
-    --color-accent: var(--color-blue-400);
+    --color-ink: var(--color-zinc-50);
+    --color-body: var(--color-zinc-300);
+    --color-muted: var(--color-zinc-500);
+    --color-surface: var(--color-zinc-950);
+    --color-chip: var(--color-zinc-900);
+    --color-line: var(--color-zinc-800);
 }
 
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@layer base {
+    html {
+        color-scheme: light;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* JetBrains Mono ships coding ligatures (-> becomes an arrow, etc.).
+           Keep characters literal in prose and code samples alike. */
+        font-variant-ligatures: none;
+    }
+    html.dark {
+        color-scheme: dark;
+    }
+
+    /* Everything renders lowercase. This is presentational only: the source
+       text keeps its casing for screen readers, find-in-page, <title>, and
+       feeds. Code is exempt so samples stay literal (JSON.parse, HJKL, etc). */
+    body {
+        text-transform: lowercase;
+    }
+    pre,
+    code,
+    kbd,
+    samp {
+        text-transform: none;
+    }
+
+    ::selection {
+        background-color: var(--color-ink);
+        color: var(--color-surface);
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-ink);
+        outline-offset: 2px;
+    }
+
+    /* Links are the ink color (a step darker/lighter than body text) with a
+       faded underline that fills in on hover. Nav and list links can opt out
+       with `no-underline`. */
+    a {
+        color: var(--color-ink);
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+        text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+        transition:
+            color 150ms,
+            text-decoration-color 150ms;
+    }
+    a:hover {
+        text-decoration-color: currentColor;
+    }
 }
 
-/* Inter ships its own tabular/contextual features; tighten slightly like
-   Zensical does so headings and body feel less airy. */
-body {
-    letter-spacing: -0.01em;
+/* ---- Prose -------------------------------------------------------------- */
+
+/* Point the typography plugin's palette at our tokens so a single `prose`
+   class works in both themes (no prose-zinc / prose-invert needed). */
+.prose {
+    font-size: inherit;
+    line-height: inherit;
+    --tw-prose-body: var(--color-body);
+    --tw-prose-headings: var(--color-ink);
+    --tw-prose-lead: var(--color-body);
+    --tw-prose-links: var(--color-ink);
+    --tw-prose-bold: var(--color-ink);
+    --tw-prose-counters: var(--color-muted);
+    --tw-prose-bullets: var(--color-muted);
+    --tw-prose-hr: var(--color-line);
+    --tw-prose-quotes: var(--color-muted);
+    --tw-prose-quote-borders: var(--color-line);
+    --tw-prose-captions: var(--color-muted);
+    --tw-prose-kbd: var(--color-ink);
+    --tw-prose-code: var(--color-ink);
+    --tw-prose-pre-code: var(--color-body);
+    --tw-prose-pre-bg: var(--color-chip);
+    --tw-prose-th-borders: var(--color-line);
+    --tw-prose-td-borders: var(--color-line);
 }
 
-/* Inline code: subtle background instead of the typography plugin's
-   backtick pseudo-elements. Scoped to exclude code inside <pre>. */
+/* The plugin's `a { text-decoration: underline }` shorthand resets the
+   decoration color, so restate the faded underline here. */
+.prose a {
+    font-weight: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+.prose a:hover {
+    text-decoration-color: currentColor;
+}
+
+/* Inline code: same font as the body now, so differentiate with a chip
+   rather than size or weight. Scoped to exclude code inside <pre>. */
 .prose :not(pre) > code {
-    font-weight: 500;
-    font-size: 0.9em;
-    padding: 0.15em 0.35em;
-    border-radius: 0.3rem;
-    background-color: var(--color-zinc-100);
-}
-.dark .prose :not(pre) > code {
-    background-color: var(--color-zinc-800);
+    font-size: 1em;
+    font-weight: inherit;
+    padding: 0.1em 0.35em;
+    border-radius: 2px;
+    background-color: var(--color-chip);
 }
 .prose code::before,
 .prose code::after {
     content: none;
 }
 
+/* Code blocks: syntax highlighting is off (astro.config.mjs), so this is a
+   single-color block on a chip background. */
+.prose pre {
+    border: 1px solid var(--color-line);
+    border-radius: 2px;
+}
+
+/* Blockquotes: thin rule, no auto-inserted curly quotes. */
+.prose blockquote {
+    border-left-width: 1px;
+}
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+    content: none;
+}

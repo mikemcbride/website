@@ -36,23 +36,16 @@ const recentPosts = (
         </Prose>
 
         <section class="mt-14">
-            <h2
-                class="mb-5 text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100"
-            >
-                Recent writing
-            </h2>
+            <h2 class="mb-5 text-lg font-medium text-ink">Recent writing</h2>
             <ul class="flex flex-col gap-3">
                 {
                     recentPosts.map((post) => (
                         <li class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
-                            <a
-                                href={`/writing/${post.id}`}
-                                class="font-medium text-zinc-900 transition hover:text-accent dark:text-zinc-100"
-                            >
+                            <a href={`/writing/${post.id}`}>
                                 {post.data.title}
                             </a>
                             <time
-                                class="shrink-0 text-sm text-zinc-500 dark:text-zinc-400"
+                                class="shrink-0 text-sm text-muted"
                                 datetime={post.data.date.toISOString()}
                             >
                                 {formatDate(post.data.date)}
@@ -62,11 +55,7 @@ const recentPosts = (
                 }
             </ul>
             <p class="mt-5 text-sm">
-                <a
-                    href="/writing"
-                    class="font-medium text-accent hover:underline"
-                    >All writing &rarr;</a
-                >
+                <a href="/writing">All writing &rarr;</a>
             </p>
         </section>
 

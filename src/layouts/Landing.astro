@@ -12,7 +12,7 @@ const subheading = frontmatter?.subheading || Astro.props.subheading;
 			<h1 class={subheading ? "mb-2" : ""}>{title}</h1>
 			{
 				subheading && (
-					<p class="mt-0 text-zinc-600 dark:text-zinc-400">
+					<p class="mt-0 text-muted">
 						{subheading}
 					</p>
 				)

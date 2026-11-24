@@ -15,13 +15,29 @@ allBlogPosts = allBlogPosts.sort((a, b) => {
     subheading="Sometimes I write things. Not often enough to call it a blog."
 >
     <section>
-        <input
-            type="search"
-            id="search-posts"
-            placeholder="Search posts…"
-            aria-label="Search posts"
-            class="mb-10 w-full rounded-md border border-zinc-300 bg-transparent px-3 py-2 text-base text-zinc-900 placeholder:text-zinc-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent dark:border-zinc-700 dark:text-zinc-100 dark:placeholder:text-zinc-500"
-        />
+        <!-- Styled like a one-line code block (see `.prose pre`) so it reads
+             as a terminal prompt. The label wrapper makes the whole block a
+             click target. -->
+        <label
+            class="group mb-10 flex items-center gap-3 rounded-sm border border-line bg-chip px-4 py-3 text-base transition focus-within:border-muted md:text-sm"
+        >
+            <span
+                aria-hidden="true"
+                class="select-none text-muted transition group-focus-within:text-ink"
+                >$</span
+            >
+            <input
+                type="search"
+                id="search-posts"
+                placeholder="search posts…"
+                aria-label="Search posts"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                class="w-full min-w-0 bg-transparent text-ink placeholder:text-muted focus:outline-none [caret-shape:block] [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden"
+            />
+        </label>
         <ul class="flex flex-col gap-8">
             {
                 allBlogPosts.map((post: any) => (
@@ -30,23 +46,20 @@ allBlogPosts = allBlogPosts.sort((a, b) => {
                     >
                         <article>
                             <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
-                                <h2 class="text-lg font-semibold leading-snug tracking-tight">
-                                    <a
-                                        href={`/writing/${post.id}`}
-                                        class="text-zinc-900 transition hover:text-accent dark:text-zinc-100"
-                                    >
+                                <h2 class="font-medium leading-snug">
+                                    <a href={`/writing/${post.id}`}>
                                         {post.data.title}
                                     </a>
                                 </h2>
                                 <time
-                                    class="shrink-0 text-sm text-zinc-500 dark:text-zinc-400"
+                                    class="shrink-0 text-sm text-muted"
                                     datetime={post.data.date.toISOString()}
                                 >
                                     {formatDate(post.data.date)}
                                 </time>
                             </div>
                             {post.data.excerpt && (
-                                <p class="mt-1 text-zinc-600 dark:text-zinc-400">
+                                <p class="mt-1 text-muted">
                                     {post.data.excerpt}
                                 </p>
                             )}
@@ -55,11 +68,7 @@ allBlogPosts = allBlogPosts.sort((a, b) => {
                 ))
             }
         </ul>
-        <p
-            id="no-results"
-            hidden
-            class="text-zinc-500 dark:text-zinc-400"
-        >
+        <p id="no-results" hidden class="text-muted">
             No posts match that search.
         </p>
     </section>
