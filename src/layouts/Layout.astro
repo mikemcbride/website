@@ -23,7 +23,9 @@ const pageTitle = title || "Mike McBride";
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- No favicon by choice. The empty data URI stops browsers from
+		     requesting /favicon.ico and 404ing on every page load. -->
+		<link rel="icon" href="data:," />
 		<link
 			rel="alternate"
 			type="application/rss+xml"
