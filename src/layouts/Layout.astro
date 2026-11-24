@@ -2,8 +2,12 @@
 import "../styles/global.css";
 import SiteNav from "../components/SiteNav.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import site from "../data/site.json";
+import { emojiFavicon } from "../utils/emojiFavicon";
 const { title } = Astro.props;
 const pageTitle = title || "Mike McBride";
+// Change the emoji in src/data/site.json.
+const faviconHref = emojiFavicon(site.favicon);
 ---
 
 <!doctype html>
@@ -23,9 +27,7 @@ const pageTitle = title || "Mike McBride";
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<!-- No favicon by choice. The empty data URI stops browsers from
-		     requesting /favicon.ico and 404ing on every page load. -->
-		<link rel="icon" href="data:," />
+		<link rel="icon" href={faviconHref} />
 		<link
 			rel="alternate"
 			type="application/rss+xml"
