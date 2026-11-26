@@ -98,7 +98,7 @@ It's not the most intuitive thing to figure out, so we'll cover it here as well.
 <template>
   <div>
     <p>
-      {% raw %}{{ quizTimer }}{% endraw %} second(s) remaining
+      {{ quizTimer }} second(s) remaining
     </p>
     <button
       @click="doCountdown">
@@ -168,7 +168,7 @@ This approach would absolutely work, but what you lose is the ability to clear t
 <template>
   <div>
     <p>
-      {% raw %}{{ quizTimer }}{% endraw %} second(s) remaining
+      {{ quizTimer }} second(s) remaining
     </p>
     <button
       @click="doCountdown">

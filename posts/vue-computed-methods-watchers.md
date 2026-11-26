@@ -25,7 +25,7 @@ This is one of the most common use cases, and probably one of the first examples
 
 ```html
 <button v-on:click="handleClick">Click me!</button>
-<span>You have clicked {% raw %}{{ clickCount }}{% endraw %} times.</span>
+<span>You have clicked {{ clickCount }} times.</span>
 ```
 
 ```js
@@ -131,7 +131,7 @@ I found that when switching from Angular.js to Vue, there were a LOT of times wh
 ```html
 <ul>
   <li v-for="user in users" :key="user.id">
-    {% raw %}{{ getUserDisplayName(user) }}{% endraw %}
+    {{ getUserDisplayName(user) }}
   </li>
 </ul>
 ```
@@ -161,7 +161,7 @@ This works fine, and in coming from Angular.js, that was really the only way you
   <li
     v-for="(user, index) in formattedUsers"
     :key="index">
-    {% raw %}{{ user }}{% endraw %}
+    {{ user }}
   </li>
 </ul>
 ```
@@ -196,7 +196,7 @@ My absolute favorite example of when you'd want to use computed properties is fo
 <li
   v-for="item in items"
   v-if="item.includes(searchTerm)">
-  {% raw %}{{ item }}{% endraw %}
+  {{ item }}
 </li>
 ```
 
@@ -204,7 +204,7 @@ You could do this:
 
 ```html
 <li v-for="item in filteredItems">
-  {% raw %}{{ item }}{% endraw %}
+  {{ item }}
 </li>
 ```
 
